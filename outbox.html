@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Главная</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/fancybox.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <script src="./js/swiper-bundle.min.js" defer></script>
+    <script src="./js/fancybox.umd.js" defer></script>
+    <script src="./js/scripts.js" defer></script>
+</head>
+
+<body>
+    <!-- wrap -->
+    <div class="wrap">
+
+        <!-- header -->
+        <header class="header">
+            <div class="inner-wrap">
+                <div class="logo-inner-wrap">
+                    <a href="" class="logo">
+                        <img src="./img/main/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="menu-inner-wrap popup-menu-wrap js-popup-wrap">
+                    <a href="" class="btn-popup btn-action-ico ico-menu button-active-close js-btn-popup-toggle"></a>
+                    <div class="popup-content-block js-popup-block">
+                        <div class="menu-wrap">
+                            <ul class="menu">
+                                <li>
+                                    <a href="" class="btn-menu active">
+                                        <div class="button-title">Заявки</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn-menu">
+                                        <div class="button-title">Арбитраж</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn-menu">
+                                        <div class="button-title">Переписка</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="actions-inner-wrap">
+                            <div class="action-wrap">
+                                <a href="" class="btn-action-ico ico-notify"></a>
+                            </div>
+                            <div class="user-wrap">
+                                <a href="" class="elm-photo photo-cover">
+                                    <img src="./img/main/user.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- /header -->
+
+        <!--actions-panel-box-->
+        <div class="actions-panel-box cnt-section">
+            <div class="inner-wrap">
+                <div class="buttons-inner-wrap">
+                    <ul class="menu">
+                        <li>
+                            <a href="" class="btn button-light">
+                                <div class="button-ico">
+                                    <img src="./img/icons/inbox.svg" alt="">
+                                </div>
+                                <div class="button-title">Входящие заявки</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="btn button-light active">
+                                <div class="button-ico">
+                                    <img src="./img/icons/outbox.svg" alt="">
+                                </div>
+                                <div class="button-title">Исходящие</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="btn button-light">
+                                <div class="button-ico">
+                                    <img src="./img/icons/favs.svg" alt="">
+                                </div>
+                                <div class="button-title">Избранные</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="btn button-light">
+                                <div class="button-ico">
+                                    <img src="./img/icons/archive.svg" alt="">
+                                </div>
+                                <div class="button-title">Архив</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="btn button-light">
+                                <div class="button-ico">
+                                    <img src="./img/icons/trash.svg" alt="">
+                                </div>
+                                <div class="button-title">Корзина</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="actions-inner-wrap">
+                    <ul class="menu">
+                        <li>
+                            <a href="" class="btn button-light button-arrow">
+                                <div class="button-title">Таблица</div>
+                            </a>
+                        </li>
+                        <li class="menu-search js-popup-wrap">
+                            <a href="" class="btn button-light btn-popup js-btn-popup-toggle">
+                                <div class="button-ico">
+                                    <img src="./img/icons/search.svg" alt="">
+                                </div>
+                                <div class="button-title">Найти</div>
+                            </a>
+                            <div class="popup-content-block js-popup-block">
+                                <form action="/" class="frm-main-search">
+                                    <div class="field-input">
+                                        <input type="text" class="form-input" placeholder="Найти в заявках">
+                                    </div>
+                                    <div class="field-button-submit">
+                                        <button type="submit" class="btn">
+                                            <div class="button-ico">
+                                                <img src="./img/icons/search.svg" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div class="field-button-close">
+                                        <a href="" class="btn button-light js-btn-popup-close">
+                                            <div class="button-ico">
+                                                <img src="./img/icons/close.svg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                        <li class="menu-filter js-popup-wrap">
+                            <a href="" class="btn button-light btn-popup js-btn-popup-toggle">
+                                <div class="button-ico">
+                                    <img src="./img/icons/filter.svg" alt="">
+                                </div>
+                            </a>
+                            <div class="popup-content-block dropdown-box js-popup-block">
+                                <div class="popup-title-wrap">
+                                    <div class="popup-title">Настройки вида</div>
+                                    <div class="popup-title-action">
+                                        <a href="" class="btn button-clear js-btn-popup-close btn-popup-close">
+                                            <div class="button-ico">
+                                                <img src="./img/icons/close.svg" alt="">
+                                            </div>
+                                            <div class="button-title">Закрыть</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="popup-content-wrap">
+                                    <div class="popup-section-wrap">
+                                        <div class="popup-section-content">
+                                            <div class="frm-select-toggle">
+                                                <input type="checkbox" id="filter01-01" checked>
+                                                <label for="filter01-01">Бесконечный скролл</label>
+                                            </div>
+                                            <div class="frm-select-toggle">
+                                                <input type="checkbox" id="filter01-02">
+                                                <label for="filter01-02">Открывать всегда вид календаря</label>
+                                            </div>
+                                            <div class="frm-select-toggle">
+                                                <input type="checkbox" id="filter01-03" checked>
+                                                <label for="filter01-03">Цветные статусы</label>
+                                            </div>
+                                            <div class="frm-select-toggle">
+                                                <input type="checkbox" id="filter01-04">
+                                                <label for="filter01-04">Сокращенное название заявок</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="popup-section-wrap">
+                                        <div class="popup-section-title">Колонки:</div>
+                                        <div class="popup-section-content">
+                                            <div class="frm-select">
+                                                <input type="checkbox" id="filter02-01" checked>
+                                                <label for="filter02-01">От кого клиника</label>
+                                            </div>
+                                            <div class="frm-select">
+                                                <input type="checkbox" id="filter02-02">
+                                                <label for="filter02-02">От кого врач</label>
+                                            </div>
+                                            <div class="frm-select">
+                                                <input type="checkbox" id="filter02-03" checked>
+                                                <label for="filter02-03">Заявка на услугу </label>
+                                            </div>
+                                            <div class="frm-select">
+                                                <input type="checkbox" id="filter02-04" checked>
+                                                <label for="filter02-04">Пациент</label>
+                                            </div>
+                                            <div class="frm-select">
+                                                <input type="checkbox" id="filter02-05" checked>
+                                                <label for="filter02-05">Статус</label>
+                                            </div>
+                                            <div class="frm-select">
+                                                <input type="checkbox" id="filter02-06" checked>
+                                                <label for="filter02-06">Сумма в ₽</label>
+                                            </div>
+                                            <div class="frm-select">
+                                                <input type="checkbox" id="filter02-07" checked>
+                                                <label for="filter02-07">Дата получения заявки</label>
+                                            </div>
+                                            <div class="frm-select">
+                                                <input type="checkbox" id="filter02-08" checked>
+                                                <label for="filter02-08">Дата открытия заявки</label>
+                                            </div>
+                                            <div class="frm-select">
+                                                <input type="checkbox" id="filter02-09" checked>
+                                                <label for="filter02-09">Дата закрытия заявки</label>
+                                            </div>
+                                            <div class="frm-select">
+                                                <input type="checkbox" id="filter02-10" checked>
+                                                <label for="filter02-10">Арбитраж</label>
+                                            </div>
+                                            <div class="frm-select">
+                                                <input type="checkbox" id="filter02-11" checked>
+                                                <label for="filter02-11">Сообщения в заявке</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-add js-popup-wrap">
+                            <a href="" class="btn btn-popup button-alert button-arrow js-btn-popup-toggle">
+                                <div class="button-ico">
+                                    <img src="./img/icons/edit.svg" alt="">
+                                </div>
+                                <div class="button-title">Добавить</div>
+                            </a>
+                            <div class="popup-content-block dropdown-box js-popup-block">
+                                <div class="popup-title-wrap">
+                                    <div class="popup-title">Новая заявка</div>
+                                    <div class="popup-title-action">
+                                        <a href="" class="btn button-clear js-btn-popup-close btn-popup-close">
+                                            <div class="button-ico">
+                                                <img src="./img/icons/close.svg" alt="">
+                                            </div>
+                                            <div class="button-title">Закрыть</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="popup-content-wrap">
+                                    <div class="popup-section-wrap">
+                                        <div class="popup-section-content">
+                                            <form action="/" class="frm-main-order">
+                                                <div class="frm-sections-wrap">
+                                                    <!-- section -->
+                                                    <div class="frm-section-wrap">
+                                                        <div class="frm-section-title">Принимающая сторона</div>
+                                                        <div class="frm-section-content">
+                                                            <div class="frm-row">
+                                                                <div class="frm-field">
+                                                                    <select class="form-input" required>
+                                                                        <option selected disabled hidden value="">Заявка на</option><!--placeholder-->
+                                                                        <option>Пункт списка</option>
+                                                                        <option>Пункт списка</option>
+                                                                        <option>Пункт списка</option>
+                                                                        <option>Пункт списка</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="frm-field">
+                                                                    <textarea class="form-input" placeholder="Подробное описание (необязательно)"></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /section -->
+                                                    <!-- section -->
+                                                    <div class="frm-section-wrap">
+                                                        <div class="frm-section-title">Принимающая сторона</div>
+                                                        <div class="frm-section-content">
+                                                            <div class="frm-row">
+                                                                <div class="frm-field">
+                                                                    <select class="form-input" required>
+                                                                        <option selected disabled hidden value="">Клиника</option><!--placeholder-->
+                                                                        <option>Пункт списка</option>
+                                                                        <option>Пункт списка</option>
+                                                                        <option>Пункт списка</option>
+                                                                        <option>Пункт списка</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="frm-field">
+                                                                    <select class="form-input" required disabled>
+                                                                        <option selected disabled hidden value="">Отделение (Сначало выберите клинику)</option><!--placeholder-->
+                                                                        <option>Пункт списка</option>
+                                                                        <option>Пункт списка</option>
+                                                                        <option>Пункт списка</option>
+                                                                        <option>Пункт списка</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="frm-field">
+                                                                    <select class="form-input" required disabled>
+                                                                        <option selected disabled hidden value="">Доктор (Сначало выберите отделение)</option><!--placeholder-->
+                                                                        <option>Пункт списка</option>
+                                                                        <option>Пункт списка</option>
+                                                                        <option>Пункт списка</option>
+                                                                        <option>Пункт списка</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /section -->
+                                                    <!-- section -->
+                                                    <div class="frm-section-wrap">
+                                                        <div class="frm-section-title">Пациент</div>
+                                                        <div class="frm-section-content">
+                                                            <div class="frm-row">
+                                                                <div class="frm-field">
+                                                                    <select class="form-input" required disabled>
+                                                                        <option selected disabled hidden value="">Пациент (выберите или ввдите по ID или ФИО)</option><!--placeholder-->
+                                                                        <option>Пункт списка</option>
+                                                                        <option>Пункт списка</option>
+                                                                        <option>Пункт списка</option>
+                                                                        <option>Пункт списка</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="frm-field">
+                                                                    <a href="" class="btn button-light">
+                                                                        <div class="button-ico ico-add">
+                                                                            <img src="./img/icons/add.svg" alt="">
+                                                                        </div>
+                                                                        <div class="button-title">Новый пациент</div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /section -->
+                                                    <!-- section -->
+                                                    <div class="frm-section-wrap">
+                                                        <div class="frm-section-title">Финансы</div>
+                                                        <div class="frm-section-content">
+                                                            <div class="frm-row">
+                                                                <div class="frm-field">
+                                                                    <input type="text" class="form-input" placeholder="Сумма заявки">
+                                                                </div>
+                                                                <div class="frm-field">
+                                                                    <input type="text" class="form-input" placeholder="Сумма обязательной предоплаты (если есть)">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /section -->
+                                                </div>
+                                                <div class="frm-row-submit">
+                                                    <div class="frm-field">
+                                                        <button type="submit" class="btn button-alert">
+                                                            <div class="button-ico">
+                                                                <img src="./img/icons/edit.svg" alt="">
+                                                            </div>
+                                                            <div class="button-title">Разместить новую заявку</div>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--/actions-panel-box-->
+
+        <!-- page -->
+        <div class="page-full">
+            333
+        </div>
+        <!-- /page -->
+
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="inner-wrap">
+                <div class="info-inner-wrap">
+                    <div class="info-wrap">
+                        <p>© 2024, НейроМаркер</p>
+                    </div>
+                    <div class="info-wrap">
+                        <p>Сделано в <a href="" class="link-studio">Вебуспех <img src="./img/main/studio.svg" alt=""></a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+
+    </div>
+    <!-- /wrap -->
+
+
+
+</body>
+
+</html>
