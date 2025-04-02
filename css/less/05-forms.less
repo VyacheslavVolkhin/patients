@@ -53,6 +53,8 @@
 .frm-main-search {
 	display: flex;
 	position: relative;
+	width: 100%;
+	flex-shrink: 0;
 	z-index: 10;
 	.field-input {
 		flex: 1;
@@ -167,8 +169,10 @@
 	font-size: 16px;
 	&.inp-clear {
 		label {
-			width: 30px;height: 30px;
+			width: 24px;height: 24px;
 			padding: 0;
+			min-height: 0;
+			min-width: 0;
 			&:before, &:after {
 				left: 50%;top: 50%;
 			}

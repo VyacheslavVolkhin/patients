@@ -80,6 +80,40 @@ select.form-input:required:invalid {
 	background: var(--clr-att);
 	font-size: 16px;
 	color: #fff;
+	&.button-vsmall {
+		height: 27px;
+		padding: 0 14px;
+		border-radius: 14px;
+		font-size: 13px;
+		.button-ico {
+			width: 18px;height: 18px;
+			margin: 0 4px;
+			&:first-child {
+				margin-left: 0;
+			}
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+	&.button-dashed {
+		border: 1px dashed #D0D0D0;
+		color: var(--clr-att);
+		font-weight: 500;
+		background-color: transparent;
+		.button-ico {
+			filter: none;
+		}
+		&:hover, &.active {
+			color: #fff;
+			border-color: var(--clr-att);
+			background-color: var(--clr-att);
+			border-style: solid;
+			.button-ico {
+				filter: brightness(0) invert(1);
+			}
+		}
+	}
 	&.button-arrow {
 		padding-right: 10px;
 		&:after {
@@ -316,6 +350,28 @@ select.form-input:required:invalid {
 			}
 			&:before {
 				opacity: 0;
+			}
+		}
+	}
+	&.ico-sort {
+		&:before {
+			background-image: url(../img/icons/sort.svg);
+		}
+		&:after {
+			background-image: url(../img/icons/sort-up.svg);
+			opacity: 0;
+		}
+		&.active-up, &.active-down {
+			&:before {
+				opacity: 0;
+			}
+			&:after {
+				opacity: 1;
+			}
+		}
+		&.active-down {
+			&:after {
+				rotate: 180deg;
 			}
 		}
 	}

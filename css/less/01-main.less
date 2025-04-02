@@ -162,53 +162,112 @@ h6, .h6-title {
         margin-top: 0;
     }
 }
-.text-att {
+.text-att, .title-att {
 	color: var(--clr-att);
 	* {
 		color: var(--clr-att);
 	}
 }
-.text-green {
+.text-green, .title-green {
 	color: var(--clr-green);
 	* {
 		color: var(--clr-green);
 	}
 }
-.text-blue {
+.text-blue, .title-blue {
 	color: var(--clr-blue);
 	* {
 		color: var(--clr-blue);
 	}
 }
-.text-violet {
+.text-violet, .title-violet {
 	color: var(--clr-violet);
 	* {
 		color: var(--clr-violet);
 	}
 }
-.text-red {
+.text-red, .title-red {
 	color: var(--clr-red);
 	* {
 		color: var(--clr-red);
 	}
 }
-.text-yellow {
+.text-yellow, .title-yellow {
 	color: var(--clr-yellow);
 	* {
 		color: var(--clr-yellow);
 	}
 }
-.text-light {
+.text-light, .title-light {
 	color: var(--clr-light);
 	* {
 		color: var(--clr-light);
 	}
 }
-.text-light, .title-light {
-    color: var(--clr-light);
+.text-line, .title-line {
+	white-space: nowrap;
+}
+.text-upper, .title-upper {
+	text-transform: uppercase;
+}
+.text-left, .title-left {
+	text-align: left;
+}
+.text-right, .title-right {
+	text-align: right;
 }
 .text-center, .title-center {
-    text-align: center;
+	text-align: center;
+}
+table {
+	width: 100%;
+	thead {
+		th, td {
+			white-space: nowrap;
+			color: var(--clr-light);
+		}
+	}
+	th, td {
+		font-weight: 400;
+		line-height: (20/16);
+		padding: 20px;
+		vertical-align: top;
+		text-align: left;
+		border: none;
+		border-bottom: 1px solid var(--clr-border-light);
+	}
+	.elm-ico {
+		width: 24px;height: 24px;
+	}
+	.td-action {
+		margin-top: -3px;
+	}
+	.frm-select {
+		margin-top: -2px;
+	}
+	.th-title {
+		display: inline-block;
+		vertical-align: top;
+		max-width: calc(100% - 24px);
+	}
+	.tbl-button-sort {
+		width: 20px;height: 20px;
+		cursor: pointer;
+		display: inline-block;
+		vertical-align: top;
+		z-index: 3;
+	}
+	.td-ico-wrap {
+		display: block;
+		width: 24px;height: 24px;
+		margin-top: -2px;
+		line-height: 24px;
+		text-align: center;
+		color: var(--clr-light);
+		.elm-ico {
+			margin: 0;
+		}
+	}
 }
 @media (max-width: 1399px) {
     :root {

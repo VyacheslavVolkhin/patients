@@ -5,6 +5,22 @@ document.addEventListener("DOMContentLoaded", function() {
 		//settings
 	});
 
+	//check table
+	const tableAllCheckbox = document.getElementById('table-all');
+	const checkboxes = document.querySelectorAll('tbody input[type="checkbox"]');
+	if (tableAllCheckbox) {
+		tableAllCheckbox.addEventListener('change', function() {
+			checkboxes.forEach(function(checkbox) {
+				checkbox.checked = tableAllCheckbox.checked;
+			});
+		});
+		checkboxes.forEach(function(checkbox) {
+			checkbox.addEventListener('change', function() {
+				const allChecked = Array.from(checkboxes).every(chk => chk.checked);
+				tableAllCheckbox.checked = allChecked;
+			});
+		});
+	}
 
 	//js popup wrap
 	const togglePopupButtons = document.querySelectorAll('.js-btn-popup-toggle')
