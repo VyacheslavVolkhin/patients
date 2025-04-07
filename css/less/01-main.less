@@ -1,11 +1,13 @@
 :root {
 	--clr-base: #121212;
+	--clr-title: #1D1D1F;
 	--clr-att: #0064FF;
 	--clr-att-hover: #3083ff;
 	--clr-green: #39E14D;
 	--clr-blue: #48CAEE;
 	--clr-violet: #AB8AE5;
 	--clr-red: #FF5F91;
+	--clr-alert: #FF4633;
 	--clr-yellow: #FFC037;
 	--clr-light: #767579;
 	--clr-bg-light: #FAFAFC;
@@ -161,6 +163,14 @@ h6, .h6-title {
     &:first-child {
         margin-top: 0;
     }
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+.h1-title {
+	font-size: 24px;
+	line-height: normal;
+	font-weight: bold;
 }
 .text-att, .title-att {
 	color: var(--clr-att);
@@ -184,6 +194,12 @@ h6, .h6-title {
 	color: var(--clr-violet);
 	* {
 		color: var(--clr-violet);
+	}
+}
+.text-alert, .title-alert {
+	color: var(--clr-alert);
+	* {
+		color: var(--clr-red);
 	}
 }
 .text-red, .title-red {
@@ -293,6 +309,9 @@ table {
     :root {
         --paddingContainer: 30px;
     }
+	.h1-title, h1 {
+		font-size: 3.2rem;
+	}
 }
 @media (min-width: 1400px) {
     :root {
