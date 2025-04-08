@@ -414,15 +414,19 @@ select.form-input:required:invalid {
         z-index: 20;
         cursor: pointer;
         &:before {
-            background-image: url(../img/icons/arrow-slider.png);
+            background-image: url(../img/icons/back.svg);
+			filter: brightness(0) grayscale(1);;
         }
         &:hover {
+			&:before {
+				filter: none;
+			}
         }
 		&.swiper-button-disabled {
 			opacity: 0.5;
 		}
     }
-    &.ico-arrow-prev {
+    &.ico-arrow-next {
         &:before {
             .t-rotate(180deg);
         }

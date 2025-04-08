@@ -78,7 +78,7 @@ p, ul, ol, table, blockquote, .bq-text {
 li {
 	position: relative;
 }
-.menu, .list {
+.menu, .list, .list-features {
     margin: 0;
     padding: 0;
     li {
@@ -89,7 +89,52 @@ li {
         }
     }
 }
-
+.list-features {
+	font-size: 16px;
+	line-height: 24px;
+	li {
+		display: flex;
+		position: relative;
+		margin: 0 0 16px 0;
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		&.li-main {
+			margin-bottom: 24px;
+		}
+		&:last-child {
+			margin-bottom: 0;
+		}
+		&:after {
+			content: "";
+			display: block;
+			flex: 1;
+			height: 1px;
+			border-top: 1px dotted #D0D0D0;
+			position: absolute;
+			bottom: 0.4em;left: 0;right: 0;
+		}
+	}
+	.list-title {
+		padding: 0 5px 0 0;
+		flex-shrink: 0;
+		position: relative;
+		background: #fff;
+		z-index: 2;
+	}
+	.list-value {
+		flex-shrink: 0;
+		padding-left: 5px;
+		position: relative;
+		background: #fff;
+		z-index: 2;
+	}
+	.elm-ico {
+		width: 24px;height: 24px;
+		display: inline-block;
+		vertical-align: middle;
+		margin-top: -1px;
+	}
+}
 a {
     text-decoration: none;
     color: var(--clr-att);
@@ -234,6 +279,21 @@ h6, .h6-title {
 }
 .text-center, .title-center {
 	text-align: center;
+}
+.bg-violet {
+	background-color: #AB8AE5;
+}
+.bg-green {
+	background-color: #39E14D;
+}
+.bg-red {
+	background-color: #FF5F91;
+}
+.bg-yellow {
+	background-color: #FFC037;
+}
+.bg-blue {
+	background-color: #48CAEE;
 }
 table {
 	width: 100%;
