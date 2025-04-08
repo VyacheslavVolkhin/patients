@@ -20,45 +20,23 @@
 
 <body>
     <!-- wrap -->
-    <div class="wrap">
+    <div class="wrap wrap-main">
 
         <!-- header -->
-        <header class="header">
+        <header class="header header-light">
             <div class="inner-wrap">
                 <div class="logo-inner-wrap">
                     <a href="" class="logo">
-                        <img src="./img/main/logo.svg" alt="">
+                        <img src="./img/main/logo-light.svg" alt="">
                     </a>
                 </div>
                 <div class="menu-inner-wrap popup-menu-wrap js-popup-wrap">
                     <a href="" class="btn-popup btn-action-ico ico-menu button-active-close js-btn-popup-toggle"></a>
                     <div class="popup-content-block js-popup-block">
-                        <div class="menu-wrap">
-                            <ul class="menu">
-                                <li>
-                                    <a href="" class="btn-menu active">
-                                        <div class="button-title">Заявки</div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="" class="btn-menu">
-                                        <div class="button-title">Арбитраж</div>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="" class="btn-menu">
-                                        <div class="button-title">Переписка</div>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
                         <div class="actions-inner-wrap">
-                            <div class="action-wrap">
-                                <a href="" class="btn-action-ico ico-notify"></a>
-                            </div>
-                            <div class="user-wrap">
-                                <a href="" class="elm-photo photo-cover">
-                                    <img src="./img/main/user.jpg" alt="">
+                            <div class="login-wrap">
+                                <a href="" class="btn button-login">
+                                    <div class="button-title">Войти</div>
                                 </a>
                             </div>
                         </div>
@@ -68,189 +46,1596 @@
         </header>
         <!-- /header -->
 
-        <!--actions-panel-box-->
-        <div class="actions-panel-box cnt-section">
-            <div class="inner-wrap">
-                <div class="buttons-inner-wrap">
-                    <ul class="menu">
-                        <li>
-                            <a href="" class="btn button-light active">
-                                <div class="button-ico">
-                                    <img src="./img/icons/inbox.svg" alt="">
-                                </div>
-                                <div class="button-title">Входящие заявки</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="btn button-light">
-                                <div class="button-ico">
-                                    <img src="./img/icons/outbox.svg" alt="">
-                                </div>
-                                <div class="button-title">Исходящие</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="btn button-light">
-                                <div class="button-ico">
-                                    <img src="./img/icons/favs.svg" alt="">
-                                </div>
-                                <div class="button-title">Избранные</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="btn button-light">
-                                <div class="button-ico">
-                                    <img src="./img/icons/archive.svg" alt="">
-                                </div>
-                                <div class="button-title">Архив</div>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="btn button-light">
-                                <div class="button-ico">
-                                    <img src="./img/icons/trash.svg" alt="">
-                                </div>
-                                <div class="button-title">Корзина</div>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="actions-inner-wrap">
-                    <ul class="menu">
-                        <li>
-                            <a href="" class="btn button-light button-arrow">
-                                <div class="button-title">Таблица</div>
-                            </a>
-                        </li>
-                        <li class="menu-search js-popup-wrap">
-                            <a href="" class="btn button-light btn-popup js-btn-popup-toggle">
-                                <div class="button-ico">
-                                    <img src="./img/icons/search.svg" alt="">
-                                </div>
-                                <div class="button-title">Найти</div>
-                            </a>
-                            <div class="popup-content-block js-popup-block">
-                                <form action="/" class="frm-main-search">
-                                    <div class="field-input">
-                                        <input type="text" class="form-input" placeholder="Найти в заявках">
-                                    </div>
-                                    <div class="field-button-submit">
-                                        <button type="submit" class="btn">
-                                            <div class="button-ico">
-                                                <img src="./img/icons/search.svg" alt="">
-                                            </div>
-                                        </button>
-                                    </div>
-                                    <div class="field-button-close">
-                                        <a href="" class="btn button-light js-btn-popup-close">
-                                            <div class="button-ico">
-                                                <img src="./img/icons/close.svg" alt="">
-                                            </div>
-                                        </a>
-                                    </div>
-                                </form>
-                            </div>
-                        </li>
-                        <li class="menu-filter js-popup-wrap">
-                            <a href="" class="btn button-light btn-popup js-btn-popup-toggle">
-                                <div class="button-ico">
-                                    <img src="./img/icons/filter.svg" alt="">
-                                </div>
-                            </a>
-                            <div class="popup-content-block dropdown-box js-popup-block">
-                                <div class="popup-title-wrap">
-                                    <div class="popup-title">Настройки вида</div>
-                                    <div class="popup-title-action">
-                                        <a href="" class="btn button-clear js-btn-popup-close btn-popup-close">
-                                            <div class="button-ico">
-                                                <img src="./img/icons/close.svg" alt="">
-                                            </div>
-                                            <div class="button-title">Закрыть</div>
-                                        </a>
-                                    </div>
-                                </div>
-                                <div class="popup-content-wrap">
-                                    <div class="popup-section-wrap">
-                                        <div class="popup-section-content">
-                                            <div class="frm-select-toggle">
-                                                <input type="checkbox" id="filter01-01" checked>
-                                                <label for="filter01-01">Бесконечный скролл</label>
-                                            </div>
-                                            <div class="frm-select-toggle">
-                                                <input type="checkbox" id="filter01-02">
-                                                <label for="filter01-02">Открывать всегда вид календаря</label>
-                                            </div>
-                                            <div class="frm-select-toggle">
-                                                <input type="checkbox" id="filter01-03" checked>
-                                                <label for="filter01-03">Цветные статусы</label>
-                                            </div>
-                                            <div class="frm-select-toggle">
-                                                <input type="checkbox" id="filter01-04">
-                                                <label for="filter01-04">Сокращенное название заявок</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="popup-section-wrap">
-                                        <div class="popup-section-title">Колонки:</div>
-                                        <div class="popup-section-content">
-                                            <div class="frm-select">
-                                                <input type="checkbox" id="filter02-01" checked>
-                                                <label for="filter02-01">От кого клиника</label>
-                                            </div>
-                                            <div class="frm-select">
-                                                <input type="checkbox" id="filter02-02">
-                                                <label for="filter02-02">От кого врач</label>
-                                            </div>
-                                            <div class="frm-select">
-                                                <input type="checkbox" id="filter02-03" checked>
-                                                <label for="filter02-03">Заявка на услугу </label>
-                                            </div>
-                                            <div class="frm-select">
-                                                <input type="checkbox" id="filter02-04" checked>
-                                                <label for="filter02-04">Пациент</label>
-                                            </div>
-                                            <div class="frm-select">
-                                                <input type="checkbox" id="filter02-05" checked>
-                                                <label for="filter02-05">Статус</label>
-                                            </div>
-                                            <div class="frm-select">
-                                                <input type="checkbox" id="filter02-06" checked>
-                                                <label for="filter02-06">Сумма в ₽</label>
-                                            </div>
-                                            <div class="frm-select">
-                                                <input type="checkbox" id="filter02-07" checked>
-                                                <label for="filter02-07">Дата получения заявки</label>
-                                            </div>
-                                            <div class="frm-select">
-                                                <input type="checkbox" id="filter02-08" checked>
-                                                <label for="filter02-08">Дата открытия заявки</label>
-                                            </div>
-                                            <div class="frm-select">
-                                                <input type="checkbox" id="filter02-09" checked>
-                                                <label for="filter02-09">Дата закрытия заявки</label>
-                                            </div>
-                                            <div class="frm-select">
-                                                <input type="checkbox" id="filter02-10" checked>
-                                                <label for="filter02-10">Арбитраж</label>
-                                            </div>
-                                            <div class="frm-select">
-                                                <input type="checkbox" id="filter02-11" checked>
-                                                <label for="filter02-11">Сообщения в заявке</label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <!--/actions-panel-box-->
-
         <!-- page -->
         <div class="page-full">
-            333
+
+            <!--info-top-box-->
+            <div class="info-top-box">
+                <div class="bg-inner-wrap">
+                    <picture class="elm-photo photo-cover">
+                        <source srcset="./img/top-d.jpg" media="(min-width: 768px)">
+                        <source srcset="./img/top-m.jpg" media="">
+                        <img src="./img/top-d.jpg" alt="" />
+                    </picture>
+                </div>
+                <div class="info-inner-wrap">
+                    <h1 class="page-title">Доверительная <br>передача пациента — <br> из рук в руки</h1>
+                    <p>Первая в России медицинская биржа, которая объединяет больницы и врачей по всей стране. Эффективная передача пациентов — от клиники к клинике, от доктора к доктору. </p>
+                    <p>Быстро, надежно, удобно!</p>
+                </div>
+                <div class="action-inner-wrap">
+                    <a href="" class="btn button-clear">
+                        <div class="button-title">Узнайте больше</div>
+                        <div class="button-ico">
+                            <img src="./img/icons/down.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--/info-top-box-->
+
+            <!--title-box-->
+            <div class="title-box">
+                <div class="title-wrap">
+                    <h2 class="page-title">Почему пациенты:</h2>
+                </div>
+            </div>
+            <!--/title-box-->
+
+            <!--tiles-slider-box-->
+            <div class="tiles-slider-box">
+                <div class="slider-inner-wrap slider-tiles">
+                    <div class="slider-wrap swiper">
+                        <div class="slider swiper-wrapper">
+                            <!--sl-wrap-->
+                            <div class="sl-wrap swiper-slide">
+                                <div class="item-tile-main">
+                                    <div class="tile-photo-wrap">
+                                        <div class="tile-photo photo-cover">
+                                            <img src="./img/01.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="tile-info-wrap">
+                                        <div class="tile-subtitle">Премущество №1</div>
+                                        <div class="tile-title">Надежно</div>
+                                        <div class="tile-info">Арбитраж — ваша надежная защита от конфликтов с пациентами и ошибок со стороны принимающей клиники. Просто отправьте любую спорную заявку в арбитраж, и наши специалисты быстро и профессионально решат все за вас. Спокойствие и безопасность вашей работы — в надежных руках!</div>
+                                        <div class="tile-action">
+                                            <a href="" class="btn button-second">
+                                                <div class="button-title">Зарегистрироваться</div>
+                                                <div class="button-ico">
+                                                    <img src="./img/icons/arrow-small.svg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/sl-wrap-->
+                            <!--sl-wrap-->
+                            <div class="sl-wrap swiper-slide">
+                                <div class="item-tile-main">
+                                    <div class="tile-photo-wrap">
+                                        <div class="tile-photo photo-cover">
+                                            <img src="./img/02.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="tile-info-wrap">
+                                        <div class="tile-subtitle">Премущество №2</div>
+                                        <div class="tile-title">Оперативно</div>
+                                        <div class="tile-info">Забудьте о долгой переписке по почте или ожидании курьера! С системой "Пациенты" все данные отправляются автоматически и мгновенно. В один клик информация синхронизируется со всеми базами, экономя ваше время и ускоряя работу. Будущее управления — уже здесь!</div>
+                                        <div class="tile-action">
+                                            <a href="" class="btn button-second">
+                                                <div class="button-title">Зарегистрироваться</div>
+                                                <div class="button-ico">
+                                                    <img src="./img/icons/arrow-small.svg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/sl-wrap-->
+                            <!--sl-wrap-->
+                            <div class="sl-wrap swiper-slide">
+                                <div class="item-tile-main">
+                                    <div class="tile-photo-wrap">
+                                        <div class="tile-photo photo-cover">
+                                            <img src="./img/03.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="tile-info-wrap">
+                                        <div class="tile-subtitle">Премущество №3</div>
+                                        <div class="tile-title">Качественно</div>
+                                        <div class="tile-info">Клиент уже с вами, а все документы полностью готовы! Вам остается лишь встретить его в назначенное время, оказать услуги и моментально получить оплату. И главное — нейросети и интеллектуальные алгоритмы проверят все за вас, обеспечивая безупречную точность и надежность. Работайте легко и уверенно!</div>
+                                        <div class="tile-action">
+                                            <a href="" class="btn button-second">
+                                                <div class="button-title">Зарегистрироваться</div>
+                                                <div class="button-ico">
+                                                    <img src="./img/icons/arrow-small.svg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/sl-wrap-->
+                            <!--sl-wrap-->
+                            <div class="sl-wrap swiper-slide">
+                                <div class="item-tile-main">
+                                    <div class="tile-photo-wrap">
+                                        <div class="tile-photo photo-cover">
+                                            <img src="./img/04.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="tile-info-wrap">
+                                        <div class="tile-subtitle">Премущество №4</div>
+                                        <div class="tile-title">Комфортно</div>
+                                        <div class="tile-info">Скажем, "нет" бумажной волоките! С биржей «Пациенты» ваш документооборота становится проще и современнее. Полная синхронизация со всеми базами данных избавит вас от ненужной документации и сделает вашу работу быстрее и удобнее. Переходите на Пациенты</div>
+                                        <div class="tile-action">
+                                            <a href="" class="btn button-second">
+                                                <div class="button-title">Зарегистрироваться</div>
+                                                <div class="button-ico">
+                                                    <img src="./img/icons/arrow-small.svg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/sl-wrap-->
+                            <!--sl-wrap-->
+                            <div class="sl-wrap swiper-slide">
+                                <div class="item-tile-main">
+                                    <div class="tile-photo-wrap">
+                                        <div class="tile-photo photo-cover">
+                                            <img src="./img/05.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="tile-info-wrap">
+                                        <div class="tile-subtitle">Премущество №5</div>
+                                        <div class="tile-title">Прозрачно</div>
+                                        <div class="tile-info">Все ваши заказы, пациенты и диагнозы собраны в одной удобной таблице. В кабинете «Пациенты» вы легко контролируете все измерения и видите, откуда пришел каждый рубль. Управляйте финансами и данными ваших пациентов с максимальной простотой!</div>
+                                        <div class="tile-action">
+                                            <a href="" class="btn button-second">
+                                                <div class="button-title">Зарегистрироваться</div>
+                                                <div class="button-ico">
+                                                    <img src="./img/icons/arrow-small.svg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/sl-wrap-->
+                            <!--sl-wrap-->
+                            <div class="sl-wrap swiper-slide">
+                                <div class="item-tile-main">
+                                    <div class="tile-photo-wrap">
+                                        <div class="tile-photo photo-cover">
+                                            <img src="./img/06.jpg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="tile-info-wrap">
+                                        <div class="tile-subtitle">Премущество №6</div>
+                                        <div class="tile-title">Доступно</div>
+                                        <div class="tile-info">Будьте уверены, где бы вы ни находились! Управляйте своей клиникой или дополнительным элементом без необходимости находиться за компьютером. Оставайтесь на связи с коллегами и клиниками, получайте уведомления и эффективно работайте с помощью мобильной версии.</div>
+                                        <div class="tile-action">
+                                            <a href="" class="btn button-second">
+                                                <div class="button-title">Зарегистрироваться</div>
+                                                <div class="button-ico">
+                                                    <img src="./img/icons/arrow-small.svg" alt="">
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/sl-wrap-->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/tiles-slider-box-->
+
+            <!--title-box-->
+            <div class="title-box">
+                <div class="title-wrap">
+                    <h2 class="page-title">Статьи:</h2>
+                </div>
+                <div class="action-wrap">
+                    <a href="" class="btn button-clear">
+                        <div class="button-title">Все статьи</div>
+                        <div class="button-ico">
+                            <img src="./img/icons/arrow-small.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--/title-box-->
+
+            <!--search-panel-box-->
+            <div class="search-panel-box">
+                <form action="/" class="form-inner-wrap">
+                    <div class="field-input">
+                        <input type="text" class="form-input" placeholder="Найти в научных статьях или полезной информации">
+                    </div>
+                    <div class="field-action">
+                        <a href="" class="btn-action-ico">
+                            <img src="./img/icons/main-filter.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="field-submit">
+                        <button type="submit" class="btn-action-ico" disabled>
+                            <img src="./img/icons/main-send.svg" alt="">
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <!--/search-panel-box-->
+
+            <!--tabs-box-->
+            <div class="tabs-box js-tabs-nav">
+                <ul class="menu">
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="taball">Все</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab active" data-tab="tab01">Кардиология</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="tab02">Радиология</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="tab03">Анкология</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="tab04">Мнение эксперта</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="tab05">Неврология</a>
+                    </li>
+                </ul>
+            </div>
+            <!--/tabs-box-->
+
+            <!--tiles-box-->
+            <div class="tiles-box">
+                <div class="items-inner-wrap">
+                    <div class="items-wrap">
+                        <!--item wrap-->
+                        <div class="item-wrap js-tab-block" data-tab="taball tab01">
+                            <a href="" class="item-tile-article">
+                                <div class="tile-photo-wrap">
+                                    <div class="tile-photo photo-cover">
+                                        <img src="./img/article01.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tile-info-wrap">
+                                    <div class="tile-user-wrap">
+                                        <div class="tile-photo photo-cover">
+                                            <img src="./img/tile-user01.jpg" alt="">
+                                        </div>
+                                        <div class="tile-user-title">Роман Константиновский</div>
+                                    </div>
+                                    <div class="tile-title">Гигиеническая оценка влияния вегатерианства и веганства на здоровье человека</div>
+                                </div>
+                                <div class="tile-action-wrap">
+                                    <div class="tile-info">12 янв. 2025</div>
+                                    <div class="btn-action-ico">
+                                        <img src="./img/icons/back.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap js-tab-block" data-tab="taball tab01">
+                            <a href="" class="item-tile-article">
+                                <div class="tile-photo-wrap">
+                                    <div class="tile-photo photo-cover">
+                                        <img src="./img/article02.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tile-info-wrap">
+                                    <div class="tile-user-wrap">
+                                        <div class="tile-photo photo-cover">
+                                            <img src="./img/tile-user02.jpg" alt="">
+                                        </div>
+                                        <div class="tile-user-title">Пациенты</div>
+                                    </div>
+                                    <div class="tile-title">Междисциплинарная программа ранней реабилитации детей с врожденной расщелиной губы</div>
+                                </div>
+                                <div class="tile-action-wrap">
+                                    <div class="tile-info">12 янв. 2025</div>
+                                    <div class="btn-action-ico">
+                                        <img src="./img/icons/back.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap js-tab-block" data-tab="taball tab01">
+                            <a href="" class="item-tile-article">
+                                <div class="tile-photo-wrap">
+                                    <div class="tile-photo photo-cover">
+                                        <img src="./img/article03.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tile-info-wrap">
+                                    <div class="tile-user-wrap">
+                                        <div class="tile-photo photo-cover">
+                                            <img src="./img/tile-user03.jpg" alt="">
+                                        </div>
+                                        <div class="tile-user-title">Клиника Екатеринская</div>
+                                    </div>
+                                    <div class="tile-title">Вопросы информированного согласия и рисков различных методов анестезии</div>
+                                </div>
+                                <div class="tile-action-wrap">
+                                    <div class="tile-info">12 янв. 2025</div>
+                                    <div class="btn-action-ico">
+                                        <img src="./img/icons/back.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap js-tab-block" data-tab="taball tab02">
+                            <a href="" class="item-tile-article">
+                                <div class="tile-photo-wrap">
+                                    <div class="tile-photo photo-cover">
+                                        <img src="./img/article01.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tile-info-wrap">
+                                    <div class="tile-user-wrap">
+                                        <div class="tile-photo photo-cover">
+                                            <img src="./img/tile-user01.jpg" alt="">
+                                        </div>
+                                        <div class="tile-user-title">Роман Константиновский</div>
+                                    </div>
+                                    <div class="tile-title">Гигиеническая оценка влияния вегатерианства и веганства на здоровье человека</div>
+                                </div>
+                                <div class="tile-action-wrap">
+                                    <div class="tile-info">12 янв. 2025</div>
+                                    <div class="btn-action-ico">
+                                        <img src="./img/icons/back.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap js-tab-block" data-tab="taball tab02">
+                            <a href="" class="item-tile-article">
+                                <div class="tile-photo-wrap">
+                                    <div class="tile-photo photo-cover">
+                                        <img src="./img/article02.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tile-info-wrap">
+                                    <div class="tile-user-wrap">
+                                        <div class="tile-photo photo-cover">
+                                            <img src="./img/tile-user02.jpg" alt="">
+                                        </div>
+                                        <div class="tile-user-title">Пациенты</div>
+                                    </div>
+                                    <div class="tile-title">Междисциплинарная программа ранней реабилитации детей с врожденной расщелиной губы</div>
+                                </div>
+                                <div class="tile-action-wrap">
+                                    <div class="tile-info">12 янв. 2025</div>
+                                    <div class="btn-action-ico">
+                                        <img src="./img/icons/back.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap js-tab-block" data-tab="taball tab02">
+                            <a href="" class="item-tile-article">
+                                <div class="tile-photo-wrap">
+                                    <div class="tile-photo photo-cover">
+                                        <img src="./img/article03.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tile-info-wrap">
+                                    <div class="tile-user-wrap">
+                                        <div class="tile-photo photo-cover">
+                                            <img src="./img/tile-user03.jpg" alt="">
+                                        </div>
+                                        <div class="tile-user-title">Клиника Екатеринская</div>
+                                    </div>
+                                    <div class="tile-title">Вопросы информированного согласия и рисков различных методов анестезии</div>
+                                </div>
+                                <div class="tile-action-wrap">
+                                    <div class="tile-info">12 янв. 2025</div>
+                                    <div class="btn-action-ico">
+                                        <img src="./img/icons/back.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap js-tab-block" data-tab="taball tab02">
+                            <a href="" class="item-tile-article">
+                                <div class="tile-photo-wrap">
+                                    <div class="tile-photo photo-cover">
+                                        <img src="./img/article01.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tile-info-wrap">
+                                    <div class="tile-user-wrap">
+                                        <div class="tile-photo photo-cover">
+                                            <img src="./img/tile-user01.jpg" alt="">
+                                        </div>
+                                        <div class="tile-user-title">Роман Константиновский</div>
+                                    </div>
+                                    <div class="tile-title">Гигиеническая оценка влияния вегатерианства и веганства на здоровье человека</div>
+                                </div>
+                                <div class="tile-action-wrap">
+                                    <div class="tile-info">12 янв. 2025</div>
+                                    <div class="btn-action-ico">
+                                        <img src="./img/icons/back.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap js-tab-block" data-tab="taball tab02">
+                            <a href="" class="item-tile-article">
+                                <div class="tile-photo-wrap">
+                                    <div class="tile-photo photo-cover">
+                                        <img src="./img/article02.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tile-info-wrap">
+                                    <div class="tile-user-wrap">
+                                        <div class="tile-photo photo-cover">
+                                            <img src="./img/tile-user02.jpg" alt="">
+                                        </div>
+                                        <div class="tile-user-title">Пациенты</div>
+                                    </div>
+                                    <div class="tile-title">Междисциплинарная программа ранней реабилитации детей с врожденной расщелиной губы</div>
+                                </div>
+                                <div class="tile-action-wrap">
+                                    <div class="tile-info">12 янв. 2025</div>
+                                    <div class="btn-action-ico">
+                                        <img src="./img/icons/back.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap js-tab-block" data-tab="taball tab02">
+                            <a href="" class="item-tile-article">
+                                <div class="tile-photo-wrap">
+                                    <div class="tile-photo photo-cover">
+                                        <img src="./img/article03.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tile-info-wrap">
+                                    <div class="tile-user-wrap">
+                                        <div class="tile-photo photo-cover">
+                                            <img src="./img/tile-user03.jpg" alt="">
+                                        </div>
+                                        <div class="tile-user-title">Клиника Екатеринская</div>
+                                    </div>
+                                    <div class="tile-title">Вопросы информированного согласия и рисков различных методов анестезии</div>
+                                </div>
+                                <div class="tile-action-wrap">
+                                    <div class="tile-info">12 янв. 2025</div>
+                                    <div class="btn-action-ico">
+                                        <img src="./img/icons/back.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap js-tab-block" data-tab="taball tab02">
+                            <a href="" class="item-tile-article">
+                                <div class="tile-photo-wrap">
+                                    <div class="tile-photo photo-cover">
+                                        <img src="./img/article01.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tile-info-wrap">
+                                    <div class="tile-user-wrap">
+                                        <div class="tile-photo photo-cover">
+                                            <img src="./img/tile-user01.jpg" alt="">
+                                        </div>
+                                        <div class="tile-user-title">Роман Константиновский</div>
+                                    </div>
+                                    <div class="tile-title">Гигиеническая оценка влияния вегатерианства и веганства на здоровье человека</div>
+                                </div>
+                                <div class="tile-action-wrap">
+                                    <div class="tile-info">12 янв. 2025</div>
+                                    <div class="btn-action-ico">
+                                        <img src="./img/icons/back.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap js-tab-block" data-tab="taball tab03">
+                            <a href="" class="item-tile-article">
+                                <div class="tile-photo-wrap">
+                                    <div class="tile-photo photo-cover">
+                                        <img src="./img/article02.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tile-info-wrap">
+                                    <div class="tile-user-wrap">
+                                        <div class="tile-photo photo-cover">
+                                            <img src="./img/tile-user02.jpg" alt="">
+                                        </div>
+                                        <div class="tile-user-title">Пациенты</div>
+                                    </div>
+                                    <div class="tile-title">Междисциплинарная программа ранней реабилитации детей с врожденной расщелиной губы</div>
+                                </div>
+                                <div class="tile-action-wrap">
+                                    <div class="tile-info">12 янв. 2025</div>
+                                    <div class="btn-action-ico">
+                                        <img src="./img/icons/back.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap js-tab-block" data-tab="taball tab04">
+                            <a href="" class="item-tile-article">
+                                <div class="tile-photo-wrap">
+                                    <div class="tile-photo photo-cover">
+                                        <img src="./img/article03.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tile-info-wrap">
+                                    <div class="tile-user-wrap">
+                                        <div class="tile-photo photo-cover">
+                                            <img src="./img/tile-user03.jpg" alt="">
+                                        </div>
+                                        <div class="tile-user-title">Клиника Екатеринская</div>
+                                    </div>
+                                    <div class="tile-title">Вопросы информированного согласия и рисков различных методов анестезии</div>
+                                </div>
+                                <div class="tile-action-wrap">
+                                    <div class="tile-info">12 янв. 2025</div>
+                                    <div class="btn-action-ico">
+                                        <img src="./img/icons/back.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap js-tab-block" data-tab="taball tab04">
+                            <a href="" class="item-tile-article">
+                                <div class="tile-photo-wrap">
+                                    <div class="tile-photo photo-cover">
+                                        <img src="./img/article01.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tile-info-wrap">
+                                    <div class="tile-user-wrap">
+                                        <div class="tile-photo photo-cover">
+                                            <img src="./img/tile-user01.jpg" alt="">
+                                        </div>
+                                        <div class="tile-user-title">Роман Константиновский</div>
+                                    </div>
+                                    <div class="tile-title">Гигиеническая оценка влияния вегатерианства и веганства на здоровье человека</div>
+                                </div>
+                                <div class="tile-action-wrap">
+                                    <div class="tile-info">12 янв. 2025</div>
+                                    <div class="btn-action-ico">
+                                        <img src="./img/icons/back.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap js-tab-block" data-tab="taball tab04">
+                            <a href="" class="item-tile-article">
+                                <div class="tile-photo-wrap">
+                                    <div class="tile-photo photo-cover">
+                                        <img src="./img/article02.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tile-info-wrap">
+                                    <div class="tile-user-wrap">
+                                        <div class="tile-photo photo-cover">
+                                            <img src="./img/tile-user02.jpg" alt="">
+                                        </div>
+                                        <div class="tile-user-title">Пациенты</div>
+                                    </div>
+                                    <div class="tile-title">Междисциплинарная программа ранней реабилитации детей с врожденной расщелиной губы</div>
+                                </div>
+                                <div class="tile-action-wrap">
+                                    <div class="tile-info">12 янв. 2025</div>
+                                    <div class="btn-action-ico">
+                                        <img src="./img/icons/back.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap js-tab-block" data-tab="taball tab04">
+                            <a href="" class="item-tile-article">
+                                <div class="tile-photo-wrap">
+                                    <div class="tile-photo photo-cover">
+                                        <img src="./img/article03.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tile-info-wrap">
+                                    <div class="tile-user-wrap">
+                                        <div class="tile-photo photo-cover">
+                                            <img src="./img/tile-user03.jpg" alt="">
+                                        </div>
+                                        <div class="tile-user-title">Клиника Екатеринская</div>
+                                    </div>
+                                    <div class="tile-title">Вопросы информированного согласия и рисков различных методов анестезии</div>
+                                </div>
+                                <div class="tile-action-wrap">
+                                    <div class="tile-info">12 янв. 2025</div>
+                                    <div class="btn-action-ico">
+                                        <img src="./img/icons/back.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap js-tab-block" data-tab="taball tab04">
+                            <a href="" class="item-tile-article">
+                                <div class="tile-photo-wrap">
+                                    <div class="tile-photo photo-cover">
+                                        <img src="./img/article01.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tile-info-wrap">
+                                    <div class="tile-user-wrap">
+                                        <div class="tile-photo photo-cover">
+                                            <img src="./img/tile-user01.jpg" alt="">
+                                        </div>
+                                        <div class="tile-user-title">Роман Константиновский</div>
+                                    </div>
+                                    <div class="tile-title">Гигиеническая оценка влияния вегатерианства и веганства на здоровье человека</div>
+                                </div>
+                                <div class="tile-action-wrap">
+                                    <div class="tile-info">12 янв. 2025</div>
+                                    <div class="btn-action-ico">
+                                        <img src="./img/icons/back.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap js-tab-block" data-tab="taball tab05">
+                            <a href="" class="item-tile-article">
+                                <div class="tile-photo-wrap">
+                                    <div class="tile-photo photo-cover">
+                                        <img src="./img/article02.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tile-info-wrap">
+                                    <div class="tile-user-wrap">
+                                        <div class="tile-photo photo-cover">
+                                            <img src="./img/tile-user02.jpg" alt="">
+                                        </div>
+                                        <div class="tile-user-title">Пациенты</div>
+                                    </div>
+                                    <div class="tile-title">Междисциплинарная программа ранней реабилитации детей с врожденной расщелиной губы</div>
+                                </div>
+                                <div class="tile-action-wrap">
+                                    <div class="tile-info">12 янв. 2025</div>
+                                    <div class="btn-action-ico">
+                                        <img src="./img/icons/back.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap js-tab-block" data-tab="taball tab05">
+                            <a href="" class="item-tile-article">
+                                <div class="tile-photo-wrap">
+                                    <div class="tile-photo photo-cover">
+                                        <img src="./img/article03.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tile-info-wrap">
+                                    <div class="tile-user-wrap">
+                                        <div class="tile-photo photo-cover">
+                                            <img src="./img/tile-user03.jpg" alt="">
+                                        </div>
+                                        <div class="tile-user-title">Клиника Екатеринская</div>
+                                    </div>
+                                    <div class="tile-title">Вопросы информированного согласия и рисков различных методов анестезии</div>
+                                </div>
+                                <div class="tile-action-wrap">
+                                    <div class="tile-info">12 янв. 2025</div>
+                                    <div class="btn-action-ico">
+                                        <img src="./img/icons/back.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap js-tab-block" data-tab="taball tab05">
+                            <a href="" class="item-tile-article">
+                                <div class="tile-photo-wrap">
+                                    <div class="tile-photo photo-cover">
+                                        <img src="./img/article01.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tile-info-wrap">
+                                    <div class="tile-user-wrap">
+                                        <div class="tile-photo photo-cover">
+                                            <img src="./img/tile-user01.jpg" alt="">
+                                        </div>
+                                        <div class="tile-user-title">Роман Константиновский</div>
+                                    </div>
+                                    <div class="tile-title">Гигиеническая оценка влияния вегатерианства и веганства на здоровье человека</div>
+                                </div>
+                                <div class="tile-action-wrap">
+                                    <div class="tile-info">12 янв. 2025</div>
+                                    <div class="btn-action-ico">
+                                        <img src="./img/icons/back.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap js-tab-block" data-tab="taball tab05">
+                            <a href="" class="item-tile-article">
+                                <div class="tile-photo-wrap">
+                                    <div class="tile-photo photo-cover">
+                                        <img src="./img/article02.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tile-info-wrap">
+                                    <div class="tile-user-wrap">
+                                        <div class="tile-photo photo-cover">
+                                            <img src="./img/tile-user02.jpg" alt="">
+                                        </div>
+                                        <div class="tile-user-title">Пациенты</div>
+                                    </div>
+                                    <div class="tile-title">Междисциплинарная программа ранней реабилитации детей с врожденной расщелиной губы</div>
+                                </div>
+                                <div class="tile-action-wrap">
+                                    <div class="tile-info">12 янв. 2025</div>
+                                    <div class="btn-action-ico">
+                                        <img src="./img/icons/back.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap js-tab-block" data-tab="taball tab05">
+                            <a href="" class="item-tile-article">
+                                <div class="tile-photo-wrap">
+                                    <div class="tile-photo photo-cover">
+                                        <img src="./img/article03.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tile-info-wrap">
+                                    <div class="tile-user-wrap">
+                                        <div class="tile-photo photo-cover">
+                                            <img src="./img/tile-user03.jpg" alt="">
+                                        </div>
+                                        <div class="tile-user-title">Клиника Екатеринская</div>
+                                    </div>
+                                    <div class="tile-title">Вопросы информированного согласия и рисков различных методов анестезии</div>
+                                </div>
+                                <div class="tile-action-wrap">
+                                    <div class="tile-info">12 янв. 2025</div>
+                                    <div class="btn-action-ico">
+                                        <img src="./img/icons/back.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap js-tab-block" data-tab="taball tab05">
+                            <a href="" class="item-tile-article">
+                                <div class="tile-photo-wrap">
+                                    <div class="tile-photo photo-cover">
+                                        <img src="./img/article01.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tile-info-wrap">
+                                    <div class="tile-user-wrap">
+                                        <div class="tile-photo photo-cover">
+                                            <img src="./img/tile-user01.jpg" alt="">
+                                        </div>
+                                        <div class="tile-user-title">Роман Константиновский</div>
+                                    </div>
+                                    <div class="tile-title">Гигиеническая оценка влияния вегатерианства и веганства на здоровье человека</div>
+                                </div>
+                                <div class="tile-action-wrap">
+                                    <div class="tile-info">12 янв. 2025</div>
+                                    <div class="btn-action-ico">
+                                        <img src="./img/icons/back.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap js-tab-block" data-tab="taball tab05">
+                            <a href="" class="item-tile-article">
+                                <div class="tile-photo-wrap">
+                                    <div class="tile-photo photo-cover">
+                                        <img src="./img/article02.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tile-info-wrap">
+                                    <div class="tile-user-wrap">
+                                        <div class="tile-photo photo-cover">
+                                            <img src="./img/tile-user02.jpg" alt="">
+                                        </div>
+                                        <div class="tile-user-title">Пациенты</div>
+                                    </div>
+                                    <div class="tile-title">Междисциплинарная программа ранней реабилитации детей с врожденной расщелиной губы</div>
+                                </div>
+                                <div class="tile-action-wrap">
+                                    <div class="tile-info">12 янв. 2025</div>
+                                    <div class="btn-action-ico">
+                                        <img src="./img/icons/back.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--/item wrap-->
+                        <!--item wrap-->
+                        <div class="item-wrap js-tab-block" data-tab="taball tab05">
+                            <a href="" class="item-tile-article">
+                                <div class="tile-photo-wrap">
+                                    <div class="tile-photo photo-cover">
+                                        <img src="./img/article03.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="tile-info-wrap">
+                                    <div class="tile-user-wrap">
+                                        <div class="tile-photo photo-cover">
+                                            <img src="./img/tile-user03.jpg" alt="">
+                                        </div>
+                                        <div class="tile-user-title">Клиника Екатеринская</div>
+                                    </div>
+                                    <div class="tile-title">Вопросы информированного согласия и рисков различных методов анестезии</div>
+                                </div>
+                                <div class="tile-action-wrap">
+                                    <div class="tile-info">12 янв. 2025</div>
+                                    <div class="btn-action-ico">
+                                        <img src="./img/icons/back.svg" alt="">
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!--/item wrap-->
+                    </div>
+                </div>
+            </div>
+            <!--/tiles-box-->
+
+            <!--title-box-->
+            <div class="title-box">
+                <div class="title-wrap">
+                    <h2 class="page-title">Новости Пациентов:</h2>
+                </div>
+                <div class="action-wrap">
+                    <a href="" class="btn button-clear">
+                        <div class="button-title">Все новости</div>
+                        <div class="button-ico">
+                            <img src="./img/icons/arrow-small.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--/title-box-->
+
+            <!--news-box-->
+            <div class="news-box">
+                <div class="items-wrap">
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <a href="" class="item-tile-new">
+                            <div class="tile-date">12 янв. 2025</div>
+                            <div class="tile-title">Оптическая когерентная томография в дифференциальной диа­гностике</div>
+                        </a>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <a href="" class="item-tile-new">
+                            <div class="tile-date">14 янв. 2025</div>
+                            <div class="tile-title">Двухэтапное хирургическое лечение катаракты с дефектом связочного аппарата хрусталика</div>
+                        </a>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <a href="" class="item-tile-new">
+                            <div class="tile-date">6 фев. 2025</div>
+                            <div class="tile-title">Неоваскулярная глаукома как осложнение протонной терапии увеальной меланомы</div>
+                        </a>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <a href="" class="item-tile-new">
+                            <div class="tile-date">8 февр. 2025</div>
+                            <div class="tile-title">Генетические исследования глаукомы нормального давления</div>
+                        </a>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <a href="" class="item-tile-new">
+                            <div class="tile-date">21 фев. 2025</div>
+                            <div class="tile-title">Об офтальмологических проявлениях аномалии Петерса</div>
+                        </a>
+                    </div>
+                    <!--/item wrap-->
+                </div>
+            </div>
+            <!--/news-box-->
+
+            <!--title-box-->
+            <div class="title-box">
+                <div class="title-wrap">
+                    <h2 class="page-title">Специальности клиник:</h2>
+                </div>
+            </div>
+            <!--/title-box-->
+
+            <!--tabs-box-->
+            <div class="tabs-box js-tabs-nav elm-hidden-desktop">
+                <ul class="menu">
+                    <li>
+                        <a href="" class="btn button-tab active" data-tab="letter01-01">А</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter01-02">Б</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter01-03">В</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter01-04">Г</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter01-05">Д</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter01-06">И</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter01-07">К</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter01-08">Л</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter01-09">М</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter01-10">Н</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter01-11">О</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter01-12">П</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter01-13">Р</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter01-14">С</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter01-15">Т</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter01-16">У</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter01-17">Ф</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter01-18">Х</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter01-19">Ч</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter01-20">Э</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter01-21">∞</a>
+                    </li>
+                </ul>
+            </div>
+            <!--/tabs-box-->
+
+            <!--list-links-box-->
+            <div class="list-links-box">
+                <div class="items-wrap">
+                    <div class="item-wrap js-tab-block" data-tab="letter01-01">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">А</div>
+                            <ul class="list">
+                                <li><a href="">Абдоминальная хирургия <span class="letter-count">256</span></a></li>
+                                <li><a href="">Авиационная и космическая медицина <span class="letter-count">32</span></a></li>
+                                <li><a href="">Акушерство и гинекология <span class="letter-count">301</span></a></li>
+                                <li><a href="">Аллергология и иммунология <span class="letter-count">18</span></a></li>
+                                <li><a href="">Анестезиология и реаниматология <span class="letter-count">79</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter01-02">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">Б</div>
+                            <ul class="list">
+                                <li><a href="">Бактериология <span class="letter-count">256</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter01-03">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">В</div>
+                            <ul class="list">
+                                <li><a href="">Вирусология <span class="letter-count">256</span></a></li>
+                                <li><a href="">Водолазная медицина <span class="letter-count">32</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter01-04">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">Г</div>
+                            <ul class="list">
+                                <li><a href="">Гастроэнтерология <span class="letter-count">256</span></a></li>
+                                <li><a href="">Гематология <span class="letter-count">32</span></a></li>
+                                <li><a href="">Генетика <span class="letter-count">301</span></a></li>
+                                <li><a href="">Гериатрия <span class="letter-count">18</span></a></li>
+                                <li><a href="">Гигиена в стоматологии <span class="letter-count">79</span></a></li>
+                                <li><a href="">Гигиеническое воспитание <span class="letter-count">256</span></a></li>
+                                <li><a href="">Гистология <span class="letter-count">32</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter01-05">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">Д</div>
+                            <ul class="list">
+                                <li><a href="">Дезинфектология <span class="letter-count">256</span></a></li>
+                                <li><a href="">Дерматовенерология и косметология <span class="letter-count">32</span></a></li>
+                                <li><a href="">Детская онкология <span class="letter-count">301</span></a></li>
+                                <li><a href="">Детская хирургия <span class="letter-count">18</span></a></li>
+                                <li><a href="">Детская эндокринология <span class="letter-count">79</span></a></li>
+                                <li><a href="">Диабетология <span class="letter-count">256</span></a></li>
+                                <li><a href="">Диетология <span class="letter-count">32</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter01-06">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">И</div>
+                            <ul class="list">
+                                <li><a href="">Инфекционные болезни <span class="letter-count">256</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter01-07">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">К</div>
+                            <ul class="list">
+                                <li><a href="">Кардиология, детская кардиология <span class="letter-count">256</span></a></li>
+                                <li><a href="">Клиническая лабораторная диагностика <span class="letter-count">32</span></a></li>
+                                <li><a href="">Клиническая микология <span class="letter-count">301</span></a></li>
+                                <li><a href="">Клиническая фармакология <span class="letter-count">18</span></a></li>
+                                <li><a href="">Колопроктология <span class="letter-count">79</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter01-08">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">Л</div>
+                            <ul class="list">
+                                <li><a href="">Лабораторная генетика <span class="letter-count">256</span></a></li>
+                                <li><a href="">Лабораторная микология <span class="letter-count">32</span></a></li>
+                                <li><a href="">Лабораторное дело <span class="letter-count">301</span></a></li>
+                                <li><a href="">Лечебная физкультура и спортивная медицина <span class="letter-count">18</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter01-09">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">М</div>
+                            <ul class="list">
+                                <li><a href="">Мануальная терапия <span class="letter-count">256</span></a></li>
+                                <li><a href="">Медицинская генетика <span class="letter-count">32</span></a></li>
+                                <li><a href="">Медицинская оптика <span class="letter-count">301</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter01-10">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">Н</div>
+                            <ul class="list">
+                                <li><a href="">Наркология <span class="letter-count">256</span></a></li>
+                                <li><a href="">Неврология <span class="letter-count">32</span></a></li>
+                                <li><a href="">Нейрохирургия <span class="letter-count">301</span></a></li>
+                                <li><a href="">Неонатология <span class="letter-count">18</span></a></li>
+                                <li><a href="">Нефрология <span class="letter-count">79</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter01-11">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">О</div>
+                            <ul class="list">
+                                <li><a href="">Общая врачебная практика (семейная медицина) <span class="letter-count">256</span></a></li>
+                                <li><a href="">Онкология <span class="letter-count">32</span></a></li>
+                                <li><a href="">Ортодонтия <span class="letter-count">301</span></a></li>
+                                <li><a href="">Оториноларингология <span class="letter-count">18</span></a></li>
+                                <li><a href="">Офтальмология <span class="letter-count">79</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter01-12">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">П</div>
+                            <ul class="list">
+                                <li><a href="">Паразитология <span class="letter-count">256</span></a></li>
+                                <li><a href="">Патологическая анатомия <span class="letter-count">32</span></a></li>
+                                <li><a href="">Педиатрия <span class="letter-count">301</span></a></li>
+                                <li><a href="">Пластическая хирургия <span class="letter-count">18</span></a></li>
+                                <li><a href="">Профпатология <span class="letter-count">79</span></a></li>
+                                <li><a href="">Психиатрия и судебно-психиатрическая экспертиза <span class="letter-count">256</span></a></li>
+                                <li><a href="">Психиатрия-наркология <span class="letter-count">32</span></a></li>
+                                <li><a href="">Психотерапия <span class="letter-count">18</span></a></li>
+                                <li><a href="">Пульмонология <span class="letter-count">79</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter01-13">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">Р</div>
+                            <ul class="list">
+                                <li><a href="">Радиология и радиотерапия <span class="letter-count">256</span></a></li>
+                                <li><a href="">Реаниматология <span class="letter-count">32</span></a></li>
+                                <li><a href="">Ревматология <span class="letter-count">301</span></a></li>
+                                <li><a href="">Рентгенология <span class="letter-count">18</span></a></li>
+                                <li><a href="">Рентгенэндоваскулярная диагностика и лечение <span class="letter-count">79</span></a></li>
+                                <li><a href="">Рефлексотерапия <span class="letter-count">256</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter01-14">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">С</div>
+                            <ul class="list">
+                                <li><a href="">Сексология <span class="letter-count">256</span></a></li>
+                                <li><a href="">Сердечно-сосудистая хирургия <span class="letter-count">32</span></a></li>
+                                <li><a href="">Скорая медицинская помощь <span class="letter-count">301</span></a></li>
+                                <li><a href="">Социальная гигиена, санитария и эпидемиология <span class="letter-count">256</span></a></li>
+                                <li><a href="">Стоматология и стоматология детская <span class="letter-count">32</span></a></li>
+                                <li><a href="">Стоматология ортопедическая <span class="letter-count">301</span></a></li>
+                                <li><a href="">Стоматология профилактическая <span class="letter-count">18</span></a></li>
+                                <li><a href="">Стоматология терапевтическая <span class="letter-count">256</span></a></li>
+                                <li><a href="">Стоматология хирургическая <span class="letter-count">32</span></a></li>
+                                <li><a href="">Судебно-медицинская экспертиза <span class="letter-count">301</span></a></li>
+                                <li><a href="">Сурдология-оториноларингология <span class="letter-count">18</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter01-15">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">Т</div>
+                            <ul class="list">
+                                <li><a href="">Терапия <span class="letter-count">256</span></a></li>
+                                <li><a href="">Токсикология <span class="letter-count">32</span></a></li>
+                                <li><a href="">Торакальная хирургия <span class="letter-count">301</span></a></li>
+                                <li><a href="">Травматология и ортопедия <span class="letter-count">18</span></a></li>
+                                <li><a href="">Трансфузиология <span class="letter-count">79</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter01-16">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">У</div>
+                            <ul class="list">
+                                <li><a href="">Ультразвуковая диагностика <span class="letter-count">256</span></a></li>
+                                <li><a href="">Урология, детская урология-андрология <span class="letter-count">32</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter01-17">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">Ф</div>
+                            <ul class="list">
+                                <li><a href="">Физиотерапия <span class="letter-count">256</span></a></li>
+                                <li><a href="">Фтизиатрия <span class="letter-count">32</span></a></li>
+                                <li><a href="">Функциональная диагностика <span class="letter-count">32</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter01-18">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">Х</div>
+                            <ul class="list">
+                                <li><a href="">Хирургия (комбустиология) <span class="letter-count">256</span></a></li>
+                                <li><a href="">Хирургия, хирургия (трансплантация <span class="letter-count">органо</span>в и тканей) и комбустиология 32</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter01-19">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">Ч</div>
+                            <ul class="list">
+                                <li><a href="">Челюстно-лицевая хирургия <span class="letter-count">256</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter01-20">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">Э</div>
+                            <ul class="list">
+                                <li><a href="">Эндокринология <span class="letter-count">256</span></a></li>
+                                <li><a href="">Эндоскопия <span class="letter-count">32</span></a></li>
+                                <li><a href="">Энтомология <span class="letter-count">301</span></a></li>
+                                <li><a href="">Эпидемиология <span class="letter-count">18</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter01-21">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">∞</div>
+                            <ul class="list">
+                                <li><a href="">прочее <span class="letter-count">256</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/list-links-box-->
+
+            <!--title-box-->
+            <div class="title-box">
+                <div class="title-wrap">
+                    <h2 class="page-title">Специальности врачей:</h2>
+                </div>
+            </div>
+            <!--/title-box-->
+
+            <!--tabs-box-->
+            <div class="tabs-box js-tabs-nav elm-hidden-desktop">
+                <ul class="menu">
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter02-01">А</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter02-02">Б</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter02-03">В</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab active" data-tab="letter02-04">Г</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter02-05">Д</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter02-06">И</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter02-07">К</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter02-08">Л</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter02-09">М</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter02-10">Н</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter02-11">О</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter02-12">П</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter02-13">Р</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter02-14">С</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter02-15">Т</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter02-16">У</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter02-17">Ф</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter02-18">Х</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter02-19">Ч</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter02-20">Э</a>
+                    </li>
+                    <li>
+                        <a href="" class="btn button-tab" data-tab="letter02-21">∞</a>
+                    </li>
+                </ul>
+            </div>
+            <!--/tabs-box-->
+
+            <!--list-links-box-->
+            <div class="list-links-box">
+                <div class="items-wrap">
+                    <div class="item-wrap js-tab-block" data-tab="letter02-01">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">А</div>
+                            <ul class="list">
+                                <li><a href="">Абдоминальная хирургия <span class="letter-count">256</span></a></li>
+                                <li><a href="">Авиационная и космическая медицина <span class="letter-count">32</span></a></li>
+                                <li><a href="">Акушерство и гинекология <span class="letter-count">301</span></a></li>
+                                <li><a href="">Аллергология и иммунология <span class="letter-count">18</span></a></li>
+                                <li><a href="">Анестезиология и реаниматология <span class="letter-count">79</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter02-02">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">Б</div>
+                            <ul class="list">
+                                <li><a href="">Бактериология <span class="letter-count">256</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter02-03">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">В</div>
+                            <ul class="list">
+                                <li><a href="">Вирусология <span class="letter-count">256</span></a></li>
+                                <li><a href="">Водолазная медицина <span class="letter-count">32</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter02-04">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">Г</div>
+                            <ul class="list">
+                                <li><a href="">Гастроэнтерология <span class="letter-count">256</span></a></li>
+                                <li><a href="">Гематология <span class="letter-count">32</span></a></li>
+                                <li><a href="">Генетика <span class="letter-count">301</span></a></li>
+                                <li><a href="">Гериатрия <span class="letter-count">18</span></a></li>
+                                <li><a href="">Гигиена в стоматологии <span class="letter-count">79</span></a></li>
+                                <li><a href="">Гигиеническое воспитание <span class="letter-count">256</span></a></li>
+                                <li><a href="">Гистология <span class="letter-count">32</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter02-05">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">Д</div>
+                            <ul class="list">
+                                <li><a href="">Дезинфектология <span class="letter-count">256</span></a></li>
+                                <li><a href="">Дерматовенерология и косметология <span class="letter-count">32</span></a></li>
+                                <li><a href="">Детская онкология <span class="letter-count">301</span></a></li>
+                                <li><a href="">Детская хирургия <span class="letter-count">18</span></a></li>
+                                <li><a href="">Детская эндокринология <span class="letter-count">79</span></a></li>
+                                <li><a href="">Диабетология <span class="letter-count">256</span></a></li>
+                                <li><a href="">Диетология <span class="letter-count">32</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter02-06">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">И</div>
+                            <ul class="list">
+                                <li><a href="">Инфекционные болезни <span class="letter-count">256</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter02-07">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">К</div>
+                            <ul class="list">
+                                <li><a href="">Кардиология, детская кардиология <span class="letter-count">256</span></a></li>
+                                <li><a href="">Клиническая лабораторная диагностика <span class="letter-count">32</span></a></li>
+                                <li><a href="">Клиническая микология <span class="letter-count">301</span></a></li>
+                                <li><a href="">Клиническая фармакология <span class="letter-count">18</span></a></li>
+                                <li><a href="">Колопроктология <span class="letter-count">79</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter02-08">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">Л</div>
+                            <ul class="list">
+                                <li><a href="">Лабораторная генетика <span class="letter-count">256</span></a></li>
+                                <li><a href="">Лабораторная микология <span class="letter-count">32</span></a></li>
+                                <li><a href="">Лабораторное дело <span class="letter-count">301</span></a></li>
+                                <li><a href="">Лечебная физкультура и спортивная медицина <span class="letter-count">18</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter02-09">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">М</div>
+                            <ul class="list">
+                                <li><a href="">Мануальная терапия <span class="letter-count">256</span></a></li>
+                                <li><a href="">Медицинская генетика <span class="letter-count">32</span></a></li>
+                                <li><a href="">Медицинская оптика <span class="letter-count">301</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter02-10">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">Н</div>
+                            <ul class="list">
+                                <li><a href="">Наркология <span class="letter-count">256</span></a></li>
+                                <li><a href="">Неврология <span class="letter-count">32</span></a></li>
+                                <li><a href="">Нейрохирургия <span class="letter-count">301</span></a></li>
+                                <li><a href="">Неонатология <span class="letter-count">18</span></a></li>
+                                <li><a href="">Нефрология <span class="letter-count">79</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter02-11">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">О</div>
+                            <ul class="list">
+                                <li><a href="">Общая врачебная практика (семейная медицина) <span class="letter-count">256</span></a></li>
+                                <li><a href="">Онкология <span class="letter-count">32</span></a></li>
+                                <li><a href="">Ортодонтия <span class="letter-count">301</span></a></li>
+                                <li><a href="">Оториноларингология <span class="letter-count">18</span></a></li>
+                                <li><a href="">Офтальмология <span class="letter-count">79</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter02-12">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">П</div>
+                            <ul class="list">
+                                <li><a href="">Паразитология <span class="letter-count">256</span></a></li>
+                                <li><a href="">Патологическая анатомия <span class="letter-count">32</span></a></li>
+                                <li><a href="">Педиатрия <span class="letter-count">301</span></a></li>
+                                <li><a href="">Пластическая хирургия <span class="letter-count">18</span></a></li>
+                                <li><a href="">Профпатология <span class="letter-count">79</span></a></li>
+                                <li><a href="">Психиатрия и судебно-психиатрическая экспертиза <span class="letter-count">256</span></a></li>
+                                <li><a href="">Психиатрия-наркология <span class="letter-count">32</span></a></li>
+                                <li><a href="">Психотерапия <span class="letter-count">18</span></a></li>
+                                <li><a href="">Пульмонология <span class="letter-count">79</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter02-13">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">Р</div>
+                            <ul class="list">
+                                <li><a href="">Радиология и радиотерапия <span class="letter-count">256</span></a></li>
+                                <li><a href="">Реаниматология <span class="letter-count">32</span></a></li>
+                                <li><a href="">Ревматология <span class="letter-count">301</span></a></li>
+                                <li><a href="">Рентгенология <span class="letter-count">18</span></a></li>
+                                <li><a href="">Рентгенэндоваскулярная диагностика и лечение <span class="letter-count">79</span></a></li>
+                                <li><a href="">Рефлексотерапия <span class="letter-count">256</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter02-14">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">С</div>
+                            <ul class="list">
+                                <li><a href="">Сексология <span class="letter-count">256</span></a></li>
+                                <li><a href="">Сердечно-сосудистая хирургия <span class="letter-count">32</span></a></li>
+                                <li><a href="">Скорая медицинская помощь <span class="letter-count">301</span></a></li>
+                                <li><a href="">Социальная гигиена, санитария и эпидемиология <span class="letter-count">256</span></a></li>
+                                <li><a href="">Стоматология и стоматология детская <span class="letter-count">32</span></a></li>
+                                <li><a href="">Стоматология ортопедическая <span class="letter-count">301</span></a></li>
+                                <li><a href="">Стоматология профилактическая <span class="letter-count">18</span></a></li>
+                                <li><a href="">Стоматология терапевтическая <span class="letter-count">256</span></a></li>
+                                <li><a href="">Стоматология хирургическая <span class="letter-count">32</span></a></li>
+                                <li><a href="">Судебно-медицинская экспертиза <span class="letter-count">301</span></a></li>
+                                <li><a href="">Сурдология-оториноларингология <span class="letter-count">18</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter02-15">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">Т</div>
+                            <ul class="list">
+                                <li><a href="">Терапия <span class="letter-count">256</span></a></li>
+                                <li><a href="">Токсикология <span class="letter-count">32</span></a></li>
+                                <li><a href="">Торакальная хирургия <span class="letter-count">301</span></a></li>
+                                <li><a href="">Травматология и ортопедия <span class="letter-count">18</span></a></li>
+                                <li><a href="">Трансфузиология <span class="letter-count">79</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter02-16">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">У</div>
+                            <ul class="list">
+                                <li><a href="">Ультразвуковая диагностика <span class="letter-count">256</span></a></li>
+                                <li><a href="">Урология, детская урология-андрология <span class="letter-count">32</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter02-17">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">Ф</div>
+                            <ul class="list">
+                                <li><a href="">Физиотерапия <span class="letter-count">256</span></a></li>
+                                <li><a href="">Фтизиатрия <span class="letter-count">32</span></a></li>
+                                <li><a href="">Функциональная диагностика <span class="letter-count">32</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter02-18">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">Х</div>
+                            <ul class="list">
+                                <li><a href="">Хирургия (комбустиология) <span class="letter-count">256</span></a></li>
+                                <li><a href="">Хирургия, хирургия (трансплантация <span class="letter-count">органо</span>в и тканей) и комбустиология 32</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter02-19">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">Ч</div>
+                            <ul class="list">
+                                <li><a href="">Челюстно-лицевая хирургия <span class="letter-count">256</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter02-20">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">Э</div>
+                            <ul class="list">
+                                <li><a href="">Эндокринология <span class="letter-count">256</span></a></li>
+                                <li><a href="">Эндоскопия <span class="letter-count">32</span></a></li>
+                                <li><a href="">Энтомология <span class="letter-count">301</span></a></li>
+                                <li><a href="">Эпидемиология <span class="letter-count">18</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="item-wrap js-tab-block" data-tab="letter02-21">
+                        <div class="item-tile-list">
+                            <div class="tile-letter">∞</div>
+                            <ul class="list">
+                                <li><a href="">прочее <span class="letter-count">256</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/list-links-box-->
+
         </div>
         <!-- /page -->
 

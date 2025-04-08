@@ -80,6 +80,38 @@ select.form-input:required:invalid {
 	background: var(--clr-att);
 	font-size: 16px;
 	color: #fff;
+	&.button-second {
+		background: rgba(0, 100, 255, 0.08);
+		color: var(--clr-att);
+		border: none;
+		.button-ico {
+			filter: none;
+		}
+		&:hover {
+			background-color: var(--clr-att);
+			color: #fff;
+			.button-ico {
+				filter: brightness(0) invert(1);
+			}
+		}
+	}
+	&.button-tab {
+		height: 28px;
+		border-radius: 6px;
+		border: 1px solid #E0E0E0;
+		padding: 0 7px;
+		min-width: 32px;
+		font-size: 17px;
+		font-weight: 300;
+		text-transform: none;
+		color: rgba(33, 36, 33, 0.50);
+		background: #fff;
+		&:hover, &.active {
+			background: var(--clr-att);
+			border-color: var(--clr-att);
+			color: #fff;
+		}
+	}
 	&.button-vsmall {
 		height: 27px;
 		padding: 0 14px;

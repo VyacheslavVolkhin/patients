@@ -337,4 +337,33 @@ document.addEventListener("DOMContentLoaded", function() {
 	});
 
 
+	//slider tiles
+	const swiperSliderTiles = new Swiper('.slider-tiles .swiper', {
+		loop: true,
+		slidesPerView: "auto",
+		direction: 'vertical',
+		spaceBetween: 0,
+		autoHeight: true,
+		speed: 400,
+		pagination: false,
+		navigation: false,
+		//allowTouchMove: false,
+		autoplay: {
+			delay: 3000,
+			disableOnInteraction: false,
+		},
+		effect: "coverflow",
+		grabCursor: true,
+		centeredSlides: true,
+		coverflowEffect: {
+		  rotate: 0,
+		  stretch: '110%',
+		  depth: 100,
+		  modifier: 1,
+		  slideShadows: false,
+		},
+	
+	});
+
+
 })

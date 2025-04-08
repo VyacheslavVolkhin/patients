@@ -97,6 +97,10 @@ html.with-fancybox body.hide-scrollbar {
 	line-height: 24px;
 	z-index: 99;
 	margin-bottom: 23px;
+	&.header-light {
+		position: absolute;
+		top: 0;left: 0;right: 0;
+	}
 	.inner-wrap {
 		display: flex;
 		align-items: center;
@@ -133,11 +137,24 @@ html.with-fancybox body.hide-scrollbar {
 		width: 40px;
 		margin-left: 20px;
 	}
-	.user-wrap {
+	.user-wrap, .login-wrap {
 		order: 3;
 		flex-shrink: 0;
 		width: 44px;
 		margin-left: 20px;
+	}
+	.login-wrap {
+		width: auto;
+	}
+	.login-wrap {
+		.btn {
+			height: 29px;
+			border-radius: 6px;
+			padding: 0 9px;
+			border: none;
+			font-size: 17px;
+			font-weight: 300;
+		}
 	}
 	.btn-menu {
 		display: block;
@@ -214,12 +231,25 @@ html.with-fancybox body.hide-scrollbar {
         width: 100%;
     }
 }
+.wrap-main {
+	.fibm;
+	--clr-base: #161616;
+}
 @media (max-width: 1023px) {
     .section-mobile-full {
         margin-left: calc(var(--paddingContainer) * -1);
         margin-right: calc(var(--paddingContainer) * -1);
     }
 	.header {
+		&.header-light {
+			.popup-menu-wrap {
+				.btn-action-ico.ico-menu {
+					&:before, &:after {
+						filter: brightness(0) invert(1);
+					}
+				}
+			}
+		}
 		.btn-menu {
 			height: auto;
 			line-height: 20px;
@@ -238,18 +268,23 @@ html.with-fancybox body.hide-scrollbar {
 			padding: 15px 0;
 			z-index: 20;
 			box-shadow: var(--main-shadow);
+			border-radius: 22px;
+			overflow: hidden;
 		}
 		.actions-inner-wrap {
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			margin-top: 15px;
+			&:first-child {
+				margin-top: 0;
+			}
 		}
 		.action-wrap {
 			order: 2;
 			margin: 0 5px;
 		}
-		.user-wrap {
+		.user-wrap, .login-wrap {
 			order: 1;
 			margin: 0 5px;
 		}
@@ -262,6 +297,21 @@ html.with-fancybox body.hide-scrollbar {
 	}
 }
 @media (min-width: 1024px) {
+	.wrap-main {
+		.inner-wrap, .page-full {
+			max-width: 1300px;
+		}
+	}
+	.header-light.header {
+		.login-wrap {
+			.btn {
+				background: rgba(255, 255, 255, 0.08);
+				&:hover {
+					background-color: var(--clr-att);
+				}
+			}
+		}
+	}
 	.page-full {
 		flex: 1;
 		display: flex;
@@ -280,6 +330,7 @@ html.with-fancybox body.hide-scrollbar {
 			flex: 1;
 			width: auto;
 		}
+
 	}
 	.popup-menu-wrap {
 		.popup-content-block {
@@ -294,6 +345,12 @@ html.with-fancybox body.hide-scrollbar {
 			margin: 0 -9px;
 			flex-wrap: wrap;
 			justify-content: flex-end;
+		}
+		.actions-inner-wrap {
+			&:first-child {
+				flex: 1;
+				justify-content: flex-end;
+			}
 		}
 	}
 	.footer {
