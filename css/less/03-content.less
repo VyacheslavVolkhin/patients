@@ -1,9 +1,11 @@
 /* ----------------------------------- *\
 			content styles
 \* ----------------------------------- */
-.columns-chart-box {
+.columns-chart-box, .lines-chart-box {
 	border-radius: 22px;
 	background: #0064FF;
+	position: relative;
+	overflow: hidden;
 	padding: 30px 22px 8px 22px;
 	min-height: 100%;
 	display: flex;
@@ -24,10 +26,14 @@
 		align-items: flex-end;
 		padding-bottom: 22px;
 	}
+	.chart-lines-wrap {
+		height: 286px;
+		flex-shrink: 0;
+	}
 	.chart-title {
 		font-size: 1em;
 		font-weight: bold;
-		margin: 0 0 5px 0;
+		margin: 0 0 10px 0;
 	}
 	.chart-info-wrap {
 		display: flex;
@@ -38,21 +44,60 @@
 		width: 50%;
 		padding: 0 10px;
 		margin-bottom: 20px;
+		max-width: 270px;
 	}
 	.info-value {
 		font-size: 20px;
 		font-weight: bold;
-		margin-top: 10px;
+		margin-top: 5px;
+	}
+	.chart-lines-wrap {
+		margin-left: -22px;
+		margin-right: -22px;
+		margin-bottom: -8px;
+	}
+	.elm-photo {
+		width: 100%;
+		height: 286px;
+		img {
+			display: block;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}
+.lines-chart-box {
+	background-color: var(--clr-bg-light);
+	color: var(--clr-light);
+	.chart-title-wrap {
+		color: var(--clr-light);
+	}
+	.info-value {
+		color: var(--clr-att);
 	}
 }
 .dashboard-box {
 	margin: 0 auto 30px auto;
 	width: 100%;
 	max-width: 1170px;
-	.items-wrap {
+
+	.tile-items-wrap {
+		display: flex;
+		flex-wrap: wrap;
 		margin: 0 -1.5rem -3rem -1.5rem;
 	}
-	.item-wrap {
+	.tile-item-wrap {
+		padding: 0 1.5rem;
+		margin-bottom: 3rem;
+		flex-shrink: 0;
+		&.wrap-half {
+			width: 50%;
+		}
+	}
+	.items-dash {
+		margin: 0 -1.5rem -3rem -1.5rem;
+	}
+	.wrap-dash {
 		padding: 0 1.5rem;
 		margin-bottom: 3rem;
 		width: 50%;
@@ -61,6 +106,22 @@
 		width: 62%;
 		&+.item-wrap {
 			width: 38%;
+		}
+	}
+	.list-box {
+		height: 100%;
+		min-height: 263px;
+		margin: 0;
+		overflow-y: auto;
+		overflow-x: hidden;
+		scrollbar-width: none;
+		-ms-overflow-style: none;
+		box-shadow: var(--main-shadow);
+		padding: 20px 0;
+		border-radius: 22px;
+		&::-webkit-scrollbar {
+			width: 0;
+			height: 0;
 		}
 	}
 }
@@ -775,8 +836,13 @@ body {
 	}
 }
 @media (max-width: 1023px) {
-	.columns-chart-box {
+	.columns-chart-box, .lines-chart-box  {
 		padding: 20px 20px 10px 20px;
+		.chart-lines-wrap {
+			margin-left: -20px;
+			margin-right: -20px;
+			margin-bottom: -10px;
+		}
 		.chart-content-wrap {
 			padding-bottom: 17px;
 			padding-top: 22px;
@@ -785,6 +851,7 @@ body {
 			display: flex;
 			width: 100%;
 			margin-bottom: 5px;
+			max-width: 100%;
 		}
 		.info-title {
 			flex: 1;
@@ -798,7 +865,24 @@ body {
 		}
 	}
 	.dashboard-box {
-		.item-wrap {
+		.tile-items-wrap {
+			margin: 0 -10px -20px -10px;
+		}
+		.tile-item-wrap {
+			padding: 0 10px;
+			margin-bottom: 20px;
+		}
+		.items-dash {
+			margin: 0 -10px -20px -10px;
+		}
+		.wrap-dash {
+			padding: 0 10px;
+			margin-bottom: 20px;
+		}
+		.list-box {
+			max-height: 263px;
+		}
+		.wrap-dash {
 			width: 100%;
 		}
 		.wrap-main {
@@ -1457,6 +1541,11 @@ body {
 		}
 	}
 }
+@media (max-width: 639px) {
+	.dashboard-box .tile-item-wrap.wrap-half {
+		width: 100%;
+	}
+}
 @media (min-width: 480px) {
 	.info-box {
 		.item-wrap {
@@ -1521,6 +1610,16 @@ body {
 	}
 }
 @media (min-width: 1024px) {
+	.dashboard-box {
+		.list-box {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			min-height: 0;
+		}
+	}
 	.calendar-box {
 		.title-inner-wrap {
 			margin-bottom: 5px;
@@ -1779,5 +1878,10 @@ body {
 				max-height: 100%;
 			}
 		}
+	}
+}
+@media (min-width: 1024px) and (max-width: 1199px) {
+	.dashboard-box .tile-item-wrap.wrap-half {
+		width: 100%;
 	}
 }

@@ -75,16 +75,34 @@
 
             <!--dashboard-box-->
             <div class="dashboard-box">
-                <div class="items-wrap">
+                <div class="items-wrap items-dash">
                     <!--item wrap-->
-                    <div class="item-wrap wrap-main">
-                        <div>
-                            <canvas id="cartBars"></canvas>
+                    <div class="item-wrap wrap-dash wrap-main">
+                        <div class="lines-chart-box">
+                            <div class="chart-title-wrap">
+                                <div class="chart-title">Входящие заявки</div>
+                                <div class="chart-info-wrap">
+                                    <div class="chart-info">
+                                        <div class="info-title">Заявок за все время</div>
+                                        <div class="info-value">84 162</div>
+                                    </div>
+                                    <div class="chart-info">
+                                        <div class="info-title">Заявок в этом месяце</div>
+                                        <div class="info-value">239</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart-lines-wrap">
+                                <div class="elm-photo">
+                                    <img src="./img/chart.png" alt="">
+                                </div>
+                                <!-- <canvas id="cartBars"></canvas> -->
+                            </div>
                         </div>
                     </div>
                     <!--/item wrap-->
                     <!--item wrap-->
-                    <div class="item-wrap">
+                    <div class="item-wrap wrap-dash">
                         <div class="columns-chart-box">
                             <div class="chart-title-wrap">
                                 <div class="chart-title">Исходящие заявки</div>
@@ -522,6 +540,790 @@
                                 <!-- /item scale -->
                             </div>
                         </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap wrap-dash">
+                        <div class="tile-items-wrap">
+                            <!-- tile item -->
+                            <div class="tile-item-wrap">
+                                <div class="item-tile-alert">
+                                    <div class="tile-info-wrap">
+                                        <div class="tile-title">Заявок на рассмотрении 450 <br>Всего аявок было в арбитраже <br>Выиграно</div>
+                                        <div class="tile-info">Арбитраж</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /tile item -->
+                            <!-- tile item -->
+                            <div class="tile-item-wrap wrap-half">
+                                <div class="item-tile-form">
+                                    <div class="tile-title">Добавить:</div>
+                                    <div class="tile-form-wrap">
+                                        <div class="tile-field-wrap">
+                                            <a href="" class="btn button-clear">
+                                                <div class="button-ico">
+                                                    <img src="./img/icons/plus.svg" alt="">
+                                                </div>
+                                                <div class="button-title">Новый диагноз</div>
+                                            </a>
+                                        </div>
+                                        <div class="tile-field-wrap">
+                                            <a href="" class="btn button-clear">
+                                                <div class="button-ico">
+                                                    <img src="./img/icons/plus.svg" alt="">
+                                                </div>
+                                                <div class="button-title">Нового пациента</div>
+                                            </a>
+                                        </div>
+                                        <div class="tile-field-wrap">
+                                            <a href="" class="btn button-clear">
+                                                <div class="button-ico">
+                                                    <img src="./img/icons/plus.svg" alt="">
+                                                </div>
+                                                <div class="button-title">Новый профиль</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /tile item -->
+                            <!-- tile item -->
+                            <div class="tile-item-wrap wrap-half">
+                                <div class="item-tile-form">
+                                    <div class="tile-title">Статус</div>
+                                    <div class="tile-form-wrap">
+                                        <div class="tile-field-wrap">
+                                            <div class="frm-select-toggle">
+                                                <input type="checkbox" id="dash01">
+                                                <label for="dash01">Клиника принимает новых пациентов</label>
+                                            </div>
+                                        </div>
+                                        <div class="tile-field-wrap">
+                                            <div class="frm-select-toggle">
+                                                <input type="checkbox" id="dash02">
+                                                <label for="dash02">Я как врач принимаю новых пациентов</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /tile item -->
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap wrap-dash">
+                        <!--list-box-->
+                        <div class="list-box">
+                            <div class="items-wrap">
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user01.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Князев А.О.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Привет, что там с Лаховым? Придет?</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-count">6</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user02.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Ширневский О.Г.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Клиент не приехал!</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-count">12</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user03.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Федоров Р.Р.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">У вас рентген появился уже?</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-time">8:34</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user04.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Манов А.Л.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Бланки что вы выслали не медицибланки что вы выслали не медици...</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-time">8:34</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user01.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Князев А.О.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Привет, что там с Лаховым? Придет?</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-count">6</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user02.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Ширневский О.Г.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Клиент не приехал!</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-count">12</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user03.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Федоров Р.Р.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">У вас рентген появился уже?</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-time">8:34</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user04.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Манов А.Л.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Бланки что вы выслали не медицибланки что вы выслали не медици...</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-time">8:34</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user01.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Князев А.О.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Привет, что там с Лаховым? Придет?</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-count">6</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user02.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Ширневский О.Г.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Клиент не приехал!</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-count">12</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user03.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Федоров Р.Р.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">У вас рентген появился уже?</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-time">8:34</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user04.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Манов А.Л.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Бланки что вы выслали не медицибланки что вы выслали не медици...</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-time">8:34</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user01.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Князев А.О.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Привет, что там с Лаховым? Придет?</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-count">6</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user02.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Ширневский О.Г.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Клиент не приехал!</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-count">12</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user03.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Федоров Р.Р.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">У вас рентген появился уже?</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-time">8:34</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user04.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Манов А.Л.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Бланки что вы выслали не медицибланки что вы выслали не медици...</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-time">8:34</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user01.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Князев А.О.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Привет, что там с Лаховым? Придет?</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-count">6</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user02.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Ширневский О.Г.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Клиент не приехал!</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-count">12</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user03.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Федоров Р.Р.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">У вас рентген появился уже?</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-time">8:34</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user04.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Манов А.Л.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Бланки что вы выслали не медицибланки что вы выслали не медици...</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-time">8:34</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user01.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Князев А.О.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Привет, что там с Лаховым? Придет?</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-count">6</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user02.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Ширневский О.Г.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Клиент не приехал!</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-count">12</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user03.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Федоров Р.Р.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">У вас рентген появился уже?</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-time">8:34</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user04.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Манов А.Л.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Бланки что вы выслали не медицибланки что вы выслали не медици...</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-time">8:34</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user01.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Князев А.О.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Привет, что там с Лаховым? Придет?</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-count">6</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user02.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Ширневский О.Г.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Клиент не приехал!</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-count">12</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user03.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Федоров Р.Р.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">У вас рентген появился уже?</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-time">8:34</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user04.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Манов А.Л.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Бланки что вы выслали не медицибланки что вы выслали не медици...</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-time">8:34</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user01.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Князев А.О.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Привет, что там с Лаховым? Придет?</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-count">6</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user02.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Ширневский О.Г.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Клиент не приехал!</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-count">12</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user03.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Федоров Р.Р.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">У вас рентген появился уже?</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-time">8:34</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user04.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Манов А.Л.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Бланки что вы выслали не медицибланки что вы выслали не медици...</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-time">8:34</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                            </div>
+                        </div>
+                        <!--/list-box-->
                     </div>
                     <!--/item wrap-->
                 </div>
