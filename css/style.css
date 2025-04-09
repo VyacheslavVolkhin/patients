@@ -411,6 +411,9 @@ table .td-ico-wrap {
 table .td-ico-wrap .elm-ico {
   margin: 0;
 }
+table .td-title-small {
+  font-size: 12px;
+}
 @media (max-width: 1399px) {
   :root {
     font-size: 9.5px;

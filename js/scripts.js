@@ -1,51 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-  //chart bars
-//   const cBars = document.getElementById("cartBars");
-
-//   const DATA_COUNT = 7;
-//   const NUMBER_CFG = {count: DATA_COUNT, min: -100, max: 100};
-  
-//   const data = {
-// 	labels: ['1','1','1','1','1','1','1',],
-// 	datasets: [
-// 	  {
-// 		label: 'Dataset 1',
-// 		data: 12,
-// 		backgroundColor: red,
-// 	  },
-// 	  {
-// 		label: 'Dataset 2',
-// 		data: 12,
-// 		backgroundColor: blue,
-// 	  },
-// 	  {
-// 		label: 'Dataset 3',
-// 		data: 12,
-// 		backgroundColor: green,
-// 	  },
-// 	]
-//   };
-
-//   new Chart(cBars, {
-//     type: 'bar',
-//     data: data,
-//     options: {
-//       scales: {
-//         y: {
-//           beginAtZero: true
-//         }
-//       }
-//     }
-//   });
-
-
-
-
-
-
-
-
-
+	
 
 
 
