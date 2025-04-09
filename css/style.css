@@ -297,7 +297,7 @@ h6:last-child,
 }
 .text-alert *,
 .title-alert * {
-  color: var(--clr-red);
+  color: var(--clr-alert);
 }
 .text-red,
 .title-red {
@@ -453,6 +453,23 @@ table .td-title-small {
     --paddingContainer: 75px;
   }
 }
+/* 
+
+там же - войти, зарегистрироваться - нет реакции
+
+2. https://skr.sh/sV3rPtzOEuW кнопка не активная и фильтры не выпадают  там выпад с чекбоксами должен быть
+
+3. https://skr.sh/sV3uIu715W4 календарь нужно ниже опустить
+
+4. чат должен начинаться с последнего сообщения без прокрутки
+
+да верно переключение вида
+
+строка вся нажиматься должна и вести на заявку
+
+https://skr.sh/sV3DkqgojRr прокрутка
+
+*/
 /* ----------------------------------- *\
 			structura
 \* ----------------------------------- */
@@ -3990,7 +4007,8 @@ html.with-fancybox body.hide-scrollbar {
   font-weight: 500;
   white-space: nowrap;
 }
-.row-slider-box.text-red:before {
+.row-slider-box.text-red:before,
+.row-slider-box.text-alert:before {
   background: rgba(255, 192, 55, 0.15);
 }
 .row-slider-box.text-violet:before {
@@ -5108,6 +5126,10 @@ body:has(.table-box .js-btn-chat-open.active) .chat-box.dropdown-box {
   .list-links-box .item-wrap.js-tab-block {
     display: block;
   }
+  .table-box table th:has(.frm-select.inp-clear),
+  .table-box table td:has(.frm-select.inp-clear) {
+    width: calc(var(--paddingContainer) + 44px);
+  }
   .table-box .chat-box.dropdown-box {
     position: absolute;
     z-index: 20;
@@ -5170,6 +5192,9 @@ body:has(.table-box .js-btn-chat-open.active) .chat-box.dropdown-box {
     padding-bottom: 7px;
     height: 50px;
     padding-top: 8px;
+  }
+  .table-box tr:hover {
+    background: rgba(0, 100, 255, 0.03);
   }
   .table-box tr:has(input:checked) th,
   .table-box tr:has(input:checked) td {

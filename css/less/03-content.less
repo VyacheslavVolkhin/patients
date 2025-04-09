@@ -1,6 +1,11 @@
 /* ----------------------------------- *\
 			content styles
 \* ----------------------------------- */
+.table-box {
+	table {
+		
+	}
+}
 .columns-chart-box, .lines-chart-box {
 	border-radius: 22px;
 	background: #0064FF;
@@ -480,7 +485,7 @@
 	text-transform: uppercase;
 	font-weight: 500;
 	white-space: nowrap;
-	&.text-red {
+	&.text-red, &.text-alert {
 		&:before {
 			background: rgba(255, 192, 55, 0.15);
 		}
@@ -1681,6 +1686,13 @@ body {
 		}
 	}
 	.table-box {
+		table {
+			th, td {
+				&:has(.frm-select.inp-clear) {
+					width: calc(var(--paddingContainer) + 44px);
+				}
+			}
+		}
 		.chat-box.dropdown-box {
 			position: absolute;
 			z-index: 20;
@@ -1742,6 +1754,9 @@ body {
 			}
 		}
 		tr {
+			&:hover {
+				background: rgba(0, 100, 255, 0.03);
+			}
 			&:has(input:checked) {
 				th, td {
 					background: rgba(0, 100, 255, 0.03);
