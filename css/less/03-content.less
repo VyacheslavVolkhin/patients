@@ -1,6 +1,50 @@
 /* ----------------------------------- *\
 			content styles
 \* ----------------------------------- */
+.columns-chart-box {
+	border-radius: 22px;
+	background: #0064FF;
+	padding: 30px 22px 8px 22px;
+	min-height: 100%;
+	display: flex;
+	flex-direction: column;
+	.chart-title-wrap {
+		flex: 1;
+		width: 100%;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: normal;
+		color: #fff;
+	}
+	.chart-content-wrap {
+		margin: 0 -22px;
+		padding-left: 22px;
+		display: flex;
+		overflow-x: auto;
+		align-items: flex-end;
+		padding-bottom: 22px;
+	}
+	.chart-title {
+		font-size: 1em;
+		font-weight: bold;
+		margin: 0 0 5px 0;
+	}
+	.chart-info-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0 -10px;
+	}
+	.chart-info {
+		width: 50%;
+		padding: 0 10px;
+		margin-bottom: 20px;
+	}
+	.info-value {
+		font-size: 20px;
+		font-weight: bold;
+		margin-top: 10px;
+	}
+}
 .dashboard-box {
 	margin: 0 auto 30px auto;
 	width: 100%;
@@ -14,9 +58,9 @@
 		width: 50%;
 	}
 	.wrap-main {
-		width: 60%;
+		width: 62%;
 		&+.item-wrap {
-			width: 40%;
+			width: 38%;
 		}
 	}
 }
@@ -731,6 +775,39 @@ body {
 	}
 }
 @media (max-width: 1023px) {
+	.columns-chart-box {
+		padding: 20px 20px 10px 20px;
+		.chart-content-wrap {
+			padding-bottom: 17px;
+			padding-top: 22px;
+		}
+		.chart-info {
+			display: flex;
+			width: 100%;
+			margin-bottom: 5px;
+		}
+		.info-title {
+			flex: 1;
+			padding: 0 10px 0 0;
+			margin: 0;
+		}
+		.info-value {
+			flex-shrink: 0;
+			padding: 0;
+			margin: 0;
+		}
+	}
+	.dashboard-box {
+		.item-wrap {
+			width: 100%;
+		}
+		.wrap-main {
+			width: 100%;
+			&+.item-wrap {
+				width: 100%;
+			}
+		}
+	}
 	.tiles-box {
 		.items-inner-wrap {
 			margin-left: calc(var(--paddingContainer) * -1);
