@@ -1,4 +1,55 @@
 document.addEventListener("DOMContentLoaded", function () {
+  //chart bars
+//   const cBars = document.getElementById("cartBars");
+
+//   const DATA_COUNT = 7;
+//   const NUMBER_CFG = {count: DATA_COUNT, min: -100, max: 100};
+  
+//   const data = {
+// 	labels: ['1','1','1','1','1','1','1',],
+// 	datasets: [
+// 	  {
+// 		label: 'Dataset 1',
+// 		data: 12,
+// 		backgroundColor: red,
+// 	  },
+// 	  {
+// 		label: 'Dataset 2',
+// 		data: 12,
+// 		backgroundColor: blue,
+// 	  },
+// 	  {
+// 		label: 'Dataset 3',
+// 		data: 12,
+// 		backgroundColor: green,
+// 	  },
+// 	]
+//   };
+
+//   new Chart(cBars, {
+//     type: 'bar',
+//     data: data,
+//     options: {
+//       scales: {
+//         y: {
+//           beginAtZero: true
+//         }
+//       }
+//     }
+//   });
+
+
+
+
+
+
+
+
+
+
+
+
+
   //calendar popup
   const calendarButtons = document.querySelectorAll(".calendar-box tbody td");
   const calendarPopup = document.querySelector(".tbl-total-popup-box");
@@ -269,11 +320,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 .toString()
                 .indexOf(tabsNavElementActive) > -1
             ) {
-              console.log(
-                tabsBlocks[j].dataset.tab
-                  .toString()
-                  .indexOf(tabsNavElementActive)
-              );
+              
               tabsBlocks[j].classList.add("active");
             }
           }
@@ -353,6 +400,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const swiperSliderRow = new Swiper(".slider-row .swiper", {
     loop: true,
     slidesPerView: "auto",
+	loopedSlidesLimit: null,
+	slidesPerGroup: 1,
     spaceBetween: 0,
     autoHeight: false,
     speed: 4000,
@@ -370,6 +419,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const swiperSliderTiles = new Swiper(".slider-tiles .swiper", {
     loop: true,
     slidesPerView: "auto",
+	loopedSlidesLimit: null,
+	slidesPerGroup: 1,
     direction: "vertical",
     spaceBetween: 0,
     autoHeight: true,

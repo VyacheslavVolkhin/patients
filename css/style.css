@@ -2315,6 +2315,28 @@ html.with-fancybox body.hide-scrollbar {
 /* ----------------------------------- *\
 			content styles
 \* ----------------------------------- */
+.dashboard-box {
+  margin: 0 auto 30px auto;
+  width: 100%;
+  max-width: 1170px;
+}
+.dashboard-box .items-wrap {
+  margin: 0 -15px -30px -15px;
+  margin: 0 -1.5rem -3rem -1.5rem;
+}
+.dashboard-box .item-wrap {
+  padding: 0 15px;
+  padding: 0 1.5rem;
+  margin-bottom: 30px;
+  margin-bottom: 3rem;
+  width: 50%;
+}
+.dashboard-box .wrap-main {
+  width: 60%;
+}
+.dashboard-box .wrap-main + .item-wrap {
+  width: 40%;
+}
 .calendar-box {
   padding-top: 15px;
   position: relative;

@@ -1,6 +1,25 @@
 /* ----------------------------------- *\
 			content styles
 \* ----------------------------------- */
+.dashboard-box {
+	margin: 0 auto 30px auto;
+	width: 100%;
+	max-width: 1170px;
+	.items-wrap {
+		margin: 0 -1.5rem -3rem -1.5rem;
+	}
+	.item-wrap {
+		padding: 0 1.5rem;
+		margin-bottom: 3rem;
+		width: 50%;
+	}
+	.wrap-main {
+		width: 60%;
+		&+.item-wrap {
+			width: 40%;
+		}
+	}
+}
 .calendar-box {
 	padding-top: 15px;
 	position: relative;
