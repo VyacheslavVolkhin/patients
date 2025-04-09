@@ -3785,6 +3785,14 @@ body:has(.table-box .js-btn-chat-open.active) .chat-box.dropdown-box {
     padding-left: 3rem;
     padding-right: 3rem;
   }
+  .chat-box.dropdown-box .popup-content-wrap:has(.row-rate-wrap:only-child) {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+        flex-direction: column;
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
   .chat-box.dropdown-box .row-inner-user {
     margin-left: -3rem;
     margin-right: -3rem;
@@ -3875,6 +3883,54 @@ body:has(.table-box .js-btn-chat-open.active) .chat-box.dropdown-box {
   .tbl-total-popup-box.dropdown-box {
     width: 420px;
     padding: 30px;
+  }
+  .content-fix-height .content-wrap {
+    position: relative;
+  }
+  .content-fix-height .content-wrap .chat-box:only-child {
+    width: calc(100% - 3rem);
+    position: absolute;
+    top: 0;
+    max-height: 100%;
+    height: 100%;
+    left: 1.5rem;
+    right: 1.5rem;
+  }
+  .content-scroll-height {
+    height: 100dvh;
+  }
+  .content-scroll-height .page-full {
+    overflow: hidden;
+    position: static;
+    padding-top: 20px;
+    padding-bottom: 80px;
+  }
+  .content-scroll-height .footer {
+    padding-top: 0;
+  }
+  .content-scroll-height .footer .inner-wrap {
+    padding-top: 0;
+  }
+  .content-scroll-height .actions-panel-box {
+    margin-bottom: 0;
+  }
+  .content-scroll-height .content-outer-wrap {
+    max-height: 100%;
+  }
+  .content-scroll-height .list-box {
+    max-height: 100%;
+    margin: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+  }
+  .content-scroll-height .list-box::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+  }
+  .content-scroll-height .content-wrap .chat-box {
+    max-height: 100%;
   }
 }
 /* ----------------------------------- *\

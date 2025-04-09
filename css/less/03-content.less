@@ -1520,6 +1520,11 @@ body {
 			.popup-content-wrap {
 				padding-left: 3rem;
 				padding-right: 3rem;
+				&:has(.row-rate-wrap:only-child) {
+					display: flex;
+					flex-direction: column;
+					justify-content: center;
+				}
 			}
 			.row-inner-user {
 				margin-left: -3rem;
@@ -1617,5 +1622,59 @@ body {
 	.tbl-total-popup-box.dropdown-box {
 		width: 420px;
 		padding: 30px;
+	}
+	.content-fix-height {
+		.content-wrap {
+			position: relative;
+			.chat-box {
+				&:only-child {
+					width: calc(100% - 3rem);
+					position: absolute;
+					top: 0;
+					max-height: 100%;
+					height: 100%;
+					left: 1.5rem;
+					right: 1.5rem;
+				}
+			}
+		}
+	}
+	.content-scroll-height {
+		height: 100dvh;
+		.page-full {
+			overflow: hidden;
+			position: static;
+			padding-top: 20px;
+			padding-bottom: 80px;
+		}
+		.footer {
+			padding-top: 0;
+			.inner-wrap {
+				padding-top: 0;
+			}
+		}
+		.actions-panel-box {
+			margin-bottom: 0;
+		}
+		.content-outer-wrap {
+			max-height: 100%;
+		}
+		.list-box {
+			max-height: 100%;
+			margin: 0;
+			overflow-y: auto;
+			overflow-x: hidden;
+			scrollbar-width: none;
+			-ms-overflow-style: none;
+			&::-webkit-scrollbar {
+				width: 0;
+				height: 0;
+			}
+		}
+		.content-wrap {
+			.chat-box {
+				max-height: 100%;
+			}
+		}
 	}
 }
