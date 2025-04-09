@@ -3803,6 +3803,12 @@ body:has(.table-box .js-btn-chat-open.active) .chat-box.dropdown-box {
     border-radius: 22px;
     box-shadow: var(--main-shadow);
   }
+  .table-box thead th,
+  .table-box thead td {
+    padding-bottom: 7px;
+    height: 50px;
+    padding-top: 8px;
+  }
   .table-box tr:has(input:checked) th,
   .table-box tr:has(input:checked) td {
     background: rgba(0, 100, 255, 0.03);
