@@ -3450,6 +3450,9 @@ html.with-fancybox body.hide-scrollbar {
 /* ----------------------------------- *\
 			content styles
 \* ----------------------------------- */
+.table-box table tr[data-href] {
+  cursor: pointer;
+}
 .columns-chart-box,
 .lines-chart-box {
   border-radius: 22px;
@@ -3483,6 +3486,44 @@ html.with-fancybox body.hide-scrollbar {
   -ms-flex-align: end;
       align-items: flex-end;
   padding-bottom: 22px;
+}
+.columns-chart-box .chart-content-wrap::-webkit-scrollbar,
+.lines-chart-box .chart-content-wrap::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+  background-color: transparent;
+}
+.columns-chart-box .chart-content-wrap::-webkit-scrollbar-thumb,
+.lines-chart-box .chart-content-wrap::-webkit-scrollbar-thumb {
+  background-color: #00000020;
+}
+.columns-chart-box .chart-content-wrap::-webkit-scrollbar-thumb:hover,
+.lines-chart-box .chart-content-wrap::-webkit-scrollbar-thumb:hover {
+  background-color: #00000020;
+}
+.columns-chart-box .chart-content-wrap::-webkit-scrollbar-button:vertical:start:decrement,
+.lines-chart-box .chart-content-wrap::-webkit-scrollbar-button:vertical:start:decrement {
+  background-color: transparent;
+  width: 0;
+  height: 0;
+}
+.columns-chart-box .chart-content-wrap::-webkit-scrollbar-button:vertical:end:increment,
+.lines-chart-box .chart-content-wrap::-webkit-scrollbar-button:vertical:end:increment {
+  background-color: transparent;
+  width: 0;
+  height: 0;
+}
+.columns-chart-box .chart-content-wrap::-webkit-scrollbar-button:horizontal:start:decrement,
+.lines-chart-box .chart-content-wrap::-webkit-scrollbar-button:horizontal:start:decrement {
+  background-color: transparent;
+  width: 0;
+  height: 0;
+}
+.columns-chart-box .chart-content-wrap::-webkit-scrollbar-button:horizontal:end:increment,
+.lines-chart-box .chart-content-wrap::-webkit-scrollbar-button:horizontal:end:increment {
+  background-color: transparent;
+  width: 0;
+  height: 0;
 }
 .columns-chart-box .chart-lines-wrap,
 .lines-chart-box .chart-lines-wrap {
@@ -4351,6 +4392,9 @@ body:has(.table-box .js-btn-chat-open.active) .chat-box.dropdown-box {
   font-weight: 500;
   line-height: 24px;
   margin-bottom: 30px;
+}
+#next {
+  scroll-margin-top: 100px;
 }
 @media (max-width: 1023px) {
   .columns-chart-box,
@@ -5850,6 +5894,34 @@ select.form-input:required:invalid {
 /* ----------------------------------- *\
 			forms elements styles
 \* ----------------------------------- */
+.frm-select-button {
+  display: block;
+  position: relative;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.frm-select-button .dropdown-box {
+  min-width: 100%;
+  float: left;
+  width: auto;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 20;
+  margin: 0;
+  margin-top: 10px;
+}
+.frm-select-button .dropdown-box .menu {
+  display: block;
+  padding: 20px 0;
+}
+.frm-select-button .dropdown-box .menu .btn-action-menu {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.frm-select-button .dropdown-box .menu .btn-action-menu .button-title {
+  padding: 0;
+}
 .frm-rate-set {
   display: -ms-flexbox;
   display: flex;

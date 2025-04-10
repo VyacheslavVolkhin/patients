@@ -1,6 +1,32 @@
 /* ----------------------------------- *\
 			forms elements styles
 \* ----------------------------------- */
+.frm-select-button {
+	display: block;
+	position: relative;
+	flex-shrink: 0;
+	.dropdown-box {
+		min-width: 100%;
+		float: left;
+		width: auto;
+		position: absolute;
+		top: 100%;left: 0;
+		z-index: 20;
+		margin: 0;
+		margin-top: 10px;
+		.menu {
+			display: block;
+			padding: 20px 0;
+			.btn-action-menu {
+				padding-left: 15px;
+				padding-right: 15px;
+				.button-title {
+					padding: 0;
+				}
+			}
+		}
+	}
+}
 .frm-rate-set {
 	display: flex;
 	position: relative;

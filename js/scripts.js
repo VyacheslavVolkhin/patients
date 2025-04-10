@@ -2,7 +2,13 @@ document.addEventListener("DOMContentLoaded", function () {
 	
 
 
+	//chat scroll down on load
+    let chatBoxLoad = document.querySelector('.chat-box.dropdown-box .popup-content-wrap');
+    if (chatBoxLoad) {
+        chatBoxLoad.scrollTop = chatBoxLoad.scrollHeight;
+    }
 
+	
 
   //calendar popup
   const calendarButtons = document.querySelectorAll(".calendar-box tbody td");
@@ -23,6 +29,26 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+
+    //table go to href
+	document.querySelectorAll('tr[data-href]').forEach(function(row) {
+        row.addEventListener('click', function(event) {
+            var chatButtonActive = document.querySelector('.js-btn-chat-open.active') !== null;
+            var menuPopupActive = document.querySelector('.tbl-menu-popup-box.dropdown-box.active') !== null;
+            var totalPopupActive = document.querySelector('.tbl-total-popup-box.dropdown-box.active') !== null;
+
+            if (!event.target.closest('.frm-select') && 
+                !event.target.closest('.btn') && 
+                !chatButtonActive && 
+                !menuPopupActive && 
+                !totalPopupActive) {
+                var href = this.getAttribute('data-href');
+                window.location.href = href;
+            }
+        });
+    });
+  
+  
   //table right click menu
   const tableRows = document.querySelectorAll("tr");
   const popupBox = document.querySelector(".tbl-menu-popup-box");
@@ -58,6 +84,17 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+
+  //button scroll 
+  document.querySelectorAll('.js-anchor').forEach(anchor => {
+	anchor.addEventListener('click', function (e) {
+		e.preventDefault();
+		document.querySelector(this.getAttribute('href')).scrollIntoView({
+			behavior: 'smooth'
+		});
+	});
+  });
+
   //btn tgl and add
   let tglButtons = document.querySelectorAll(".js-btn-tgl");
   let addButtons = document.querySelectorAll(".js-btn-add");
@@ -82,6 +119,8 @@ document.addEventListener("DOMContentLoaded", function () {
   let buttonsTglOne = document.querySelectorAll(".js-btn-tgl-one");
   buttonsTglOne.forEach(function (button) {
     button.addEventListener("click", function (e) {
+
+		
       e.preventDefault();
       let row = this.closest(".items-wrap");
       row.querySelectorAll(".js-btn-tgl-one").forEach(function (btn) {
@@ -91,6 +130,10 @@ document.addEventListener("DOMContentLoaded", function () {
         btn.classList.remove("active");
       });
       this.classList.add("active");
+
+	  const chatBoxTile = document.querySelector('.chat-box.dropdown-box .popup-content-wrap');
+	chatBoxTile.scrollTop = chatBoxTile.scrollHeight;
+	  
       return false;
     });
   });
@@ -98,10 +141,14 @@ document.addEventListener("DOMContentLoaded", function () {
   //table chats toggle
 
   const chatButtonOpen = document.querySelectorAll(".js-btn-chat-open");
+  const chatPopupContentWrap = document.querySelector('.chat-box.dropdown-box .popup-content-wrap');
   for (i = 0; i < chatButtonOpen.length; i++) {
     chatButtonOpen[i].addEventListener("click", function (e) {
       if (!this.classList.contains("active")) {
         this.classList.add("active");
+        chatPopupContentWrap.scrollTop = chatPopupContentWrap.scrollHeight;
+		
+		
         e.preventDefault();
         return false;
       }
