@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
   
   
   //table right click menu
-  const tableRows = document.querySelectorAll("tr");
+  const tableRows = document.querySelectorAll("tbody tr");
   const popupBox = document.querySelector(".tbl-menu-popup-box");
 
   if (popupBox) {
@@ -82,6 +82,29 @@ document.addEventListener("DOMContentLoaded", function () {
         popupBox.classList.remove("active");
       }
     });
+  }
+
+
+  //field-password
+  const passwordToggle = document.querySelectorAll(".js-password-toggle");
+  for (let i = 0; i < passwordToggle.length; i++) {
+	passwordToggle[i
+	].addEventListener("click", function (e) {
+	  if (this.classList.contains("active")) {
+		this.classList.remove("active");
+		const input = this.closest(".frm-field-password").querySelector(
+		  ".form-input"
+		);
+		input.type = "password";
+		} else {
+		this.classList.add("active");
+		const input = this.closest(".frm-field-password").querySelector(
+		  ".form-input"
+		);
+		input.type = "text";
+		}
+	e.preventDefault();
+	})
   }
 
 

@@ -4396,6 +4396,78 @@ body:has(.table-box .js-btn-chat-open.active) .chat-box.dropdown-box {
 #next {
   scroll-margin-top: 100px;
 }
+body.popup-open {
+  overflow: hidden;
+}
+.popup-outer-box {
+  display: none;
+  padding: 50px 20px;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-pack: center;
+      justify-content: center;
+  position: fixed;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(30px);
+          backdrop-filter: blur(30px);
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+.popup-outer-box.active {
+  display: -ms-flexbox;
+  display: flex;
+}
+.popup-box {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  position: relative;
+  overflow: hidden;
+  width: 360px;
+  max-width: 100%;
+  max-height: 100%;
+  background-color: #fff;
+  border-radius: 22px;
+  z-index: 20;
+}
+.popup-box .popup-title-wrap,
+.popup-box .popup-footer-wrap {
+  width: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.popup-box .popup-title-wrap {
+  padding: 42px 20px 30px 20px;
+}
+.popup-box .popup-content-wrap {
+  padding: 20px;
+  width: 100%;
+  overflow: auto;
+  -ms-overflow-style: none;
+}
+.popup-box .popup-content-wrap::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+.popup-box .btn-popup-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  z-index: 2;
+}
+.popup-box .popup-title {
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 0.24px;
+  margin: 0;
+}
 @media (max-width: 1023px) {
   .columns-chart-box,
   .lines-chart-box {
@@ -5384,7 +5456,13 @@ body:has(.table-box .js-btn-chat-open.active) .chat-box.dropdown-box {
   border: 1px solid var(--clr-bg-light);
   padding: 0 19px;
   font-size: 16px;
+  transition: all ease 0.2s;
   color: var(--clr-base);
+}
+.form-input:focus {
+  border-color: #fff;
+  background-color: #fff;
+  box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.01), 0px 5px 10px 0px rgba(0, 0, 0, 0.04), 0px 30px 70px 0px rgba(0, 0, 0, 0.05);
 }
 textarea.form-input {
   height: 114px;
@@ -5760,6 +5838,12 @@ select.form-input:required:invalid {
 .btn-action-ico.ico-sort.active-down:after {
   rotate: 180deg;
 }
+.btn-action-ico.ico-password:before {
+  background-image: url(../img/icons/showed.svg);
+}
+.btn-action-ico.ico-password:after {
+  background-image: url(../img/icons/hide.svg);
+}
 .btn-action-ico.ico-arrow {
   z-index: 20;
   cursor: pointer;
@@ -5894,6 +5978,91 @@ select.form-input:required:invalid {
 /* ----------------------------------- *\
 			forms elements styles
 \* ----------------------------------- */
+.frm-field-password .form-input {
+  padding-right: 60px;
+}
+.frm-field-password .btn-action-ico {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  z-index: 2;
+  top: 50%;
+  right: 18px;
+  margin-top: -16px;
+}
+.frm-popup .frm-row {
+  margin: 0 -5px;
+}
+.frm-popup .frm-row-submit {
+  margin: 0;
+}
+.frm-popup .frm-row-submit .frm-field {
+  margin: 0;
+  padding: 0;
+}
+.frm-popup .frm-row-submit .btn {
+  width: 100%;
+}
+.frm-popup .frm-field {
+  padding: 0 5px;
+  margin-bottom: 36px;
+}
+.frm-popup .row-login {
+  margin-top: 36px;
+}
+.frm-popup .row-login .row-title {
+  width: 100%;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  padding-top: 39px;
+  border-top: 1px solid var(--clr-border-light);
+  text-align: center;
+  font-size: 10px;
+  color: rgba(18, 18, 18, 0.7);
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 20px;
+}
+.frm-popup .row-login .frm-field {
+  width: 33.33%;
+  margin-bottom: 0;
+}
+.frm-popup .row-login .btn {
+  width: 100%;
+  height: 60px;
+  border-radius: 22px;
+}
+.frm-popup .row-login .btn.button-light:hover {
+  background-color: var(--clr-border-light);
+  border-color: var(--clr-border-light);
+}
+.frm-popup .row-login .btn .button-ico {
+  filter: none;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+}
+.frm-popup .row-actions {
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+.frm-popup .row-actions .frm-field {
+  width: auto;
+  margin-bottom: 30px;
+}
+.frm-popup .row-actions .frm-field:first-child {
+  -ms-flex: 1;
+      flex: 1;
+}
+.frm-popup .row-actions .frm-field:last-child {
+  text-align: right;
+}
+.frm-popup .row-actions .frm-select label {
+  padding-left: 30px;
+}
 .frm-select-button {
   display: block;
   position: relative;

@@ -16,7 +16,13 @@
 	border: 1px solid var(--clr-bg-light);
 	padding: 0 19px;
 	font-size: 16px;
+	transition: all ease 0.2s;
 	color: var(--clr-base);
+	&:focus {
+		border-color: #fff;
+		background-color: #fff;
+		box-shadow: 0px 3px 5px 0px rgba(0, 0, 0, 0.01), 0px 5px 10px 0px rgba(0, 0, 0, 0.04), 0px 30px 70px 0px rgba(0, 0, 0, 0.05);
+	}
 }
 textarea.form-input {
 	height: 114px;
@@ -408,6 +414,14 @@ select.form-input:required:invalid {
 			&:after {
 				rotate: 180deg;
 			}
+		}
+	}
+	&.ico-password {
+		&:before {
+			background-image: url(../img/icons/showed.svg);
+		}
+		&:after {
+			background-image: url(../img/icons/hide.svg);
 		}
 	}
     &.ico-arrow {
