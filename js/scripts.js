@@ -2,6 +2,62 @@ document.addEventListener("DOMContentLoaded", function () {
 	
 
 
+	const ctx = document.getElementById('chartLines').getContext('2d');
+    const chartLines = new Chart(ctx, {
+        type: 'line', // Тип диаграммы
+        data: {
+            labels: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'], // Метки по оси X
+            datasets: [{
+                label: 'Мои данные', // Подпись для легенды
+                data: [120, 59, 80, 81, 56, 55, 0, 120, 30, 80, 200, 55],
+                borderColor: '#0064FF',
+                backgroundColor: '#DCE7FC',
+                borderWidth: 3,
+				fill: true,
+				tension: 0.3,
+				hoverRadius: 15,
+				pointRadius: 0,
+            }]
+        },
+        options: {
+			responsive: false,
+            scales: {
+				x: {
+					display: true,
+					beginAtZero: true,
+					grid: {
+						display: false
+					},
+				},
+				y: {
+					display: false,
+					beginAtZero: true,
+					grid: {
+						display: false
+					},
+				}
+			},
+			plugins: {
+				legend: false,
+				title: false,
+				chartAreaBorder: false,
+				tooltip: {
+					enabled: true,
+					mode: 'index',
+					intersect: false,
+					callbacks: {
+						label: function(tooltipItem) {
+							return `Значение: ${tooltipItem.raw}`;
+						}
+					}
+				}
+			  }
+
+        }
+    });
+
+	
+	
 	//chat scroll down on load
     let chatBoxLoad = document.querySelector('.chat-box.dropdown-box .popup-content-wrap');
     if (chatBoxLoad) {
