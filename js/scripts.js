@@ -160,7 +160,22 @@ document.addEventListener("DOMContentLoaded", function () {
           popupBox.classList.add("active");
         }
       });
+
+	  row.addEventListener("touchend", (event) => {
+		const checkbox = row.querySelector('input[type="checkbox"]');
+		if (checkbox && checkbox.checked) {
+			const rect = row.getBoundingClientRect();
+			const tableRect = row.closest("table").getBoundingClientRect();
+			popupBox.style.top = `${rect.top - tableRect.top}px`;
+			popupBox.style.left = `${rect.left - tableRect.left}px`;
+
+			popupBox.classList.add("active");
+		}
+	});
+	  
+	  
     });
+	
     tableRows.forEach((row) => {
       row.addEventListener("contextmenu", (event) => {
         const checkbox = row.querySelector('input[type="checkbox"]');

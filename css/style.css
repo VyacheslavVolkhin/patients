@@ -6374,6 +6374,7 @@ select.form-input:required:invalid {
   animation: fadein ease 0.2s;
   white-space: normal;
   background: #fff;
+  z-index: 10;
 }
 .frm-select.inp-clear label {
   width: 24px;
