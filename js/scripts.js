@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			data: {
 				labels: ['Янв', 'Фев', 'Мар', 'Апр', 'Май', 'Июн', 'Июл', 'Авг', 'Сен', 'Окт', 'Ноя', 'Дек'], // Метки по оси X
 				datasets: [{
-					label: 'Мои данные', // Подпись для легенды
+					label: 'Мои данные', 
 					data: [120, 59, 80, 81, 56, 55, 0, 120, 30, 80, 200, 55],
 					borderColor: '#0064FF',
 					backgroundColor: '#DCE7FC',
@@ -64,6 +64,42 @@ document.addEventListener("DOMContentLoaded", function () {
     if (chatBoxLoad) {
         chatBoxLoad.scrollTop = chatBoxLoad.scrollHeight;
     }
+
+
+	//checkbox tooltip
+	const checkboxesTooltip = document.querySelectorAll('.frm-select:has(.lbl-tooltip) input');
+	let timeout;
+
+	if (checkboxesTooltip) {
+		checkboxesTooltip.forEach(checkbox => {
+			checkbox.addEventListener('change', function () {
+				// Удаляем класс is-activated у всех чекбоксов
+				checkboxesTooltip.forEach(cb => cb.classList.remove('is-activated'));
+	
+				if (this.checked) {
+					this.classList.add('is-activated');
+	
+					// Удаление класса через 3 секунды
+					timeout = setTimeout(() => {
+						this.classList.remove('is-activated');
+					}, 3000);
+				} else {
+					// Если чекбокс выключен, очищаем таймер
+					clearTimeout(timeout);
+				}
+			});
+		});
+	
+		// Обработчик события для клика на другие чекбоксы
+		checkboxesTooltip.forEach(checkbox => {
+			checkbox.addEventListener('click', function () {
+				// Если этот чекбокс активирован, отменяем таймер
+				if (this.checked) {
+					clearTimeout(timeout);
+				}
+			});
+		});
+	}
 
 	
 

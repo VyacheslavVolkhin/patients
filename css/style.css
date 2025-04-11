@@ -6350,6 +6350,30 @@ select.form-input:required:invalid {
 }
 .frm-select {
   font-size: 16px;
+  overflow: visible;
+}
+.frm-select input.is-activated ~ .lbl-tooltip {
+  display: block;
+}
+.frm-select .lbl-tooltip {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 40px;
+  z-index: 20;
+  border-radius: 10px;
+  box-shadow: var(--main-shadow);
+  padding: 10px;
+  font-size: 12px;
+  line-height: 15px;
+  color: var(--clr-base);
+  width: auto;
+  width: 120px;
+  pointer-events: none;
+  transition: all ease 0.2s;
+  animation: fadein ease 0.2s;
+  white-space: normal;
+  background: #fff;
 }
 .frm-select.inp-clear label {
   width: 24px;
