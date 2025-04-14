@@ -70,6 +70,14 @@
 		}
 	}
 	.chart-lines-wrap {
+		&:has(.slider-wrap) {
+			overflow: visible;
+			.sl-wrap {
+				width: 1200px;
+			}
+		}
+	}
+	.chart-lines-wrap {
 		flex-shrink: 0;
 		margin-bottom: 0;
 	}

@@ -3545,6 +3545,14 @@ html.with-fancybox body.hide-scrollbar {
 .lines-chart-box .chart-content-wrap:has(.slider-wrap) {
   overflow: visible;
 }
+.columns-chart-box .chart-lines-wrap:has(.slider-wrap),
+.lines-chart-box .chart-lines-wrap:has(.slider-wrap) {
+  overflow: visible;
+}
+.columns-chart-box .chart-lines-wrap:has(.slider-wrap) .sl-wrap,
+.lines-chart-box .chart-lines-wrap:has(.slider-wrap) .sl-wrap {
+  width: 1200px;
+}
 .columns-chart-box .chart-lines-wrap,
 .lines-chart-box .chart-lines-wrap {
   -ms-flex-negative: 0;

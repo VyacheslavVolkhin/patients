@@ -589,7 +589,23 @@ document.addEventListener("DOMContentLoaded", function () {
 	navigation: false,
   
   });
+
+
+  //slider dashboard line
+  const swiperSliderDBoardLine = new Swiper('.slider-dashboard-line .swiper', {
+	loop: false,
+	slidesPerView: 'auto',
+	spaceBetween: 0,
+	autoHeight: false,
+	speed: 400,
+	pagination: false,
+	autoplay: false,
+	navigation: false,
+	freeMode: true,
   
+  });
+  
+
   
   
 });
