@@ -198,6 +198,35 @@
 .calendar-box {
 	padding-top: 15px;
 	position: relative;
+	.slider-inner-wrap {
+		position: relative;
+		margin-left: calc(var(--paddingContainer) * -1);
+		margin-right: calc(var(--paddingContainer) * -1);
+		.content-inner-wrap {
+			margin-left: 0;
+			margin-right: 0;
+		}
+	}
+	.slider-actions-wrap {
+		display: flex;
+		justify-content: space-between;
+		height: 40px;
+		position: absolute;
+		width: 200px;
+		position: absolute;
+		top: 15px;left: 50%;
+		margin-left: -100px;
+	}
+	.sl-wrap {
+		.title-inner {
+			width: 130px;
+			padding: 0;
+			max-width: 130px;
+			margin: 0 auto;
+			height: 40px;
+			line-height: 40px;
+		}
+	}
 	.content-inner-wrap {
 		position: relative;
 	}
@@ -866,10 +895,14 @@ body {
 		}
 	}
 }
+.tbl-menu-popup-box.dropdown-box {
+	left: 180px !important;
+}
 .tbl-menu-popup-box.dropdown-box,
 .tbl-total-popup-box.dropdown-box {
 	position: absolute;
-	top: 0;left: 180px !important;
+	top: 0;
+	left: 180px;
 	width: 318px;
 	padding: 24px 0;
 	margin: 0;
@@ -973,6 +1006,42 @@ body.popup-open {
 	}
 }
 @media (max-width: 1023px) {
+	.calendar-box {
+		.slider-wrap {
+			overflow: visible;
+		}
+		&:has(.tbl-menu-popup-box.dropdown-box.active, .tbl-total-popup-box.dropdown-box.active) {
+			.slider-actions-wrap, .title-inner-wrap {
+				opacity: 0;
+				pointer-events: none;
+			}
+		}
+		.tbl-menu-popup-box.dropdown-box.active, .tbl-total-popup-box.dropdown-box.active {
+			display: flex;
+		}
+		.tbl-total-popup-box.dropdown-box {
+			flex-direction: column;
+			width: 100%;
+			border-radius: 0;
+			position: absolute;
+			top: 0 !important;
+			bottom: 0 !important;
+			left: 0 !important;
+			right: 0 !important;
+			height: 100%;
+			z-index: 100;
+			.popup-total-list {
+				overflow-y: auto;
+				overflow-x: hidden;
+				scrollbar-width: none;
+				-ms-overflow-style: none;
+				&::-webkit-scrollbar {
+					width: 0;
+					height: 0;
+				}
+			}
+		}
+	}
 	.columns-chart-box, .lines-chart-box  {
 		padding: 20px 20px 10px 20px;
 		.chart-lines-wrap {
@@ -1652,7 +1721,8 @@ body.popup-open {
 	}
 	.tbl-total-popup-box.dropdown-box {
 		width: 360px;
-		left: 20px !important;
+		//left: 20px !important;
+		left: 20px;
 	}
 }
 @media (max-width: 767px) {
@@ -2031,3 +2101,4 @@ body.popup-open {
 		width: 100%;
 	}
 }
+

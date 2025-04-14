@@ -104,23 +104,78 @@ document.addEventListener("DOMContentLoaded", function () {
 	
 
   //calendar popup
-  const calendarButtons = document.querySelectorAll(".calendar-box tbody td");
-  const calendarPopup = document.querySelector(".tbl-total-popup-box");
-  const calendarPopupOuter = document.querySelector(".calendar-box");
+//   const calendarButtons = document.querySelectorAll(".calendar-box tbody td");
+//   const calendarPopup = document.querySelector(".tbl-total-popup-box");
+//   const calendarPopupOuter = document.querySelector(".calendar-box");
 
-  if (calendarPopup) {
-    calendarButtons.forEach((cButton) => {
-      cButton.addEventListener("click", function () {
-        calendarPopup.classList.toggle("active");
-      });
-    });
+//   if (calendarPopup) {
+//     calendarButtons.forEach((cButton) => {
+//       cButton.addEventListener("click", function () {
+//         calendarPopup.classList.toggle("active");
+//       });
+//     });
 
-    document.addEventListener("click", (event) => {
-      if (!calendarPopupOuter.contains(event.target)) {
-        calendarPopup.classList.remove("active");
+//     document.addEventListener("click", (event) => {
+//       if (!calendarPopupOuter.contains(event.target)) {
+//         calendarPopup.classList.remove("active");
+//       }
+//     });
+//   }
+
+//calendar popup
+const calendarButtons = document.querySelectorAll(".calendar-box tbody td");
+const calendarPopup = document.querySelector(".tbl-total-popup-box");
+const calendarPopupOuter = document.querySelector(".calendar-box");
+const sliderInnerWrap = document.querySelector(".slider-inner-wrap"); // Получаем обертку
+
+if (calendarPopup && sliderInnerWrap) {
+  calendarButtons.forEach((cButton) => {
+    cButton.addEventListener("click", function (event) {
+      // Отображаем попап
+      calendarPopup.classList.toggle("active");
+
+      // Получаем координаты обертки
+      const wrapRect = sliderInnerWrap.getBoundingClientRect();
+
+      // Получаем координаты ячейки
+      const cellRect = cButton.getBoundingClientRect();
+
+      // Вычисляем позицию для попапа
+      const popupWidth = calendarPopup.offsetWidth;
+      const popupHeight = calendarPopup.offsetHeight;
+
+      // Устанавливаем позицию по X
+      let left = cellRect.left - wrapRect.left; // Позиция относительно обертки
+      if (left + popupWidth > wrapRect.width) { // Используем ширину обертки
+        left = wrapRect.width - popupWidth - 10; // 10 - отступ от края
       }
+
+      // Устанавливаем позицию по Y
+      let top = cellRect.top - wrapRect.top - popupHeight; // Показываем над ячейкой
+      if (top < 0) {
+        top = cellRect.bottom - wrapRect.top + 10; // Если не хватает места сверху, показываем снизу
+      }
+      if (top + popupHeight > wrapRect.height) { // Проверяем выход за пределы высоты обертки
+        top = wrapRect.height - popupHeight - 10; // Если не хватает места снизу, показываем выше
+      }
+
+      // Устанавливаем позицию попапа
+      calendarPopup.style.left = `${left}px`;
+      calendarPopup.style.top = `${top}px`;
     });
-  }
+  });
+
+  document.addEventListener("click", (event) => {
+    if (!calendarPopupOuter.contains(event.target)) {
+      calendarPopup.classList.remove("active");
+    }
+  });
+}
+
+
+
+	
+
 
 
     //table go to href
@@ -603,6 +658,23 @@ document.addEventListener("DOMContentLoaded", function () {
 	autoplay: false,
 	navigation: false,
 	freeMode: true,
+  
+  });
+
+
+  //slider calendar
+  const swiperSliderCalendar = new Swiper('.slider-calendar .swiper', {
+	loop: false,
+	slidesPerView: 1,
+	spaceBetween: 0,
+	autoHeight: true,
+	speed: 400,
+	pagination: false,
+	autoplay: false,
+	navigation: {
+		nextEl: '.btn-action-ico.ico-arrow.ico-arrow-next.button-slider-calendar-next',
+		prevEl: '.btn-action-ico.ico-arrow.ico-arrow-prev.button-slider-calendar-prev',
+	},
   
   });
   
