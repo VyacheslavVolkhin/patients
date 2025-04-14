@@ -575,4 +575,21 @@ document.addEventListener("DOMContentLoaded", function () {
       slideShadows: false,
     },
   });
+
+
+  //slider dashboard
+  const swiperSliderDBoard = new Swiper('.slider-dashboard .swiper', {
+	loop: false,
+	slidesPerView: 'auto',
+	spaceBetween: 0,
+	autoHeight: false,
+	speed: 400,
+	pagination: false,
+	autoplay: false,
+	navigation: false,
+  
+  });
+  
+  
+  
 });

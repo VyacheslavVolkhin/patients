@@ -3541,6 +3541,10 @@ html.with-fancybox body.hide-scrollbar {
   width: 0;
   height: 0;
 }
+.columns-chart-box .chart-content-wrap:has(.slider-wrap),
+.lines-chart-box .chart-content-wrap:has(.slider-wrap) {
+  overflow: visible;
+}
 .columns-chart-box .chart-lines-wrap,
 .lines-chart-box .chart-lines-wrap {
   -ms-flex-negative: 0;
@@ -3581,6 +3585,26 @@ html.with-fancybox body.hide-scrollbar {
   padding-left: 0;
   padding-bottom: 10px;
   padding-top: 10px;
+}
+.columns-chart-box .slider,
+.lines-chart-box .slider {
+  -ms-flex-align: end;
+      align-items: flex-end;
+}
+.columns-chart-box .sl-wrap,
+.lines-chart-box .sl-wrap {
+  width: 50px;
+  padding: 0;
+}
+.columns-chart-box .slider-inner-wrap,
+.lines-chart-box .slider-inner-wrap {
+  width: 100%;
+}
+.columns-chart-box .slider-wrap,
+.lines-chart-box .slider-wrap {
+  margin: 0 -22px;
+  width: calc(100% + 44px);
+  padding-left: 22px;
 }
 .columns-chart-box .elm-photo,
 .lines-chart-box .elm-photo {

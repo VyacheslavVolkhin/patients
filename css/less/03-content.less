@@ -64,6 +64,11 @@
 			height: 0;
 		}
 	}
+	.chart-content-wrap {
+		&:has(.slider-wrap) {
+			overflow: visible;
+		}
+	}
 	.chart-lines-wrap {
 		flex-shrink: 0;
 		margin-bottom: 0;
@@ -95,6 +100,21 @@
 		padding-left: 0;
 		padding-bottom: 10px;
 		padding-top: 10px;
+	}
+	.slider {
+		align-items: flex-end;
+	}
+	.sl-wrap {
+		width: 50px;
+		padding: 0;
+	}
+	.slider-inner-wrap {
+		width: 100%;
+	}
+	.slider-wrap {
+		margin: 0 -22px;
+		width: calc(100% + 44px);
+		padding-left: 22px;
 	}
 	.elm-photo {
 		width: 100%;
