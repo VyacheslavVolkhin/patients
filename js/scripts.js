@@ -587,6 +587,7 @@ document.addEventListener("DOMContentLoaded", function () {
 	pagination: false,
 	autoplay: false,
 	navigation: false,
+	freeMode: true,
   
   });
 
