@@ -1,6 +1,16 @@
 /* ----------------------------------- *\
 			content styles
 \* ----------------------------------- */
+.tiles-slider-box {
+	position: relative;
+	margin-left: -5px;
+	margin-right: -5px;
+	.slider-inner-wrap {
+		overflow: hidden;
+		padding: 5px 5px 100px 5px;
+		margin-bottom: -100px;
+	}
+}
 .page-lk {
 	.title-box {
 		.page-title {
@@ -541,6 +551,68 @@
 		margin-bottom: 26px;
 		display: flex;
 		gap: 10px;
+		&.type-row {
+			margin-bottom: 20px;
+			margin-left: calc(var(--paddingContainer) * -1);
+			margin-right: calc(var(--paddingContainer) * -1);
+			padding-left: var(--paddingContainer);
+			display: flex;
+			gap: 10px;
+			overflow-x: auto;
+			overflow-y: hidden;
+			scrollbar-width: none;
+			-ms-overflow-style: none;
+			&::-webkit-scrollbar {
+				width: 0;
+				height: 0;
+			}
+			.filter-search-wrap {
+				display: none;
+			}
+			.filter-button-wrap {
+				flex-shrink: 0;
+			}
+			.filter-action-wrap {
+				flex-shrink: 0;
+				&:last-child {
+					padding-right: 30px;
+				}
+			}
+			.filter-actions-wrap {
+				display: flex;
+				gap: 10px;
+			}
+			.btn.button-input, .btn.button-input-att, .btn, select.form-input.inp-main, .form-input.inp-main {
+				height: 40px;
+				border-radius: 10px;
+				padding-left: 14px;
+				font-size: 14px;
+				font-weight: 600;
+			}
+			.btn.button-input, .btn.button-input-att, .btn {
+				padding-right: 14px;
+			}
+			&:not(.type-compact) {
+				.btn.button-input, .btn.button-input-att {
+					border-color: var(--clr-att);
+					background-color: #E6EEFA;
+					color: var(--clr-att);
+					.button-ico {
+						filter: none;
+					}
+					&:hover {
+						background-color: var(--clr-att);
+						color: #fff;
+						.button-ico {
+							filter: var(--filter-white);
+						}
+					}
+				}
+			}
+			select.form-input.inp-main {
+				background-image: url(../img/icons/arrow-select.svg);
+			}
+		}
 		.filter-actions-wrap {
 			display: none;
 		}
@@ -551,14 +623,16 @@
 			flex-shrink: 0;
 			.btn {
 				height: 60px;
-				width: 76px;
+				width: auto;;
 				display: flex;
 				padding: 0;
 				.button-ico {
-					margin: 0 auto;
+					margin: 0 5px 0 0;
+					display: block;
+					flex-shrink: 0;
 				}
 				.button-title {
-					display: none;
+					display: block;
 				}
 			}
 		}
