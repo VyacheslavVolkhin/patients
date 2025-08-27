@@ -358,14 +358,14 @@
 									<div class="wrap-title">Все врачи клиники</div>
 									
 									<!--page-filter-box-->
-									<div class="page-filter-box">
+									<div class="page-filter-box js-popup-block no-close-desktop">
 										<div class="filter-search-wrap">
-											<form action="/" class="frm-main-search">
+											<div class="frm-main-search">
 												<input type="text" class="form-input inp-main" placeholder="Поиск по наименованию">
 												<button type="submit" class="button-form btn-action-ico ico-search"></button>
-											</form>
+											</div>
 										</div>
-										<div class="filter-button-wrap">
+										<div class="filter-button-wrap js-btn-popup-toggle">
 											<a href="" class="btn button-input">
 												<div class="button-ico">
 													<img src="./img/icons/filter.svg" alt="">
@@ -373,30 +373,40 @@
 												<div class="button-title">Фильтры</div>
 											</a>
 										</div>
-										<div class="filter-actions-wrap">
-											<div class="filter-action-wrap">
-												<select class="form-input inp-main" required="">
-													<option selected="" disabled="" hidden="" value="">Город/область</option><!--placeholder-->
-													<option>Пункт списка</option>
-													<option>Пункт списка</option>
-													<option>Пункт списка</option>
-													<option>Пункт списка</option>
-												</select>
+										<div class="filter-actions-wrap js-popup-block">
+											<div class="filter-title-wrap">
+												<div class="filter-title">Фильтр</div>
 											</div>
-											<div class="filter-action-wrap">
-												<div class="frm-select-button">
-													<input type="checkbox" id="button01">
-													<label for="button01">Со скидкой</label>
+											<div class="filter-content-wrap">
+												<div class="filter-action-wrap">
+													<select class="form-input inp-main" required="">
+														<option selected="" disabled="" hidden="" value="">Город/область</option><!--placeholder-->
+														<option>Пункт списка</option>
+														<option>Пункт списка</option>
+														<option>Пункт списка</option>
+														<option>Пункт списка</option>
+													</select>
+												</div>
+												<div class="filter-action-wrap">
+													<div class="frm-select-button">
+														<input type="checkbox" id="button01">
+														<label for="button01">Со скидкой</label>
+													</div>
+												</div>
+												<div class="filter-action-wrap">
+													<select class="form-input inp-main" required="">
+														<option selected="" disabled="" hidden="" value="">Цена</option><!--placeholder-->
+														<option>Пункт списка</option>
+														<option>Пункт списка</option>
+														<option>Пункт списка</option>
+														<option>Пункт списка</option>
+													</select>
 												</div>
 											</div>
-											<div class="filter-action-wrap">
-												<select class="form-input inp-main" required="">
-													<option selected="" disabled="" hidden="" value="">Цена</option><!--placeholder-->
-													<option>Пункт списка</option>
-													<option>Пункт списка</option>
-													<option>Пункт списка</option>
-													<option>Пункт списка</option>
-												</select>
+											<div class="filter-apply-wrap">
+												<a href="" class="btn button-main js-btn-popup-close">
+													<div class="button-title">Применить фильтры</div>
+												</a>
 											</div>
 										</div>
 									</div>
@@ -415,14 +425,14 @@
 												<div class="panel-table-wrap">
 													<table>
 														<tbody>
-															<tr class="tr-title">
+															<tr class="tr-title tr-show">
 																<th colspan="2">Личные данные врача</th>
 															</tr>
-															<tr>
+															<tr class="tr-show">
 																<th>Дата рождения</th>
 																<td>30.01.1955</td>
 															</tr>
-															<tr>
+															<tr class="tr-show">
 																<th>Пол</th>
 																<td>Женский</td>
 															</tr>
@@ -581,7 +591,7 @@
 																</th>
 																<td>10</td>
 															</tr>
-															<tr class="tr-sep">
+															<tr class="tr-sep tr-show">
 																<th>Телефон</th>
 																<td>
 																	<div class="tile-phone-number">
@@ -590,7 +600,459 @@
 																	</div>
 																</td>
 															</tr>
+															<tr class="tr-sep tr-show">
+																<th>Email</th>
+																<td>
+																	<div class="tile-phone-number">
+																		<a href="" class="link-main phone-action js-btn-tgl" data-show="Показать почту" data-hide="Скрыть"></a>
+																		<div class="phone-number">info@clinca.ru</div>
+																	</div>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+										<div class="panel-toggle-wrap">
+											<a href="" class="btn-action-toggle js-btn-tgl panel-button-toggle">
+												<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+											</a>
+										</div>
+										<div class="panel-actions-wrap">
+											<div class="panel-action-wrap">
+												<a href="" class="btn button-input button-small">
+													<div class="button-title">Редактировать</div>
+												</a>
+											</div>
+											<div class="panel-action-wrap">
+												<a href="" class="btn button-input button-small">
+													<div class="button-title">Задать вопрос</div>
+												</a>
+											</div>
+											<div class="panel-action-wrap">
+												<a href="" class="btn button-input-att button-small">
+													<div class="button-title">Направить пацииента</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<!--/item tile-panel-->
+									<!--item tile-panel-->
+									<div class="item-tile-panel type-light">
+										<div class="tile-doccard-wrap">
+											<div class="tile-photo-wrap">
+												<div class="tile-photo photo-cover">
+													<img src="./img/result.jpg" alt="">
+												</div>
+											</div>
+											<div class="tile-info-main-wrap">
+												<div class="tile-title">Гамова Елена Владимировна </div>
+												<div class="panel-table-wrap">
+													<table>
+														<tbody>
+															<tr class="tr-title tr-show">
+																<th colspan="2">Личные данные врача</th>
+															</tr>
+															<tr class="tr-show">
+																<th>Дата рождения</th>
+																<td>30.01.1955</td>
+															</tr>
+															<tr class="tr-show">
+																<th>Пол</th>
+																<td>Женский</td>
+															</tr>
+															<tr class="tr-title">
+																<th colspan="2">Паспортные данные врача</th>
+															</tr>
+															<tr>
+																<th>Паспорт</th>
+																<td>1234/123 123</td>
+															</tr>
+															<tr>
+																<th>Выдан</th>
+																<td>МВД Москвы 000-001</td>
+															</tr>
+															<tr>
+																<th>
+																	Дата выдачи
+																	<br>
+																	<a href="" class="elm-attach">
+																		<div class="attach-title">Страница1.jpg 200 kb</div>
+																	</a>
+																	<br>
+																	<a href="" class="elm-attach">
+																		<div class="attach-title">Страница2.jpg 200 kb</div>
+																	</a>
+																	<br>
+																	<a href="" class="elm-attach">
+																		<div class="attach-title">Страница3.jpg 200 kb</div>
+																	</a>
+																</th>
+																<td>11.12.2020</td>
+															</tr>
+															<tr>
+																<th>Адрес регистрации</th>
+																<td>Москва, Красная площадь дом 1, кв. 2344</td>
+															</tr>
+															<tr class="tr-title">
+																<th colspan="2">Основное образование</th>
+															</tr>
+															<tr>
+																<th>Образование</th>
+																<td>Врач</td>
+															</tr>
+															<tr>
+																<th>Выдан</th>
+																<td>Институтом</td>
+															</tr>
+															<tr>
+																<th>
+																	Дата окончания
+																	<br>
+																	<a href="" class="elm-attach">
+																		<div class="attach-title">Страница1.jpg 200 kb</div>
+																	</a>
+																	<br>
+																	<a href="" class="elm-attach">
+																		<div class="attach-title">Страница2.jpg 200 kb</div>
+																	</a>
+																	<br>
+																	<a href="" class="elm-attach">
+																		<div class="attach-title">Страница3.jpg 200 kb</div>
+																	</a>
+																</th>
+																<td>11.12.2020</td>
+															</tr>
+															<tr class="tr-title">
+																<th colspan="2">Дополнительное образование</th>
+															</tr>
+															<tr>
+																<th>Образование</th>
+																<td>Врач</td>
+															</tr>
+															<tr>
+																<th>Выдан</th>
+																<td>Институтом</td>
+															</tr>
+															<tr>
+																<th>
+																	Дата окончания
+																	<br>
+																	<a href="" class="elm-attach">
+																		<div class="attach-title">Страница3.jpg 200 kb</div>
+																	</a>
+																</th>
+																<td>11.12.2020</td>
+															</tr>
+															<tr class="tr-title">
+																<th colspan="2">Квалификация</th>
+															</tr>
+															<tr>
+																<th>Название</th>
+																<td>1</td>
+															</tr>
+															<tr>
+																<th>
+																	Дата получения
+																	<br>
+																	<a href="" class="elm-attach">
+																		<div class="attach-title">Страница3.jpg 200 kb</div>
+																	</a>
+																</th>
+																<td>11.12.2020</td>
+															</tr>
+															<tr class="tr-title">
+																<th colspan="2">Должность</th>
+															</tr>
+															<tr>
+																<th>Клиника</th>
+																<td>Здравсити</td>
+															</tr>
+															<tr>
+																<th>Название</th>
+																<td>Врач-кардиолог</td>
+															</tr>
+															<tr>
+																<th>Дата вступления в должность</th>
+																<td>11.12.2020</td>
+															</tr>
+															<tr class="tr-title">
+																<th colspan="2">Направление деятельности</th>
+															</tr>
+															<tr>
+																<th>Название</th>
+																<td>Кардиология</td>
+															</tr>
 															<tr class="tr-sep">
+																<th>Стоимость приема</th>
+																<td><div class="elm-price" data-unit=" ₽">2500</div></td>
+															</tr>
+															<tr>
+																<th>Название</th>
+																<td>Терапия</td>
+															</tr>
+															<tr class="tr-sep">
+																<th>Стоимость приема</th>
+																<td><div class="elm-price" data-unit=" ₽">2500</div></td>
+															</tr>
+															<tr>
+																<th>Название</th>
+																<td>Психология</td>
+															</tr>
+															<tr class="tr-sep">
+																<th>Стоимость приема</th>
+																<td><div class="elm-price" data-unit=" ₽">2500</div></td>
+															</tr>
+															<tr class="tr-title">
+																<th colspan="2">Стаж деятельности</th>
+															</tr>
+															<tr>
+																<th>
+																	Кол-во лет
+																	<br>
+																	<a href="" class="elm-attach">
+																		<div class="attach-title">Страница3.jpg 200 kb</div>
+																	</a>
+																</th>
+																<td>10</td>
+															</tr>
+															<tr class="tr-sep tr-show">
+																<th>Телефон</th>
+																<td>
+																	<div class="tile-phone-number">
+																		<a href="" class="link-main phone-action js-btn-tgl" data-show="Показать номер" data-hide="Скрыть"></a>
+																		<div class="phone-number">8 (495) 135-37-22</div>
+																	</div>
+																</td>
+															</tr>
+															<tr class="tr-sep tr-show">
+																<th>Email</th>
+																<td>
+																	<div class="tile-phone-number">
+																		<a href="" class="link-main phone-action js-btn-tgl" data-show="Показать почту" data-hide="Скрыть"></a>
+																		<div class="phone-number">info@clinca.ru</div>
+																	</div>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+										<div class="panel-toggle-wrap">
+											<a href="" class="btn-action-toggle js-btn-tgl panel-button-toggle">
+												<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+											</a>
+										</div>
+										<div class="panel-actions-wrap">
+											<div class="panel-action-wrap">
+												<a href="" class="btn button-input button-small">
+													<div class="button-title">Редактировать</div>
+												</a>
+											</div>
+											<div class="panel-action-wrap">
+												<a href="" class="btn button-input button-small">
+													<div class="button-title">Задать вопрос</div>
+												</a>
+											</div>
+											<div class="panel-action-wrap">
+												<a href="" class="btn button-input-att button-small">
+													<div class="button-title">Направить пацииента</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<!--/item tile-panel-->
+									<!--item tile-panel-->
+									<div class="item-tile-panel type-light">
+										<div class="tile-doccard-wrap">
+											<div class="tile-photo-wrap">
+												<div class="tile-photo photo-cover">
+													<img src="./img/result.jpg" alt="">
+												</div>
+											</div>
+											<div class="tile-info-main-wrap">
+												<div class="tile-title">Гамова Елена Владимировна </div>
+												<div class="panel-table-wrap">
+													<table>
+														<tbody>
+															<tr class="tr-title tr-show">
+																<th colspan="2">Личные данные врача</th>
+															</tr>
+															<tr class="tr-show">
+																<th>Дата рождения</th>
+																<td>30.01.1955</td>
+															</tr>
+															<tr class="tr-show">
+																<th>Пол</th>
+																<td>Женский</td>
+															</tr>
+															<tr class="tr-title">
+																<th colspan="2">Паспортные данные врача</th>
+															</tr>
+															<tr>
+																<th>Паспорт</th>
+																<td>1234/123 123</td>
+															</tr>
+															<tr>
+																<th>Выдан</th>
+																<td>МВД Москвы 000-001</td>
+															</tr>
+															<tr>
+																<th>
+																	Дата выдачи
+																	<br>
+																	<a href="" class="elm-attach">
+																		<div class="attach-title">Страница1.jpg 200 kb</div>
+																	</a>
+																	<br>
+																	<a href="" class="elm-attach">
+																		<div class="attach-title">Страница2.jpg 200 kb</div>
+																	</a>
+																	<br>
+																	<a href="" class="elm-attach">
+																		<div class="attach-title">Страница3.jpg 200 kb</div>
+																	</a>
+																</th>
+																<td>11.12.2020</td>
+															</tr>
+															<tr>
+																<th>Адрес регистрации</th>
+																<td>Москва, Красная площадь дом 1, кв. 2344</td>
+															</tr>
+															<tr class="tr-title">
+																<th colspan="2">Основное образование</th>
+															</tr>
+															<tr>
+																<th>Образование</th>
+																<td>Врач</td>
+															</tr>
+															<tr>
+																<th>Выдан</th>
+																<td>Институтом</td>
+															</tr>
+															<tr>
+																<th>
+																	Дата окончания
+																	<br>
+																	<a href="" class="elm-attach">
+																		<div class="attach-title">Страница1.jpg 200 kb</div>
+																	</a>
+																	<br>
+																	<a href="" class="elm-attach">
+																		<div class="attach-title">Страница2.jpg 200 kb</div>
+																	</a>
+																	<br>
+																	<a href="" class="elm-attach">
+																		<div class="attach-title">Страница3.jpg 200 kb</div>
+																	</a>
+																</th>
+																<td>11.12.2020</td>
+															</tr>
+															<tr class="tr-title">
+																<th colspan="2">Дополнительное образование</th>
+															</tr>
+															<tr>
+																<th>Образование</th>
+																<td>Врач</td>
+															</tr>
+															<tr>
+																<th>Выдан</th>
+																<td>Институтом</td>
+															</tr>
+															<tr>
+																<th>
+																	Дата окончания
+																	<br>
+																	<a href="" class="elm-attach">
+																		<div class="attach-title">Страница3.jpg 200 kb</div>
+																	</a>
+																</th>
+																<td>11.12.2020</td>
+															</tr>
+															<tr class="tr-title">
+																<th colspan="2">Квалификация</th>
+															</tr>
+															<tr>
+																<th>Название</th>
+																<td>1</td>
+															</tr>
+															<tr>
+																<th>
+																	Дата получения
+																	<br>
+																	<a href="" class="elm-attach">
+																		<div class="attach-title">Страница3.jpg 200 kb</div>
+																	</a>
+																</th>
+																<td>11.12.2020</td>
+															</tr>
+															<tr class="tr-title">
+																<th colspan="2">Должность</th>
+															</tr>
+															<tr>
+																<th>Клиника</th>
+																<td>Здравсити</td>
+															</tr>
+															<tr>
+																<th>Название</th>
+																<td>Врач-кардиолог</td>
+															</tr>
+															<tr>
+																<th>Дата вступления в должность</th>
+																<td>11.12.2020</td>
+															</tr>
+															<tr class="tr-title">
+																<th colspan="2">Направление деятельности</th>
+															</tr>
+															<tr>
+																<th>Название</th>
+																<td>Кардиология</td>
+															</tr>
+															<tr class="tr-sep">
+																<th>Стоимость приема</th>
+																<td><div class="elm-price" data-unit=" ₽">2500</div></td>
+															</tr>
+															<tr>
+																<th>Название</th>
+																<td>Терапия</td>
+															</tr>
+															<tr class="tr-sep">
+																<th>Стоимость приема</th>
+																<td><div class="elm-price" data-unit=" ₽">2500</div></td>
+															</tr>
+															<tr>
+																<th>Название</th>
+																<td>Психология</td>
+															</tr>
+															<tr class="tr-sep">
+																<th>Стоимость приема</th>
+																<td><div class="elm-price" data-unit=" ₽">2500</div></td>
+															</tr>
+															<tr class="tr-title">
+																<th colspan="2">Стаж деятельности</th>
+															</tr>
+															<tr>
+																<th>
+																	Кол-во лет
+																	<br>
+																	<a href="" class="elm-attach">
+																		<div class="attach-title">Страница3.jpg 200 kb</div>
+																	</a>
+																</th>
+																<td>10</td>
+															</tr>
+															<tr class="tr-sep tr-show">
+																<th>Телефон</th>
+																<td>
+																	<div class="tile-phone-number">
+																		<a href="" class="link-main phone-action js-btn-tgl" data-show="Показать номер" data-hide="Скрыть"></a>
+																		<div class="phone-number">8 (495) 135-37-22</div>
+																	</div>
+																</td>
+															</tr>
+															<tr class="tr-sep tr-show">
 																<th>Email</th>
 																<td>
 																	<div class="tile-phone-number">

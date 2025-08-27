@@ -376,12 +376,24 @@ if (calendarPopup && sliderInnerWrap) {
     popupElements.forEach((element) => element.classList.remove("popup-right"));
   }
   function popupElementsClose() {
-    togglePopupButtons.forEach((element) => {
-      if (!element.closest(".no-close")) {
-        element.classList.remove("active");
-      }
-    });
-  }
+		togglePopupButtons.forEach(element => {
+			if (window.innerWidth < 1024) {
+				if (!element.closest('.no-close-mobile') && !element.closest('.no-close')) {
+					element.classList.remove('active')
+				}
+
+			} else if  (window.innerWidth > 1023) {
+				if (!element.closest('.no-close-desktop') && !element.closest('.no-close')) {
+					element.classList.remove('active')
+				}
+			} else {
+				if (!element.closest('.no-close')) {
+					element.classList.remove('active')
+				}
+			}
+			
+		})
+	}
   function popupElementsContentPositionClass() {
     popupElements.forEach((element) => {
       let pLeft = element.offsetLeft;

@@ -175,18 +175,25 @@
                                                             <textarea class="form-input inp-main" placeholder="Укажите предварительный или  установленный диагноз"></textarea>
                                                         </div>
                                                         <div class="frm-field">
-                                                            <div class="frm-field-upload">
+                                                            <div class="frm-field-upload js-field-file">
+                                                                <input type="file" class="js-field-input">
                                                                 <div class="upload-info-wrap">
                                                                     <div class="elm-ico">
                                                                         <img src="./img/icons/cloud.svg" alt="">
                                                                     </div>
-                                                                    <div class="upload-title">Перетащите файлы сюда или нажмите для выбора</div>
-                                                                    <div class="upload-info">Поддерживаемые форматы: PDF, DOC, DOCX, JPG, PNG (до 10 МБ)</div>
+                                                                    <div class="file-info-wrap">
+                                                                        <div class="upload-title">Перетащите файлы сюда или нажмите для выбора</div>
+                                                                        <div class="upload-info">Поддерживаемые форматы: PDF, DOC, DOCX, JPG, PNG (до 10 МБ)</div>
+                                                                    </div>
                                                                 </div>
                                                                 <div class="upload-actions-wrap">
-                                                                    <a href="" class="btn">
+                                                                    <a href="" class="btn js-file-button-attach">
                                                                         <div class="button-title">Выбрать файлы</div>
                                                                     </a>
+                                                                </div>
+                                                                <div class="file-inner-wrap">
+                                                                    <div class="file-name"></div>
+                                                                    <a href="" class="btn-action-ico ico-trash button-file-del js-file-button-del"></a>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -225,14 +232,14 @@
                                         <div class="panel-form-wrap">
                                             <div class="frm-section-title">Выбрать клинику</div>
                                             <!--page-filter-box-->
-                                            <div class="page-filter-box type-compact">
+                                            <div class="page-filter-box type-compact js-popup-block">
                                                 <div class="filter-search-wrap">
                                                     <div class="frm-main-search">
                                                         <input type="text" class="form-input inp-main" placeholder="Поиск по наименованию">
                                                         <button type="submit" class="button-form btn-action-ico ico-search"></button>
                                                     </div>
                                                 </div>
-                                                <div class="filter-button-wrap">
+                                                <div class="filter-button-wrap js-btn-popup-toggle">
                                                     <a href="" class="btn button-input">
                                                         <div class="button-ico">
                                                             <img src="./img/icons/filter.svg" alt="">
@@ -240,30 +247,40 @@
                                                         <div class="button-title">Фильтры</div>
                                                     </a>
                                                 </div>
-                                                <div class="filter-actions-wrap">
-                                                    <div class="filter-action-wrap">
-                                                        <select class="form-input inp-main" required="">
-                                                            <option selected="" disabled="" hidden="" value="">Город/область</option><!--placeholder-->
-                                                            <option>Пункт списка</option>
-                                                            <option>Пункт списка</option>
-                                                            <option>Пункт списка</option>
-                                                            <option>Пункт списка</option>
-                                                        </select>
+                                                <div class="filter-actions-wrap js-popup-block">
+                                                    <div class="filter-title-wrap">
+                                                        <div class="filter-title">Фильтр</div>
                                                     </div>
-                                                    <div class="filter-action-wrap">
-                                                        <div class="frm-select-button">
-                                                            <input type="checkbox" id="button01">
-                                                            <label for="button01">Со скидкой</label>
+                                                    <div class="filter-content-wrap">
+                                                        <div class="filter-action-wrap">
+                                                            <select class="form-input inp-main" required="">
+                                                                <option selected="" disabled="" hidden="" value="">Город/область</option><!--placeholder-->
+                                                                <option>Пункт списка</option>
+                                                                <option>Пункт списка</option>
+                                                                <option>Пункт списка</option>
+                                                                <option>Пункт списка</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="filter-action-wrap">
+                                                            <div class="frm-select-button">
+                                                                <input type="checkbox" id="button01">
+                                                                <label for="button01">Со скидкой</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="filter-action-wrap">
+                                                            <select class="form-input inp-main" required="">
+                                                                <option selected="" disabled="" hidden="" value="">Цена</option><!--placeholder-->
+                                                                <option>Пункт списка</option>
+                                                                <option>Пункт списка</option>
+                                                                <option>Пункт списка</option>
+                                                                <option>Пункт списка</option>
+                                                            </select>
                                                         </div>
                                                     </div>
-                                                    <div class="filter-action-wrap">
-                                                        <select class="form-input inp-main" required="">
-                                                            <option selected="" disabled="" hidden="" value="">Цена</option><!--placeholder-->
-                                                            <option>Пункт списка</option>
-                                                            <option>Пункт списка</option>
-                                                            <option>Пункт списка</option>
-                                                            <option>Пункт списка</option>
-                                                        </select>
+                                                    <div class="filter-apply-wrap">
+                                                        <a href="" class="btn button-main js-btn-popup-close">
+                                                            <div class="button-title">Применить фильтры</div>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -310,13 +327,50 @@
                                                             <a href="" class="btn">
                                                                 <div class="button-title">Травматология</div>
                                                             </a>
-                                                            <a href="" class="btn link-main">
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Кардиология</div>
+                                                            </a>
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Ортопедия</div>
+                                                            </a>
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Онкология</div>
+                                                            </a>
+                                                            </a>
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Кардиология</div>
+                                                            </a>
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Ортопедия</div>
+                                                            </a>
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Онкология</div>
+                                                            </a>
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Неврология</div>
+                                                            </a>
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Гастроэнтерология</div>
+                                                            </a>
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Эндокринология</div>
+                                                            </a>
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Урология</div>
+                                                            </a>
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Гинекология</div>
+                                                            </a>
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Травматология</div>
+                                                            </a>
+                                                            <a href="" class="btn link-main button-tags-toggle js-btn-tgl">
                                                                 <div class="button-title">Еще 12</div>
                                                             </a>
                                                         </div>
                                                     </div>
                                                     <div class="frm-select tile-select">
-                                                        <input type="checkbox" id="select01-01">
+                                                        <input type="radio" name="select01" id="select01-01">
                                                         <label for="select01-01"></label>
                                                     </div>
                                                 </div>
@@ -362,13 +416,58 @@
                                                             <a href="" class="btn">
                                                                 <div class="button-title">Травматология</div>
                                                             </a>
-                                                            <a href="" class="btn link-main">
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Кардиология</div>
+                                                            </a>
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Ортопедия</div>
+                                                            </a>
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Онкология</div>
+                                                            </a>
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Неврология</div>
+                                                            </a>
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Гастроэнтерология</div>
+                                                            </a>
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Эндокринология</div>
+                                                            </a>
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Урология</div>
+                                                            </a>
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Гинекология</div>
+                                                            </a>
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Онкология</div>
+                                                            </a>
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Неврология</div>
+                                                            </a>
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Гастроэнтерология</div>
+                                                            </a>
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Эндокринология</div>
+                                                            </a>
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Урология</div>
+                                                            </a>
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Гинекология</div>
+                                                            </a>
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Травматология</div>
+                                                            </a>
+                                                            <a href="" class="btn link-main button-tags-toggle js-btn-tgl">
                                                                 <div class="button-title">Еще 12</div>
                                                             </a>
                                                         </div>
                                                     </div>
                                                     <div class="frm-select tile-select">
-                                                        <input type="checkbox" id="select01-02">
+                                                        <input type="radio" name="select01" id="select01-02">
                                                         <label for="select01-02"></label>
                                                     </div>
                                                 </div>
@@ -414,13 +513,49 @@
                                                             <a href="" class="btn">
                                                                 <div class="button-title">Травматология</div>
                                                             </a>
-                                                            <a href="" class="btn link-main">
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Кардиология</div>
+                                                            </a>
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Ортопедия</div>
+                                                            </a>
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Онкология</div>
+                                                            </a>
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Неврология</div>
+                                                            </a>
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Гастроэнтерология</div>
+                                                            </a>
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Онкология</div>
+                                                            </a>
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Неврология</div>
+                                                            </a>
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Гастроэнтерология</div>
+                                                            </a>
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Эндокринология</div>
+                                                            </a>
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Урология</div>
+                                                            </a>
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Гинекология</div>
+                                                            </a>
+                                                            <a href="" class="btn">
+                                                                <div class="button-title">Травматология</div>
+                                                            </a>
+                                                            <a href="" class="btn link-main button-tags-toggle js-btn-tgl">
                                                                 <div class="button-title">Еще 12</div>
                                                             </a>
                                                         </div>
                                                     </div>
                                                     <div class="frm-select tile-select">
-                                                        <input type="checkbox" id="select01-03">
+                                                        <input type="radio" name="select01" id="select01-03">
                                                         <label for="select01-03"></label>
                                                     </div>
                                                 </div>
@@ -428,7 +563,7 @@
                                             <!-- /panel item -->
                                         </div>
                                         <div class="panel-toggle-wrap">
-                                            <a href="" class="btn-action-toggle js-btn-tgl panel-button-items-toggle">
+                                            <a href="" class="btn-action-toggle panel-button-items-toggle">
                                                 <div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
                                             </a>
                                         </div>
@@ -441,14 +576,14 @@
                                         <div class="panel-form-wrap">
                                             <div class="frm-section-title">Выбрать врача</div>
                                             <!--page-filter-box-->
-                                            <div class="page-filter-box type-compact">
+                                            <div class="page-filter-box type-compact js-popup-block">
                                                 <div class="filter-search-wrap">
                                                     <div class="frm-main-search">
                                                         <input type="text" class="form-input inp-main" placeholder="Поиск по наименованию">
                                                         <button type="submit" class="button-form btn-action-ico ico-search"></button>
                                                     </div>
                                                 </div>
-                                                <div class="filter-button-wrap">
+                                                <div class="filter-button-wrap js-btn-popup-toggle">
                                                     <a href="" class="btn button-input">
                                                         <div class="button-ico">
                                                             <img src="./img/icons/filter.svg" alt="">
@@ -456,30 +591,40 @@
                                                         <div class="button-title">Фильтры</div>
                                                     </a>
                                                 </div>
-                                                <div class="filter-actions-wrap">
-                                                    <div class="filter-action-wrap">
-                                                        <select class="form-input inp-main" required="">
-                                                            <option selected="" disabled="" hidden="" value="">Город/область</option><!--placeholder-->
-                                                            <option>Пункт списка</option>
-                                                            <option>Пункт списка</option>
-                                                            <option>Пункт списка</option>
-                                                            <option>Пункт списка</option>
-                                                        </select>
+                                                <div class="filter-actions-wrap js-popup-block">
+                                                    <div class="filter-title-wrap">
+                                                        <div class="filter-title">Фильтр</div>
                                                     </div>
-                                                    <div class="filter-action-wrap">
-                                                        <div class="frm-select-button">
-                                                            <input type="checkbox" id="button01">
-                                                            <label for="button01">Со скидкой</label>
+                                                    <div class="filter-content-wrap">
+                                                        <div class="filter-action-wrap">
+                                                            <select class="form-input inp-main" required="">
+                                                                <option selected="" disabled="" hidden="" value="">Город/область</option><!--placeholder-->
+                                                                <option>Пункт списка</option>
+                                                                <option>Пункт списка</option>
+                                                                <option>Пункт списка</option>
+                                                                <option>Пункт списка</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="filter-action-wrap">
+                                                            <div class="frm-select-button">
+                                                                <input type="checkbox" id="button01">
+                                                                <label for="button01">Со скидкой</label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="filter-action-wrap">
+                                                            <select class="form-input inp-main" required="">
+                                                                <option selected="" disabled="" hidden="" value="">Цена</option><!--placeholder-->
+                                                                <option>Пункт списка</option>
+                                                                <option>Пункт списка</option>
+                                                                <option>Пункт списка</option>
+                                                                <option>Пункт списка</option>
+                                                            </select>
                                                         </div>
                                                     </div>
-                                                    <div class="filter-action-wrap">
-                                                        <select class="form-input inp-main" required="">
-                                                            <option selected="" disabled="" hidden="" value="">Цена</option><!--placeholder-->
-                                                            <option>Пункт списка</option>
-                                                            <option>Пункт списка</option>
-                                                            <option>Пункт списка</option>
-                                                            <option>Пункт списка</option>
-                                                        </select>
+                                                    <div class="filter-apply-wrap">
+                                                        <a href="" class="btn button-main js-btn-popup-close">
+                                                            <div class="button-title">Применить фильтры</div>
+                                                        </a>
                                                     </div>
                                                 </div>
                                             </div>
@@ -506,7 +651,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="frm-select tile-select">
-                                                        <input type="checkbox" id="select02-01">
+                                                        <input type="radio" name="select02" id="select02-01">
                                                         <label for="select02-01"></label>
                                                     </div>
                                                 </div>
@@ -532,7 +677,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="frm-select tile-select">
-                                                        <input type="checkbox" id="select02-02">
+                                                        <input type="radio" name="select02" id="select02-02">
                                                         <label for="select02-02"></label>
                                                     </div>
                                                 </div>
@@ -558,7 +703,7 @@
                                                         </div>
                                                     </div>
                                                     <div class="frm-select tile-select">
-                                                        <input type="checkbox" id="select02-03">
+                                                        <input type="radio" name="select02" id="select02-03">
                                                         <label for="select02-03"></label>
                                                     </div>
                                                 </div>
@@ -566,7 +711,7 @@
                                             <!-- /panel item -->
                                         </div>
                                         <div class="panel-toggle-wrap">
-                                            <a href="" class="btn-action-toggle js-btn-tgl panel-button-items-toggle">
+                                            <a href="" class="btn-action-toggle panel-button-items-toggle">
                                                 <div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
                                             </a>
                                         </div>

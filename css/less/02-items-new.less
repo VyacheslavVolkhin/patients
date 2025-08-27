@@ -239,6 +239,36 @@
 		display: flex;
 		flex-wrap: wrap;
 		gap: 5px 15px;
+		.button-tags-toggle {
+			display: none;
+		}
+		&:has(.btn:nth-child(10)) {
+
+			&:has(.button-tags-toggle) {
+				.btn {
+					&:nth-child(8) {
+						&~.btn {
+							display: none;
+							&.button-tags-toggle {
+								display: inline-flex;
+							}
+						}
+					}
+				}
+			}
+			&:has(.button-tags-toggle.active) {
+				.btn {
+					&:nth-child(8) {
+						&~.btn {
+							display: inline-flex;
+							&.button-tags-toggle {
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
 		.btn {
 			height: 24px;
 			padding: 0 7px;
@@ -430,6 +460,15 @@
 	line-height: 1.4;
 	margin-bottom: 15px;
 	flex-shrink: 0;
+	&:has(.panel-button-toggle:not(.active)) {
+		.tile-doccard-wrap {
+			.panel-table-wrap {
+				tr:not(.tr-show) {
+					display: none;
+				}
+			}
+		}
+	}
 	.panel-tiles-wrap {
 		display: block;
 		margin: 0 0 15px 0;
