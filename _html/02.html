@@ -1,0 +1,2642 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <!-- build:section head -->
+    <!-- /build -->
+    <body>
+        <!-- wrap -->
+        <div class="wrap">
+            
+            <!-- build:section header -->
+            <!-- /build -->
+			 
+
+            <!-- page -->
+			 <div class="page-full page-lk">
+				
+				<!--content-outer-wrap-->
+				<div class="content-outer-wrap filter-include">
+					
+					<!--content-wrap-->
+					<div class="content-wrap">
+
+						<!--page-title-box-->
+						<div class="page-title-box">
+							<div class="title-wrap">
+								<a href="" class="btn-action-ico ico-back section-button"></a>
+								<div class="section-title h1-title">Клиники</div>
+							</div>
+							<div class="title-wrap form-active">
+								<a href="" class="btn-action-ico ico-back section-button" onclick="document.getElementById('toggleForm').classList.remove('active');return false;"></a>
+								<div class="section-title h1-title">Добавление клиники</div>
+							</div>
+							<div class="action-wrap">
+								<a href="" class="btn button-main" onclick="document.getElementById('toggleForm').classList.add('active');return false;">
+									<div class="button-title">Добавить клинику</div>
+								</a>
+							</div>
+						</div>
+						<!--/page-title-box-->
+						
+						<!--dashboard-box-->
+						<div class="dashboard-box">
+							<div class="items-wrap items-dash">
+								<!--item wrap-->
+								<div class="item-wrap wrap-dash" id="toggleForm">
+									<div class="item-tile-panel type-fit-height section-mobile-full">
+										<div class="panel-content-wrap">
+											<form action="/" class="panel-form-wrap">
+												<div class="frm-title">Добавить клинику</div>
+												<div class="frm-section-title">Данные клиники</div>
+												<!--frm-section-->
+												<div class="frm-section">
+													<div class="frm-section-content">
+														<div class="frm-row">
+															<div class="frm-field">
+																<div class="frm-field-file js-field-file">
+																	<input type="file" class="js-field-input">
+																	<button type="button" class="btn button-clear button-file-attach js-file-button-attach">
+																		<div class="button-ico">
+																			<img src="./img/icons/attach-main.svg" alt="">
+																		</div>
+																		<span class="button-title">Логотип клиники</span>
+																	</button>
+																	<div class="file-inner-wrap">
+																		<div class="file-name"></div>
+																		<a href="" class="btn-action-ico ico-trash button-file-del js-file-button-del"></a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!--/frm-section-->
+												<!--frm-section-->
+												<div class="frm-section">
+													<div class="frm-section-content">
+														<div class="frm-row">
+															<div class="frm-field">
+																<input type="text" class="form-input inp-main" placeholder="Название клиники">
+															</div>
+															<div class="frm-field">
+																<select class="form-input inp-main" required>
+																	<option selected disabled hidden value="">Статус</option><!--placeholder-->
+																	<option>Пункт списка</option>
+																	<option>Пункт списка</option>
+																	<option>Пункт списка</option>
+																	<option>Пункт списка</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!--/frm-section-->
+												<!--frm-section-->
+												<div class="frm-section">
+													<div class="frm-section-content">
+														<div class="frm-row">
+															<div class="frm-field">
+																<input type="text" class="form-input inp-main inp-date" placeholder="Дата государственной регистрации">
+															</div>
+														</div>
+													</div>
+												</div>
+												<!--/frm-section-->
+												<!--frm-section-->
+												<div class="frm-section">
+													<div class="frm-section-content">
+														<div class="frm-row">
+															<div class="frm-field">
+																<input type="text" class="form-input inp-main" placeholder="Учредитель">
+															</div>
+															<div class="frm-field field-action">
+																<a href="" class="btn-action-add">
+																	<div class="button-title">Добавить учредителя</div>
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!--/frm-section-->
+												<!--frm-section-->
+												<div class="frm-section">
+													<div class="frm-section-content">
+														<div class="frm-row">
+															<div class="frm-field">
+																<div class="frm-field-file js-field-file">
+																	<input type="file" class="js-field-input">
+																	<button type="button" class="btn button-clear button-file-attach js-file-button-attach">
+																		<div class="button-ico">
+																			<img src="./img/icons/attach-main.svg" alt="">
+																		</div>
+																		<span class="button-title">Основные положения учётной политики </span>
+																	</button>
+																	<div class="file-inner-wrap">
+																		<div class="file-name"></div>
+																		<a href="" class="btn-action-ico ico-trash button-file-del js-file-button-del"></a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!--/frm-section-->
+												<!--frm-section-->
+												<div class="frm-section">
+													<div class="frm-section-content">
+														<div class="frm-row">
+															<div class="frm-field field-half">
+																<input type="text" class="form-input inp-main" placeholder="Номер лицензии">
+															</div>
+															<div class="frm-field field-half">
+																<input type="text" class="form-input inp-main inp-date" placeholder="Дата ">
+															</div>
+															<div class="frm-field">
+																<select class="form-input inp-main" required>
+																	<option selected disabled hidden value="">Кем выдана лицензия</option><!--placeholder-->
+																	<option>Пункт списка</option>
+																	<option>Пункт списка</option>
+																	<option>Пункт списка</option>
+																	<option>Пункт списка</option>
+																</select>
+															</div>
+															<div class="frm-field">
+																<div class="frm-field-file js-field-file">
+																	<input type="file" class="js-field-input">
+																	<button type="button" class="btn button-clear button-file-attach js-file-button-attach">
+																		<div class="button-ico">
+																			<img src="./img/icons/attach-main.svg" alt="">
+																		</div>
+																		<span class="button-title">QR-код выписки из реестра лицензий</span>
+																	</button>
+																	<div class="file-inner-wrap">
+																		<div class="file-name"></div>
+																		<a href="" class="btn-action-ico ico-trash button-file-del js-file-button-del"></a>
+																	</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!--/frm-section-->
+												<!--frm-section-->
+												<div class="frm-section">
+													<div class="frm-section-content">
+														<div class="frm-row">
+															<div class="frm-field">
+																<input type="text" class="form-input inp-main" placeholder="Адрес фактический">
+															</div>
+															<div class="frm-field">
+																<input type="text" class="form-input inp-main" placeholder="Адрес юридический">
+															</div>
+															<div class="frm-field">
+																<input type="text" class="form-input inp-main" placeholder="Номер телефона">
+															</div>
+															<div class="frm-field">
+																<input type="text" class="form-input inp-main" placeholder="Email">
+															</div>
+														</div>
+													</div>
+												</div>
+												<!--/frm-section-->
+												<div class="frm-section-title">Добавить направления деятельности</div>
+												<!--frm-section-->
+												<div class="frm-section">
+													<div class="frm-section-content">
+														<div class="frm-row">
+															<div class="frm-field">
+																<input type="text" class="form-input inp-main" placeholder="Название направление">
+															</div>
+															<div class="frm-field field-max">
+																<input type="text" class="form-input inp-main" placeholder="Стоимость приема">
+															</div>
+															<div class="frm-field">
+																<div class="form-input-text">₽ (руб.)</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!--/frm-section-->
+												<!--frm-section-->
+												<div class="frm-section">
+													<div class="frm-section-content">
+														<div class="frm-row">
+															<div class="frm-field">
+																<input type="text" class="form-input inp-main" placeholder="Заболевание">
+															</div>
+															<div class="frm-field field-max">
+																<input type="text" class="form-input inp-main" placeholder="Стоимость приема">
+															</div>
+															<div class="frm-field">
+																<div class="form-input-text">₽ (руб.)</div>
+															</div>
+															<div class="frm-field field-action">
+																<a href="" class="btn-action-add">
+																	<div class="button-title">Добавить заболевание</div>
+																</a>
+															</div>
+															<div class="frm-field field-action field-action-second">
+																<a href="" class="btn-action-add">
+																	<div class="button-title">Добавить направление деятельности</div>
+																</a>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!--/frm-section-->
+												<div class="frm-section-title">Описание</div>
+												<!--frm-section-->
+												<div class="frm-section">
+													<div class="frm-section-content">
+														<div class="frm-row">
+															<div class="frm-field">
+																<textarea class="form-input inp-main" placeholder="Текст описания не более 2000 символов"></textarea>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!--/frm-section-->
+												<div class="frm-section-title">Как добраться до клиники</div>
+												<!--frm-section-->
+												<div class="frm-section">
+													<div class="frm-section-content">
+														<div class="frm-row">
+															<div class="frm-field">
+																<textarea class="form-input inp-main" placeholder="Текст описания не более 2000 символов"></textarea>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!--/frm-section-->
+												<div class="frm-section-title">Время и дни приема</div>
+												<!--frm-section-->
+												<div class="frm-section">
+													<div class="frm-section-content">
+														<div class="frm-row">
+															<div class="frm-field">
+																<select class="form-input inp-main" required>
+																	<option selected disabled hidden value="">Будни</option><!--placeholder-->
+																	<option>Пункт списка</option>
+																	<option>Пункт списка</option>
+																	<option>Пункт списка</option>
+																	<option>Пункт списка</option>
+																</select>
+															</div>
+															<div class="frm-field">
+																<select class="form-input inp-main" required>
+																	<option selected disabled hidden value="">Интервал приема</option><!--placeholder-->
+																	<option>Пункт списка</option>
+																	<option>Пункт списка</option>
+																	<option>Пункт списка</option>
+																	<option>Пункт списка</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!--/frm-section-->
+												<!--frm-section-->
+												<div class="frm-section">
+													<div class="frm-section-content">
+														<div class="frm-row">
+															<div class="frm-field">
+																<select class="form-input inp-main" required>
+																	<option selected disabled hidden value="">Выходные</option><!--placeholder-->
+																	<option>Пункт списка</option>
+																	<option>Пункт списка</option>
+																	<option>Пункт списка</option>
+																	<option>Пункт списка</option>
+																</select>
+															</div>
+															<div class="frm-field">
+																<select class="form-input inp-main" required>
+																	<option selected disabled hidden value="">Интервал приема</option><!--placeholder-->
+																	<option>Пункт списка</option>
+																	<option>Пункт списка</option>
+																	<option>Пункт списка</option>
+																	<option>Пункт списка</option>
+																</select>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!--/frm-section-->
+												<!--frm-section-->
+												<div class="frm-section">
+													<div class="frm-section-content">
+														<div class="frm-row-submit">
+															<div class="frm-field">
+																<button type="submit" class="btn button-main">
+																	<div class="button-title">Сохранить изменения</div>
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!--/frm-section-->
+											</form>
+										</div>
+									</div>
+								</div>
+								<!--/item wrap-->
+								<!--item wrap-->
+								<div class="item-wrap wrap-dash">
+									<!-- panel item -->
+									<div class="item-tile-panel type-fit-height type-light">
+										<div class="panel-header-wrap">
+											<div class="panel-head-logo">
+												<div class="elm-photo photo-contain">
+													<img src="./img/logo.jpg" alt="">
+												</div>
+											</div>
+											<div class="panel-head-title-wrap">
+												<div class="panel-head-title">Клиника неврологии и ортопедии ЗдравКлиник на Октябрьской</div>
+												<div class="panel-head-info">Многопрофильный медицинский центр</div>
+											</div>
+										</div>
+										<div class="panel-content-wrap">
+											<div class="panel-table-wrap">
+												<table>
+													<tbody>
+														<tr>
+															<th>Дата гос. регистрации</th>
+															<td>11.12.2020</td>
+														</tr>
+														<tr>
+															<th>Учредитель</th>
+															<td>Иванов ИИ</td>
+														</tr>
+														<tr>
+															<th>Лицензия</th>
+															<td>ЛО-77-01-018297</td>
+														</tr>
+														<tr>
+															<th>Дата </th>
+															<td>11.12.2020</td>
+														</tr>
+														<tr>
+															<th>
+																Кем выдана
+																<br>
+																<a href="" class="elm-attach">
+																	<div class="attach-title">Страница1.jpg  200 kb</div>
+																</a>
+															</th>
+															<td>Кем-то</td>
+														</tr>
+														<tr>
+															<th>Адрес фактический</th>
+															<td>г. Москва, ул. Ленинский пр-т, д. 2а</td>
+														</tr>
+														<tr>
+															<th>Адрес юридический </th>
+															<td>г. Москва, ул. Ленинский пр-т, д. 2а</td>
+														</tr>
+														<tr>
+															<th>Номер телефона</th>
+															<td>+7</td>
+														</tr>
+														<tr>
+															<th>Email</th>
+															<td>+7</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<div class="panel-rows-wrap">
+												<!-- panel item -->
+												 <div class="panel-item-wrap">
+													<div class="item-tile-service-toggle">
+														<div class="tile-service-header">
+															<div class="tile-service-title">Кардиология</div>
+															<div class="tile-service-title-outer">
+																<div class="tile-service-info">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+																<div class="tile-service-info">
+																	<div class="tile-service-value">11</div>
+																	<div class="tile-service-subtitle">заболеваний</div>
+																	<div class="tile-service-actions">
+																		<a href="" class="btn-action-ico button-type-dark ico-plus-border"></a>
+																		<a href="" class="btn-action-ico button-type-dark ico-del-border"></a>
+																	</div>
+																</div>
+															</div>
+															<div class="tile-service-title-action">
+																<a href="" class="btn-action-toggle js-btn-tgl tile-service-button-toggle">
+																	<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+																</a>
+															</div>
+														</div>
+														<div class="tile-service-content">
+															<div class="tile-service-row">
+																<div class="tile-service-title">Ишемическая болезнь сердца (ИБС)</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Стенокардия</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Кардиомиопатия </div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Пороки сердца</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Воспалительные процессы</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Аритмии </div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Инфаркт</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Аневризма аорты</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Тромбозы</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Атеросклероз</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Послеоперационное наблюдение</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															
+														</div>
+													</div>
+												 </div>
+												<!-- /panel item -->
+												<!-- panel item -->
+												 <div class="panel-item-wrap">
+													<div class="item-tile-service-toggle">
+														<div class="tile-service-header">
+															<div class="tile-service-title">Ортопедия</div>
+															<div class="tile-service-title-outer">
+																<div class="tile-service-info">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+																<div class="tile-service-info">
+																	<div class="tile-service-value">11</div>
+																	<div class="tile-service-subtitle">заболеваний</div>
+																	<div class="tile-service-actions">
+																		<a href="" class="btn-action-ico button-type-dark ico-plus-border"></a>
+																		<a href="" class="btn-action-ico button-type-dark ico-del-border"></a>
+																	</div>
+																</div>
+															</div>
+															<div class="tile-service-title-action">
+																<a href="" class="btn-action-toggle js-btn-tgl tile-service-button-toggle">
+																	<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+																</a>
+															</div>
+														</div>
+														<div class="tile-service-content">
+															<div class="tile-service-row">
+																<div class="tile-service-title">Ишемическая болезнь сердца (ИБС)</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Стенокардия</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												 </div>
+												<!-- /panel item -->
+												<!-- panel item -->
+												 <div class="panel-item-wrap">
+													<div class="item-tile-service-toggle">
+														<div class="tile-service-header">
+															<div class="tile-service-title">Онкология</div>
+															<div class="tile-service-title-outer">
+																<div class="tile-service-info">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+																<div class="tile-service-info">
+																	<div class="tile-service-value">11</div>
+																	<div class="tile-service-subtitle">заболеваний</div>
+																	<div class="tile-service-actions">
+																		<a href="" class="btn-action-ico button-type-dark ico-plus-border"></a>
+																		<a href="" class="btn-action-ico button-type-dark ico-del-border"></a>
+																	</div>
+																</div>
+															</div>
+															<div class="tile-service-title-action">
+																<a href="" class="btn-action-toggle js-btn-tgl tile-service-button-toggle">
+																	<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+																</a>
+															</div>
+														</div>
+														<div class="tile-service-content">
+															<div class="tile-service-row">
+																<div class="tile-service-title">Ишемическая болезнь сердца (ИБС)</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Стенокардия</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												 </div>
+												<!-- /panel item -->
+												<!-- panel item -->
+												 <div class="panel-item-wrap">
+													<div class="item-tile-service-toggle">
+														<div class="tile-service-header">
+															<div class="tile-service-title">ЛОР</div>
+															<div class="tile-service-title-outer">
+																<div class="tile-service-info">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+																<div class="tile-service-info">
+																	<div class="tile-service-value">11</div>
+																	<div class="tile-service-subtitle">заболеваний</div>
+																	<div class="tile-service-actions">
+																		<a href="" class="btn-action-ico button-type-dark ico-plus-border"></a>
+																		<a href="" class="btn-action-ico button-type-dark ico-del-border"></a>
+																	</div>
+																</div>
+															</div>
+															<div class="tile-service-title-action">
+																<a href="" class="btn-action-toggle js-btn-tgl tile-service-button-toggle">
+																	<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+																</a>
+															</div>
+														</div>
+														<div class="tile-service-content">
+															<div class="tile-service-row">
+																<div class="tile-service-title">Ишемическая болезнь сердца (ИБС)</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Стенокардия</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												 </div>
+												<!-- /panel item -->
+												<!-- panel item -->
+												 <div class="panel-item-wrap">
+													<div class="item-tile-service-toggle">
+														<div class="tile-service-header">
+															<div class="tile-service-title">Иммунология</div>
+															<div class="tile-service-title-outer">
+																<div class="tile-service-info">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+																<div class="tile-service-info">
+																	<div class="tile-service-value">11</div>
+																	<div class="tile-service-subtitle">заболеваний</div>
+																	<div class="tile-service-actions">
+																		<a href="" class="btn-action-ico button-type-dark ico-plus-border"></a>
+																		<a href="" class="btn-action-ico button-type-dark ico-del-border"></a>
+																	</div>
+																</div>
+															</div>
+															<div class="tile-service-title-action">
+																<a href="" class="btn-action-toggle js-btn-tgl tile-service-button-toggle">
+																	<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+																</a>
+															</div>
+														</div>
+														<div class="tile-service-content">
+															<div class="tile-service-row">
+																<div class="tile-service-title">Ишемическая болезнь сердца (ИБС)</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Стенокардия</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												 </div>
+												<!-- /panel item -->
+												<!-- panel item -->
+												 <div class="panel-item-wrap">
+													<div class="item-tile-service-toggle">
+														<div class="tile-service-header">
+															<div class="tile-service-title">Офтальмология</div>
+															<div class="tile-service-title-outer">
+																<div class="tile-service-info">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+																<div class="tile-service-info">
+																	<div class="tile-service-value">11</div>
+																	<div class="tile-service-subtitle">заболеваний</div>
+																	<div class="tile-service-actions">
+																		<a href="" class="btn-action-ico button-type-dark ico-plus-border"></a>
+																		<a href="" class="btn-action-ico button-type-dark ico-del-border"></a>
+																	</div>
+																</div>
+															</div>
+															<div class="tile-service-title-action">
+																<a href="" class="btn-action-toggle js-btn-tgl tile-service-button-toggle">
+																	<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+																</a>
+															</div>
+														</div>
+														<div class="tile-service-content">
+															<div class="tile-service-row">
+																<div class="tile-service-title">Ишемическая болезнь сердца (ИБС)</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Стенокардия</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												 </div>
+												<!-- /panel item -->
+												<!-- panel item -->
+												 <div class="panel-item-wrap">
+													<div class="item-tile-service-toggle">
+														<div class="tile-service-header">
+															<div class="tile-service-title">Неврология</div>
+															<div class="tile-service-title-outer">
+																<div class="tile-service-info">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+																<div class="tile-service-info">
+																	<div class="tile-service-value">11</div>
+																	<div class="tile-service-subtitle">заболеваний</div>
+																	<div class="tile-service-actions">
+																		<a href="" class="btn-action-ico button-type-dark ico-plus-border"></a>
+																		<a href="" class="btn-action-ico button-type-dark ico-del-border"></a>
+																	</div>
+																</div>
+															</div>
+															<div class="tile-service-title-action">
+																<a href="" class="btn-action-toggle js-btn-tgl tile-service-button-toggle">
+																	<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+																</a>
+															</div>
+														</div>
+														<div class="tile-service-content">
+															<div class="tile-service-row">
+																<div class="tile-service-title">Ишемическая болезнь сердца (ИБС)</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Стенокардия</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												 </div>
+												<!-- /panel item -->
+												<!-- panel item -->
+												 <div class="panel-item-wrap">
+													<div class="item-tile-service-toggle">
+														<div class="tile-service-header">
+															<div class="tile-service-title">Гастроэнтерология</div>
+															<div class="tile-service-title-outer">
+																<div class="tile-service-info">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+																<div class="tile-service-info">
+																	<div class="tile-service-value">11</div>
+																	<div class="tile-service-subtitle">заболеваний</div>
+																	<div class="tile-service-actions">
+																		<a href="" class="btn-action-ico button-type-dark ico-plus-border"></a>
+																		<a href="" class="btn-action-ico button-type-dark ico-del-border"></a>
+																	</div>
+																</div>
+															</div>
+															<div class="tile-service-title-action">
+																<a href="" class="btn-action-toggle js-btn-tgl tile-service-button-toggle">
+																	<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+																</a>
+															</div>
+														</div>
+														<div class="tile-service-content">
+															<div class="tile-service-row">
+																<div class="tile-service-title">Ишемическая болезнь сердца (ИБС)</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Стенокардия</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												 </div>
+												<!-- /panel item -->
+												<!-- panel item -->
+												 <div class="panel-item-wrap">
+													<div class="item-tile-service-toggle">
+														<div class="tile-service-header">
+															<div class="tile-service-title">Урология</div>
+															<div class="tile-service-title-outer">
+																<div class="tile-service-info">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+																<div class="tile-service-info">
+																	<div class="tile-service-value">11</div>
+																	<div class="tile-service-subtitle">заболеваний</div>
+																	<div class="tile-service-actions">
+																		<a href="" class="btn-action-ico button-type-dark ico-plus-border"></a>
+																		<a href="" class="btn-action-ico button-type-dark ico-del-border"></a>
+																	</div>
+																</div>
+															</div>
+															<div class="tile-service-title-action">
+																<a href="" class="btn-action-toggle js-btn-tgl tile-service-button-toggle">
+																	<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+																</a>
+															</div>
+														</div>
+														<div class="tile-service-content">
+															<div class="tile-service-row">
+																<div class="tile-service-title">Ишемическая болезнь сердца (ИБС)</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Стенокардия</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												 </div>
+												<!-- /panel item -->
+												<!-- panel item -->
+												 <div class="panel-item-wrap">
+													<div class="item-tile-service-toggle">
+														<div class="tile-service-header">
+															<div class="tile-service-title">Гинекология</div>
+															<div class="tile-service-title-outer">
+																<div class="tile-service-info">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+																<div class="tile-service-info">
+																	<div class="tile-service-value">11</div>
+																	<div class="tile-service-subtitle">заболеваний</div>
+																	<div class="tile-service-actions">
+																		<a href="" class="btn-action-ico button-type-dark ico-plus-border"></a>
+																		<a href="" class="btn-action-ico button-type-dark ico-del-border"></a>
+																	</div>
+																</div>
+															</div>
+															<div class="tile-service-title-action">
+																<a href="" class="btn-action-toggle js-btn-tgl tile-service-button-toggle">
+																	<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+																</a>
+															</div>
+														</div>
+														<div class="tile-service-content">
+															<div class="tile-service-row">
+																<div class="tile-service-title">Ишемическая болезнь сердца (ИБС)</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Стенокардия</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												 </div>
+												<!-- /panel item -->
+												<!-- panel item -->
+												 <div class="panel-item-wrap">
+													<div class="item-tile-service-toggle">
+														<div class="tile-service-header">
+															<div class="tile-service-title">Травматология</div>
+															<div class="tile-service-title-outer">
+																<div class="tile-service-info">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+																<div class="tile-service-info">
+																	<div class="tile-service-value">11</div>
+																	<div class="tile-service-subtitle">заболеваний</div>
+																	<div class="tile-service-actions">
+																		<a href="" class="btn-action-ico button-type-dark ico-plus-border"></a>
+																		<a href="" class="btn-action-ico button-type-dark ico-del-border"></a>
+																	</div>
+																</div>
+															</div>
+															<div class="tile-service-title-action">
+																<a href="" class="btn-action-toggle js-btn-tgl tile-service-button-toggle">
+																	<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+																</a>
+															</div>
+														</div>
+														<div class="tile-service-content">
+															<div class="tile-service-row">
+																<div class="tile-service-title">Ишемическая болезнь сердца (ИБС)</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Стенокардия</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												 </div>
+												<!-- /panel item -->
+												<!-- panel item -->
+												 <div class="panel-item-wrap">
+													<div class="item-tile-service-toggle">
+														<div class="tile-service-header">
+															<div class="tile-service-title">Психология</div>
+															<div class="tile-service-title-outer">
+																<div class="tile-service-info">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+																<div class="tile-service-info">
+																	<div class="tile-service-value">11</div>
+																	<div class="tile-service-subtitle">заболеваний</div>
+																	<div class="tile-service-actions">
+																		<a href="" class="btn-action-ico button-type-dark ico-plus-border"></a>
+																		<a href="" class="btn-action-ico button-type-dark ico-del-border"></a>
+																	</div>
+																</div>
+															</div>
+															<div class="tile-service-title-action">
+																<a href="" class="btn-action-toggle js-btn-tgl tile-service-button-toggle">
+																	<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+																</a>
+															</div>
+														</div>
+														<div class="tile-service-content">
+															<div class="tile-service-row">
+																<div class="tile-service-title">Ишемическая болезнь сердца (ИБС)</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Стенокардия</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												 </div>
+												<!-- /panel item -->
+											</div>
+											<div class="panel-info-wrap">
+												<div class="panel-info-content">
+													<p>ЗдравКлиник на Октябрьской – узкоспециализированная клиника, в которой ведут прием травматологи, ортопеды, неврологи и вертебрологи.</p>
+													<div class="panel-info-content-hidden">
+														<p>ЗдравКлиник на Октябрьской – узкоспециализированная клиника, в которой ведут прием травматологи, ортопеды, неврологи и вертебрологи.</p>
+														<p>ЗдравКлиник на Октябрьской – узкоспециализированная клиника, в которой ведут прием травматологи, ортопеды, неврологи и вертебрологи.</p>
+														<p>ЗдравКлиник на Октябрьской – узкоспециализированная клиника, в которой ведут прием травматологи, ортопеды, неврологи и вертебрологи.</p>
+													</div>
+													<div class="panel-info-content-toggle">
+														<a href="" class="btn-action-toggle-text js-btn-tgl panel-button-toggle-texts">
+															<div class="button-title" data-show="Подробнее" data-hide="Свернуть"></div>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="panel-info-wrap">
+												<div class="panel-info-content">
+													<p class="text-light">г. Москва, ул. Ленинский пр-т, д. 2а</p>
+													<div class="elm-shedule">
+														<div class="row-title">пн-пт</div>
+														<div class="row-value">9:00 - 21:00</div>
+														<div class="row-title">сб</div>
+														<div class="row-value">9:00 - 21:00</div>
+														<div class="row-title">вс</div>
+														<div class="row-value">9:00 - 21:00</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="panel-toggle-wrap">
+											<a href="" class="btn-action-toggle js-btn-tgl panel-button-toggle active">
+												<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+											</a>
+										</div>
+										<div class="panel-actions-wrap">
+											<div class="panel-action-wrap">
+												<a href="" class="btn button-input button-small">
+													<div class="button-title">Редактировать</div>
+												</a>
+											</div>
+											<div class="panel-action-wrap">
+												<a href="" class="btn button-input button-small">
+													<div class="button-title">Оставить заявку</div>
+												</a>
+											</div>
+											<div class="panel-action-wrap">
+												<a href="" class="btn button-input button-small">
+													<div class="button-title">Задать вопрос</div>
+												</a>
+											</div>
+											<div class="panel-action-wrap">
+												<a href="" class="btn button-input-att button-small">
+													<div class="button-title">Направить пацииента</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<!-- /panel item -->
+									<!-- panel item -->
+									<div class="item-tile-panel type-fit-height type-light">
+										<div class="panel-header-wrap">
+											<div class="panel-head-logo">
+												<div class="elm-photo photo-contain">
+													<img src="./img/logo.jpg" alt="">
+												</div>
+											</div>
+											<div class="panel-head-title-wrap">
+												<div class="panel-head-title">Клиника неврологии и ортопедии ЗдравКлиник на Октябрьской</div>
+												<div class="panel-head-info">Многопрофильный медицинский центр</div>
+											</div>
+										</div>
+										<div class="panel-content-wrap">
+											<div class="panel-table-wrap">
+												<table>
+													<tbody>
+														<tr>
+															<th>Дата гос. регистрации</th>
+															<td>11.12.2020</td>
+														</tr>
+														<tr>
+															<th>Учредитель</th>
+															<td>Иванов ИИ</td>
+														</tr>
+														<tr>
+															<th>Лицензия</th>
+															<td>ЛО-77-01-018297</td>
+														</tr>
+														<tr>
+															<th>Дата </th>
+															<td>11.12.2020</td>
+														</tr>
+														<tr>
+															<th>
+																Кем выдана
+																<br>
+																<a href="" class="elm-attach">
+																	<div class="attach-title">Страница1.jpg  200 kb</div>
+																</a>
+															</th>
+															<td>Кем-то</td>
+														</tr>
+														<tr>
+															<th>Адрес фактический</th>
+															<td>г. Москва, ул. Ленинский пр-т, д. 2а</td>
+														</tr>
+														<tr>
+															<th>Адрес юридический </th>
+															<td>г. Москва, ул. Ленинский пр-т, д. 2а</td>
+														</tr>
+														<tr>
+															<th>Номер телефона</th>
+															<td>+7</td>
+														</tr>
+														<tr>
+															<th>Email</th>
+															<td>+7</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<div class="panel-rows-wrap">
+												<!-- panel item -->
+												 <div class="panel-item-wrap">
+													<div class="item-tile-service-toggle">
+														<div class="tile-service-header">
+															<div class="tile-service-title">Кардиология</div>
+															<div class="tile-service-title-outer">
+																<div class="tile-service-info">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+																<div class="tile-service-info">
+																	<div class="tile-service-value">11</div>
+																	<div class="tile-service-subtitle">заболеваний</div>
+																	<div class="tile-service-actions">
+																		<a href="" class="btn-action-ico button-type-dark ico-plus-border"></a>
+																		<a href="" class="btn-action-ico button-type-dark ico-del-border"></a>
+																	</div>
+																</div>
+															</div>
+															<div class="tile-service-title-action">
+																<a href="" class="btn-action-toggle js-btn-tgl tile-service-button-toggle">
+																	<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+																</a>
+															</div>
+														</div>
+														<div class="tile-service-content">
+															<div class="tile-service-row">
+																<div class="tile-service-title">Ишемическая болезнь сердца (ИБС)</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Стенокардия</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Кардиомиопатия </div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Пороки сердца</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Воспалительные процессы</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Аритмии </div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Инфаркт</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Аневризма аорты</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Тромбозы</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Атеросклероз</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Послеоперационное наблюдение</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															
+														</div>
+													</div>
+												 </div>
+												<!-- /panel item -->
+												<!-- panel item -->
+												 <div class="panel-item-wrap">
+													<div class="item-tile-service-toggle">
+														<div class="tile-service-header">
+															<div class="tile-service-title">Ортопедия</div>
+															<div class="tile-service-title-outer">
+																<div class="tile-service-info">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+																<div class="tile-service-info">
+																	<div class="tile-service-value">11</div>
+																	<div class="tile-service-subtitle">заболеваний</div>
+																	<div class="tile-service-actions">
+																		<a href="" class="btn-action-ico button-type-dark ico-plus-border"></a>
+																		<a href="" class="btn-action-ico button-type-dark ico-del-border"></a>
+																	</div>
+																</div>
+															</div>
+															<div class="tile-service-title-action">
+																<a href="" class="btn-action-toggle js-btn-tgl tile-service-button-toggle">
+																	<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+																</a>
+															</div>
+														</div>
+														<div class="tile-service-content">
+															<div class="tile-service-row">
+																<div class="tile-service-title">Ишемическая болезнь сердца (ИБС)</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Стенокардия</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												 </div>
+												<!-- /panel item -->
+												<!-- panel item -->
+												 <div class="panel-item-wrap">
+													<div class="item-tile-service-toggle">
+														<div class="tile-service-header">
+															<div class="tile-service-title">Онкология</div>
+															<div class="tile-service-title-outer">
+																<div class="tile-service-info">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+																<div class="tile-service-info">
+																	<div class="tile-service-value">11</div>
+																	<div class="tile-service-subtitle">заболеваний</div>
+																	<div class="tile-service-actions">
+																		<a href="" class="btn-action-ico button-type-dark ico-plus-border"></a>
+																		<a href="" class="btn-action-ico button-type-dark ico-del-border"></a>
+																	</div>
+																</div>
+															</div>
+															<div class="tile-service-title-action">
+																<a href="" class="btn-action-toggle js-btn-tgl tile-service-button-toggle">
+																	<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+																</a>
+															</div>
+														</div>
+														<div class="tile-service-content">
+															<div class="tile-service-row">
+																<div class="tile-service-title">Ишемическая болезнь сердца (ИБС)</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Стенокардия</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												 </div>
+												<!-- /panel item -->
+												<!-- panel item -->
+												 <div class="panel-item-wrap">
+													<div class="item-tile-service-toggle">
+														<div class="tile-service-header">
+															<div class="tile-service-title">ЛОР</div>
+															<div class="tile-service-title-outer">
+																<div class="tile-service-info">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+																<div class="tile-service-info">
+																	<div class="tile-service-value">11</div>
+																	<div class="tile-service-subtitle">заболеваний</div>
+																	<div class="tile-service-actions">
+																		<a href="" class="btn-action-ico button-type-dark ico-plus-border"></a>
+																		<a href="" class="btn-action-ico button-type-dark ico-del-border"></a>
+																	</div>
+																</div>
+															</div>
+															<div class="tile-service-title-action">
+																<a href="" class="btn-action-toggle js-btn-tgl tile-service-button-toggle">
+																	<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+																</a>
+															</div>
+														</div>
+														<div class="tile-service-content">
+															<div class="tile-service-row">
+																<div class="tile-service-title">Ишемическая болезнь сердца (ИБС)</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Стенокардия</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												 </div>
+												<!-- /panel item -->
+												<!-- panel item -->
+												 <div class="panel-item-wrap">
+													<div class="item-tile-service-toggle">
+														<div class="tile-service-header">
+															<div class="tile-service-title">Иммунология</div>
+															<div class="tile-service-title-outer">
+																<div class="tile-service-info">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+																<div class="tile-service-info">
+																	<div class="tile-service-value">11</div>
+																	<div class="tile-service-subtitle">заболеваний</div>
+																	<div class="tile-service-actions">
+																		<a href="" class="btn-action-ico button-type-dark ico-plus-border"></a>
+																		<a href="" class="btn-action-ico button-type-dark ico-del-border"></a>
+																	</div>
+																</div>
+															</div>
+															<div class="tile-service-title-action">
+																<a href="" class="btn-action-toggle js-btn-tgl tile-service-button-toggle">
+																	<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+																</a>
+															</div>
+														</div>
+														<div class="tile-service-content">
+															<div class="tile-service-row">
+																<div class="tile-service-title">Ишемическая болезнь сердца (ИБС)</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Стенокардия</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												 </div>
+												<!-- /panel item -->
+												<!-- panel item -->
+												 <div class="panel-item-wrap">
+													<div class="item-tile-service-toggle">
+														<div class="tile-service-header">
+															<div class="tile-service-title">Офтальмология</div>
+															<div class="tile-service-title-outer">
+																<div class="tile-service-info">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+																<div class="tile-service-info">
+																	<div class="tile-service-value">11</div>
+																	<div class="tile-service-subtitle">заболеваний</div>
+																	<div class="tile-service-actions">
+																		<a href="" class="btn-action-ico button-type-dark ico-plus-border"></a>
+																		<a href="" class="btn-action-ico button-type-dark ico-del-border"></a>
+																	</div>
+																</div>
+															</div>
+															<div class="tile-service-title-action">
+																<a href="" class="btn-action-toggle js-btn-tgl tile-service-button-toggle">
+																	<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+																</a>
+															</div>
+														</div>
+														<div class="tile-service-content">
+															<div class="tile-service-row">
+																<div class="tile-service-title">Ишемическая болезнь сердца (ИБС)</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Стенокардия</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												 </div>
+												<!-- /panel item -->
+												<!-- panel item -->
+												 <div class="panel-item-wrap">
+													<div class="item-tile-service-toggle">
+														<div class="tile-service-header">
+															<div class="tile-service-title">Неврология</div>
+															<div class="tile-service-title-outer">
+																<div class="tile-service-info">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+																<div class="tile-service-info">
+																	<div class="tile-service-value">11</div>
+																	<div class="tile-service-subtitle">заболеваний</div>
+																	<div class="tile-service-actions">
+																		<a href="" class="btn-action-ico button-type-dark ico-plus-border"></a>
+																		<a href="" class="btn-action-ico button-type-dark ico-del-border"></a>
+																	</div>
+																</div>
+															</div>
+															<div class="tile-service-title-action">
+																<a href="" class="btn-action-toggle js-btn-tgl tile-service-button-toggle">
+																	<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+																</a>
+															</div>
+														</div>
+														<div class="tile-service-content">
+															<div class="tile-service-row">
+																<div class="tile-service-title">Ишемическая болезнь сердца (ИБС)</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Стенокардия</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												 </div>
+												<!-- /panel item -->
+												<!-- panel item -->
+												 <div class="panel-item-wrap">
+													<div class="item-tile-service-toggle">
+														<div class="tile-service-header">
+															<div class="tile-service-title">Гастроэнтерология</div>
+															<div class="tile-service-title-outer">
+																<div class="tile-service-info">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+																<div class="tile-service-info">
+																	<div class="tile-service-value">11</div>
+																	<div class="tile-service-subtitle">заболеваний</div>
+																	<div class="tile-service-actions">
+																		<a href="" class="btn-action-ico button-type-dark ico-plus-border"></a>
+																		<a href="" class="btn-action-ico button-type-dark ico-del-border"></a>
+																	</div>
+																</div>
+															</div>
+															<div class="tile-service-title-action">
+																<a href="" class="btn-action-toggle js-btn-tgl tile-service-button-toggle">
+																	<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+																</a>
+															</div>
+														</div>
+														<div class="tile-service-content">
+															<div class="tile-service-row">
+																<div class="tile-service-title">Ишемическая болезнь сердца (ИБС)</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Стенокардия</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												 </div>
+												<!-- /panel item -->
+												<!-- panel item -->
+												 <div class="panel-item-wrap">
+													<div class="item-tile-service-toggle">
+														<div class="tile-service-header">
+															<div class="tile-service-title">Урология</div>
+															<div class="tile-service-title-outer">
+																<div class="tile-service-info">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+																<div class="tile-service-info">
+																	<div class="tile-service-value">11</div>
+																	<div class="tile-service-subtitle">заболеваний</div>
+																	<div class="tile-service-actions">
+																		<a href="" class="btn-action-ico button-type-dark ico-plus-border"></a>
+																		<a href="" class="btn-action-ico button-type-dark ico-del-border"></a>
+																	</div>
+																</div>
+															</div>
+															<div class="tile-service-title-action">
+																<a href="" class="btn-action-toggle js-btn-tgl tile-service-button-toggle">
+																	<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+																</a>
+															</div>
+														</div>
+														<div class="tile-service-content">
+															<div class="tile-service-row">
+																<div class="tile-service-title">Ишемическая болезнь сердца (ИБС)</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Стенокардия</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												 </div>
+												<!-- /panel item -->
+												<!-- panel item -->
+												 <div class="panel-item-wrap">
+													<div class="item-tile-service-toggle">
+														<div class="tile-service-header">
+															<div class="tile-service-title">Гинекология</div>
+															<div class="tile-service-title-outer">
+																<div class="tile-service-info">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+																<div class="tile-service-info">
+																	<div class="tile-service-value">11</div>
+																	<div class="tile-service-subtitle">заболеваний</div>
+																	<div class="tile-service-actions">
+																		<a href="" class="btn-action-ico button-type-dark ico-plus-border"></a>
+																		<a href="" class="btn-action-ico button-type-dark ico-del-border"></a>
+																	</div>
+																</div>
+															</div>
+															<div class="tile-service-title-action">
+																<a href="" class="btn-action-toggle js-btn-tgl tile-service-button-toggle">
+																	<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+																</a>
+															</div>
+														</div>
+														<div class="tile-service-content">
+															<div class="tile-service-row">
+																<div class="tile-service-title">Ишемическая болезнь сердца (ИБС)</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Стенокардия</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												 </div>
+												<!-- /panel item -->
+												<!-- panel item -->
+												 <div class="panel-item-wrap">
+													<div class="item-tile-service-toggle">
+														<div class="tile-service-header">
+															<div class="tile-service-title">Травматология</div>
+															<div class="tile-service-title-outer">
+																<div class="tile-service-info">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+																<div class="tile-service-info">
+																	<div class="tile-service-value">11</div>
+																	<div class="tile-service-subtitle">заболеваний</div>
+																	<div class="tile-service-actions">
+																		<a href="" class="btn-action-ico button-type-dark ico-plus-border"></a>
+																		<a href="" class="btn-action-ico button-type-dark ico-del-border"></a>
+																	</div>
+																</div>
+															</div>
+															<div class="tile-service-title-action">
+																<a href="" class="btn-action-toggle js-btn-tgl tile-service-button-toggle">
+																	<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+																</a>
+															</div>
+														</div>
+														<div class="tile-service-content">
+															<div class="tile-service-row">
+																<div class="tile-service-title">Ишемическая болезнь сердца (ИБС)</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Стенокардия</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												 </div>
+												<!-- /panel item -->
+												<!-- panel item -->
+												 <div class="panel-item-wrap">
+													<div class="item-tile-service-toggle">
+														<div class="tile-service-header">
+															<div class="tile-service-title">Психология</div>
+															<div class="tile-service-title-outer">
+																<div class="tile-service-info">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+																<div class="tile-service-info">
+																	<div class="tile-service-value">11</div>
+																	<div class="tile-service-subtitle">заболеваний</div>
+																	<div class="tile-service-actions">
+																		<a href="" class="btn-action-ico button-type-dark ico-plus-border"></a>
+																		<a href="" class="btn-action-ico button-type-dark ico-del-border"></a>
+																	</div>
+																</div>
+															</div>
+															<div class="tile-service-title-action">
+																<a href="" class="btn-action-toggle js-btn-tgl tile-service-button-toggle">
+																	<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+																</a>
+															</div>
+														</div>
+														<div class="tile-service-content">
+															<div class="tile-service-row">
+																<div class="tile-service-title">Ишемическая болезнь сердца (ИБС)</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Стенокардия</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												 </div>
+												<!-- /panel item -->
+											</div>
+											<div class="panel-info-wrap">
+												<div class="panel-info-content">
+													<p>ЗдравКлиник на Октябрьской – узкоспециализированная клиника, в которой ведут прием травматологи, ортопеды, неврологи и вертебрологи.</p>
+													<div class="panel-info-content-hidden">
+														<p>ЗдравКлиник на Октябрьской – узкоспециализированная клиника, в которой ведут прием травматологи, ортопеды, неврологи и вертебрологи.</p>
+														<p>ЗдравКлиник на Октябрьской – узкоспециализированная клиника, в которой ведут прием травматологи, ортопеды, неврологи и вертебрологи.</p>
+														<p>ЗдравКлиник на Октябрьской – узкоспециализированная клиника, в которой ведут прием травматологи, ортопеды, неврологи и вертебрологи.</p>
+													</div>
+													<div class="panel-info-content-toggle">
+														<a href="" class="btn-action-toggle-text js-btn-tgl panel-button-toggle-texts">
+															<div class="button-title" data-show="Подробнее" data-hide="Свернуть"></div>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="panel-info-wrap">
+												<div class="panel-info-content">
+													<p class="text-light">г. Москва, ул. Ленинский пр-т, д. 2а</p>
+													<div class="elm-shedule">
+														<div class="row-title">пн-пт</div>
+														<div class="row-value">9:00 - 21:00</div>
+														<div class="row-title">сб</div>
+														<div class="row-value">9:00 - 21:00</div>
+														<div class="row-title">вс</div>
+														<div class="row-value">9:00 - 21:00</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="panel-toggle-wrap">
+											<a href="" class="btn-action-toggle js-btn-tgl panel-button-toggle">
+												<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+											</a>
+										</div>
+										<div class="panel-actions-wrap">
+											<div class="panel-action-wrap">
+												<a href="" class="btn button-input button-small">
+													<div class="button-title">Редактировать</div>
+												</a>
+											</div>
+											<div class="panel-action-wrap">
+												<a href="" class="btn button-input button-small">
+													<div class="button-title">Оставить заявку</div>
+												</a>
+											</div>
+											<div class="panel-action-wrap">
+												<a href="" class="btn button-input button-small">
+													<div class="button-title">Задать вопрос</div>
+												</a>
+											</div>
+											<div class="panel-action-wrap">
+												<a href="" class="btn button-input-att button-small">
+													<div class="button-title">Направить пацииента</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<!-- /panel item -->
+									<!-- panel item -->
+									<div class="item-tile-panel type-fit-height type-light">
+										<div class="panel-header-wrap">
+											<div class="panel-head-logo">
+												<div class="elm-photo photo-contain">
+													<img src="./img/logo.jpg" alt="">
+												</div>
+											</div>
+											<div class="panel-head-title-wrap">
+												<div class="panel-head-title">Клиника неврологии и ортопедии ЗдравКлиник на Октябрьской</div>
+												<div class="panel-head-info">Многопрофильный медицинский центр</div>
+											</div>
+										</div>
+										<div class="panel-content-wrap">
+											<div class="panel-table-wrap">
+												<table>
+													<tbody>
+														<tr>
+															<th>Дата гос. регистрации</th>
+															<td>11.12.2020</td>
+														</tr>
+														<tr>
+															<th>Учредитель</th>
+															<td>Иванов ИИ</td>
+														</tr>
+														<tr>
+															<th>Лицензия</th>
+															<td>ЛО-77-01-018297</td>
+														</tr>
+														<tr>
+															<th>Дата </th>
+															<td>11.12.2020</td>
+														</tr>
+														<tr>
+															<th>
+																Кем выдана
+																<br>
+																<a href="" class="elm-attach">
+																	<div class="attach-title">Страница1.jpg  200 kb</div>
+																</a>
+															</th>
+															<td>Кем-то</td>
+														</tr>
+														<tr>
+															<th>Адрес фактический</th>
+															<td>г. Москва, ул. Ленинский пр-т, д. 2а</td>
+														</tr>
+														<tr>
+															<th>Адрес юридический </th>
+															<td>г. Москва, ул. Ленинский пр-т, д. 2а</td>
+														</tr>
+														<tr>
+															<th>Номер телефона</th>
+															<td>+7</td>
+														</tr>
+														<tr>
+															<th>Email</th>
+															<td>+7</td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+											<div class="panel-rows-wrap">
+												<!-- panel item -->
+												 <div class="panel-item-wrap">
+													<div class="item-tile-service-toggle">
+														<div class="tile-service-header">
+															<div class="tile-service-title">Кардиология</div>
+															<div class="tile-service-title-outer">
+																<div class="tile-service-info">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+																<div class="tile-service-info">
+																	<div class="tile-service-value">11</div>
+																	<div class="tile-service-subtitle">заболеваний</div>
+																	<div class="tile-service-actions">
+																		<a href="" class="btn-action-ico button-type-dark ico-plus-border"></a>
+																		<a href="" class="btn-action-ico button-type-dark ico-del-border"></a>
+																	</div>
+																</div>
+															</div>
+															<div class="tile-service-title-action">
+																<a href="" class="btn-action-toggle js-btn-tgl tile-service-button-toggle">
+																	<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+																</a>
+															</div>
+														</div>
+														<div class="tile-service-content">
+															<div class="tile-service-row">
+																<div class="tile-service-title">Ишемическая болезнь сердца (ИБС)</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Стенокардия</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Кардиомиопатия </div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Пороки сердца</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Воспалительные процессы</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Аритмии </div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Инфаркт</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Аневризма аорты</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Тромбозы</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Атеросклероз</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Послеоперационное наблюдение</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															
+														</div>
+													</div>
+												 </div>
+												<!-- /panel item -->
+												<!-- panel item -->
+												 <div class="panel-item-wrap">
+													<div class="item-tile-service-toggle">
+														<div class="tile-service-header">
+															<div class="tile-service-title">Ортопедия</div>
+															<div class="tile-service-title-outer">
+																<div class="tile-service-info">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+																<div class="tile-service-info">
+																	<div class="tile-service-value">11</div>
+																	<div class="tile-service-subtitle">заболеваний</div>
+																	<div class="tile-service-actions">
+																		<a href="" class="btn-action-ico button-type-dark ico-plus-border"></a>
+																		<a href="" class="btn-action-ico button-type-dark ico-del-border"></a>
+																	</div>
+																</div>
+															</div>
+															<div class="tile-service-title-action">
+																<a href="" class="btn-action-toggle js-btn-tgl tile-service-button-toggle">
+																	<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+																</a>
+															</div>
+														</div>
+														<div class="tile-service-content">
+															<div class="tile-service-row">
+																<div class="tile-service-title">Ишемическая болезнь сердца (ИБС)</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Стенокардия</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												 </div>
+												<!-- /panel item -->
+												<!-- panel item -->
+												 <div class="panel-item-wrap">
+													<div class="item-tile-service-toggle">
+														<div class="tile-service-header">
+															<div class="tile-service-title">Онкология</div>
+															<div class="tile-service-title-outer">
+																<div class="tile-service-info">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+																<div class="tile-service-info">
+																	<div class="tile-service-value">11</div>
+																	<div class="tile-service-subtitle">заболеваний</div>
+																	<div class="tile-service-actions">
+																		<a href="" class="btn-action-ico button-type-dark ico-plus-border"></a>
+																		<a href="" class="btn-action-ico button-type-dark ico-del-border"></a>
+																	</div>
+																</div>
+															</div>
+															<div class="tile-service-title-action">
+																<a href="" class="btn-action-toggle js-btn-tgl tile-service-button-toggle">
+																	<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+																</a>
+															</div>
+														</div>
+														<div class="tile-service-content">
+															<div class="tile-service-row">
+																<div class="tile-service-title">Ишемическая болезнь сердца (ИБС)</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Стенокардия</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												 </div>
+												<!-- /panel item -->
+												<!-- panel item -->
+												 <div class="panel-item-wrap">
+													<div class="item-tile-service-toggle">
+														<div class="tile-service-header">
+															<div class="tile-service-title">ЛОР</div>
+															<div class="tile-service-title-outer">
+																<div class="tile-service-info">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+																<div class="tile-service-info">
+																	<div class="tile-service-value">11</div>
+																	<div class="tile-service-subtitle">заболеваний</div>
+																	<div class="tile-service-actions">
+																		<a href="" class="btn-action-ico button-type-dark ico-plus-border"></a>
+																		<a href="" class="btn-action-ico button-type-dark ico-del-border"></a>
+																	</div>
+																</div>
+															</div>
+															<div class="tile-service-title-action">
+																<a href="" class="btn-action-toggle js-btn-tgl tile-service-button-toggle">
+																	<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+																</a>
+															</div>
+														</div>
+														<div class="tile-service-content">
+															<div class="tile-service-row">
+																<div class="tile-service-title">Ишемическая болезнь сердца (ИБС)</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Стенокардия</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												 </div>
+												<!-- /panel item -->
+												<!-- panel item -->
+												 <div class="panel-item-wrap">
+													<div class="item-tile-service-toggle">
+														<div class="tile-service-header">
+															<div class="tile-service-title">Иммунология</div>
+															<div class="tile-service-title-outer">
+																<div class="tile-service-info">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+																<div class="tile-service-info">
+																	<div class="tile-service-value">11</div>
+																	<div class="tile-service-subtitle">заболеваний</div>
+																	<div class="tile-service-actions">
+																		<a href="" class="btn-action-ico button-type-dark ico-plus-border"></a>
+																		<a href="" class="btn-action-ico button-type-dark ico-del-border"></a>
+																	</div>
+																</div>
+															</div>
+															<div class="tile-service-title-action">
+																<a href="" class="btn-action-toggle js-btn-tgl tile-service-button-toggle">
+																	<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+																</a>
+															</div>
+														</div>
+														<div class="tile-service-content">
+															<div class="tile-service-row">
+																<div class="tile-service-title">Ишемическая болезнь сердца (ИБС)</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Стенокардия</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												 </div>
+												<!-- /panel item -->
+												<!-- panel item -->
+												 <div class="panel-item-wrap">
+													<div class="item-tile-service-toggle">
+														<div class="tile-service-header">
+															<div class="tile-service-title">Офтальмология</div>
+															<div class="tile-service-title-outer">
+																<div class="tile-service-info">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+																<div class="tile-service-info">
+																	<div class="tile-service-value">11</div>
+																	<div class="tile-service-subtitle">заболеваний</div>
+																	<div class="tile-service-actions">
+																		<a href="" class="btn-action-ico button-type-dark ico-plus-border"></a>
+																		<a href="" class="btn-action-ico button-type-dark ico-del-border"></a>
+																	</div>
+																</div>
+															</div>
+															<div class="tile-service-title-action">
+																<a href="" class="btn-action-toggle js-btn-tgl tile-service-button-toggle">
+																	<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+																</a>
+															</div>
+														</div>
+														<div class="tile-service-content">
+															<div class="tile-service-row">
+																<div class="tile-service-title">Ишемическая болезнь сердца (ИБС)</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Стенокардия</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												 </div>
+												<!-- /panel item -->
+												<!-- panel item -->
+												 <div class="panel-item-wrap">
+													<div class="item-tile-service-toggle">
+														<div class="tile-service-header">
+															<div class="tile-service-title">Неврология</div>
+															<div class="tile-service-title-outer">
+																<div class="tile-service-info">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+																<div class="tile-service-info">
+																	<div class="tile-service-value">11</div>
+																	<div class="tile-service-subtitle">заболеваний</div>
+																	<div class="tile-service-actions">
+																		<a href="" class="btn-action-ico button-type-dark ico-plus-border"></a>
+																		<a href="" class="btn-action-ico button-type-dark ico-del-border"></a>
+																	</div>
+																</div>
+															</div>
+															<div class="tile-service-title-action">
+																<a href="" class="btn-action-toggle js-btn-tgl tile-service-button-toggle">
+																	<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+																</a>
+															</div>
+														</div>
+														<div class="tile-service-content">
+															<div class="tile-service-row">
+																<div class="tile-service-title">Ишемическая болезнь сердца (ИБС)</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Стенокардия</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												 </div>
+												<!-- /panel item -->
+												<!-- panel item -->
+												 <div class="panel-item-wrap">
+													<div class="item-tile-service-toggle">
+														<div class="tile-service-header">
+															<div class="tile-service-title">Гастроэнтерология</div>
+															<div class="tile-service-title-outer">
+																<div class="tile-service-info">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+																<div class="tile-service-info">
+																	<div class="tile-service-value">11</div>
+																	<div class="tile-service-subtitle">заболеваний</div>
+																	<div class="tile-service-actions">
+																		<a href="" class="btn-action-ico button-type-dark ico-plus-border"></a>
+																		<a href="" class="btn-action-ico button-type-dark ico-del-border"></a>
+																	</div>
+																</div>
+															</div>
+															<div class="tile-service-title-action">
+																<a href="" class="btn-action-toggle js-btn-tgl tile-service-button-toggle">
+																	<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+																</a>
+															</div>
+														</div>
+														<div class="tile-service-content">
+															<div class="tile-service-row">
+																<div class="tile-service-title">Ишемическая болезнь сердца (ИБС)</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Стенокардия</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												 </div>
+												<!-- /panel item -->
+												<!-- panel item -->
+												 <div class="panel-item-wrap">
+													<div class="item-tile-service-toggle">
+														<div class="tile-service-header">
+															<div class="tile-service-title">Урология</div>
+															<div class="tile-service-title-outer">
+																<div class="tile-service-info">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+																<div class="tile-service-info">
+																	<div class="tile-service-value">11</div>
+																	<div class="tile-service-subtitle">заболеваний</div>
+																	<div class="tile-service-actions">
+																		<a href="" class="btn-action-ico button-type-dark ico-plus-border"></a>
+																		<a href="" class="btn-action-ico button-type-dark ico-del-border"></a>
+																	</div>
+																</div>
+															</div>
+															<div class="tile-service-title-action">
+																<a href="" class="btn-action-toggle js-btn-tgl tile-service-button-toggle">
+																	<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+																</a>
+															</div>
+														</div>
+														<div class="tile-service-content">
+															<div class="tile-service-row">
+																<div class="tile-service-title">Ишемическая болезнь сердца (ИБС)</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Стенокардия</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												 </div>
+												<!-- /panel item -->
+												<!-- panel item -->
+												 <div class="panel-item-wrap">
+													<div class="item-tile-service-toggle">
+														<div class="tile-service-header">
+															<div class="tile-service-title">Гинекология</div>
+															<div class="tile-service-title-outer">
+																<div class="tile-service-info">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+																<div class="tile-service-info">
+																	<div class="tile-service-value">11</div>
+																	<div class="tile-service-subtitle">заболеваний</div>
+																	<div class="tile-service-actions">
+																		<a href="" class="btn-action-ico button-type-dark ico-plus-border"></a>
+																		<a href="" class="btn-action-ico button-type-dark ico-del-border"></a>
+																	</div>
+																</div>
+															</div>
+															<div class="tile-service-title-action">
+																<a href="" class="btn-action-toggle js-btn-tgl tile-service-button-toggle">
+																	<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+																</a>
+															</div>
+														</div>
+														<div class="tile-service-content">
+															<div class="tile-service-row">
+																<div class="tile-service-title">Ишемическая болезнь сердца (ИБС)</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Стенокардия</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												 </div>
+												<!-- /panel item -->
+												<!-- panel item -->
+												 <div class="panel-item-wrap">
+													<div class="item-tile-service-toggle">
+														<div class="tile-service-header">
+															<div class="tile-service-title">Травматология</div>
+															<div class="tile-service-title-outer">
+																<div class="tile-service-info">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+																<div class="tile-service-info">
+																	<div class="tile-service-value">11</div>
+																	<div class="tile-service-subtitle">заболеваний</div>
+																	<div class="tile-service-actions">
+																		<a href="" class="btn-action-ico button-type-dark ico-plus-border"></a>
+																		<a href="" class="btn-action-ico button-type-dark ico-del-border"></a>
+																	</div>
+																</div>
+															</div>
+															<div class="tile-service-title-action">
+																<a href="" class="btn-action-toggle js-btn-tgl tile-service-button-toggle">
+																	<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+																</a>
+															</div>
+														</div>
+														<div class="tile-service-content">
+															<div class="tile-service-row">
+																<div class="tile-service-title">Ишемическая болезнь сердца (ИБС)</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Стенокардия</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												 </div>
+												<!-- /panel item -->
+												<!-- panel item -->
+												 <div class="panel-item-wrap">
+													<div class="item-tile-service-toggle">
+														<div class="tile-service-header">
+															<div class="tile-service-title">Психология</div>
+															<div class="tile-service-title-outer">
+																<div class="tile-service-info">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+																<div class="tile-service-info">
+																	<div class="tile-service-value">11</div>
+																	<div class="tile-service-subtitle">заболеваний</div>
+																	<div class="tile-service-actions">
+																		<a href="" class="btn-action-ico button-type-dark ico-plus-border"></a>
+																		<a href="" class="btn-action-ico button-type-dark ico-del-border"></a>
+																	</div>
+																</div>
+															</div>
+															<div class="tile-service-title-action">
+																<a href="" class="btn-action-toggle js-btn-tgl tile-service-button-toggle">
+																	<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+																</a>
+															</div>
+														</div>
+														<div class="tile-service-content">
+															<div class="tile-service-row">
+																<div class="tile-service-title">Ишемическая болезнь сердца (ИБС)</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+															<div class="tile-service-row">
+																<div class="tile-service-title">Стенокардия</div>
+																<div class="tile-service-row-value">
+																	<div class="tile-service-value" data-unit="₽">7 586</div>
+																	<div class="tile-service-subtitle">средняя цена</div>
+																</div>
+															</div>
+														</div>
+													</div>
+												 </div>
+												<!-- /panel item -->
+											</div>
+											<div class="panel-info-wrap">
+												<div class="panel-info-content">
+													<p>ЗдравКлиник на Октябрьской – узкоспециализированная клиника, в которой ведут прием травматологи, ортопеды, неврологи и вертебрологи.</p>
+													<div class="panel-info-content-hidden">
+														<p>ЗдравКлиник на Октябрьской – узкоспециализированная клиника, в которой ведут прием травматологи, ортопеды, неврологи и вертебрологи.</p>
+														<p>ЗдравКлиник на Октябрьской – узкоспециализированная клиника, в которой ведут прием травматологи, ортопеды, неврологи и вертебрологи.</p>
+														<p>ЗдравКлиник на Октябрьской – узкоспециализированная клиника, в которой ведут прием травматологи, ортопеды, неврологи и вертебрологи.</p>
+													</div>
+													<div class="panel-info-content-toggle">
+														<a href="" class="btn-action-toggle-text js-btn-tgl panel-button-toggle-texts">
+															<div class="button-title" data-show="Подробнее" data-hide="Свернуть"></div>
+														</a>
+													</div>
+												</div>
+											</div>
+											<div class="panel-info-wrap">
+												<div class="panel-info-content">
+													<p class="text-light">г. Москва, ул. Ленинский пр-т, д. 2а</p>
+													<div class="elm-shedule">
+														<div class="row-title">пн-пт</div>
+														<div class="row-value">9:00 - 21:00</div>
+														<div class="row-title">сб</div>
+														<div class="row-value">9:00 - 21:00</div>
+														<div class="row-title">вс</div>
+														<div class="row-value">9:00 - 21:00</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="panel-toggle-wrap">
+											<a href="" class="btn-action-toggle js-btn-tgl panel-button-toggle">
+												<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+											</a>
+										</div>
+										<div class="panel-actions-wrap">
+											<div class="panel-action-wrap">
+												<a href="" class="btn button-input button-small">
+													<div class="button-title">Редактировать</div>
+												</a>
+											</div>
+											<div class="panel-action-wrap">
+												<a href="" class="btn button-input button-small">
+													<div class="button-title">Оставить заявку</div>
+												</a>
+											</div>
+											<div class="panel-action-wrap">
+												<a href="" class="btn button-input button-small">
+													<div class="button-title">Задать вопрос</div>
+												</a>
+											</div>
+											<div class="panel-action-wrap">
+												<a href="" class="btn button-input-att button-small">
+													<div class="button-title">Направить пацииента</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<!-- /panel item -->
+								</div>
+								<!--/item wrap-->
+							</div>
+						</div>
+						<!--/dashboard-box-->
+						
+					</div>
+					<!--/content-wrap-->
+
+					<!--side-wrap-->
+					<div class="side-wrap">
+						
+						<!--side-menu-box-->
+						<div class="side-menu-box">
+							<ul class="menu">
+								<li>
+									<a href="" class="btn">
+										<div class="button-ico">
+											<img src="./img/icons/menu01.svg" alt="">
+										</div>
+										<div class="button-title">Заявки</div>
+									</a>
+								</li>
+								<li>
+									<a href="" class="btn">
+										<div class="button-ico">
+											<img src="./img/icons/menu02.svg" alt="">
+										</div>
+										<div class="button-title">Пациенты/Медкарты</div>
+									</a>
+								</li>
+								<li>
+									<a href="" class="btn">
+										<div class="button-ico">
+											<img src="./img/icons/menu03.svg" alt="">
+										</div>
+										<div class="button-title">Врачи</div>
+									</a>
+								</li>
+								<li>
+									<a href="" class="btn active">
+										<div class="button-ico">
+											<img src="./img/icons/menu04.svg" alt="">
+										</div>
+										<div class="button-title">Клиники</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!--/side-menu-box-->
+
+						
+						<!--side-filter-box-->
+						<div class="side-filter-box">
+							<div class="filter-inner-wrap">
+								<div class="filter-content-wrap">
+									<div class="filter-title">Быстрый поиск</div>
+									<div class="filter-section-wrap">
+										<form action="/" class="frm-main-search">
+											<input type="text" class="form-input inp-main" placeholder="Поиск по наименованию">
+											<button type="submit" class="button-form btn-action-ico ico-search"></button>
+										</form>
+									</div>
+								</div>
+								<div class="filter-popup-wrap js-popup-wrap">
+									<a href="" class="btn-popup btn button-input js-btn-popup-toggle">
+										<div class="button-ico">
+											<img src="./img/icons/filter.svg" alt="">
+										</div>
+									</a>
+									<div class="filter-popup-content js-popup-block">
+										<div class="filter-content-wrap">
+											<div class="filter-title">Фильтр</div>
+											<div class="filter-section-wrap">
+												<div class="frm-row">
+													<div class="frm-field">
+														<select class="form-input inp-main" required>
+															<option selected disabled hidden value="">Врачи</option><!--placeholder-->
+															<option>Пункт списка</option>
+															<option>Пункт списка</option>
+															<option>Пункт списка</option>
+															<option>Пункт списка</option>
+														</select>
+													</div>
+													<div class="frm-field">
+														<select class="form-input inp-main" required>
+															<option selected disabled hidden value="">Регион</option><!--placeholder-->
+															<option>Пункт списка</option>
+															<option>Пункт списка</option>
+															<option>Пункт списка</option>
+															<option>Пункт списка</option>
+														</select>
+													</div>
+													<div class="frm-field">
+														<select class="form-input inp-main" required>
+															<option selected disabled hidden value="">Клиника</option><!--placeholder-->
+															<option>Пункт списка</option>
+															<option>Пункт списка</option>
+															<option>Пункт списка</option>
+															<option>Пункт списка</option>
+														</select>
+													</div>
+													<div class="frm-field">
+														<select class="form-input inp-main" required>
+															<option selected disabled hidden value="">Направление </option><!--placeholder-->
+															<option>Пункт списка</option>
+															<option>Пункт списка</option>
+															<option>Пункт списка</option>
+															<option>Пункт списка</option>
+														</select>
+													</div>
+													<div class="frm-field">
+														<select class="form-input inp-main" required>
+															<option selected disabled hidden value="">Заболевание</option><!--placeholder-->
+															<option>Пункт списка</option>
+															<option>Пункт списка</option>
+															<option>Пункт списка</option>
+															<option>Пункт списка</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="filter-actions-wrap">
+											<div class="frm-row">
+												<div class="frm-field">
+													<a href="" class="btn button-main">
+														<div class="button-title">Применить фильтры</div>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--/side-filter-box-->
+						
+					</div>
+					<!--/side-wrap-->
+					
+				</div>
+				<!--/content-outer-wrap-->
+				
+            </div>
+            <!-- /page -->
+            
+            <!-- build:section footer -->
+            <!-- /build -->
+            
+        </div>
+        <!-- /wrap -->
+
+        <!-- build:section scripts -->
+        <!-- /build -->
+    </body>
+</html>
+

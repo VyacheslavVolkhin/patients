@@ -1,0 +1,1767 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Главная</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/fancybox.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <script src="./js/chart.js"></script>
+    <script src="./js/swiper-bundle.min.js" defer></script>
+    <script src="./js/fancybox.umd.js" defer></script>
+    <script src="./js/scripts.js" defer></script>
+</head>
+
+<body>
+    <!-- wrap -->
+    <div class="wrap">
+
+        <!-- header -->
+        <header class="header">
+            <div class="inner-wrap">
+                <div class="logo-inner-wrap">
+                    <a href="" class="logo">
+                        <img src="./img/main/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="menu-inner-wrap popup-menu-wrap js-popup-wrap">
+                    <a href="" class="btn-popup btn-action-ico ico-menu button-active-close js-btn-popup-toggle"></a>
+                    <div class="popup-content-block js-popup-block">
+                        <div class="menu-wrap">
+                            <ul class="menu">
+                                <li>
+                                    <a href="" class="btn-menu active">
+                                        <div class="button-title">Заявки</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn-menu">
+                                        <div class="button-title">Арбитраж</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn-menu">
+                                        <div class="button-title">Переписка</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="actions-inner-wrap">
+                            <div class="action-wrap">
+                                <a href="" class="btn-action-ico ico-notify"></a>
+                            </div>
+                            <div class="user-wrap">
+                                <a href="" class="elm-photo photo-cover">
+                                    <img src="./img/main/user.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- /header -->
+
+        <!--actions-panel-box-->
+        <div class="actions-panel-box cnt-section">
+            <div class="inner-wrap">
+                <div class="buttons-inner-wrap">
+                    <ul class="menu">
+                        <li>
+                            <a href="" class="btn button-light">
+                                <div class="button-ico">
+                                    <img src="./img/icons/inbox.svg" alt="">
+                                </div>
+                                <div class="button-title">Входящие заявки</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="btn button-light active">
+                                <div class="button-ico">
+                                    <img src="./img/icons/outbox.svg" alt="">
+                                </div>
+                                <div class="button-title">Исходящие</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="btn button-light">
+                                <div class="button-ico">
+                                    <img src="./img/icons/favs.svg" alt="">
+                                </div>
+                                <div class="button-title">Избранные</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="btn button-light">
+                                <div class="button-ico">
+                                    <img src="./img/icons/archive.svg" alt="">
+                                </div>
+                                <div class="button-title">Архив</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="" class="btn button-light">
+                                <div class="button-ico">
+                                    <img src="./img/icons/trash.svg" alt="">
+                                </div>
+                                <div class="button-title">Корзина</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="actions-inner-wrap">
+                    <ul class="menu">
+                        <li>
+                            <div class="frm-select-button js-popup-wrap">
+                                <a href="" class="btn button-light button-arrow js-btn-popup-toggle">
+                                    <div class="button-title">Таблица</div>
+                                </a>
+                                <div class="select-content-block dropdown-box js-popup-block">
+                                    <ul class="menu">
+                                        <li>
+                                            <a href="" class="btn-action-menu">
+                                                <div class="button-title">Календарь</div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="btn-action-menu active">
+                                                <div class="button-title">Таблица</div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-search js-popup-wrap">
+                            <a href="" class="btn button-light btn-popup js-btn-popup-toggle">
+                                <div class="button-ico">
+                                    <img src="./img/icons/search.svg" alt="">
+                                </div>
+                                <div class="button-title">Найти</div>
+                            </a>
+                            <div class="popup-content-block js-popup-block">
+                                <form action="/" class="frm-main-search">
+                                    <div class="field-input">
+                                        <input type="text" class="form-input" placeholder="Найти в заявках">
+                                    </div>
+                                    <div class="field-button-submit">
+                                        <button type="submit" class="btn">
+                                            <div class="button-ico">
+                                                <img src="./img/icons/search.svg" alt="">
+                                            </div>
+                                        </button>
+                                    </div>
+                                    <div class="field-button-close">
+                                        <a href="" class="btn button-light js-btn-popup-close">
+                                            <div class="button-ico">
+                                                <img src="./img/icons/close.svg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                        <li class="menu-filter js-popup-wrap">
+                            <a href="" class="btn button-light btn-popup js-btn-popup-toggle">
+                                <div class="button-ico">
+                                    <img src="./img/icons/filter.svg" alt="">
+                                </div>
+                            </a>
+                            <div class="popup-content-block dropdown-box js-popup-block">
+                                <div class="popup-title-wrap">
+                                    <div class="popup-title">Настройки вида</div>
+                                    <div class="popup-title-action">
+                                        <a href="" class="btn button-clear js-btn-popup-close btn-popup-close">
+                                            <div class="button-ico">
+                                                <img src="./img/icons/close.svg" alt="">
+                                            </div>
+                                            <div class="button-title">Закрыть</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="popup-content-wrap">
+                                    <div class="popup-section-wrap">
+                                        <div class="popup-section-content">
+                                            <div class="frm-select-toggle">
+                                                <input type="checkbox" id="filter01-01" checked>
+                                                <label for="filter01-01">Бесконечный скролл</label>
+                                            </div>
+                                            <div class="frm-select-toggle">
+                                                <input type="checkbox" id="filter01-02">
+                                                <label for="filter01-02">Открывать всегда вид календаря</label>
+                                            </div>
+                                            <div class="frm-select-toggle">
+                                                <input type="checkbox" id="filter01-03" checked>
+                                                <label for="filter01-03">Цветные статусы</label>
+                                            </div>
+                                            <div class="frm-select-toggle">
+                                                <input type="checkbox" id="filter01-04">
+                                                <label for="filter01-04">Сокращенное название заявок</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="popup-section-wrap">
+                                        <div class="popup-section-title">Колонки:</div>
+                                        <div class="popup-section-content">
+                                            <div class="frm-select">
+                                                <input type="checkbox" id="filter02-01" checked>
+                                                <label for="filter02-01">Кому клиника</label>
+                                            </div>
+                                            <div class="frm-select">
+                                                <input type="checkbox" id="filter02-02">
+                                                <label for="filter02-02">Кому врач</label>
+                                            </div>
+                                            <div class="frm-select">
+                                                <input type="checkbox" id="filter02-03" checked>
+                                                <label for="filter02-03">Заявка на услугу </label>
+                                            </div>
+                                            <div class="frm-select">
+                                                <input type="checkbox" id="filter02-04" checked>
+                                                <label for="filter02-04">Пациент</label>
+                                            </div>
+                                            <div class="frm-select">
+                                                <input type="checkbox" id="filter02-05" checked>
+                                                <label for="filter02-05">Статус</label>
+                                            </div>
+                                            <div class="frm-select">
+                                                <input type="checkbox" id="filter02-06" checked>
+                                                <label for="filter02-06">Сумма в ₽</label>
+                                            </div>
+                                            <div class="frm-select">
+                                                <input type="checkbox" id="filter02-07" checked>
+                                                <label for="filter02-07">Дата получения заявки</label>
+                                            </div>
+                                            <div class="frm-select">
+                                                <input type="checkbox" id="filter02-08" checked>
+                                                <label for="filter02-08">Дата открытия заявки</label>
+                                            </div>
+                                            <div class="frm-select">
+                                                <input type="checkbox" id="filter02-09" checked>
+                                                <label for="filter02-09">Дата закрытия заявки</label>
+                                            </div>
+                                            <div class="frm-select">
+                                                <input type="checkbox" id="filter02-10" checked>
+                                                <label for="filter02-10">Арбитраж</label>
+                                            </div>
+                                            <div class="frm-select">
+                                                <input type="checkbox" id="filter02-11" checked>
+                                                <label for="filter02-11">Сообщения в заявке</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="menu-add js-popup-wrap">
+                            <a href="" class="btn btn-popup button-alert button-arrow js-btn-popup-toggle">
+                                <div class="button-ico">
+                                    <img src="./img/icons/edit.svg" alt="">
+                                </div>
+                                <div class="button-title">Добавить</div>
+                            </a>
+                            <div class="popup-content-block dropdown-box js-popup-block">
+                                <div class="popup-title-wrap">
+                                    <div class="popup-title">Новая заявка</div>
+                                    <div class="popup-title-action">
+                                        <a href="" class="btn button-clear js-btn-popup-close btn-popup-close">
+                                            <div class="button-ico">
+                                                <img src="./img/icons/close.svg" alt="">
+                                            </div>
+                                            <div class="button-title">Закрыть</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="popup-content-wrap">
+                                    <div class="popup-section-wrap">
+                                        <div class="popup-section-content">
+                                            <form action="/" class="frm-main-order">
+                                                <div class="frm-sections-wrap">
+                                                    <!-- section -->
+                                                    <div class="frm-section-wrap">
+                                                        <div class="frm-section-title">Принимающая сторона</div>
+                                                        <div class="frm-section-content">
+                                                            <div class="frm-row">
+                                                                <div class="frm-field">
+                                                                    <select class="form-input" required>
+                                                                        <option selected disabled hidden value="">Заявка на</option><!--placeholder-->
+                                                                        <option>Пункт списка</option>
+                                                                        <option>Пункт списка</option>
+                                                                        <option>Пункт списка</option>
+                                                                        <option>Пункт списка</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="frm-field">
+                                                                    <textarea class="form-input" placeholder="Подробное описание (необязательно)"></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /section -->
+                                                    <!-- section -->
+                                                    <div class="frm-section-wrap">
+                                                        <div class="frm-section-title">Принимающая сторона</div>
+                                                        <div class="frm-section-content">
+                                                            <div class="frm-row">
+                                                                <div class="frm-field">
+                                                                    <select class="form-input" required>
+                                                                        <option selected disabled hidden value="">Клиника</option><!--placeholder-->
+                                                                        <option>Пункт списка</option>
+                                                                        <option>Пункт списка</option>
+                                                                        <option>Пункт списка</option>
+                                                                        <option>Пункт списка</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="frm-field">
+                                                                    <select class="form-input" required disabled>
+                                                                        <option selected disabled hidden value="">Отделение (Сначало выберите клинику)</option><!--placeholder-->
+                                                                        <option>Пункт списка</option>
+                                                                        <option>Пункт списка</option>
+                                                                        <option>Пункт списка</option>
+                                                                        <option>Пункт списка</option>
+                                                                    </select>
+                                                                </div>
+                                                                <div class="frm-field">
+                                                                    <select class="form-input" required disabled>
+                                                                        <option selected disabled hidden value="">Доктор (Сначало выберите отделение)</option><!--placeholder-->
+                                                                        <option>Пункт списка</option>
+                                                                        <option>Пункт списка</option>
+                                                                        <option>Пункт списка</option>
+                                                                        <option>Пункт списка</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /section -->
+                                                    <!-- section -->
+                                                    <div class="frm-section-wrap">
+                                                        <div class="frm-section-title">Пациент</div>
+                                                        <div class="frm-section-content">
+                                                            <div class="frm-row">
+                                                                <div class="frm-field">
+                                                                    <select class="form-input" required disabled>
+                                                                        <option selected disabled hidden value="">Пациент (выберите или ввдите по ID или ФИО)</option><!--placeholder-->
+                                                                        <option>Пункт списка</option>
+                                                                        <option>Пункт списка</option>
+                                                                        <option>Пункт списка</option>
+                                                                        <option>Пункт списка</option>
+                                                                    </select>
+                                                                </div>
+
+                                                                <div class="frm-field">
+                                                                    <a href="" class="btn button-light">
+                                                                        <div class="button-ico ico-add">
+                                                                            <img src="./img/icons/add.svg" alt="">
+                                                                        </div>
+                                                                        <div class="button-title">Новый пациент</div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /section -->
+                                                    <!-- section -->
+                                                    <div class="frm-section-wrap">
+                                                        <div class="frm-section-title">Финансы</div>
+                                                        <div class="frm-section-content">
+                                                            <div class="frm-row">
+                                                                <div class="frm-field">
+                                                                    <input type="text" class="form-input" placeholder="Сумма заявки">
+                                                                </div>
+                                                                <div class="frm-field">
+                                                                    <input type="text" class="form-input" placeholder="Сумма обязательной предоплаты (если есть)">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- /section -->
+                                                </div>
+                                                <div class="frm-row-submit">
+                                                    <div class="frm-field">
+                                                        <button type="submit" class="btn button-alert">
+                                                            <div class="button-ico">
+                                                                <img src="./img/icons/edit.svg" alt="">
+                                                            </div>
+                                                            <div class="button-title">Разместить новую заявку</div>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--/actions-panel-box-->
+
+        <!-- page -->
+        <div class="page-full">
+
+            <!--table-box-->
+            <div class="table-box">
+                <div class="tbl-inner-wrap">
+                    <table>
+                        <colgroup>
+                            <col class="col01">
+                            <col class="col02">
+                            <col class="col03">
+                            <col class="col04">
+                            <col class="col05">
+                            <col class="col06 text-right mobile-small">
+                            <col class="col07 mobile-small">
+                            <col class="col08 mobile-small">
+                            <col class="col09 mobile-small">
+                            <col class="col10">
+                            <col class="col11">
+                        </colgroup>
+                        <thead>
+                            <tr data-href="/order.html">
+                                <th>
+                                    <div class="frm-select inp-clear">
+                                        <input type="checkbox" id="table-all">
+                                        <label for="table-all"></label>
+                                    </div>
+                                </th>
+                                <th>
+                                    <div class="th-title">Кому</div>
+                                    <a href="" class="btn-action-ico ico-sort tbl-button-sort"></a>
+                                </th>
+                                <th>
+                                    <div class="th-title">Заявка на</div>
+                                    <a href="" class="btn-action-ico ico-sort tbl-button-sort"></a>
+                                </th>
+                                <th>
+                                    <div class="th-title">Пациент</div>
+                                    <a href="" class="btn-action-ico ico-sort tbl-button-sort"></a>
+                                </th>
+                                <th>
+                                    <div class="th-title">Статус</div>
+                                    <a href="" class="btn-action-ico ico-sort tbl-button-sort"></a>
+                                </th>
+                                <th>
+                                    <div class="th-title">Сумма в&nbsp;₽</div>
+                                    <a href="" class="btn-action-ico ico-sort tbl-button-sort"></a>
+                                </th>
+                                <th>
+                                    <div class="th-title">Получено</div>
+                                    <a href="" class="btn-action-ico ico-sort tbl-button-sort"></a>
+                                </th>
+                                <th>
+                                    <div class="th-title">Заявка <br> открыта</div>
+                                    <a href="" class="btn-action-ico ico-sort tbl-button-sort"></a>
+                                </th>
+                                <th>
+                                    <div class="th-title">Заявка <br> закрыта</div>
+                                    <a href="" class="btn-action-ico ico-sort tbl-button-sort"></a>
+                                </th>
+                                <th>
+                                    <div class="th-title">Арбитраж</div>
+                                    <a href="" class="btn-action-ico ico-sort tbl-button-sort"></a>
+                                </th>
+                                <th>
+                                    <div class="th-title">Сооб.</div>
+                                    <a href="" class="btn-action-ico ico-sort tbl-button-sort"></a>
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- tr -->
+                            <tr data-href="/order.html">
+                                <td>
+                                    <div class="frm-select inp-clear">
+                                        <input type="checkbox" id="table-02">
+                                        <label for="table-02"></label>
+                                    </div>
+                                </td>
+                                <td data-title="Кому">
+                                    <div class="td-title">Свердловская Больница №2</div>
+                                </td>
+                                <td data-title="Заявка на">
+                                    <div class="td-title">Прием (осмотр, консультация) врача-аллерголога иммунолога первичный</div>
+                                </td>
+                                <td data-title="Пациент">
+                                    <div class="td-title">Воронцов И.П.</div>
+                                </td>
+                                <td data-title="Статус">
+                                    <div class="td-title td-title-small text-upper text-violet">В ожидании пациента</div>
+                                </td>
+                                <td data-title="Сумма в ₽">
+                                    <div class="td-title td-price">6 450</div>
+                                </td>
+                                <td data-title="Получено">
+                                    <div class="td-title">23 февр. </div>
+                                </td>
+                                <td data-title="Заявка открыта">
+                                    <div class="td-title">28 февр. </div>
+                                </td>
+                                <td data-title="Заявка закрыта">
+                                    <div class="td-title">23 февр. </div>
+                                </td>
+                                <td>
+                                    <div class="td-ico-wrap">-</div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <!-- end tr -->
+                            <!-- tr -->
+                            <tr data-href="/order.html">
+                                <td>
+                                    <div class="frm-select inp-clear">
+                                        <input type="checkbox" id="table-03">
+                                        <label for="table-03"></label>
+                                    </div>
+                                </td>
+                                <td data-title="Кому">
+                                    <div class="td-title">Клиника Екатерининская</div>
+                                </td>
+                                <td data-title="Заявка на">
+                                    <div class="td-title">Комплексное ультразвуковое исследование внутренних органов (мочевыделительная система)</div>
+                                </td>
+                                <td data-title="Пациент">
+                                    <div class="td-title">Константинов А.В.</div>
+                                </td>
+                                <td data-title="Статус">
+                                    <div class="td-title td-title-small text-upper text-green">Отправлена</div>
+                                </td>
+                                <td data-title="Сумма в ₽">
+                                    <div class="td-title td-price">33 850</div>
+                                </td>
+                                <td data-title="Получено">
+                                    <div class="td-title">24 февр. </div>
+                                </td>
+                                <td data-title="Заявка открыта">
+                                    <div class="td-title">28 февр. </div>
+                                </td>
+                                <td data-title="Заявка закрыта">
+                                    <div class="td-title">23 февр. </div>
+                                </td>
+                                <td>
+                                    <div class="td-ico-wrap">-</div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <!-- end tr -->
+                            <!-- tr -->
+                            <tr data-href="/order.html">
+                                <td>
+                                    <div class="frm-select inp-clear">
+                                        <input type="checkbox" id="table-04">
+                                        <label for="table-04"></label>
+                                    </div>
+                                </td>
+                                <td data-title="Кому">
+                                    <div class="td-title">Свердловская Больница №2</div>
+                                </td>
+                                <td data-title="Заявка на">
+                                    <div class="td-title">Прием (осмотр, консультация) врача-аллерголога иммунолога первичный</div>
+                                </td>
+                                <td data-title="Пациент">
+                                    <div class="td-title">Воронцов И.П.</div>
+                                </td>
+                                <td data-title="Статус">
+                                    <div class="td-title td-title-small text-upper text-violet">В ожидании пациента</div>
+                                </td>
+                                <td data-title="Сумма в ₽">
+                                    <div class="td-title td-price">6 450</div>
+                                </td>
+                                <td data-title="Получено">
+                                    <div class="td-title">23 февр. </div>
+                                </td>
+                                <td data-title="Заявка открыта">
+                                    <div class="td-title">28 февр. </div>
+                                </td>
+                                <td data-title="Заявка закрыта">
+                                    <div class="td-title">23 февр. </div>
+                                </td>
+                                <td>
+                                    <div class="td-ico-wrap">-</div>
+                                </td>
+                                <td>
+                                    <div class="td-action">
+                                        <a href="" class="btn button-vsmall button-dashed js-btn-chat-open">
+                                            <div class="button-title">12</div>
+                                            <div class="button-ico">
+                                                <img src="./img/icons/outbox.svg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- end tr -->
+                            <!-- tr -->
+                            <tr data-href="/order.html">
+                                <td>
+                                    <div class="frm-select inp-clear">
+                                        <input type="checkbox" id="table-05">
+                                        <label for="table-05"></label>
+                                    </div>
+                                </td>
+                                <td data-title="Кому">
+                                    <div class="td-title">Клиника Екатерининская</div>
+                                </td>
+                                <td data-title="Заявка на">
+                                    <div class="td-title">Комплексное ультразвуковое исследование внутренних органов (мочевыделительная система)</div>
+                                </td>
+                                <td data-title="Пациент">
+                                    <div class="td-title">Константинов А.В.</div>
+                                </td>
+                                <td data-title="Статус">
+                                    <div class="td-title td-title-small text-upper text-green">Отправлена</div>
+                                </td>
+                                <td data-title="Сумма в ₽">
+                                    <div class="td-title td-price">33 850</div>
+                                </td>
+                                <td data-title="Получено">
+                                    <div class="td-title">24 февр. </div>
+                                </td>
+                                <td data-title="Заявка открыта">
+                                    <div class="td-title">28 февр. </div>
+                                </td>
+                                <td data-title="Заявка закрыта">
+                                    <div class="td-title">23 февр. </div>
+                                </td>
+                                <td>
+                                    <div class="td-ico-wrap">-</div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <!-- end tr -->
+                            <!-- tr -->
+                            <tr data-href="/order.html">
+                                <td>
+                                    <div class="frm-select inp-clear">
+                                        <input type="checkbox" id="table-06">
+                                        <label for="table-06"></label>
+                                    </div>
+                                </td>
+                                <td data-title="Кому">
+                                    <div class="td-title">Свердловская Больница №2</div>
+                                </td>
+                                <td data-title="Заявка на">
+                                    <div class="td-title">Прием (осмотр, консультация) врача-аллерголога иммунолога первичный</div>
+                                </td>
+                                <td data-title="Пациент">
+                                    <div class="td-title">Воронцов И.П.</div>
+                                </td>
+                                <td data-title="Статус">
+                                    <div class="td-title td-title-small text-upper text-violet">В ожидании пациента</div>
+                                </td>
+                                <td data-title="Сумма в ₽">
+                                    <div class="td-title td-price">6 450</div>
+                                </td>
+                                <td data-title="Получено">
+                                    <div class="td-title">23 февр. </div>
+                                </td>
+                                <td data-title="Заявка открыта">
+                                    <div class="td-title">28 февр. </div>
+                                </td>
+                                <td data-title="Заявка закрыта">
+                                    <div class="td-title">23 февр. </div>
+                                </td>
+                                <td>
+                                    <div class="td-ico-wrap">-</div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <!-- end tr -->
+                            <!-- tr -->
+                            <tr data-href="/order.html">
+                                <td>
+                                    <div class="frm-select inp-clear">
+                                        <input type="checkbox" id="table-07">
+                                        <label for="table-07"></label>
+                                    </div>
+                                </td>
+                                <td data-title="Кому">
+                                    <div class="td-title">Клиника Екатерининская</div>
+                                </td>
+                                <td data-title="Заявка на">
+                                    <div class="td-title">Комплексное ультразвуковое исследование внутренних органов (мочевыделительная система)</div>
+                                </td>
+                                <td data-title="Пациент">
+                                    <div class="td-title">Константинов А.В.</div>
+                                </td>
+                                <td data-title="Статус">
+                                    <div class="td-title td-title-small text-upper text-green">Отправлена</div>
+                                </td>
+                                <td data-title="Сумма в ₽">
+                                    <div class="td-title td-price">33 850</div>
+                                </td>
+                                <td data-title="Получено">
+                                    <div class="td-title">24 февр. </div>
+                                </td>
+                                <td data-title="Заявка открыта">
+                                    <div class="td-title">28 февр. </div>
+                                </td>
+                                <td data-title="Заявка закрыта">
+                                    <div class="td-title">23 февр. </div>
+                                </td>
+                                <td>
+                                    <div class="td-ico-wrap">-</div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <!-- end tr -->
+                            <!-- tr -->
+                            <tr data-href="/order.html">
+                                <td>
+                                    <div class="frm-select inp-clear">
+                                        <input type="checkbox" id="table-08">
+                                        <label for="table-08"></label>
+                                    </div>
+                                </td>
+                                <td data-title="Кому">
+                                    <div class="td-title">Свердловская Больница №2</div>
+                                </td>
+                                <td data-title="Заявка на">
+                                    <div class="td-title">Прием (осмотр, консультация) врача-аллерголога иммунолога первичный</div>
+                                </td>
+                                <td data-title="Пациент">
+                                    <div class="td-title">Воронцов И.П.</div>
+                                </td>
+                                <td data-title="Статус">
+                                    <div class="td-title td-title-small text-upper text-violet">В ожидании пациента</div>
+                                </td>
+                                <td data-title="Сумма в ₽">
+                                    <div class="td-title td-price">6 450</div>
+                                </td>
+                                <td data-title="Получено">
+                                    <div class="td-title">23 февр. </div>
+                                </td>
+                                <td data-title="Заявка открыта">
+                                    <div class="td-title">28 февр. </div>
+                                </td>
+                                <td data-title="Заявка закрыта">
+                                    <div class="td-title">23 февр. </div>
+                                </td>
+                                <td>
+                                    <div class="td-ico-wrap">-</div>
+                                </td>
+                                <td>
+                                    <div class="td-action">
+                                        <a href="" class="btn button-vsmall button-dashed js-btn-chat-open">
+                                            <div class="button-title">9</div>
+                                            <div class="button-ico">
+                                                <img src="./img/icons/outbox.svg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- end tr -->
+                            <!-- tr -->
+                            <tr data-href="/order.html">
+                                <td>
+                                    <div class="frm-select inp-clear">
+                                        <input type="checkbox" id="table-09">
+                                        <label for="table-09"></label>
+                                    </div>
+                                </td>
+                                <td data-title="Кому">
+                                    <div class="td-title">Клиника Екатерининская</div>
+                                </td>
+                                <td data-title="Заявка на">
+                                    <div class="td-title">Комплексное ультразвуковое исследование внутренних органов (мочевыделительная система)</div>
+                                </td>
+                                <td data-title="Пациент">
+                                    <div class="td-title">Константинов А.В.</div>
+                                </td>
+                                <td data-title="Статус">
+                                    <div class="td-title td-title-small text-upper text-green">Отправлена</div>
+                                </td>
+                                <td data-title="Сумма в ₽">
+                                    <div class="td-title td-price">33 850</div>
+                                </td>
+                                <td data-title="Получено">
+                                    <div class="td-title">24 февр. </div>
+                                </td>
+                                <td data-title="Заявка открыта">
+                                    <div class="td-title">28 февр. </div>
+                                </td>
+                                <td data-title="Заявка закрыта">
+                                    <div class="td-title">23 февр. </div>
+                                </td>
+                                <td>
+                                    <div class="td-ico-wrap">
+                                        <div class="elm-ico">
+                                            <img src="./img/icons/alert.svg" alt="">
+                                        </div>
+                                    </div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <!-- end tr -->
+                            <!-- tr -->
+                            <tr data-href="/order.html">
+                                <td>
+                                    <div class="frm-select inp-clear">
+                                        <input type="checkbox" id="table-10">
+                                        <label for="table-10"></label>
+                                    </div>
+                                </td>
+                                <td data-title="Кому">
+                                    <div class="td-title">Свердловская Больница №2</div>
+                                </td>
+                                <td data-title="Заявка на">
+                                    <div class="td-title">Прием (осмотр, консультация) врача-аллерголога иммунолога первичный</div>
+                                </td>
+                                <td data-title="Пациент">
+                                    <div class="td-title">Воронцов И.П.</div>
+                                </td>
+                                <td data-title="Статус">
+                                    <div class="td-title td-title-small text-upper text-violet">В ожидании пациента</div>
+                                </td>
+                                <td data-title="Сумма в ₽">
+                                    <div class="td-title td-price">6 450</div>
+                                </td>
+                                <td data-title="Получено">
+                                    <div class="td-title">23 февр. </div>
+                                </td>
+                                <td data-title="Заявка открыта">
+                                    <div class="td-title">28 февр. </div>
+                                </td>
+                                <td data-title="Заявка закрыта">
+                                    <div class="td-title">23 февр. </div>
+                                </td>
+                                <td>
+                                    <div class="td-ico-wrap">-</div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <!-- end tr -->
+                            <!-- tr -->
+                            <tr data-href="/order.html">
+                                <td>
+                                    <div class="frm-select inp-clear">
+                                        <input type="checkbox" id="table-11">
+                                        <label for="table-11"></label>
+                                    </div>
+                                </td>
+                                <td data-title="Кому">
+                                    <div class="td-title">Клиника Екатерининская</div>
+                                </td>
+                                <td data-title="Заявка на">
+                                    <div class="td-title">Комплексное ультразвуковое исследование внутренних органов (мочевыделительная система)</div>
+                                </td>
+                                <td data-title="Пациент">
+                                    <div class="td-title">Константинов А.В.</div>
+                                </td>
+                                <td data-title="Статус">
+                                    <div class="td-title td-title-small text-upper text-green">Отправлена</div>
+                                </td>
+                                <td data-title="Сумма в ₽">
+                                    <div class="td-title td-price">33 850</div>
+                                </td>
+                                <td data-title="Получено">
+                                    <div class="td-title">24 февр. </div>
+                                </td>
+                                <td data-title="Заявка открыта">
+                                    <div class="td-title">28 февр. </div>
+                                </td>
+                                <td data-title="Заявка закрыта">
+                                    <div class="td-title">23 февр. </div>
+                                </td>
+                                <td>
+                                    <div class="td-ico-wrap">-</div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <!-- end tr -->
+                            <!-- tr -->
+                            <tr data-href="/order.html">
+                                <td>
+                                    <div class="frm-select inp-clear">
+                                        <input type="checkbox" id="table-12">
+                                        <label for="table-12"></label>
+                                    </div>
+                                </td>
+                                <td data-title="Кому">
+                                    <div class="td-title">Свердловская Больница №2</div>
+                                </td>
+                                <td data-title="Заявка на">
+                                    <div class="td-title">Прием (осмотр, консультация) врача-аллерголога иммунолога первичный</div>
+                                </td>
+                                <td data-title="Пациент">
+                                    <div class="td-title">Воронцов И.П.</div>
+                                </td>
+                                <td data-title="Статус">
+                                    <div class="td-title td-title-small text-upper text-violet">В ожидании пациента</div>
+                                </td>
+                                <td data-title="Сумма в ₽">
+                                    <div class="td-title td-price">6 450</div>
+                                </td>
+                                <td data-title="Получено">
+                                    <div class="td-title">23 февр. </div>
+                                </td>
+                                <td data-title="Заявка открыта">
+                                    <div class="td-title">28 февр. </div>
+                                </td>
+                                <td data-title="Заявка закрыта">
+                                    <div class="td-title">23 февр. </div>
+                                </td>
+                                <td>
+                                    <div class="td-ico-wrap">
+                                        <div class="elm-ico">
+                                            <img src="./img/icons/alert.svg" alt="">
+                                        </div>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="td-action">
+                                        <a href="" class="btn button-vsmall button-dashed js-btn-chat-open">
+                                            <div class="button-title">12</div>
+                                            <div class="button-ico">
+                                                <img src="./img/icons/outbox.svg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- end tr -->
+                            <!-- tr -->
+                            <tr data-href="/order.html">
+                                <td>
+                                    <div class="frm-select inp-clear">
+                                        <input type="checkbox" id="table-13">
+                                        <label for="table-13"></label>
+                                    </div>
+                                </td>
+                                <td data-title="Кому">
+                                    <div class="td-title">Клиника Екатерининская</div>
+                                </td>
+                                <td data-title="Заявка на">
+                                    <div class="td-title">Комплексное ультразвуковое исследование внутренних органов (мочевыделительная система)</div>
+                                </td>
+                                <td data-title="Пациент">
+                                    <div class="td-title">Константинов А.В.</div>
+                                </td>
+                                <td data-title="Статус">
+                                    <div class="td-title td-title-small text-upper text-green">Отправлена</div>
+                                </td>
+                                <td data-title="Сумма в ₽">
+                                    <div class="td-title td-price">33 850</div>
+                                </td>
+                                <td data-title="Получено">
+                                    <div class="td-title">24 февр. </div>
+                                </td>
+                                <td data-title="Заявка открыта">
+                                    <div class="td-title">28 февр. </div>
+                                </td>
+                                <td data-title="Заявка закрыта">
+                                    <div class="td-title">23 февр. </div>
+                                </td>
+                                <td>
+                                    <div class="td-ico-wrap">-</div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <!-- end tr -->
+                            <!-- tr -->
+                            <tr data-href="/order.html">
+                                <td>
+                                    <div class="frm-select inp-clear">
+                                        <input type="checkbox" id="table-14">
+                                        <label for="table-14"></label>
+                                    </div>
+                                </td>
+                                <td data-title="Кому">
+                                    <div class="td-title">Свердловская Больница №2</div>
+                                </td>
+                                <td data-title="Заявка на">
+                                    <div class="td-title">Прием (осмотр, консультация) врача-аллерголога иммунолога первичный</div>
+                                </td>
+                                <td data-title="Пациент">
+                                    <div class="td-title">Воронцов И.П.</div>
+                                </td>
+                                <td data-title="Статус">
+                                    <div class="td-title td-title-small text-upper text-violet">В ожидании пациента</div>
+                                </td>
+                                <td data-title="Сумма в ₽">
+                                    <div class="td-title td-price">6 450</div>
+                                </td>
+                                <td data-title="Получено">
+                                    <div class="td-title">23 февр. </div>
+                                </td>
+                                <td data-title="Заявка открыта">
+                                    <div class="td-title">28 февр. </div>
+                                </td>
+                                <td data-title="Заявка закрыта">
+                                    <div class="td-title">23 февр. </div>
+                                </td>
+                                <td>
+                                    <div class="td-ico-wrap">-</div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <!-- end tr -->
+                            <!-- tr -->
+                            <tr data-href="/order.html">
+                                <td>
+                                    <div class="frm-select inp-clear">
+                                        <input type="checkbox" id="table-15">
+                                        <label for="table-15"></label>
+                                    </div>
+                                </td>
+                                <td data-title="Кому">
+                                    <div class="td-title">Клиника Екатерининская</div>
+                                </td>
+                                <td data-title="Заявка на">
+                                    <div class="td-title">Комплексное ультразвуковое исследование внутренних органов (мочевыделительная система)</div>
+                                </td>
+                                <td data-title="Пациент">
+                                    <div class="td-title">Константинов А.В.</div>
+                                </td>
+                                <td data-title="Статус">
+                                    <div class="td-title td-title-small text-upper text-green">Отправлена</div>
+                                </td>
+                                <td data-title="Сумма в ₽">
+                                    <div class="td-title td-price">33 850</div>
+                                </td>
+                                <td data-title="Получено">
+                                    <div class="td-title">24 февр. </div>
+                                </td>
+                                <td data-title="Заявка открыта">
+                                    <div class="td-title">28 февр. </div>
+                                </td>
+                                <td data-title="Заявка закрыта">
+                                    <div class="td-title">23 февр. </div>
+                                </td>
+                                <td>
+                                    <div class="td-ico-wrap">-</div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <!-- end tr -->
+                            <!-- tr -->
+                            <tr data-href="/order.html">
+                                <td>
+                                    <div class="frm-select inp-clear">
+                                        <input type="checkbox" id="table-16">
+                                        <label for="table-16"></label>
+                                    </div>
+                                </td>
+                                <td data-title="Кому">
+                                    <div class="td-title">Свердловская Больница №2</div>
+                                </td>
+                                <td data-title="Заявка на">
+                                    <div class="td-title">Прием (осмотр, консультация) врача-аллерголога иммунолога первичный</div>
+                                </td>
+                                <td data-title="Пациент">
+                                    <div class="td-title">Воронцов И.П.</div>
+                                </td>
+                                <td data-title="Статус">
+                                    <div class="td-title td-title-small text-upper text-violet">В ожидании пациента</div>
+                                </td>
+                                <td data-title="Сумма в ₽">
+                                    <div class="td-title td-price">6 450</div>
+                                </td>
+                                <td data-title="Получено">
+                                    <div class="td-title">23 февр. </div>
+                                </td>
+                                <td data-title="Заявка открыта">
+                                    <div class="td-title">28 февр. </div>
+                                </td>
+                                <td data-title="Заявка закрыта">
+                                    <div class="td-title">23 февр. </div>
+                                </td>
+                                <td>
+                                    <div class="td-ico-wrap">-</div>
+                                </td>
+                                <td>
+                                    <div class="td-action">
+                                        <a href="" class="btn button-vsmall button-dashed js-btn-chat-open">
+                                            <div class="button-title">9</div>
+                                            <div class="button-ico">
+                                                <img src="./img/icons/outbox.svg" alt="">
+                                            </div>
+                                        </a>
+                                    </div>
+                                </td>
+                            </tr>
+                            <!-- end tr -->
+                            <!-- tr -->
+                            <tr data-href="/order.html">
+                                <td>
+                                    <div class="frm-select inp-clear">
+                                        <input type="checkbox" id="table-17">
+                                        <label for="table-17"></label>
+                                    </div>
+                                </td>
+                                <td data-title="Кому">
+                                    <div class="td-title">Клиника Екатерининская</div>
+                                </td>
+                                <td data-title="Заявка на">
+                                    <div class="td-title">Комплексное ультразвуковое исследование внутренних органов (мочевыделительная система)</div>
+                                </td>
+                                <td data-title="Пациент">
+                                    <div class="td-title">Константинов А.В.</div>
+                                </td>
+                                <td data-title="Статус">
+                                    <div class="td-title td-title-small text-upper text-green">Отправлена</div>
+                                </td>
+                                <td data-title="Сумма в ₽">
+                                    <div class="td-title td-price">33 850</div>
+                                </td>
+                                <td data-title="Получено">
+                                    <div class="td-title">24 февр. </div>
+                                </td>
+                                <td data-title="Заявка открыта">
+                                    <div class="td-title">28 февр. </div>
+                                </td>
+                                <td data-title="Заявка закрыта">
+                                    <div class="td-title">23 февр. </div>
+                                </td>
+                                <td>
+                                    <div class="td-ico-wrap">-</div>
+                                </td>
+                                <td></td>
+                            </tr>
+                            <!-- end tr -->
+                        </tbody>
+                    </table>
+                    <div class="tbl-menu-popup-box dropdown-box">
+                        <ul class="menu">
+                            <li>
+                                <a href="" class="btn-action-menu">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/favs.svg" alt="">
+                                    </div>
+                                    <div class="button-title">В избранное</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="btn-action-menu">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/inbox.svg" alt="">
+                                    </div>
+                                    <div class="button-title">Отметить как непрочитанное</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="btn-action-menu">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/archive.svg" alt="">
+                                    </div>
+                                    <div class="button-title">В архив</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="btn-action-menu">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/trash.svg" alt="">
+                                    </div>
+                                    <div class="button-title">Удалить</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--chat-box-->
+                    <div class="chat-box dropdown-box">
+                        <!-- chat title wrap -->
+                        <div class="popup-title-wrap">
+                            <div class="popup-title">Osman</div>
+                            <div class="popup-title-action">
+                                <a href="" class="btn button-clear btn-popup-close" onclick="document.querySelector('.table-box .js-btn-chat-open.active').classList.remove('active');return false;">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/close.svg" alt="">
+                                    </div>
+                                    <div class="button-title">Закрыть</div>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- /chat title wrap -->
+                        <!-- chat content wrap -->
+                        <div class="popup-content-wrap">
+                            <div class="row-title-wrap">November 3</div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message">
+                                    <div class="tile-title">
+                                        <div class="tile-title-text">Привет, что там с Лаховым?</div>
+                                    </div>
+                                    <div class="tile-time">8:34</div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message">
+                                    <div class="tile-title">
+                                        <div class="tile-title-text">Он вообще собрался в клинику идти? Ждем тут</div>
+                                    </div>
+                                    <div class="tile-time">8:34</div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message tile-message-out">
+                                    <div class="tile-title">
+                                        <div class="tile-title-text">Привет, а клиника то наша переехала мы теперь в Москве</div>
+                                    </div>
+                                    <div class="tile-time">8:34</div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message tile-message-out">
+                                    <div class="tile-photo">
+                                        <img src="./img/ms-map.jpg" alt="">
+                                        <div class="tile-time">8:34</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message">
+                                    <div class="tile-title">
+                                        <div class="tile-title-text">Ну он так далеко не может поехать. есть какие-то варианты его забрать? Может скорая может вертолет?</div>
+                                    </div>
+                                    <div class="tile-time">8:34</div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message">
+                                    <div class="tile-title">
+                                        <div class="tile-title-text">Что скажете на чем его везти?</div>
+                                    </div>
+                                    <div class="tile-time">8:34</div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message tile-message-out">
+                                    <div class="tile-photo">
+                                        <img src="./img/ms-photo.jpg" alt="">
+                                        <div class="tile-time">8:34</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message">
+                                    <div class="tile-title">
+                                        <div class="tile-title-text">Привет, что там с Лаховым?</div>
+                                    </div>
+                                    <div class="tile-time">8:34</div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message">
+                                    <div class="tile-title">
+                                        <div class="tile-title-text">Он вообще собрался в клинику идти? Ждем тут</div>
+                                    </div>
+                                    <div class="tile-time">8:34</div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message tile-message-out">
+                                    <div class="tile-title">
+                                        <div class="tile-title-text">Привет, а клиника то наша переехала мы теперь в Москве</div>
+                                    </div>
+                                    <div class="tile-time">8:34</div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message tile-message-out">
+                                    <div class="tile-photo">
+                                        <img src="./img/ms-map.jpg" alt="">
+                                        <div class="tile-time">8:34</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message">
+                                    <div class="tile-title">
+                                        <div class="tile-title-text">Ну он так далеко не может поехать. есть какие-то варианты его забрать? Может скорая может вертолет?</div>
+                                    </div>
+                                    <div class="tile-time">8:34</div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message">
+                                    <div class="tile-title">
+                                        <div class="tile-title-text">Что скажете на чем его везти?</div>
+                                    </div>
+                                    <div class="tile-time">8:34</div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message tile-message-out">
+                                    <div class="tile-photo">
+                                        <img src="./img/ms-photo.jpg" alt="">
+                                        <div class="tile-time">8:34</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-title-wrap">November 3</div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message">
+                                    <div class="tile-title">
+                                        <div class="tile-title-text">Привет, что там с Лаховым?</div>
+                                    </div>
+                                    <div class="tile-time">8:34</div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message">
+                                    <div class="tile-title">
+                                        <div class="tile-title-text">Он вообще собрался в клинику идти? Ждем тут</div>
+                                    </div>
+                                    <div class="tile-time">8:34</div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message tile-message-out">
+                                    <div class="tile-title">
+                                        <div class="tile-title-text">Привет, а клиника то наша переехала мы теперь в Москве</div>
+                                    </div>
+                                    <div class="tile-time">8:34</div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message tile-message-out">
+                                    <div class="tile-photo">
+                                        <img src="./img/ms-map.jpg" alt="">
+                                        <div class="tile-time">8:34</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message">
+                                    <div class="tile-title">
+                                        <div class="tile-title-text">Ну он так далеко не может поехать. есть какие-то варианты его забрать? Может скорая может вертолет?</div>
+                                    </div>
+                                    <div class="tile-time">8:34</div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message">
+                                    <div class="tile-title">
+                                        <div class="tile-title-text">Что скажете на чем его везти?</div>
+                                    </div>
+                                    <div class="tile-time">8:34</div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message tile-message-out">
+                                    <div class="tile-photo">
+                                        <img src="./img/ms-photo.jpg" alt="">
+                                        <div class="tile-time">8:34</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message">
+                                    <div class="tile-title">
+                                        <div class="tile-title-text">Привет, что там с Лаховым?</div>
+                                    </div>
+                                    <div class="tile-time">8:34</div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message">
+                                    <div class="tile-title">
+                                        <div class="tile-title-text">Он вообще собрался в клинику идти? Ждем тут</div>
+                                    </div>
+                                    <div class="tile-time">8:34</div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message tile-message-out">
+                                    <div class="tile-title">
+                                        <div class="tile-title-text">Привет, а клиника то наша переехала мы теперь в Москве</div>
+                                    </div>
+                                    <div class="tile-time">8:34</div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message tile-message-out">
+                                    <div class="tile-photo">
+                                        <img src="./img/ms-map.jpg" alt="">
+                                        <div class="tile-time">8:34</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message">
+                                    <div class="tile-title">
+                                        <div class="tile-title-text">Ну он так далеко не может поехать. есть какие-то варианты его забрать? Может скорая может вертолет?</div>
+                                    </div>
+                                    <div class="tile-time">8:34</div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message">
+                                    <div class="tile-title">
+                                        <div class="tile-title-text">Что скажете на чем его везти?</div>
+                                    </div>
+                                    <div class="tile-time">8:34</div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message tile-message-out">
+                                    <div class="tile-photo">
+                                        <img src="./img/ms-photo.jpg" alt="">
+                                        <div class="tile-time">8:34</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-title-wrap">November 3</div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message">
+                                    <div class="tile-title">
+                                        <div class="tile-title-text">Привет, что там с Лаховым?</div>
+                                    </div>
+                                    <div class="tile-time">8:34</div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message">
+                                    <div class="tile-title">
+                                        <div class="tile-title-text">Он вообще собрался в клинику идти? Ждем тут</div>
+                                    </div>
+                                    <div class="tile-time">8:34</div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message tile-message-out">
+                                    <div class="tile-title">
+                                        <div class="tile-title-text">Привет, а клиника то наша переехала мы теперь в Москве</div>
+                                    </div>
+                                    <div class="tile-time">8:34</div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message tile-message-out">
+                                    <div class="tile-photo">
+                                        <img src="./img/ms-map.jpg" alt="">
+                                        <div class="tile-time">8:34</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message">
+                                    <div class="tile-title">
+                                        <div class="tile-title-text">Ну он так далеко не может поехать. есть какие-то варианты его забрать? Может скорая может вертолет?</div>
+                                    </div>
+                                    <div class="tile-time">8:34</div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message">
+                                    <div class="tile-title">
+                                        <div class="tile-title-text">Что скажете на чем его везти?</div>
+                                    </div>
+                                    <div class="tile-time">8:34</div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message tile-message-out">
+                                    <div class="tile-photo">
+                                        <img src="./img/ms-photo.jpg" alt="">
+                                        <div class="tile-time">8:34</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message">
+                                    <div class="tile-title">
+                                        <div class="tile-title-text">Привет, что там с Лаховым?</div>
+                                    </div>
+                                    <div class="tile-time">8:34</div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message">
+                                    <div class="tile-title">
+                                        <div class="tile-title-text">Он вообще собрался в клинику идти? Ждем тут</div>
+                                    </div>
+                                    <div class="tile-time">8:34</div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message tile-message-out">
+                                    <div class="tile-title">
+                                        <div class="tile-title-text">Привет, а клиника то наша переехала мы теперь в Москве</div>
+                                    </div>
+                                    <div class="tile-time">8:34</div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message tile-message-out">
+                                    <div class="tile-photo">
+                                        <img src="./img/ms-map.jpg" alt="">
+                                        <div class="tile-time">8:34</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message">
+                                    <div class="tile-title">
+                                        <div class="tile-title-text">Ну он так далеко не может поехать. есть какие-то варианты его забрать? Может скорая может вертолет?</div>
+                                    </div>
+                                    <div class="tile-time">8:34</div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message">
+                                    <div class="tile-title">
+                                        <div class="tile-title-text">Что скажете на чем его везти?</div>
+                                    </div>
+                                    <div class="tile-time">8:34</div>
+                                </div>
+                            </div>
+                            <div class="row-inner-wrap">
+                                <div class="item-tile-message tile-message-out">
+                                    <div class="tile-photo">
+                                        <img src="./img/ms-photo.jpg" alt="">
+                                        <div class="tile-time">8:34</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /chat content wrap -->
+                        <!-- chat footer wrap -->
+                        <div class="popup-footer-wrap">
+                            <!--form-message-box-->
+                            <div class="form-message-box">
+                                <div class="frm-action-wrap">
+                                    <button class="btn-action-ico">
+                                        <img src="./img/icons/attach.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="frm-action-wrap">
+                                    <button class="btn-action-ico">
+                                        <img src="./img/icons/pin.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="frm-input-wrap">
+                                    <input type="text" class="form-input" placeholder="Отправить сообщение">
+                                </div>
+                                <div class="frm-action-wrap">
+                                    <button class="btn-action-ico">
+                                        <img src="./img/icons/mic.svg" alt="">
+                                    </button>
+                                </div>
+                                <div class="frm-action-wrap">
+                                    <button class="btn-action-ico">
+                                        <img src="./img/icons/send.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
+                            <!--/form-message-box-->
+                        </div>
+                        <!-- /chat footer wrap -->
+                    </div>
+                    <!--/chat-box-->
+                </div>
+            </div>
+            <!--/table-box-->
+
+        </div>
+        <!-- /page -->
+
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="inner-wrap">
+                <div class="info-inner-wrap">
+                    <div class="info-wrap">
+                        <p>© 2024, НейроМаркер</p>
+                    </div>
+                    <div class="info-wrap">
+                        <p>Сделано в <a href="" class="link-studio">Вебуспех <img src="./img/main/studio.svg" alt=""></a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+
+
+        <!--popup-outer-box-->
+        <div class="popup-outer-box" id="popup-login">
+            <div class="popup-box">
+                <a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-title-wrap">
+                    <div class="popup-title">Вход в кабинет</div>
+                </div>
+                <div class="popup-content-wrap">
+                    <form action="/" class="frm-popup">
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <input type="email" class="form-input" placeholder="Ваш e-mail">
+                            </div>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <div class="frm-field-password">
+                                    <input type="text" class="form-input" placeholder="Пароль">
+                                    <a href="" class="btn-action-ico ico-password button-active-toggle active js-password-toggle"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm-row row-actions">
+                            <div class="frm-field">
+                                <div class="frm-select">
+                                    <input type="checkbox" id="popup01">
+                                    <label for="popup01">Запомнить пароль</label>
+                                </div>
+                            </div>
+                            <div class="frm-field">
+                                <a href="" class="js-popup-open" data-popup="popup-password">Напомнить пароль</a>
+                            </div>
+                        </div>
+                        <div class="frm-row-submit">
+                            <div class="frm-field">
+                                <button type="submit" class="btn">
+                                    <div class="button-title">Войти</div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="frm-row row-login">
+                            <div class="row-title">Или войдите через</div>
+                            <div class="frm-field">
+                                <a href="" class="btn button-light">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/login01.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="frm-field">
+                                <a href="" class="btn button-light">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/login02.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="frm-field">
+                                <a href="" class="btn button-light">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/login03.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div><!--/popup-outer-box-->
+        <!--popup-outer-box-->
+        <div class="popup-outer-box" id="popup-reg">
+            <div class="popup-box">
+                <a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-title-wrap">
+                    <div class="popup-title">Регистрация</div>
+                </div>
+                <div class="popup-content-wrap">
+                    <form action="/" class="frm-popup">
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <input type="email" class="form-input" placeholder="Ваш e-mail">
+                            </div>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <input type="text" class="form-input" placeholder="Ваше имя">
+                            </div>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <div class="frm-field-password">
+                                    <input type="text" class="form-input" placeholder="Пароль">
+                                    <a href="" class="btn-action-ico ico-password button-active-toggle active js-password-toggle"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <div class="frm-field-password">
+                                    <input type="text" class="form-input" placeholder="Повторите пароль">
+                                    <a href="" class="btn-action-ico ico-password button-active-toggle active js-password-toggle"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm-row row-actions">
+                            <div class="frm-field">
+                                <div class="frm-select">
+                                    <input type="checkbox" id="popup01">
+                                    <label for="popup01">Запомнить пароль</label>
+                                </div>
+                            </div>
+                            <div class="frm-field">
+                                <a href="" class="js-popup-open" data-popup="popup-password">Напомнить пароль</a>
+                            </div>
+                        </div>
+                        <div class="frm-row-submit">
+                            <div class="frm-field">
+                                <button type="submit" class="btn">
+                                    <div class="button-title">Зарегистрироваться</div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="frm-row row-login">
+                            <div class="row-title">Или войдите через</div>
+                            <div class="frm-field">
+                                <a href="" class="btn button-light">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/login01.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="frm-field">
+                                <a href="" class="btn button-light">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/login02.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="frm-field">
+                                <a href="" class="btn button-light">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/login03.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div><!--/popup-outer-box-->
+
+        <!--popup-outer-box-->
+        <div class="popup-outer-box" id="popup-password">
+            <div class="popup-box">
+                <a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-title-wrap">
+                    <div class="popup-title">Напомнить пароль</div>
+                </div>
+                <div class="popup-content-wrap">
+                    <form action="/" class="frm-popup">
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <input type="email" class="form-input" placeholder="denis456@mail.ru">
+                            </div>
+                        </div>
+                        <div class="frm-row-submit">
+                            <div class="frm-field">
+                                <button type="submit" class="btn">
+                                    <div class="button-title">Востановить пароль</div>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div><!--/popup-outer-box-->
+
+    </div>
+    <!-- /wrap -->
+
+
+
+</body>
+
+</html>

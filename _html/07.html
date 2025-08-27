@@ -1,0 +1,805 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <!-- build:section head -->
+    <!-- /build -->
+    <body>
+        <!-- wrap -->
+        <div class="wrap">
+            
+            <!-- build:section header -->
+            <!-- /build -->
+			 
+
+            <!-- page -->
+			 <div class="page-full page-lk">
+				
+				<!--content-outer-wrap-->
+				<div class="content-outer-wrap filter-include">
+					
+					<!--content-wrap-->
+					<div class="content-wrap">
+
+						<!--page-title-box-->
+						<div class="page-title-box">
+							<div class="title-wrap">
+								<a href="" class="btn-action-ico ico-back section-button"></a>
+								<div class="section-title h1-title">Врачи</div>
+							</div>
+							<div class="title-wrap form-active">
+								<a href="" class="btn-action-ico ico-back section-button" onclick="document.getElementById('toggleForm').classList.remove('active');return false;"></a>
+								<div class="section-title h1-title">Добавить врача</div>
+							</div>
+							<div class="action-wrap">
+								<a href="" class="btn button-main" onclick="document.getElementById('toggleForm').classList.add('active');return false;">
+									<div class="button-title">Добавить врача</div>
+								</a>
+							</div>
+						</div>
+						<!--/page-title-box-->
+						
+						<!--dashboard-box-->
+						<div class="dashboard-box">
+							<div class="items-wrap items-dash">
+								<!--item wrap-->
+								<div class="item-wrap wrap-dash" id="toggleForm">
+									<div class="item-tile-panel type-fit-height section-mobile-full">
+										<div class="panel-content-wrap">
+											<form action="/" class="panel-form-wrap">
+												<div class="frm-title">Добавить врача</div>
+												<div class="frm-section-title">Личные данные врача</div>
+												<!--frm-section-->
+												<div class="frm-section">
+													<div class="frm-row">
+														<div class="frm-field">
+															<input type="text" class="form-input inp-main" placeholder="Фамилия">
+														</div>
+														<div class="frm-field">
+															<input type="text" class="form-input inp-main" placeholder="Имя">
+														</div>
+														<div class="frm-field">
+															<input type="text" class="form-input inp-main" placeholder="Отчество">
+														</div>
+														<div class="frm-field">
+															<div class="frm-field-file js-field-file">
+																<input type="file" class="js-field-input">
+																<button type="button" class="btn button-clear button-file-attach js-file-button-attach">
+																	<div class="button-ico">
+																		<img src="./img/icons/attach-main.svg" alt="">
+																	</div>
+																	<span class="button-title">Фотография</span>
+																</button>
+																<div class="file-inner-wrap">
+																	<div class="file-name"></div>
+																	<a href="" class="btn-action-ico ico-trash button-file-del js-file-button-del"></a>
+																</div>
+															</div>
+														</div>
+														<div class="frm-field field-half">
+															<select class="form-input inp-main" required>
+																<option selected disabled hidden value="">Пол </option><!--placeholder-->
+																<option>Пункт списка</option>
+																<option>Пункт списка</option>
+																<option>Пункт списка</option>
+																<option>Пункт списка</option>
+															</select>
+														</div>
+														<div class="frm-field field-half">
+															<input type="text" class="form-input inp-main inp-date" placeholder="Дата рождения  ">
+														</div>
+													</div>
+												</div>
+												<!--/frm-section-->
+												<div class="frm-section-title">Паспортные данные врача</div>
+												<!--frm-section-->
+												<div class="frm-section">
+													<div class="frm-row">
+														<div class="frm-field">
+															<input type="text" class="form-input inp-main" placeholder="Паспорт: серия/номер">
+														</div>
+														<div class="frm-field">
+															<input type="text" class="form-input inp-main" placeholder="Кем выдан">
+														</div>
+														<div class="frm-field">
+															<input type="text" class="form-input inp-main" placeholder="Дата выдачи">
+														</div>
+														<div class="frm-field">
+															<div class="frm-field-file js-field-file">
+																<input type="file" class="js-field-input">
+																<button type="button" class="btn button-clear button-file-attach js-file-button-attach">
+																	<div class="button-ico">
+																		<img src="./img/icons/attach-main.svg" alt="">
+																	</div>
+																	<span class="button-title">Страницы паспорта</span>
+																</button>
+																<div class="file-inner-wrap">
+																	<div class="file-name"></div>
+																	<a href="" class="btn-action-ico ico-trash button-file-del js-file-button-del"></a>
+																</div>
+															</div>
+														</div>
+														<div class="frm-field">
+															<input type="text" class="form-input inp-main" placeholder="Адрес регистрации">
+														</div>
+													</div>
+												</div>
+												<!--/frm-section-->
+												<div class="frm-section-title">Основное образование</div>
+												<!--frm-section-->
+												<div class="frm-section">
+													<div class="frm-row">
+														<div class="frm-field">
+															<select class="form-input inp-main" required>
+																<option selected disabled hidden value="">Название образования</option><!--placeholder-->
+																<option>Пункт списка</option>
+																<option>Пункт списка</option>
+																<option>Пункт списка</option>
+																<option>Пункт списка</option>
+															</select>
+														</div>
+														<div class="frm-field">
+															<select class="form-input inp-main" required>
+																<option selected disabled hidden value="">Учебное заведение</option><!--placeholder-->
+																<option>Пункт списка</option>
+																<option>Пункт списка</option>
+																<option>Пункт списка</option>
+																<option>Пункт списка</option>
+															</select>
+														</div>
+														<div class="frm-field">
+															<input type="text" class="form-input inp-main" placeholder="Дата окончания">
+														</div>
+														<div class="frm-field">
+															<div class="frm-field-file js-field-file">
+																<input type="file" class="js-field-input">
+																<button type="button" class="btn button-clear button-file-attach js-file-button-attach">
+																	<div class="button-ico">
+																		<img src="./img/icons/attach-main.svg" alt="">
+																	</div>
+																	<span class="button-title">Документы об окончании</span>
+																</button>
+																<div class="file-inner-wrap">
+																	<div class="file-name"></div>
+																	<a href="" class="btn-action-ico ico-trash button-file-del js-file-button-del"></a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!--/frm-section-->
+												<div class="frm-section-title">Дополнительное образование</div>
+												<!--frm-section-->
+												<div class="frm-section">
+													<div class="frm-row">
+														<div class="frm-field">
+															<select class="form-input inp-main" required>
+																<option selected disabled hidden value="">Название образования</option><!--placeholder-->
+																<option>Пункт списка</option>
+																<option>Пункт списка</option>
+																<option>Пункт списка</option>
+																<option>Пункт списка</option>
+															</select>
+														</div>
+														<div class="frm-field">
+															<select class="form-input inp-main" required>
+																<option selected disabled hidden value="">Учебное заведение</option><!--placeholder-->
+																<option>Пункт списка</option>
+																<option>Пункт списка</option>
+																<option>Пункт списка</option>
+																<option>Пункт списка</option>
+															</select>
+														</div>
+														<div class="frm-field">
+															<input type="text" class="form-input inp-main" placeholder="Дата окончания">
+														</div>
+														<div class="frm-field">
+															<div class="frm-field-file js-field-file">
+																<input type="file" class="js-field-input">
+																<button type="button" class="btn button-clear button-file-attach js-file-button-attach">
+																	<div class="button-ico">
+																		<img src="./img/icons/attach-main.svg" alt="">
+																	</div>
+																	<span class="button-title">Документы об окончании</span>
+																</button>
+																<div class="file-inner-wrap">
+																	<div class="file-name"></div>
+																	<a href="" class="btn-action-ico ico-trash button-file-del js-file-button-del"></a>
+																</div>
+															</div>
+														</div>
+														<div class="frm-field field-action">
+                                                            <a href="" class="btn-action-add">
+                                                                <div class="button-title">Добавить дополнительное образование</div>
+                                                            </a>
+                                                        </div>
+													</div>
+												</div>
+												<!--/frm-section-->
+												<div class="frm-section-title">Квалификация</div>
+												<!--frm-section-->
+												<div class="frm-section">
+													<div class="frm-row">
+														<div class="frm-field">
+															<select class="form-input inp-main" required>
+																<option selected disabled hidden value="">Название</option><!--placeholder-->
+																<option>Пункт списка</option>
+																<option>Пункт списка</option>
+																<option>Пункт списка</option>
+																<option>Пункт списка</option>
+															</select>
+														</div>
+														<div class="frm-field">
+															<input type="text" class="form-input inp-main" placeholder="Дата получения">
+														</div>
+														<div class="frm-field">
+															<div class="frm-field-file js-field-file">
+																<input type="file" class="js-field-input">
+																<button type="button" class="btn button-clear button-file-attach js-file-button-attach">
+																	<div class="button-ico">
+																		<img src="./img/icons/attach-main.svg" alt="">
+																	</div>
+																	<span class="button-title">Документы об окончании</span>
+																</button>
+																<div class="file-inner-wrap">
+																	<div class="file-name"></div>
+																	<a href="" class="btn-action-ico ico-trash button-file-del js-file-button-del"></a>
+																</div>
+															</div>
+														</div>
+														<div class="frm-field field-action">
+                                                            <a href="" class="btn-action-add">
+                                                                <div class="button-title">Добавить</div>
+                                                            </a>
+                                                        </div>
+													</div>
+												</div>
+												<!--/frm-section-->
+												<div class="frm-section-title">Должность</div>
+												<!--frm-section-->
+												<div class="frm-section">
+													<div class="frm-row">
+														<div class="frm-field">
+															<select class="form-input inp-main" required>
+																<option selected disabled hidden value="">Клиника</option><!--placeholder-->
+																<option>Пункт списка</option>
+																<option>Пункт списка</option>
+																<option>Пункт списка</option>
+																<option>Пункт списка</option>
+															</select>
+														</div>
+														<div class="frm-field">
+															<input type="text" class="form-input inp-main" placeholder="Название">
+														</div>
+														<div class="frm-field">
+															<input type="text" class="form-input inp-main" placeholder="Дата вступления в должность">
+														</div>
+													</div>
+												</div>
+												<!--/frm-section-->
+												<div class="frm-section-title">Направления деятельности</div>
+												<!--frm-section-->
+												<div class="frm-section">
+													<div class="frm-row">
+														<div class="frm-field">
+															<input type="text" class="form-input inp-main" placeholder="Название направления деятельности">
+														</div>
+														<div class="frm-field field-max">
+															<input type="text" class="form-input inp-main" placeholder="Стоимость приема">
+														</div>
+														<div class="frm-field">
+                                                            <div class="form-input-text">₽ (руб.)</div>
+                                                        </div>
+														<div class="frm-field field-action">
+															<a href="" class="btn-action-add">
+																<div class="button-title">Добавить направление</div>
+															</a>
+														</div>
+													</div>
+												</div>
+												<!--/frm-section-->
+												<div class="frm-section-title">Стаж деятельности</div>
+												<!--frm-section-->
+												<div class="frm-section">
+													<div class="frm-row">
+														<div class="frm-field">
+															<input type="text" class="form-input inp-main" placeholder="Кол-во лет">
+														</div>
+														<div class="frm-field">
+															<div class="frm-field-file js-field-file">
+																<input type="file" class="js-field-input">
+																<button type="button" class="btn button-clear button-file-attach js-file-button-attach">
+																	<div class="button-ico">
+																		<img src="./img/icons/attach-main.svg" alt="">
+																	</div>
+																	<span class="button-title">Трудовая книга</span>
+																</button>
+																<div class="file-inner-wrap">
+																	<div class="file-name"></div>
+																	<a href="" class="btn-action-ico ico-trash button-file-del js-file-button-del"></a>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!--/frm-section-->
+												<div class="frm-section-title">Контакты</div>
+												<!--frm-section-->
+												<div class="frm-section">
+													<div class="frm-row">
+														<div class="frm-field">
+															<input type="tel" class="form-input inp-main" placeholder="Телефон">
+														</div>
+														<div class="frm-field">
+															<input type="email" class="form-input inp-main" placeholder="Email">
+														</div>
+													</div>
+												</div>
+												<!--/frm-section-->
+												<!--frm-section-->
+												<div class="frm-section">
+													<div class="frm-section-content">
+														<div class="frm-row-submit">
+															<div class="frm-field">
+																<button type="submit" class="btn button-main">
+																	<div class="button-title">Сохранить изменения</div>
+																</button>
+															</div>
+														</div>
+													</div>
+												</div>
+												<!--/frm-section-->
+											</form>
+										</div>
+									</div>
+								</div>
+								<!--/item wrap-->
+								<!--item wrap-->
+								<div class="item-wrap wrap-dash">
+									
+									<div class="wrap-title">Все врачи клиники</div>
+									
+									<!--page-filter-box-->
+									<div class="page-filter-box">
+										<div class="filter-search-wrap">
+											<form action="/" class="frm-main-search">
+												<input type="text" class="form-input inp-main" placeholder="Поиск по наименованию">
+												<button type="submit" class="button-form btn-action-ico ico-search"></button>
+											</form>
+										</div>
+										<div class="filter-button-wrap">
+											<a href="" class="btn button-input">
+												<div class="button-ico">
+													<img src="./img/icons/filter.svg" alt="">
+												</div>
+												<div class="button-title">Фильтры</div>
+											</a>
+										</div>
+										<div class="filter-actions-wrap">
+											<div class="filter-action-wrap">
+												<select class="form-input inp-main" required="">
+													<option selected="" disabled="" hidden="" value="">Город/область</option><!--placeholder-->
+													<option>Пункт списка</option>
+													<option>Пункт списка</option>
+													<option>Пункт списка</option>
+													<option>Пункт списка</option>
+												</select>
+											</div>
+											<div class="filter-action-wrap">
+												<div class="frm-select-button">
+													<input type="checkbox" id="button01">
+													<label for="button01">Со скидкой</label>
+												</div>
+											</div>
+											<div class="filter-action-wrap">
+												<select class="form-input inp-main" required="">
+													<option selected="" disabled="" hidden="" value="">Цена</option><!--placeholder-->
+													<option>Пункт списка</option>
+													<option>Пункт списка</option>
+													<option>Пункт списка</option>
+													<option>Пункт списка</option>
+												</select>
+											</div>
+										</div>
+									</div>
+									<!--/page-filter-box-->
+
+									<!--item tile-panel-->
+									<div class="item-tile-panel type-light">
+										<div class="tile-doccard-wrap">
+											<div class="tile-photo-wrap">
+												<div class="tile-photo photo-cover">
+													<img src="./img/result.jpg" alt="">
+												</div>
+											</div>
+											<div class="tile-info-main-wrap">
+												<div class="tile-title">Гамова Елена Владимировна </div>
+												<div class="panel-table-wrap">
+													<table>
+														<tbody>
+															<tr class="tr-title">
+																<th colspan="2">Личные данные врача</th>
+															</tr>
+															<tr>
+																<th>Дата рождения</th>
+																<td>30.01.1955</td>
+															</tr>
+															<tr>
+																<th>Пол</th>
+																<td>Женский</td>
+															</tr>
+															<tr class="tr-title">
+																<th colspan="2">Паспортные данные врача</th>
+															</tr>
+															<tr>
+																<th>Паспорт</th>
+																<td>1234/123 123</td>
+															</tr>
+															<tr>
+																<th>Выдан</th>
+																<td>МВД Москвы 000-001</td>
+															</tr>
+															<tr>
+																<th>
+																	Дата выдачи
+																	<br>
+																	<a href="" class="elm-attach">
+																		<div class="attach-title">Страница1.jpg 200 kb</div>
+																	</a>
+																	<br>
+																	<a href="" class="elm-attach">
+																		<div class="attach-title">Страница2.jpg 200 kb</div>
+																	</a>
+																	<br>
+																	<a href="" class="elm-attach">
+																		<div class="attach-title">Страница3.jpg 200 kb</div>
+																	</a>
+																</th>
+																<td>11.12.2020</td>
+															</tr>
+															<tr>
+																<th>Адрес регистрации</th>
+																<td>Москва, Красная площадь дом 1, кв. 2344</td>
+															</tr>
+															<tr class="tr-title">
+																<th colspan="2">Основное образование</th>
+															</tr>
+															<tr>
+																<th>Образование</th>
+																<td>Врач</td>
+															</tr>
+															<tr>
+																<th>Выдан</th>
+																<td>Институтом</td>
+															</tr>
+															<tr>
+																<th>
+																	Дата окончания
+																	<br>
+																	<a href="" class="elm-attach">
+																		<div class="attach-title">Страница1.jpg 200 kb</div>
+																	</a>
+																	<br>
+																	<a href="" class="elm-attach">
+																		<div class="attach-title">Страница2.jpg 200 kb</div>
+																	</a>
+																	<br>
+																	<a href="" class="elm-attach">
+																		<div class="attach-title">Страница3.jpg 200 kb</div>
+																	</a>
+																</th>
+																<td>11.12.2020</td>
+															</tr>
+															<tr class="tr-title">
+																<th colspan="2">Дополнительное образование</th>
+															</tr>
+															<tr>
+																<th>Образование</th>
+																<td>Врач</td>
+															</tr>
+															<tr>
+																<th>Выдан</th>
+																<td>Институтом</td>
+															</tr>
+															<tr>
+																<th>
+																	Дата окончания
+																	<br>
+																	<a href="" class="elm-attach">
+																		<div class="attach-title">Страница3.jpg 200 kb</div>
+																	</a>
+																</th>
+																<td>11.12.2020</td>
+															</tr>
+															<tr class="tr-title">
+																<th colspan="2">Квалификация</th>
+															</tr>
+															<tr>
+																<th>Название</th>
+																<td>1</td>
+															</tr>
+															<tr>
+																<th>
+																	Дата получения
+																	<br>
+																	<a href="" class="elm-attach">
+																		<div class="attach-title">Страница3.jpg 200 kb</div>
+																	</a>
+																</th>
+																<td>11.12.2020</td>
+															</tr>
+															<tr class="tr-title">
+																<th colspan="2">Должность</th>
+															</tr>
+															<tr>
+																<th>Клиника</th>
+																<td>Здравсити</td>
+															</tr>
+															<tr>
+																<th>Название</th>
+																<td>Врач-кардиолог</td>
+															</tr>
+															<tr>
+																<th>Дата вступления в должность</th>
+																<td>11.12.2020</td>
+															</tr>
+															<tr class="tr-title">
+																<th colspan="2">Направление деятельности</th>
+															</tr>
+															<tr>
+																<th>Название</th>
+																<td>Кардиология</td>
+															</tr>
+															<tr class="tr-sep">
+																<th>Стоимость приема</th>
+																<td><div class="elm-price" data-unit=" ₽">2500</div></td>
+															</tr>
+															<tr>
+																<th>Название</th>
+																<td>Терапия</td>
+															</tr>
+															<tr class="tr-sep">
+																<th>Стоимость приема</th>
+																<td><div class="elm-price" data-unit=" ₽">2500</div></td>
+															</tr>
+															<tr>
+																<th>Название</th>
+																<td>Психология</td>
+															</tr>
+															<tr class="tr-sep">
+																<th>Стоимость приема</th>
+																<td><div class="elm-price" data-unit=" ₽">2500</div></td>
+															</tr>
+															<tr class="tr-title">
+																<th colspan="2">Стаж деятельности</th>
+															</tr>
+															<tr>
+																<th>
+																	Кол-во лет
+																	<br>
+																	<a href="" class="elm-attach">
+																		<div class="attach-title">Страница3.jpg 200 kb</div>
+																	</a>
+																</th>
+																<td>10</td>
+															</tr>
+															<tr class="tr-sep">
+																<th>Телефон</th>
+																<td>
+																	<div class="tile-phone-number">
+																		<a href="" class="link-main phone-action js-btn-tgl" data-show="Показать номер" data-hide="Скрыть"></a>
+																		<div class="phone-number">8 (495) 135-37-22</div>
+																	</div>
+																</td>
+															</tr>
+															<tr class="tr-sep">
+																<th>Email</th>
+																<td>
+																	<div class="tile-phone-number">
+																		<a href="" class="link-main phone-action js-btn-tgl" data-show="Показать почту" data-hide="Скрыть"></a>
+																		<div class="phone-number">info@clinca.ru</div>
+																	</div>
+																</td>
+															</tr>
+														</tbody>
+													</table>
+												</div>
+											</div>
+										</div>
+										<div class="panel-toggle-wrap">
+											<a href="" class="btn-action-toggle js-btn-tgl panel-button-toggle">
+												<div class="button-title" data-show="Развернуть" data-hide="Свернуть"></div>
+											</a>
+										</div>
+										<div class="panel-actions-wrap">
+											<div class="panel-action-wrap">
+												<a href="" class="btn button-input button-small">
+													<div class="button-title">Редактировать</div>
+												</a>
+											</div>
+											<div class="panel-action-wrap">
+												<a href="" class="btn button-input button-small">
+													<div class="button-title">Задать вопрос</div>
+												</a>
+											</div>
+											<div class="panel-action-wrap">
+												<a href="" class="btn button-input-att button-small">
+													<div class="button-title">Направить пацииента</div>
+												</a>
+											</div>
+										</div>
+									</div>
+									<!--/item tile-panel-->
+									
+								</div>
+								<!--/item wrap-->
+							</div>
+						</div>
+						<!--/dashboard-box-->
+						
+					</div>
+					<!--/content-wrap-->
+
+					<!--side-wrap-->
+					<div class="side-wrap">
+						
+						<!--side-menu-box-->
+						<div class="side-menu-box">
+							<ul class="menu">
+								<li>
+									<a href="" class="btn">
+										<div class="button-ico">
+											<img src="./img/icons/menu05.svg" alt="">
+										</div>
+										<div class="button-title">Профиль клиники</div>
+									</a>
+								</li>
+								<li>
+									<a href="" class="btn">
+										<div class="button-ico">
+											<img src="./img/icons/menu06.svg" alt="">
+										</div>
+										<div class="button-title">Направления деятельности</div>
+									</a>
+								</li>
+								<li>
+									<a href="" class="btn active">
+										<div class="button-ico">
+											<img src="./img/icons/menu03.svg" alt="">
+										</div>
+										<div class="button-title">Врачи</div>
+									</a>
+								</li>
+								<li>
+									<a href="" class="btn">
+										<div class="button-ico">
+											<img src="./img/icons/menu01.svg" alt="">
+										</div>
+										<div class="button-title">Заявки</div>
+									</a>
+								</li>
+								<li>
+									<a href="" class="btn">
+										<div class="button-ico">
+											<img src="./img/icons/menu02.svg" alt="">
+										</div>
+										<div class="button-title">Пациенты/Медкарты</div>
+									</a>
+								</li>
+								<li>
+									<a href="" class="btn">
+										<div class="button-ico">
+											<img src="./img/icons/menu04.svg" alt="">
+										</div>
+										<div class="button-title">Клиники-партнеры</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+						<!--/side-menu-box-->
+
+						
+						<!--side-filter-box-->
+						<div class="side-filter-box">
+							<div class="filter-inner-wrap">
+								<div class="filter-content-wrap">
+									<div class="filter-title">Быстрый поиск</div>
+									<div class="filter-section-wrap">
+										<form action="/" class="frm-main-search">
+											<input type="text" class="form-input inp-main" placeholder="Поиск по наименованию">
+											<button type="submit" class="button-form btn-action-ico ico-search"></button>
+										</form>
+									</div>
+								</div>
+								<div class="filter-popup-wrap js-popup-wrap">
+									<a href="" class="btn-popup btn button-input js-btn-popup-toggle">
+										<div class="button-ico">
+											<img src="./img/icons/filter.svg" alt="">
+										</div>
+									</a>
+									<div class="filter-popup-content js-popup-block">
+										<div class="filter-content-wrap">
+											<div class="filter-title">Фильтр</div>
+											<div class="filter-section-wrap">
+												<div class="frm-row">
+													<div class="frm-field">
+														<select class="form-input inp-main" required>
+															<option selected disabled hidden value="">Врачи</option><!--placeholder-->
+															<option>Пункт списка</option>
+															<option>Пункт списка</option>
+															<option>Пункт списка</option>
+															<option>Пункт списка</option>
+														</select>
+													</div>
+													<div class="frm-field">
+														<select class="form-input inp-main" required>
+															<option selected disabled hidden value="">Регион</option><!--placeholder-->
+															<option>Пункт списка</option>
+															<option>Пункт списка</option>
+															<option>Пункт списка</option>
+															<option>Пункт списка</option>
+														</select>
+													</div>
+													<div class="frm-field">
+														<select class="form-input inp-main" required>
+															<option selected disabled hidden value="">Клиника</option><!--placeholder-->
+															<option>Пункт списка</option>
+															<option>Пункт списка</option>
+															<option>Пункт списка</option>
+															<option>Пункт списка</option>
+														</select>
+													</div>
+													<div class="frm-field">
+														<select class="form-input inp-main" required>
+															<option selected disabled hidden value="">Направление </option><!--placeholder-->
+															<option>Пункт списка</option>
+															<option>Пункт списка</option>
+															<option>Пункт списка</option>
+															<option>Пункт списка</option>
+														</select>
+													</div>
+													<div class="frm-field">
+														<select class="form-input inp-main" required>
+															<option selected disabled hidden value="">Заболевание</option><!--placeholder-->
+															<option>Пункт списка</option>
+															<option>Пункт списка</option>
+															<option>Пункт списка</option>
+															<option>Пункт списка</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="filter-actions-wrap">
+											<div class="frm-row">
+												<div class="frm-field">
+													<a href="" class="btn button-main">
+														<div class="button-title">Применить фильтры</div>
+													</a>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!--/side-filter-box-->
+						
+					</div>
+					<!--/side-wrap-->
+					
+				</div>
+				<!--/content-outer-wrap-->
+				
+            </div>
+            <!-- /page -->
+            
+            <!-- build:section footer -->
+            <!-- /build -->
+            
+        </div>
+        <!-- /wrap -->
+
+        <!-- build:section scripts -->
+        <!-- /build -->
+    </body>
+</html>
+

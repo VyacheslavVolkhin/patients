@@ -1,0 +1,1605 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Главная</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/fancybox.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <script src="./js/chart.js"></script>
+    <script src="./js/swiper-bundle.min.js" defer></script>
+    <script src="./js/fancybox.umd.js" defer></script>
+    <script src="./js/scripts.js" defer></script>
+</head>
+
+<body>
+    <!-- wrap -->
+    <div class="wrap">
+
+        <!-- header -->
+        <header class="header">
+            <div class="inner-wrap">
+                <div class="logo-inner-wrap">
+                    <a href="" class="logo">
+                        <img src="./img/main/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="menu-inner-wrap popup-menu-wrap js-popup-wrap">
+                    <a href="" class="btn-popup btn-action-ico ico-menu button-active-close js-btn-popup-toggle"></a>
+                    <div class="popup-content-block js-popup-block">
+                        <div class="menu-wrap">
+                            <ul class="menu">
+                                <li>
+                                    <a href="" class="btn-menu active">
+                                        <div class="button-title">Заявки</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn-menu">
+                                        <div class="button-title">Арбитраж</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn-menu">
+                                        <div class="button-title">Переписка</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="actions-inner-wrap">
+                            <div class="action-wrap">
+                                <a href="" class="btn-action-ico ico-notify"></a>
+                            </div>
+                            <div class="user-wrap">
+                                <a href="" class="elm-photo photo-cover">
+                                    <img src="./img/main/user.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- /header -->
+
+
+        <!-- page -->
+        <div class="page-full">
+
+            <!--dashboard-box-->
+            <div class="dashboard-box">
+                <div class="items-wrap items-dash">
+                    <!--item wrap-->
+                    <div class="item-wrap wrap-dash wrap-main">
+                        <div class="lines-chart-box">
+                            <div class="chart-title-wrap">
+                                <div class="chart-title">Входящие заявки</div>
+                                <div class="chart-info-wrap">
+                                    <div class="chart-info">
+                                        <div class="info-title">Заявок за все время</div>
+                                        <div class="info-value">84 162</div>
+                                    </div>
+                                    <div class="chart-info">
+                                        <div class="info-title">Заявок в этом месяце</div>
+                                        <div class="info-value">239</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart-lines-wrap">
+                                <div class="slider-inner-wrap slider-dashboard-line">
+                                    <div class="slider-wrap swiper">
+                                        <div class="slider swiper-wrapper">
+                                            <!--sl-wrap-->
+                                            <div class="sl-wrap swiper-slide">
+                                                <canvas id="chartLines" width="1200" height="286"></canvas>
+                                            </div>
+                                            <!--/sl-wrap-->
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap wrap-dash">
+                        <div class="columns-chart-box">
+                            <div class="chart-title-wrap">
+                                <div class="chart-title">Исходящие заявки</div>
+                                <div class="chart-info-wrap">
+                                    <div class="chart-info">
+                                        <div class="info-title">Заявок за все время</div>
+                                        <div class="info-value">84 162</div>
+                                    </div>
+                                    <div class="chart-info">
+                                        <div class="info-title">Заявок в этом месяце</div>
+                                        <div class="info-value">239</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="chart-content-wrap">
+                                <div class="slider-inner-wrap slider-dashboard">
+                                    <div class="slider-wrap swiper">
+                                        <div class="slider swiper-wrapper">
+                                            <div class="sl-wrap swiper-slide">
+                                                <!-- item scale -->
+                                                <div class="item-tile-scale type-v">
+                                                    <div class="tile-scale-wrap" data-scale-height="100">
+                                                        <div class="tile-scale bg-violet" data-scale="38"></div>
+                                                        <div class="tile-scale bg-green" data-scale="7"></div>
+                                                        <div class="tile-scale bg-red" data-scale="26"></div>
+                                                        <div class="tile-scale bg-yellow" data-scale="8"></div>
+                                                        <div class="tile-scale bg-blue" data-scale="21"></div>
+                                                    </div>
+                                                    <div class="tile-title-wrap">
+                                                        <div class="tile-total">3 980</div>
+                                                        <div class="tile-title">Нояб.</div>
+                                                    </div>
+                                                </div>
+                                                <!-- /item scale -->
+                                            </div>
+                                            <div class="sl-wrap swiper-slide">
+                                                <!-- item scale -->
+                                                <div class="item-tile-scale type-v">
+                                                    <div class="tile-scale-wrap" data-scale-height="50">
+                                                        <div class="tile-scale bg-violet" data-scale="38"></div>
+                                                        <div class="tile-scale bg-green" data-scale="7"></div>
+                                                        <div class="tile-scale bg-red" data-scale="26"></div>
+                                                        <div class="tile-scale bg-yellow" data-scale="8"></div>
+                                                        <div class="tile-scale bg-blue" data-scale="21"></div>
+                                                    </div>
+                                                    <div class="tile-title-wrap">
+                                                        <div class="tile-total">3 980</div>
+                                                        <div class="tile-title">Нояб.</div>
+                                                    </div>
+                                                </div>
+                                                <!-- /item scale -->
+                                            </div>
+                                            <div class="sl-wrap swiper-slide">
+                                                <!-- item scale -->
+                                                <div class="item-tile-scale type-v">
+                                                    <div class="tile-scale-wrap" data-scale-height="100">
+                                                        <div class="tile-scale bg-violet" data-scale="38"></div>
+                                                        <div class="tile-scale bg-green" data-scale="7"></div>
+                                                        <div class="tile-scale bg-red" data-scale="26"></div>
+                                                        <div class="tile-scale bg-yellow" data-scale="8"></div>
+                                                        <div class="tile-scale bg-blue" data-scale="21"></div>
+                                                    </div>
+                                                    <div class="tile-title-wrap">
+                                                        <div class="tile-total">3 980</div>
+                                                        <div class="tile-title">Нояб.</div>
+                                                    </div>
+                                                </div>
+                                                <!-- /item scale -->
+                                            </div>
+                                            <div class="sl-wrap swiper-slide">
+                                                <!-- item scale -->
+                                                <div class="item-tile-scale type-v">
+                                                    <div class="tile-scale-wrap" data-scale-height="50">
+                                                        <div class="tile-scale bg-violet" data-scale="38"></div>
+                                                        <div class="tile-scale bg-green" data-scale="7"></div>
+                                                        <div class="tile-scale bg-red" data-scale="26"></div>
+                                                        <div class="tile-scale bg-yellow" data-scale="8"></div>
+                                                        <div class="tile-scale bg-blue" data-scale="21"></div>
+                                                    </div>
+                                                    <div class="tile-title-wrap">
+                                                        <div class="tile-total">3 980</div>
+                                                        <div class="tile-title">Нояб.</div>
+                                                    </div>
+                                                </div>
+                                                <!-- /item scale -->
+                                            </div>
+                                            <div class="sl-wrap swiper-slide">
+                                                <!-- item scale -->
+                                                <div class="item-tile-scale type-v">
+                                                    <div class="tile-scale-wrap" data-scale-height="100">
+                                                        <div class="tile-scale bg-violet" data-scale="38"></div>
+                                                        <div class="tile-scale bg-green" data-scale="7"></div>
+                                                        <div class="tile-scale bg-red" data-scale="26"></div>
+                                                        <div class="tile-scale bg-yellow" data-scale="8"></div>
+                                                        <div class="tile-scale bg-blue" data-scale="21"></div>
+                                                    </div>
+                                                    <div class="tile-title-wrap">
+                                                        <div class="tile-total">3 980</div>
+                                                        <div class="tile-title">Нояб.</div>
+                                                    </div>
+                                                </div>
+                                                <!-- /item scale -->
+                                            </div>
+                                            <div class="sl-wrap swiper-slide">
+                                                <!-- item scale -->
+                                                <div class="item-tile-scale type-v">
+                                                    <div class="tile-scale-wrap" data-scale-height="50">
+                                                        <div class="tile-scale bg-violet" data-scale="38"></div>
+                                                        <div class="tile-scale bg-green" data-scale="7"></div>
+                                                        <div class="tile-scale bg-red" data-scale="26"></div>
+                                                        <div class="tile-scale bg-yellow" data-scale="8"></div>
+                                                        <div class="tile-scale bg-blue" data-scale="21"></div>
+                                                    </div>
+                                                    <div class="tile-title-wrap">
+                                                        <div class="tile-total">3 980</div>
+                                                        <div class="tile-title">Нояб.</div>
+                                                    </div>
+                                                </div>
+                                                <!-- /item scale -->
+                                            </div>
+                                            <div class="sl-wrap swiper-slide">
+                                                <!-- item scale -->
+                                                <div class="item-tile-scale type-v">
+                                                    <div class="tile-scale-wrap" data-scale-height="100">
+                                                        <div class="tile-scale bg-violet" data-scale="38"></div>
+                                                        <div class="tile-scale bg-green" data-scale="7"></div>
+                                                        <div class="tile-scale bg-red" data-scale="26"></div>
+                                                        <div class="tile-scale bg-yellow" data-scale="8"></div>
+                                                        <div class="tile-scale bg-blue" data-scale="21"></div>
+                                                    </div>
+                                                    <div class="tile-title-wrap">
+                                                        <div class="tile-total">3 980</div>
+                                                        <div class="tile-title">Нояб.</div>
+                                                    </div>
+                                                </div>
+                                                <!-- /item scale -->
+                                            </div>
+                                            <div class="sl-wrap swiper-slide">
+                                                <!-- item scale -->
+                                                <div class="item-tile-scale type-v">
+                                                    <div class="tile-scale-wrap" data-scale-height="50">
+                                                        <div class="tile-scale bg-violet" data-scale="38"></div>
+                                                        <div class="tile-scale bg-green" data-scale="7"></div>
+                                                        <div class="tile-scale bg-red" data-scale="26"></div>
+                                                        <div class="tile-scale bg-yellow" data-scale="8"></div>
+                                                        <div class="tile-scale bg-blue" data-scale="21"></div>
+                                                    </div>
+                                                    <div class="tile-title-wrap">
+                                                        <div class="tile-total">3 980</div>
+                                                        <div class="tile-title">Нояб.</div>
+                                                    </div>
+                                                </div>
+                                                <!-- /item scale -->
+                                            </div>
+                                            <div class="sl-wrap swiper-slide">
+                                                <!-- item scale -->
+                                                <div class="item-tile-scale type-v">
+                                                    <div class="tile-scale-wrap" data-scale-height="100">
+                                                        <div class="tile-scale bg-violet" data-scale="38"></div>
+                                                        <div class="tile-scale bg-green" data-scale="7"></div>
+                                                        <div class="tile-scale bg-red" data-scale="26"></div>
+                                                        <div class="tile-scale bg-yellow" data-scale="8"></div>
+                                                        <div class="tile-scale bg-blue" data-scale="21"></div>
+                                                    </div>
+                                                    <div class="tile-title-wrap">
+                                                        <div class="tile-total">3 980</div>
+                                                        <div class="tile-title">Нояб.</div>
+                                                    </div>
+                                                </div>
+                                                <!-- /item scale -->
+                                            </div>
+                                            <div class="sl-wrap swiper-slide">
+                                                <!-- item scale -->
+                                                <div class="item-tile-scale type-v">
+                                                    <div class="tile-scale-wrap" data-scale-height="50">
+                                                        <div class="tile-scale bg-violet" data-scale="38"></div>
+                                                        <div class="tile-scale bg-green" data-scale="7"></div>
+                                                        <div class="tile-scale bg-red" data-scale="26"></div>
+                                                        <div class="tile-scale bg-yellow" data-scale="8"></div>
+                                                        <div class="tile-scale bg-blue" data-scale="21"></div>
+                                                    </div>
+                                                    <div class="tile-title-wrap">
+                                                        <div class="tile-total">3 980</div>
+                                                        <div class="tile-title">Нояб.</div>
+                                                    </div>
+                                                </div>
+                                                <!-- /item scale -->
+                                            </div>
+                                            <div class="sl-wrap swiper-slide">
+                                                <!-- item scale -->
+                                                <div class="item-tile-scale type-v">
+                                                    <div class="tile-scale-wrap" data-scale-height="100">
+                                                        <div class="tile-scale bg-violet" data-scale="38"></div>
+                                                        <div class="tile-scale bg-green" data-scale="7"></div>
+                                                        <div class="tile-scale bg-red" data-scale="26"></div>
+                                                        <div class="tile-scale bg-yellow" data-scale="8"></div>
+                                                        <div class="tile-scale bg-blue" data-scale="21"></div>
+                                                    </div>
+                                                    <div class="tile-title-wrap">
+                                                        <div class="tile-total">3 980</div>
+                                                        <div class="tile-title">Нояб.</div>
+                                                    </div>
+                                                </div>
+                                                <!-- /item scale -->
+                                            </div>
+                                            <div class="sl-wrap swiper-slide">
+                                                <!-- item scale -->
+                                                <div class="item-tile-scale type-v">
+                                                    <div class="tile-scale-wrap" data-scale-height="50">
+                                                        <div class="tile-scale bg-violet" data-scale="38"></div>
+                                                        <div class="tile-scale bg-green" data-scale="7"></div>
+                                                        <div class="tile-scale bg-red" data-scale="26"></div>
+                                                        <div class="tile-scale bg-yellow" data-scale="8"></div>
+                                                        <div class="tile-scale bg-blue" data-scale="21"></div>
+                                                    </div>
+                                                    <div class="tile-title-wrap">
+                                                        <div class="tile-total">3 980</div>
+                                                        <div class="tile-title">Нояб.</div>
+                                                    </div>
+                                                </div>
+                                                <!-- /item scale -->
+                                            </div>
+                                            <div class="sl-wrap swiper-slide">
+                                                <!-- item scale -->
+                                                <div class="item-tile-scale type-v">
+                                                    <div class="tile-scale-wrap" data-scale-height="100">
+                                                        <div class="tile-scale bg-violet" data-scale="38"></div>
+                                                        <div class="tile-scale bg-green" data-scale="7"></div>
+                                                        <div class="tile-scale bg-red" data-scale="26"></div>
+                                                        <div class="tile-scale bg-yellow" data-scale="8"></div>
+                                                        <div class="tile-scale bg-blue" data-scale="21"></div>
+                                                    </div>
+                                                    <div class="tile-title-wrap">
+                                                        <div class="tile-total">3 980</div>
+                                                        <div class="tile-title">Нояб.</div>
+                                                    </div>
+                                                </div>
+                                                <!-- /item scale -->
+                                            </div>
+                                            <div class="sl-wrap swiper-slide">
+                                                <!-- item scale -->
+                                                <div class="item-tile-scale type-v">
+                                                    <div class="tile-scale-wrap" data-scale-height="50">
+                                                        <div class="tile-scale bg-violet" data-scale="38"></div>
+                                                        <div class="tile-scale bg-green" data-scale="7"></div>
+                                                        <div class="tile-scale bg-red" data-scale="26"></div>
+                                                        <div class="tile-scale bg-yellow" data-scale="8"></div>
+                                                        <div class="tile-scale bg-blue" data-scale="21"></div>
+                                                    </div>
+                                                    <div class="tile-title-wrap">
+                                                        <div class="tile-total">3 980</div>
+                                                        <div class="tile-title">Нояб.</div>
+                                                    </div>
+                                                </div>
+                                                <!-- /item scale -->
+                                            </div>
+                                            <div class="sl-wrap swiper-slide">
+                                                <!-- item scale -->
+                                                <div class="item-tile-scale type-v">
+                                                    <div class="tile-scale-wrap" data-scale-height="100">
+                                                        <div class="tile-scale bg-violet" data-scale="38"></div>
+                                                        <div class="tile-scale bg-green" data-scale="7"></div>
+                                                        <div class="tile-scale bg-red" data-scale="26"></div>
+                                                        <div class="tile-scale bg-yellow" data-scale="8"></div>
+                                                        <div class="tile-scale bg-blue" data-scale="21"></div>
+                                                    </div>
+                                                    <div class="tile-title-wrap">
+                                                        <div class="tile-total">3 980</div>
+                                                        <div class="tile-title">Нояб.</div>
+                                                    </div>
+                                                </div>
+                                                <!-- /item scale -->
+                                            </div>
+                                            <div class="sl-wrap swiper-slide">
+                                                <!-- item scale -->
+                                                <div class="item-tile-scale type-v">
+                                                    <div class="tile-scale-wrap" data-scale-height="50">
+                                                        <div class="tile-scale bg-violet" data-scale="38"></div>
+                                                        <div class="tile-scale bg-green" data-scale="7"></div>
+                                                        <div class="tile-scale bg-red" data-scale="26"></div>
+                                                        <div class="tile-scale bg-yellow" data-scale="8"></div>
+                                                        <div class="tile-scale bg-blue" data-scale="21"></div>
+                                                    </div>
+                                                    <div class="tile-title-wrap">
+                                                        <div class="tile-total">3 980</div>
+                                                        <div class="tile-title">Нояб.</div>
+                                                    </div>
+                                                </div>
+                                                <!-- /item scale -->
+                                            </div>
+                                            <div class="sl-wrap swiper-slide">
+                                                <!-- item scale -->
+                                                <div class="item-tile-scale type-v">
+                                                    <div class="tile-scale-wrap" data-scale-height="100">
+                                                        <div class="tile-scale bg-violet" data-scale="38"></div>
+                                                        <div class="tile-scale bg-green" data-scale="7"></div>
+                                                        <div class="tile-scale bg-red" data-scale="26"></div>
+                                                        <div class="tile-scale bg-yellow" data-scale="8"></div>
+                                                        <div class="tile-scale bg-blue" data-scale="21"></div>
+                                                    </div>
+                                                    <div class="tile-title-wrap">
+                                                        <div class="tile-total">3 980</div>
+                                                        <div class="tile-title">Нояб.</div>
+                                                    </div>
+                                                </div>
+                                                <!-- /item scale -->
+                                            </div>
+                                            <div class="sl-wrap swiper-slide">
+                                                <!-- item scale -->
+                                                <div class="item-tile-scale type-v">
+                                                    <div class="tile-scale-wrap" data-scale-height="50">
+                                                        <div class="tile-scale bg-violet" data-scale="38"></div>
+                                                        <div class="tile-scale bg-green" data-scale="7"></div>
+                                                        <div class="tile-scale bg-red" data-scale="26"></div>
+                                                        <div class="tile-scale bg-yellow" data-scale="8"></div>
+                                                        <div class="tile-scale bg-blue" data-scale="21"></div>
+                                                    </div>
+                                                    <div class="tile-title-wrap">
+                                                        <div class="tile-total">3 980</div>
+                                                        <div class="tile-title">Нояб.</div>
+                                                    </div>
+                                                </div>
+                                                <!-- /item scale -->
+                                            </div>
+                                            <div class="sl-wrap swiper-slide">
+                                                <!-- item scale -->
+                                                <div class="item-tile-scale type-v">
+                                                    <div class="tile-scale-wrap" data-scale-height="100">
+                                                        <div class="tile-scale bg-violet" data-scale="38"></div>
+                                                        <div class="tile-scale bg-green" data-scale="7"></div>
+                                                        <div class="tile-scale bg-red" data-scale="26"></div>
+                                                        <div class="tile-scale bg-yellow" data-scale="8"></div>
+                                                        <div class="tile-scale bg-blue" data-scale="21"></div>
+                                                    </div>
+                                                    <div class="tile-title-wrap">
+                                                        <div class="tile-total">3 980</div>
+                                                        <div class="tile-title">Нояб.</div>
+                                                    </div>
+                                                </div>
+                                                <!-- /item scale -->
+                                            </div>
+                                            <div class="sl-wrap swiper-slide">
+                                                <!-- item scale -->
+                                                <div class="item-tile-scale type-v">
+                                                    <div class="tile-scale-wrap" data-scale-height="50">
+                                                        <div class="tile-scale bg-violet" data-scale="38"></div>
+                                                        <div class="tile-scale bg-green" data-scale="7"></div>
+                                                        <div class="tile-scale bg-red" data-scale="26"></div>
+                                                        <div class="tile-scale bg-yellow" data-scale="8"></div>
+                                                        <div class="tile-scale bg-blue" data-scale="21"></div>
+                                                    </div>
+                                                    <div class="tile-title-wrap">
+                                                        <div class="tile-total">3 980</div>
+                                                        <div class="tile-title">Нояб.</div>
+                                                    </div>
+                                                </div>
+                                                <!-- /item scale -->
+                                            </div>
+                                            <div class="sl-wrap swiper-slide">
+                                                <!-- item scale -->
+                                                <div class="item-tile-scale type-v">
+                                                    <div class="tile-scale-wrap" data-scale-height="100">
+                                                        <div class="tile-scale bg-violet" data-scale="38"></div>
+                                                        <div class="tile-scale bg-green" data-scale="7"></div>
+                                                        <div class="tile-scale bg-red" data-scale="26"></div>
+                                                        <div class="tile-scale bg-yellow" data-scale="8"></div>
+                                                        <div class="tile-scale bg-blue" data-scale="21"></div>
+                                                    </div>
+                                                    <div class="tile-title-wrap">
+                                                        <div class="tile-total">3 980</div>
+                                                        <div class="tile-title">Нояб.</div>
+                                                    </div>
+                                                </div>
+                                                <!-- /item scale -->
+                                            </div>
+                                            <div class="sl-wrap swiper-slide">
+                                                <!-- item scale -->
+                                                <div class="item-tile-scale type-v">
+                                                    <div class="tile-scale-wrap" data-scale-height="50">
+                                                        <div class="tile-scale bg-violet" data-scale="38"></div>
+                                                        <div class="tile-scale bg-green" data-scale="7"></div>
+                                                        <div class="tile-scale bg-red" data-scale="26"></div>
+                                                        <div class="tile-scale bg-yellow" data-scale="8"></div>
+                                                        <div class="tile-scale bg-blue" data-scale="21"></div>
+                                                    </div>
+                                                    <div class="tile-title-wrap">
+                                                        <div class="tile-total">3 980</div>
+                                                        <div class="tile-title">Нояб.</div>
+                                                    </div>
+                                                </div>
+                                                <!-- /item scale -->
+                                            </div>
+                                            <div class="sl-wrap swiper-slide">
+                                                <!-- item scale -->
+                                                <div class="item-tile-scale type-v">
+                                                    <div class="tile-scale-wrap" data-scale-height="100">
+                                                        <div class="tile-scale bg-violet" data-scale="38"></div>
+                                                        <div class="tile-scale bg-green" data-scale="7"></div>
+                                                        <div class="tile-scale bg-red" data-scale="26"></div>
+                                                        <div class="tile-scale bg-yellow" data-scale="8"></div>
+                                                        <div class="tile-scale bg-blue" data-scale="21"></div>
+                                                    </div>
+                                                    <div class="tile-title-wrap">
+                                                        <div class="tile-total">3 980</div>
+                                                        <div class="tile-title">Нояб.</div>
+                                                    </div>
+                                                </div>
+                                                <!-- /item scale -->
+                                            </div>
+                                            <div class="sl-wrap swiper-slide">
+                                                <!-- item scale -->
+                                                <div class="item-tile-scale type-v">
+                                                    <div class="tile-scale-wrap" data-scale-height="50">
+                                                        <div class="tile-scale bg-violet" data-scale="38"></div>
+                                                        <div class="tile-scale bg-green" data-scale="7"></div>
+                                                        <div class="tile-scale bg-red" data-scale="26"></div>
+                                                        <div class="tile-scale bg-yellow" data-scale="8"></div>
+                                                        <div class="tile-scale bg-blue" data-scale="21"></div>
+                                                    </div>
+                                                    <div class="tile-title-wrap">
+                                                        <div class="tile-total">3 980</div>
+                                                        <div class="tile-title">Нояб.</div>
+                                                    </div>
+                                                </div>
+                                                <!-- /item scale -->
+                                            </div>
+                                            <div class="sl-wrap swiper-slide">
+                                                <!-- item scale -->
+                                                <div class="item-tile-scale type-v">
+                                                    <div class="tile-scale-wrap" data-scale-height="100">
+                                                        <div class="tile-scale bg-violet" data-scale="38"></div>
+                                                        <div class="tile-scale bg-green" data-scale="7"></div>
+                                                        <div class="tile-scale bg-red" data-scale="26"></div>
+                                                        <div class="tile-scale bg-yellow" data-scale="8"></div>
+                                                        <div class="tile-scale bg-blue" data-scale="21"></div>
+                                                    </div>
+                                                    <div class="tile-title-wrap">
+                                                        <div class="tile-total">3 980</div>
+                                                        <div class="tile-title">Нояб.</div>
+                                                    </div>
+                                                </div>
+                                                <!-- /item scale -->
+                                            </div>
+                                            <div class="sl-wrap swiper-slide">
+                                                <!-- item scale -->
+                                                <div class="item-tile-scale type-v">
+                                                    <div class="tile-scale-wrap" data-scale-height="50">
+                                                        <div class="tile-scale bg-violet" data-scale="38"></div>
+                                                        <div class="tile-scale bg-green" data-scale="7"></div>
+                                                        <div class="tile-scale bg-red" data-scale="26"></div>
+                                                        <div class="tile-scale bg-yellow" data-scale="8"></div>
+                                                        <div class="tile-scale bg-blue" data-scale="21"></div>
+                                                    </div>
+                                                    <div class="tile-title-wrap">
+                                                        <div class="tile-total">3 980</div>
+                                                        <div class="tile-title">Нояб.</div>
+                                                    </div>
+                                                </div>
+                                                <!-- /item scale -->
+                                            </div>
+                                            <div class="sl-wrap swiper-slide">
+                                                <!-- item scale -->
+                                                <div class="item-tile-scale type-v">
+                                                    <div class="tile-scale-wrap" data-scale-height="100">
+                                                        <div class="tile-scale bg-violet" data-scale="38"></div>
+                                                        <div class="tile-scale bg-green" data-scale="7"></div>
+                                                        <div class="tile-scale bg-red" data-scale="26"></div>
+                                                        <div class="tile-scale bg-yellow" data-scale="8"></div>
+                                                        <div class="tile-scale bg-blue" data-scale="21"></div>
+                                                    </div>
+                                                    <div class="tile-title-wrap">
+                                                        <div class="tile-total">3 980</div>
+                                                        <div class="tile-title">Нояб.</div>
+                                                    </div>
+                                                </div>
+                                                <!-- /item scale -->
+                                            </div>
+                                            <div class="sl-wrap swiper-slide">
+                                                <!-- item scale -->
+                                                <div class="item-tile-scale type-v">
+                                                    <div class="tile-scale-wrap" data-scale-height="50">
+                                                        <div class="tile-scale bg-violet" data-scale="38"></div>
+                                                        <div class="tile-scale bg-green" data-scale="7"></div>
+                                                        <div class="tile-scale bg-red" data-scale="26"></div>
+                                                        <div class="tile-scale bg-yellow" data-scale="8"></div>
+                                                        <div class="tile-scale bg-blue" data-scale="21"></div>
+                                                    </div>
+                                                    <div class="tile-title-wrap">
+                                                        <div class="tile-total">3 980</div>
+                                                        <div class="tile-title">Нояб.</div>
+                                                    </div>
+                                                </div>
+                                                <!-- /item scale -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap wrap-dash">
+                        <div class="tile-items-wrap">
+                            <!-- tile item -->
+                            <div class="tile-item-wrap">
+                                <div class="item-tile-alert">
+                                    <div class="tile-info-wrap">
+                                        <div class="tile-title">Заявок на рассмотрении 450 <br>Всего аявок было в арбитраже <br>Выиграно</div>
+                                        <div class="tile-info">Арбитраж</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /tile item -->
+                            <!-- tile item -->
+                            <div class="tile-item-wrap wrap-half">
+                                <div class="item-tile-form">
+                                    <div class="tile-title">Добавить:</div>
+                                    <div class="tile-form-wrap">
+                                        <div class="tile-field-wrap">
+                                            <a href="" class="btn button-clear">
+                                                <div class="button-ico">
+                                                    <img src="./img/icons/plus.svg" alt="">
+                                                </div>
+                                                <div class="button-title">Новый диагноз</div>
+                                            </a>
+                                        </div>
+                                        <div class="tile-field-wrap">
+                                            <a href="" class="btn button-clear">
+                                                <div class="button-ico">
+                                                    <img src="./img/icons/plus.svg" alt="">
+                                                </div>
+                                                <div class="button-title">Нового пациента</div>
+                                            </a>
+                                        </div>
+                                        <div class="tile-field-wrap">
+                                            <a href="" class="btn button-clear">
+                                                <div class="button-ico">
+                                                    <img src="./img/icons/plus.svg" alt="">
+                                                </div>
+                                                <div class="button-title">Новый профиль</div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /tile item -->
+                            <!-- tile item -->
+                            <div class="tile-item-wrap wrap-half">
+                                <div class="item-tile-form">
+                                    <div class="tile-title">Статус</div>
+                                    <div class="tile-form-wrap">
+                                        <div class="tile-field-wrap">
+                                            <div class="frm-select-toggle">
+                                                <input type="checkbox" id="dash01">
+                                                <label for="dash01">Клиника принимает новых пациентов</label>
+                                            </div>
+                                        </div>
+                                        <div class="tile-field-wrap">
+                                            <div class="frm-select-toggle">
+                                                <input type="checkbox" id="dash02">
+                                                <label for="dash02">Я как врач принимаю новых пациентов</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- /tile item -->
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap wrap-dash">
+                        <!--list-box-->
+                        <div class="list-box">
+                            <div class="items-wrap">
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user01.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Князев А.О.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Привет, что там с Лаховым? Придет?</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-count">6</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user02.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Ширневский О.Г.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Клиент не приехал!</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-count">12</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user03.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Федоров Р.Р.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">У вас рентген появился уже?</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-time">8:34</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user04.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Манов А.Л.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Бланки что вы выслали не медицибланки что вы выслали не медици...</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-time">8:34</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user01.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Князев А.О.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Привет, что там с Лаховым? Придет?</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-count">6</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user02.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Ширневский О.Г.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Клиент не приехал!</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-count">12</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user03.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Федоров Р.Р.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">У вас рентген появился уже?</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-time">8:34</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user04.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Манов А.Л.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Бланки что вы выслали не медицибланки что вы выслали не медици...</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-time">8:34</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user01.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Князев А.О.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Привет, что там с Лаховым? Придет?</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-count">6</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user02.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Ширневский О.Г.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Клиент не приехал!</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-count">12</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user03.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Федоров Р.Р.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">У вас рентген появился уже?</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-time">8:34</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user04.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Манов А.Л.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Бланки что вы выслали не медицибланки что вы выслали не медици...</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-time">8:34</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user01.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Князев А.О.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Привет, что там с Лаховым? Придет?</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-count">6</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user02.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Ширневский О.Г.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Клиент не приехал!</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-count">12</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user03.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Федоров Р.Р.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">У вас рентген появился уже?</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-time">8:34</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user04.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Манов А.Л.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Бланки что вы выслали не медицибланки что вы выслали не медици...</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-time">8:34</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user01.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Князев А.О.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Привет, что там с Лаховым? Придет?</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-count">6</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user02.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Ширневский О.Г.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Клиент не приехал!</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-count">12</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user03.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Федоров Р.Р.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">У вас рентген появился уже?</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-time">8:34</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user04.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Манов А.Л.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Бланки что вы выслали не медицибланки что вы выслали не медици...</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-time">8:34</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user01.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Князев А.О.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Привет, что там с Лаховым? Придет?</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-count">6</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user02.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Ширневский О.Г.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Клиент не приехал!</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-count">12</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user03.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Федоров Р.Р.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">У вас рентген появился уже?</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-time">8:34</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user04.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Манов А.Л.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Бланки что вы выслали не медицибланки что вы выслали не медици...</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-time">8:34</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user01.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Князев А.О.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Привет, что там с Лаховым? Придет?</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-count">6</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user02.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Ширневский О.Г.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Клиент не приехал!</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-count">12</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user03.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Федоров Р.Р.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">У вас рентген появился уже?</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-time">8:34</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user04.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Манов А.Л.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Бланки что вы выслали не медицибланки что вы выслали не медици...</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-time">8:34</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user01.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Князев А.О.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Привет, что там с Лаховым? Придет?</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-count">6</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user02.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Ширневский О.Г.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Клиент не приехал!</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-count">12</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user03.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Федоров Р.Р.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">У вас рентген появился уже?</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-time">8:34</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                                <!--item wrap-->
+                                <div class="item-wrap">
+                                    <a href="" class="item-tile-chat">
+                                        <div class="tile-photo-wrap">
+                                            <div class="tile-photo photo-cover">
+                                                <img src="./img/user04.jpg" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-info-wrap">
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-title">Манов А.Л.</div>
+                                            </div>
+                                            <div class="tile-row-wrap">
+                                                <div class="tile-text">Бланки что вы выслали не медицибланки что вы выслали не медици...</div>
+                                                <div class="tile-status-wrap">
+                                                    <div class="tile-time">8:34</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <!--/item wrap-->
+                            </div>
+                        </div>
+                        <!--/list-box-->
+                    </div>
+                    <!--/item wrap-->
+                </div>
+            </div>
+            <!--/dashboard-box-->
+
+        </div>
+        <!-- /page -->
+
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="inner-wrap">
+                <div class="info-inner-wrap">
+                    <div class="info-wrap">
+                        <p>© 2024, НейроМаркер</p>
+                    </div>
+                    <div class="info-wrap">
+                        <p>Сделано в <a href="" class="link-studio">Вебуспех <img src="./img/main/studio.svg" alt=""></a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+
+
+        <!--popup-outer-box-->
+        <div class="popup-outer-box" id="popup-login">
+            <div class="popup-box">
+                <a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-title-wrap">
+                    <div class="popup-title">Вход в кабинет</div>
+                </div>
+                <div class="popup-content-wrap">
+                    <form action="/" class="frm-popup">
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <input type="email" class="form-input" placeholder="Ваш e-mail">
+                            </div>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <div class="frm-field-password">
+                                    <input type="text" class="form-input" placeholder="Пароль">
+                                    <a href="" class="btn-action-ico ico-password button-active-toggle active js-password-toggle"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm-row row-actions">
+                            <div class="frm-field">
+                                <div class="frm-select">
+                                    <input type="checkbox" id="popup01">
+                                    <label for="popup01">Запомнить пароль</label>
+                                </div>
+                            </div>
+                            <div class="frm-field">
+                                <a href="" class="js-popup-open" data-popup="popup-password">Напомнить пароль</a>
+                            </div>
+                        </div>
+                        <div class="frm-row-submit">
+                            <div class="frm-field">
+                                <button type="submit" class="btn">
+                                    <div class="button-title">Войти</div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="frm-row row-login">
+                            <div class="row-title">Или войдите через</div>
+                            <div class="frm-field">
+                                <a href="" class="btn button-light">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/login01.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="frm-field">
+                                <a href="" class="btn button-light">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/login02.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="frm-field">
+                                <a href="" class="btn button-light">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/login03.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div><!--/popup-outer-box-->
+        <!--popup-outer-box-->
+        <div class="popup-outer-box" id="popup-reg">
+            <div class="popup-box">
+                <a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-title-wrap">
+                    <div class="popup-title">Регистрация</div>
+                </div>
+                <div class="popup-content-wrap">
+                    <form action="/" class="frm-popup">
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <input type="email" class="form-input" placeholder="Ваш e-mail">
+                            </div>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <input type="text" class="form-input" placeholder="Ваше имя">
+                            </div>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <div class="frm-field-password">
+                                    <input type="text" class="form-input" placeholder="Пароль">
+                                    <a href="" class="btn-action-ico ico-password button-active-toggle active js-password-toggle"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <div class="frm-field-password">
+                                    <input type="text" class="form-input" placeholder="Повторите пароль">
+                                    <a href="" class="btn-action-ico ico-password button-active-toggle active js-password-toggle"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm-row row-actions">
+                            <div class="frm-field">
+                                <div class="frm-select">
+                                    <input type="checkbox" id="popup01">
+                                    <label for="popup01">Запомнить пароль</label>
+                                </div>
+                            </div>
+                            <div class="frm-field">
+                                <a href="" class="js-popup-open" data-popup="popup-password">Напомнить пароль</a>
+                            </div>
+                        </div>
+                        <div class="frm-row-submit">
+                            <div class="frm-field">
+                                <button type="submit" class="btn">
+                                    <div class="button-title">Зарегистрироваться</div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="frm-row row-login">
+                            <div class="row-title">Или войдите через</div>
+                            <div class="frm-field">
+                                <a href="" class="btn button-light">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/login01.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="frm-field">
+                                <a href="" class="btn button-light">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/login02.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="frm-field">
+                                <a href="" class="btn button-light">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/login03.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div><!--/popup-outer-box-->
+
+        <!--popup-outer-box-->
+        <div class="popup-outer-box" id="popup-password">
+            <div class="popup-box">
+                <a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-title-wrap">
+                    <div class="popup-title">Напомнить пароль</div>
+                </div>
+                <div class="popup-content-wrap">
+                    <form action="/" class="frm-popup">
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <input type="email" class="form-input" placeholder="denis456@mail.ru">
+                            </div>
+                        </div>
+                        <div class="frm-row-submit">
+                            <div class="frm-field">
+                                <button type="submit" class="btn">
+                                    <div class="button-title">Востановить пароль</div>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div><!--/popup-outer-box-->
+
+    </div>
+    <!-- /wrap -->
+
+
+</body>
+
+</html>

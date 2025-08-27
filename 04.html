@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Главная</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/fancybox.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <script src="./js/chart.js"></script>
+    <script src="./js/swiper-bundle.min.js" defer></script>
+    <script src="./js/fancybox.umd.js" defer></script>
+    <script src="./js/scripts.js" defer></script>
+    <script src="./js/scripts-new.js" defer></script>
+</head>
+
+<body>
+    <!-- wrap -->
+    <div class="wrap">
+
+        <!-- header -->
+        <header class="header">
+            <div class="inner-wrap">
+                <div class="logo-inner-wrap">
+                    <a href="" class="logo">
+                        <img src="./img/main/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="menu-inner-wrap popup-menu-wrap js-popup-wrap">
+                    <a href="" class="btn-popup btn-action-ico ico-menu button-active-close js-btn-popup-toggle"></a>
+                    <div class="popup-content-block js-popup-block">
+                        <div class="menu-wrap">
+                            <ul class="menu">
+                                <li>
+                                    <a href="" class="btn-menu active">
+                                        <div class="button-title">Заявки</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn-menu">
+                                        <div class="button-title">Арбитраж</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn-menu">
+                                        <div class="button-title">Переписка</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="actions-inner-wrap">
+                            <div class="action-wrap">
+                                <a href="" class="btn-action-ico ico-notify"></a>
+                            </div>
+                            <div class="user-wrap">
+                                <a href="" class="elm-photo photo-cover">
+                                    <img src="./img/main/user.jpg" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- /header -->
+
+
+        <!-- page -->
+        <div class="page-full page-lk">
+
+            <!--content-outer-wrap-->
+            <div class="content-outer-wrap filter-include">
+
+                <!--content-wrap-->
+                <div class="content-wrap">
+
+                    <!--page-title-box-->
+                    <div class="page-title-box">
+                        <div class="title-wrap">
+                            <a href="" class="btn-action-ico ico-back section-button"></a>
+                            <div class="section-title h1-title">Мои вопросы</div>
+                        </div>
+                        <div class="title-wrap form-active">
+                            <a href="" class="btn-action-ico ico-back section-button" onclick="document.getElementById('toggleForm').classList.remove('active');return false;"></a>
+                            <div class="section-title h1-title">Новый вопрос</div>
+                        </div>
+                        <div class="action-wrap">
+                            <a href="" class="btn button-main" onclick="document.getElementById('toggleForm').classList.add('active');return false;">
+                                <div class="button-title">Задать вопрос</div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--/page-title-box-->
+
+                    <!--dashboard-box-->
+                    <div class="dashboard-box">
+                        <div class="items-wrap items-dash">
+                            <!--item wrap-->
+                            <div class="item-wrap wrap-dash" id="toggleForm">
+                                <!-- panel form -->
+                                <div class="item-tile-panel type-fit-height">
+                                    <div class="panel-content-wrap">
+                                        <form action="/" class="panel-form-wrap">
+                                            <!--frm-section-->
+                                            <div class="frm-section">
+                                                <div class="frm-section-content">
+                                                    <div class="frm-row">
+                                                        <div class="frm-field">
+                                                            <div class="field-title">Текст вопроса</div>
+                                                            <textarea placeholder="Текст" class="form-input inp-main"></textarea>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/frm-section-->
+                                            <!--frm-section-->
+                                            <div class="frm-section">
+                                                <div class="frm-section-content">
+                                                    <div class="frm-row">
+                                                        <div class="frm-field">
+                                                            <div class="frm-field-upload">
+                                                                <div class="upload-info-wrap">
+                                                                    <div class="elm-ico">
+                                                                        <img src="./img/icons/cloud.svg" alt="">
+                                                                    </div>
+                                                                    <div class="upload-title">Перетащите файлы сюда или нажмите для выбора</div>
+                                                                    <div class="upload-info">Поддерживаемые форматы: PDF, DOC, DOCX, JPG, PNG (до 10 МБ)</div>
+                                                                </div>
+                                                                <div class="upload-actions-wrap">
+                                                                    <a href="" class="btn">
+                                                                        <div class="button-title">Выбрать файлы</div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/frm-section-->
+                                            <!--frm-section-->
+                                            <div class="frm-section">
+                                                <div class="frm-section-content">
+                                                    <div class="frm-row-submit submit-actions">
+                                                        <div class="frm-field field-main">
+                                                            <button type="submit" class="btn button-main">
+                                                                <div class="button-ico">
+                                                                    <img src="./img/icons/mail-send.svg" alt="">
+                                                                </div>
+                                                                <div class="button-title">Отправить </div>
+                                                            </button>
+                                                        </div>
+                                                        <div class="frm-field field-half">
+                                                            <a href="" class="btn button-main button-input-att">
+                                                                <div class="button-ico">
+                                                                    <img src="./img/icons/draft.svg" alt="">
+                                                                </div>
+                                                                <div class="button-title">Сохранить черновик </div>
+                                                            </a>
+                                                        </div>
+                                                        <div class="frm-field field-half">
+                                                            <a href="" class="btn button-main button-input-att">
+                                                                <div class="button-ico">
+                                                                    <img src="./img/icons/cancel.svg" alt="">
+                                                                </div>
+                                                                <div class="button-title">Отменить </div>
+                                                            </a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--/frm-section-->
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- /panel form -->
+                            </div>
+                            <!--/item wrap-->
+                            <!--item wrap-->
+                            <div class="item-wrap wrap-dash">
+                                <!-- panel item -->
+                                <div class="item-tile-panel type-fill-height">
+                                    <div class="panel-title-wrap">
+                                        <div class="section-title title-large">Последние вопросы</div>
+                                        <div class="section-info">
+                                            <a href="" class="link-main">Посмотреть все</a>
+                                        </div>
+                                    </div>
+                                    <div class="panel-content-wrap">
+                                        <div class="panel-scroll-wrap">
+                                            <!-- panel item -->
+                                            <div class="panel-item-wrap">
+                                                <div class="item-tile-panel-order">
+                                                    <div class="panel-title-wrap">
+                                                        <div class="section-title title-large">Вопрос от 12.12.2025 12:25</div>
+                                                        <div class="section-info">
+                                                            <div class="elm-status type-succefull">Посмотреть ответ</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-order-info-wrap">
+                                                        <div class="tile-order-title">Текст отзыва</div>
+                                                        <div class="tile-order-info">
+                                                            <p>Сыпь по лицевой части головы и правое предплечье. Жалоба на зуд в местах сыпи...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /panel item -->
+                                            <!-- panel item -->
+                                            <div class="panel-item-wrap">
+                                                <div class="item-tile-panel-order">
+                                                    <div class="panel-title-wrap">
+                                                        <div class="section-title title-large">Вопрос от 12.12.2025 12:25</div>
+                                                        <div class="section-info">
+                                                            <div class="elm-status type-alert">Не отвечено</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-order-info-wrap">
+                                                        <div class="tile-order-title">Текст отзыва</div>
+                                                        <div class="tile-order-info">
+                                                            <p>Сыпь по лицевой части головы и правое предплечье. Жалоба на зуд в местах сыпи...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /panel item -->
+                                            <!-- panel item -->
+                                            <div class="panel-item-wrap">
+                                                <div class="item-tile-panel-order">
+                                                    <div class="panel-title-wrap">
+                                                        <div class="section-title title-large">Вопрос от 12.12.2025 12:25</div>
+                                                        <div class="section-info">
+                                                            <div class="elm-status type-succefull">Посмотреть ответ</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-order-info-wrap">
+                                                        <div class="tile-order-title">Текст отзыва</div>
+                                                        <div class="tile-order-info">
+                                                            <p>Сыпь по лицевой части головы и правое предплечье. Жалоба на зуд в местах сыпи...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /panel item -->
+                                            <!-- panel item -->
+                                            <div class="panel-item-wrap">
+                                                <div class="item-tile-panel-order">
+                                                    <div class="panel-title-wrap">
+                                                        <div class="section-title title-large">Вопрос от 12.12.2025 12:25</div>
+                                                        <div class="section-info">
+                                                            <div class="elm-status type-alert">Не отвечено</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-order-info-wrap">
+                                                        <div class="tile-order-title">Текст отзыва</div>
+                                                        <div class="tile-order-info">
+                                                            <p>Сыпь по лицевой части головы и правое предплечье. Жалоба на зуд в местах сыпи...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /panel item -->
+                                            <!-- panel item -->
+                                            <div class="panel-item-wrap">
+                                                <div class="item-tile-panel-order">
+                                                    <div class="panel-title-wrap">
+                                                        <div class="section-title title-large">Вопрос от 12.12.2025 12:25</div>
+                                                        <div class="section-info">
+                                                            <div class="elm-status type-succefull">Посмотреть ответ</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-order-info-wrap">
+                                                        <div class="tile-order-title">Текст отзыва</div>
+                                                        <div class="tile-order-info">
+                                                            <p>Сыпь по лицевой части головы и правое предплечье. Жалоба на зуд в местах сыпи...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /panel item -->
+                                            <!-- panel item -->
+                                            <div class="panel-item-wrap">
+                                                <div class="item-tile-panel-order">
+                                                    <div class="panel-title-wrap">
+                                                        <div class="section-title title-large">Вопрос от 12.12.2025 12:25</div>
+                                                        <div class="section-info">
+                                                            <div class="elm-status type-alert">Не отвечено</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-order-info-wrap">
+                                                        <div class="tile-order-title">Текст отзыва</div>
+                                                        <div class="tile-order-info">
+                                                            <p>Сыпь по лицевой части головы и правое предплечье. Жалоба на зуд в местах сыпи...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /panel item -->
+                                            <!-- panel item -->
+                                            <div class="panel-item-wrap">
+                                                <div class="item-tile-panel-order">
+                                                    <div class="panel-title-wrap">
+                                                        <div class="section-title title-large">Вопрос от 12.12.2025 12:25</div>
+                                                        <div class="section-info">
+                                                            <div class="elm-status type-succefull">Посмотреть ответ</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-order-info-wrap">
+                                                        <div class="tile-order-title">Текст отзыва</div>
+                                                        <div class="tile-order-info">
+                                                            <p>Сыпь по лицевой части головы и правое предплечье. Жалоба на зуд в местах сыпи...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /panel item -->
+                                            <!-- panel item -->
+                                            <div class="panel-item-wrap">
+                                                <div class="item-tile-panel-order">
+                                                    <div class="panel-title-wrap">
+                                                        <div class="section-title title-large">Вопрос от 12.12.2025 12:25</div>
+                                                        <div class="section-info">
+                                                            <div class="elm-status type-alert">Не отвечено</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-order-info-wrap">
+                                                        <div class="tile-order-title">Текст отзыва</div>
+                                                        <div class="tile-order-info">
+                                                            <p>Сыпь по лицевой части головы и правое предплечье. Жалоба на зуд в местах сыпи...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /panel item -->
+                                            <!-- panel item -->
+                                            <div class="panel-item-wrap">
+                                                <div class="item-tile-panel-order">
+                                                    <div class="panel-title-wrap">
+                                                        <div class="section-title title-large">Вопрос от 12.12.2025 12:25</div>
+                                                        <div class="section-info">
+                                                            <div class="elm-status type-succefull">Посмотреть ответ</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-order-info-wrap">
+                                                        <div class="tile-order-title">Текст отзыва</div>
+                                                        <div class="tile-order-info">
+                                                            <p>Сыпь по лицевой части головы и правое предплечье. Жалоба на зуд в местах сыпи...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /panel item -->
+                                            <!-- panel item -->
+                                            <div class="panel-item-wrap">
+                                                <div class="item-tile-panel-order">
+                                                    <div class="panel-title-wrap">
+                                                        <div class="section-title title-large">Вопрос от 12.12.2025 12:25</div>
+                                                        <div class="section-info">
+                                                            <div class="elm-status type-alert">Не отвечено</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-order-info-wrap">
+                                                        <div class="tile-order-title">Текст отзыва</div>
+                                                        <div class="tile-order-info">
+                                                            <p>Сыпь по лицевой части головы и правое предплечье. Жалоба на зуд в местах сыпи...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /panel item -->
+                                            <!-- panel item -->
+                                            <div class="panel-item-wrap">
+                                                <div class="item-tile-panel-order">
+                                                    <div class="panel-title-wrap">
+                                                        <div class="section-title title-large">Вопрос от 12.12.2025 12:25</div>
+                                                        <div class="section-info">
+                                                            <div class="elm-status type-succefull">Посмотреть ответ</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-order-info-wrap">
+                                                        <div class="tile-order-title">Текст отзыва</div>
+                                                        <div class="tile-order-info">
+                                                            <p>Сыпь по лицевой части головы и правое предплечье. Жалоба на зуд в местах сыпи...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /panel item -->
+                                            <!-- panel item -->
+                                            <div class="panel-item-wrap">
+                                                <div class="item-tile-panel-order">
+                                                    <div class="panel-title-wrap">
+                                                        <div class="section-title title-large">Вопрос от 12.12.2025 12:25</div>
+                                                        <div class="section-info">
+                                                            <div class="elm-status type-alert">Не отвечено</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-order-info-wrap">
+                                                        <div class="tile-order-title">Текст отзыва</div>
+                                                        <div class="tile-order-info">
+                                                            <p>Сыпь по лицевой части головы и правое предплечье. Жалоба на зуд в местах сыпи...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /panel item -->
+                                            <!-- panel item -->
+                                            <div class="panel-item-wrap">
+                                                <div class="item-tile-panel-order">
+                                                    <div class="panel-title-wrap">
+                                                        <div class="section-title title-large">Вопрос от 12.12.2025 12:25</div>
+                                                        <div class="section-info">
+                                                            <div class="elm-status type-succefull">Посмотреть ответ</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-order-info-wrap">
+                                                        <div class="tile-order-title">Текст отзыва</div>
+                                                        <div class="tile-order-info">
+                                                            <p>Сыпь по лицевой части головы и правое предплечье. Жалоба на зуд в местах сыпи...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /panel item -->
+                                            <!-- panel item -->
+                                            <div class="panel-item-wrap">
+                                                <div class="item-tile-panel-order">
+                                                    <div class="panel-title-wrap">
+                                                        <div class="section-title title-large">Вопрос от 12.12.2025 12:25</div>
+                                                        <div class="section-info">
+                                                            <div class="elm-status type-alert">Не отвечено</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-order-info-wrap">
+                                                        <div class="tile-order-title">Текст отзыва</div>
+                                                        <div class="tile-order-info">
+                                                            <p>Сыпь по лицевой части головы и правое предплечье. Жалоба на зуд в местах сыпи...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /panel item -->
+                                            <!-- panel item -->
+                                            <div class="panel-item-wrap">
+                                                <div class="item-tile-panel-order">
+                                                    <div class="panel-title-wrap">
+                                                        <div class="section-title title-large">Вопрос от 12.12.2025 12:25</div>
+                                                        <div class="section-info">
+                                                            <div class="elm-status type-succefull">Посмотреть ответ</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-order-info-wrap">
+                                                        <div class="tile-order-title">Текст отзыва</div>
+                                                        <div class="tile-order-info">
+                                                            <p>Сыпь по лицевой части головы и правое предплечье. Жалоба на зуд в местах сыпи...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /panel item -->
+                                            <!-- panel item -->
+                                            <div class="panel-item-wrap">
+                                                <div class="item-tile-panel-order">
+                                                    <div class="panel-title-wrap">
+                                                        <div class="section-title title-large">Вопрос от 12.12.2025 12:25</div>
+                                                        <div class="section-info">
+                                                            <div class="elm-status type-alert">Не отвечено</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-order-info-wrap">
+                                                        <div class="tile-order-title">Текст отзыва</div>
+                                                        <div class="tile-order-info">
+                                                            <p>Сыпь по лицевой части головы и правое предплечье. Жалоба на зуд в местах сыпи...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /panel item -->
+                                            <!-- panel item -->
+                                            <div class="panel-item-wrap">
+                                                <div class="item-tile-panel-order">
+                                                    <div class="panel-title-wrap">
+                                                        <div class="section-title title-large">Вопрос от 12.12.2025 12:25</div>
+                                                        <div class="section-info">
+                                                            <div class="elm-status type-succefull">Посмотреть ответ</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-order-info-wrap">
+                                                        <div class="tile-order-title">Текст отзыва</div>
+                                                        <div class="tile-order-info">
+                                                            <p>Сыпь по лицевой части головы и правое предплечье. Жалоба на зуд в местах сыпи...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /panel item -->
+                                            <!-- panel item -->
+                                            <div class="panel-item-wrap">
+                                                <div class="item-tile-panel-order">
+                                                    <div class="panel-title-wrap">
+                                                        <div class="section-title title-large">Вопрос от 12.12.2025 12:25</div>
+                                                        <div class="section-info">
+                                                            <div class="elm-status type-alert">Не отвечено</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-order-info-wrap">
+                                                        <div class="tile-order-title">Текст отзыва</div>
+                                                        <div class="tile-order-info">
+                                                            <p>Сыпь по лицевой части головы и правое предплечье. Жалоба на зуд в местах сыпи...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /panel item -->
+                                            <!-- panel item -->
+                                            <div class="panel-item-wrap">
+                                                <div class="item-tile-panel-order">
+                                                    <div class="panel-title-wrap">
+                                                        <div class="section-title title-large">Вопрос от 12.12.2025 12:25</div>
+                                                        <div class="section-info">
+                                                            <div class="elm-status type-succefull">Посмотреть ответ</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-order-info-wrap">
+                                                        <div class="tile-order-title">Текст отзыва</div>
+                                                        <div class="tile-order-info">
+                                                            <p>Сыпь по лицевой части головы и правое предплечье. Жалоба на зуд в местах сыпи...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /panel item -->
+                                            <!-- panel item -->
+                                            <div class="panel-item-wrap">
+                                                <div class="item-tile-panel-order">
+                                                    <div class="panel-title-wrap">
+                                                        <div class="section-title title-large">Вопрос от 12.12.2025 12:25</div>
+                                                        <div class="section-info">
+                                                            <div class="elm-status type-alert">Не отвечено</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-order-info-wrap">
+                                                        <div class="tile-order-title">Текст отзыва</div>
+                                                        <div class="tile-order-info">
+                                                            <p>Сыпь по лицевой части головы и правое предплечье. Жалоба на зуд в местах сыпи...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /panel item -->
+                                            <!-- panel item -->
+                                            <div class="panel-item-wrap">
+                                                <div class="item-tile-panel-order">
+                                                    <div class="panel-title-wrap">
+                                                        <div class="section-title title-large">Вопрос от 12.12.2025 12:25</div>
+                                                        <div class="section-info">
+                                                            <div class="elm-status type-succefull">Посмотреть ответ</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-order-info-wrap">
+                                                        <div class="tile-order-title">Текст отзыва</div>
+                                                        <div class="tile-order-info">
+                                                            <p>Сыпь по лицевой части головы и правое предплечье. Жалоба на зуд в местах сыпи...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /panel item -->
+                                            <!-- panel item -->
+                                            <div class="panel-item-wrap">
+                                                <div class="item-tile-panel-order">
+                                                    <div class="panel-title-wrap">
+                                                        <div class="section-title title-large">Вопрос от 12.12.2025 12:25</div>
+                                                        <div class="section-info">
+                                                            <div class="elm-status type-alert">Не отвечено</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-order-info-wrap">
+                                                        <div class="tile-order-title">Текст отзыва</div>
+                                                        <div class="tile-order-info">
+                                                            <p>Сыпь по лицевой части головы и правое предплечье. Жалоба на зуд в местах сыпи...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /panel item -->
+                                            <!-- panel item -->
+                                            <div class="panel-item-wrap">
+                                                <div class="item-tile-panel-order">
+                                                    <div class="panel-title-wrap">
+                                                        <div class="section-title title-large">Вопрос от 12.12.2025 12:25</div>
+                                                        <div class="section-info">
+                                                            <div class="elm-status type-succefull">Посмотреть ответ</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-order-info-wrap">
+                                                        <div class="tile-order-title">Текст отзыва</div>
+                                                        <div class="tile-order-info">
+                                                            <p>Сыпь по лицевой части головы и правое предплечье. Жалоба на зуд в местах сыпи...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /panel item -->
+                                            <!-- panel item -->
+                                            <div class="panel-item-wrap">
+                                                <div class="item-tile-panel-order">
+                                                    <div class="panel-title-wrap">
+                                                        <div class="section-title title-large">Вопрос от 12.12.2025 12:25</div>
+                                                        <div class="section-info">
+                                                            <div class="elm-status type-alert">Не отвечено</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-order-info-wrap">
+                                                        <div class="tile-order-title">Текст отзыва</div>
+                                                        <div class="tile-order-info">
+                                                            <p>Сыпь по лицевой части головы и правое предплечье. Жалоба на зуд в местах сыпи...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /panel item -->
+                                            <!-- panel item -->
+                                            <div class="panel-item-wrap">
+                                                <div class="item-tile-panel-order">
+                                                    <div class="panel-title-wrap">
+                                                        <div class="section-title title-large">Вопрос от 12.12.2025 12:25</div>
+                                                        <div class="section-info">
+                                                            <div class="elm-status type-succefull">Посмотреть ответ</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-order-info-wrap">
+                                                        <div class="tile-order-title">Текст отзыва</div>
+                                                        <div class="tile-order-info">
+                                                            <p>Сыпь по лицевой части головы и правое предплечье. Жалоба на зуд в местах сыпи...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /panel item -->
+                                            <!-- panel item -->
+                                            <div class="panel-item-wrap">
+                                                <div class="item-tile-panel-order">
+                                                    <div class="panel-title-wrap">
+                                                        <div class="section-title title-large">Вопрос от 12.12.2025 12:25</div>
+                                                        <div class="section-info">
+                                                            <div class="elm-status type-alert">Не отвечено</div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="tile-order-info-wrap">
+                                                        <div class="tile-order-title">Текст отзыва</div>
+                                                        <div class="tile-order-info">
+                                                            <p>Сыпь по лицевой части головы и правое предплечье. Жалоба на зуд в местах сыпи...</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- /panel item -->
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /panel item -->
+                            </div>
+                            <!--/item wrap-->
+                        </div>
+                    </div>
+                    <!--/dashboard-box-->
+
+                </div>
+                <!--/content-wrap-->
+
+                <!--side-wrap-->
+                <div class="side-wrap">
+
+                    <!--side-menu-box-->
+                    <div class="side-menu-box">
+                        <ul class="menu">
+                            <li>
+                                <a href="" class="btn active">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/menu07.svg" alt="">
+                                    </div>
+                                    <div class="button-title">Мой профиль</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="btn">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/menu08.svg" alt="">
+                                    </div>
+                                    <div class="button-title">Мои вопросы</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="btn">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/logout.svg" alt="">
+                                    </div>
+                                    <div class="button-title">Выйти</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/side-menu-box-->
+
+
+                    <!--side-filter-box-->
+                    <div class="side-filter-box">
+                        <div class="filter-inner-wrap">
+                            <div class="filter-content-wrap">
+                                <div class="filter-title">Быстрый поиск</div>
+                                <div class="filter-section-wrap">
+                                    <form action="/" class="frm-main-search">
+                                        <input type="text" class="form-input inp-main" placeholder="Поиск по наименованию">
+                                        <button type="submit" class="button-form btn-action-ico ico-search"></button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="filter-popup-wrap js-popup-wrap">
+                                <a href="" class="btn-popup btn button-input js-btn-popup-toggle">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/filter.svg" alt="">
+                                    </div>
+                                </a>
+                                <div class="filter-popup-content js-popup-block">
+                                    <div class="filter-content-wrap">
+                                        <div class="filter-title">Фильтр</div>
+                                        <div class="filter-section-wrap">
+                                            <div class="frm-row">
+                                                <div class="frm-field">
+                                                    <select class="form-input inp-main" required>
+                                                        <option selected disabled hidden value="">Врачи</option><!--placeholder-->
+                                                        <option>Пункт списка</option>
+                                                        <option>Пункт списка</option>
+                                                        <option>Пункт списка</option>
+                                                        <option>Пункт списка</option>
+                                                    </select>
+                                                </div>
+                                                <div class="frm-field">
+                                                    <select class="form-input inp-main" required>
+                                                        <option selected disabled hidden value="">Регион</option><!--placeholder-->
+                                                        <option>Пункт списка</option>
+                                                        <option>Пункт списка</option>
+                                                        <option>Пункт списка</option>
+                                                        <option>Пункт списка</option>
+                                                    </select>
+                                                </div>
+                                                <div class="frm-field">
+                                                    <select class="form-input inp-main" required>
+                                                        <option selected disabled hidden value="">Клиника</option><!--placeholder-->
+                                                        <option>Пункт списка</option>
+                                                        <option>Пункт списка</option>
+                                                        <option>Пункт списка</option>
+                                                        <option>Пункт списка</option>
+                                                    </select>
+                                                </div>
+                                                <div class="frm-field">
+                                                    <select class="form-input inp-main" required>
+                                                        <option selected disabled hidden value="">Направление </option><!--placeholder-->
+                                                        <option>Пункт списка</option>
+                                                        <option>Пункт списка</option>
+                                                        <option>Пункт списка</option>
+                                                        <option>Пункт списка</option>
+                                                    </select>
+                                                </div>
+                                                <div class="frm-field">
+                                                    <select class="form-input inp-main" required>
+                                                        <option selected disabled hidden value="">Заболевание</option><!--placeholder-->
+                                                        <option>Пункт списка</option>
+                                                        <option>Пункт списка</option>
+                                                        <option>Пункт списка</option>
+                                                        <option>Пункт списка</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="filter-actions-wrap">
+                                        <div class="frm-row">
+                                            <div class="frm-field">
+                                                <a href="" class="btn button-main">
+                                                    <div class="button-title">Применить фильтры</div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/side-filter-box-->
+
+                    <!--side-info-box-->
+                    <div class="side-info-box">
+                        <div class="section-title-wrap">
+                            <div class="section-title">Полезная информация</div>
+                        </div>
+                        <div class="elm-info-ico">
+                            <div class="elm-ico">
+                                <img src="./img/icons/time.svg" alt="">
+                            </div>
+                            <div class="info-title">Сроки рассмотрения</div>
+                            <p>Плановые: до 3 дней <br>Срочные: до 24 часов <br>Экстренные: до 2 часов</p>
+                        </div>
+                        <div class="elm-info-ico">
+                            <div class="elm-ico">
+                                <img src="./img/icons/protect.svg" alt="">
+                            </div>
+                            <div class="info-title">Поддержка</div>
+                            <p><a href="tel:88001234567">8 (800) 123-45-67</a><br><a href="mailto:SUPPORT@MEDPORTAL.RU">SUPPORT@MEDPORTAL.RU</a></p>
+                        </div>
+                        <div class="elm-info-ico">
+                            <div class="elm-ico">
+                                <img src="./img/icons/monitor.svg" alt="">
+                            </div>
+                            <div class="info-title">Часто задаваемые вопросы</div>
+                            <p><a href="" class="link-main">Посмотреть FAQ</a></p>
+                        </div>
+                    </div>
+                    <!--/side-info-box-->
+
+                </div>
+                <!--/side-wrap-->
+
+            </div>
+            <!--/content-outer-wrap-->
+
+        </div>
+        <!-- /page -->
+
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="inner-wrap">
+                <div class="info-inner-wrap">
+                    <div class="info-wrap">
+                        <p>© 2024, НейроМаркер</p>
+                    </div>
+                    <div class="info-wrap">
+                        <p>Сделано в <a href="" class="link-studio">Вебуспех <img src="./img/main/studio.svg" alt=""></a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+
+
+        <!--popup-outer-box-->
+        <!-- <div class="popup-outer-box" id="popup-login">
+	<div class="popup-box">
+		<a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+		<div class="popup-title-wrap">
+			<div class="popup-title">Вход в кабинет</div>
+		</div>
+		<div class="popup-content-wrap">
+			<form action="/" class="frm-popup">
+				<div class="frm-row">
+					<div class="frm-field">
+						<input type="email" class="form-input" placeholder="Ваш e-mail">
+					</div>
+				</div>
+				<div class="frm-row">
+					<div class="frm-field">
+						<div class="frm-field-password">
+							<input type="text" class="form-input" placeholder="Пароль">
+							<a href="" class="btn-action-ico ico-password button-active-toggle active js-password-toggle"></a>
+						</div>
+					</div>
+				</div>
+				<div class="frm-row row-actions">
+					<div class="frm-field">
+						<div class="frm-select">
+							<input type="checkbox" id="popup01">
+							<label for="popup01">Запомнить пароль</label>
+						</div>
+					</div>
+					<div class="frm-field">
+						<a href="" class="js-popup-open" data-popup="popup-password">Напомнить пароль</a>
+					</div>
+				</div>
+				<div class="frm-row-submit">
+					<div class="frm-field">
+						<button type="submit" class="btn">
+							<div class="button-title">Войти</div>
+						</button>
+					</div>
+				</div>
+				<div class="frm-row row-login">
+					<div class="row-title">Или войдите через</div>
+					<div class="frm-field">
+						<a href="" class="btn button-light">
+							<div class="button-ico">
+								<img src="./img/icons/login01.svg" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="frm-field">
+						<a href="" class="btn button-light">
+							<div class="button-ico">
+								<img src="./img/icons/login02.svg" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="frm-field">
+						<a href="" class="btn button-light">
+							<div class="button-ico">
+								<img src="./img/icons/login03.svg" alt="">
+							</div>
+						</a>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div> -->
+        <!--/popup-outer-box-->
+        <!--popup-outer-box-->
+        <!-- <div class="popup-outer-box" id="popup-reg">
+	<div class="popup-box">
+		<a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+		<div class="popup-title-wrap">
+			<div class="popup-title">Регистрация</div>
+		</div>
+		<div class="popup-content-wrap">
+			<form action="/" class="frm-popup">
+				<div class="frm-row">
+					<div class="frm-field">
+						<input type="email" class="form-input" placeholder="Ваш e-mail">
+					</div>
+				</div>
+				<div class="frm-row">
+					<div class="frm-field">
+						<input type="text" class="form-input" placeholder="Ваше имя">
+					</div>
+				</div>
+				<div class="frm-row">
+					<div class="frm-field">
+						<div class="frm-field-password">
+							<input type="text" class="form-input" placeholder="Пароль">
+							<a href="" class="btn-action-ico ico-password button-active-toggle active js-password-toggle"></a>
+						</div>
+					</div>
+				</div>
+				<div class="frm-row">
+					<div class="frm-field">
+						<div class="frm-field-password">
+							<input type="text" class="form-input" placeholder="Повторите пароль">
+							<a href="" class="btn-action-ico ico-password button-active-toggle active js-password-toggle"></a>
+						</div>
+					</div>
+				</div>
+				<div class="frm-row row-actions">
+					<div class="frm-field">
+						<div class="frm-select">
+							<input type="checkbox" id="popup01">
+							<label for="popup01">Запомнить пароль</label>
+						</div>
+					</div>
+					<div class="frm-field">
+						<a href="" class="js-popup-open" data-popup="popup-password">Напомнить пароль</a>
+					</div>
+				</div>
+				<div class="frm-row-submit">
+					<div class="frm-field">
+						<button type="submit" class="btn">
+							<div class="button-title">Зарегистрироваться</div>
+						</button>
+					</div>
+				</div>
+				<div class="frm-row row-login">
+					<div class="row-title">Или войдите через</div>
+					<div class="frm-field">
+						<a href="" class="btn button-light">
+							<div class="button-ico">
+								<img src="./img/icons/login01.svg" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="frm-field">
+						<a href="" class="btn button-light">
+							<div class="button-ico">
+								<img src="./img/icons/login02.svg" alt="">
+							</div>
+						</a>
+					</div>
+					<div class="frm-field">
+						<a href="" class="btn button-light">
+							<div class="button-ico">
+								<img src="./img/icons/login03.svg" alt="">
+							</div>
+						</a>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div> -->
+        <!--/popup-outer-box-->
+
+        <!--popup-outer-box-->
+        <!-- <div class="popup-outer-box" id="popup-password">
+	<div class="popup-box">
+		<a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+		<div class="popup-title-wrap">
+			<div class="popup-title">Напомнить пароль</div>
+		</div>
+		<div class="popup-content-wrap">
+			<form action="/" class="frm-popup">
+				<div class="frm-row">
+					<div class="frm-field">
+						<input type="email" class="form-input" placeholder="denis456@mail.ru">
+					</div>
+				</div>
+				<div class="frm-row-submit">
+					<div class="frm-field">
+						<button type="submit" class="btn">
+							<div class="button-title">Востановить пароль</div>
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div> -->
+        <!--/popup-outer-box-->
+
+        <!--popup-outer-box-->
+        <div class="popup-outer-box popup-main " id="popup-main-login">
+            <div class="popup-box">
+                <a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-title-wrap">
+                    <div class="popup-title">Вход в кабинет</div>
+                </div>
+                <div class="popup-content-wrap">
+                    <form action="/" class="frm-popup">
+                        <div class="select-inner-wrap">
+                            <div class="item-select-profile js-popup-wrap js-popup-select">
+                                <a href="" class="btn-popup btn-menu js-btn-popup-toggle"></a>
+                                <div class="select-content-block js-popup-block">
+                                    <ul class="menu">
+                                        <li>
+                                            <a href="" class="btn-menu active">
+                                                <div class="button-ico">
+                                                    <img src="./img/icons/menu03.svg" alt="">
+                                                </div>
+                                                <div class="button-title">
+                                                    <div class="button-title-head">Врач</div>
+                                                    <div class="button-title-info">Направляющий специалист</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="btn-menu">
+                                                <div class="button-ico">
+                                                    <img src="./img/icons/menu04.svg" alt="">
+                                                </div>
+                                                <div class="button-title">
+                                                    <div class="button-title-head">Клиника</div>
+                                                    <div class="button-title-info">Принимающая организация</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="btn-menu">
+                                                <div class="button-ico">
+                                                    <img src="./img/icons/menu02.svg" alt="">
+                                                </div>
+                                                <div class="button-title">
+                                                    <div class="button-title-head">Пациент</div>
+                                                    <div class="button-title-info">Получатель медицинских услуг</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-field field-half">
+                                <input type="email" class="form-input inp-main" placeholder="Ваш e-mail">
+                            </div>
+                            <div class="frm-field field-half">
+                                <div class="frm-field-password">
+                                    <input type="text" class="form-input inp-main" placeholder="Пароль">
+                                    <a href="" class="btn-action-ico ico-password button-active-toggle active js-password-toggle"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm-row-submit row-line">
+                            <div class="frm-field field-info">
+                                <div class="frm-select">
+                                    <input type="checkbox" id="popup-form01">
+                                    <label for="popup-form01">Запомнить пароль</label>
+                                </div>
+                                <a href="" class="js-popup-open" data-popup="popup-main-password">Напомнить пароль</a>
+                            </div>
+                            <div class="frm-field field-submit">
+                                <button type="submit" class="btn button-main">
+                                    <div class="button-title">Войти</div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="frm-row row-login">
+                            <div class="row-title">Или войдите через</div>
+                            <div class="frm-field">
+                                <a href="" class="btn button-light">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/login01.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="frm-field">
+                                <a href="" class="btn button-light">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/login02.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="frm-field">
+                                <a href="" class="btn button-light">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/login03.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--/popup-outer-box-->
+
+        <!--popup-outer-box-->
+        <div class="popup-outer-box popup-main" id="popup-main-reg">
+            <div class="popup-box">
+                <a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-title-wrap">
+                    <div class="popup-title">Регистрация</div>
+                </div>
+                <div class="popup-content-wrap">
+                    <form action="/" class="frm-popup">
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <select class="form-input inp-main" required>
+                                    <option selected disabled hidden value="">Выберите роль</option><!--placeholder-->
+                                    <option>Пункт списка</option>
+                                    <option>Пункт списка</option>
+                                    <option>Пункт списка</option>
+                                    <option>Пункт списка</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <input type="text" class="form-input inp-main" placeholder="Ваше ФИО">
+                            </div>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-field field-half">
+                                <input type="email" class="form-input inp-main" placeholder="Ваш e-mail">
+                            </div>
+                            <div class="frm-field field-half">
+                                <input type="tel" class="form-input inp-main" placeholder="Телефон">
+                            </div>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-field field-half">
+                                <div class="frm-field-password">
+                                    <input type="text" class="form-input inp-main" placeholder="Пароль">
+                                    <a href="" class="btn-action-ico ico-password button-active-toggle active js-password-toggle"></a>
+                                </div>
+                            </div>
+                            <div class="frm-field field-half">
+                                <div class="frm-field-password">
+                                    <input type="text" class="form-input inp-main" placeholder="Пароль">
+                                    <a href="" class="btn-action-ico ico-password button-active-toggle active js-password-toggle"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm-row-submit">
+                            <div class="frm-field field-info">
+                                <div class="frm-select">
+                                    <input type="checkbox" id="popup-form02">
+                                    <label for="popup-form02">Даю согласие на обработку <a href="">Персональных данных</a></label>
+                                </div>
+                            </div>
+                            <div class="frm-field field-submit">
+                                <button type="submit" class="btn button-main">
+                                    <div class="button-title">Зарегистрироваться</div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="frm-row row-login">
+                            <div class="row-title">Или войдите через</div>
+                            <div class="frm-field">
+                                <a href="" class="btn button-light">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/login01.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="frm-field">
+                                <a href="" class="btn button-light">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/login02.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="frm-field">
+                                <a href="" class="btn button-light">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/login03.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--/popup-outer-box-->
+
+        <!--popup-outer-box-->
+        <div class="popup-outer-box popup-main" id="popup-main-password">
+            <div class="popup-box">
+                <a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-title-wrap">
+                    <div class="popup-title">Восстановить пароль</div>
+                </div>
+                <div class="popup-content-wrap">
+                    <form action="/" class="frm-popup">
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <input type="email" class="form-input inp-main" placeholder="Ваш e-mail">
+                            </div>
+                        </div>
+                        <div class="frm-row-submit">
+                            <div class="frm-field field-submit">
+                                <button type="submit" class="btn button-main">
+                                    <div class="button-title">Востановить пароль</div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="frm-row row-login">
+                            <div class="row-title">Или войдите через</div>
+                            <div class="frm-field">
+                                <a href="" class="btn button-light">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/login01.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="frm-field">
+                                <a href="" class="btn button-light">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/login02.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="frm-field">
+                                <a href="" class="btn button-light">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/login03.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--/popup-outer-box-->
+
+    </div>
+    <!-- /wrap -->
+
+
+</body>
+
+</html>

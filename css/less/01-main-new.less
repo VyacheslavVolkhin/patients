@@ -1,0 +1,31 @@
+:root {
+	--filterAttToBase: brightness(0.6) grayscale(1);
+	--filterAttToGray: brightness(0.9) grayscale(1);
+}
+.page-lk {
+	--clr-base: #212421;
+	--clr-bg-light: #FAFAFC;;
+	--clr-border-light: #f5f5f5;
+	--clr-light: #525252;
+}
+
+/* ----------------------------------- *\
+			main styles
+\* ----------------------------------- */
+.text-base, .title-base {
+	color: var(--clr-base);
+	* {
+		color: var(--clr-base);
+	}
+}
+.bg-alert {
+	background-color: var(--clr-alert);
+}
+.bg-light {
+	background-color: var(--clr-bg-light);
+}
+@media (max-width: 1023px) {
+	.text-center-m, .title-center-m {
+		text-align: center;
+	}
+}
