@@ -7243,6 +7243,7 @@ input.form-clear-autofill::-webkit-contacts-auto-fill-button {
 :root {
   --filterAttToBase: brightness(0.6) grayscale(1);
   --filterAttToGray: brightness(0.9) grayscale(1);
+  --min: 375px;
 }
 .page-lk {
   --clr-base: #212421;
@@ -7271,6 +7272,69 @@ input.form-clear-autofill::-webkit-contacts-auto-fill-button {
   .text-center-m,
   .title-center-m {
     text-align: center;
+  }
+}
+/* ----------------------------------- *\
+			structura
+\* ----------------------------------- */
+.header .actions-header-wrap {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-align: center;
+      align-items: center;
+  -ms-flex-order: 4;
+      order: 4;
+}
+.header .actions-header-wrap .action-wrap {
+  margin-left: 20px;
+  width: 40px;
+  -ms-flex-order: 2;
+      order: 2;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+.header .actions-header-wrap .user-wrap {
+  -ms-flex-order: 3;
+      order: 3;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 44px;
+  margin-left: 20px;
+}
+.header .actions-header-wrap .user-wrap .elm-photo {
+  background-repeat: 50%;
+}
+@media (max-width: 1023px) {
+  .header .actions-header-wrap {
+    -ms-flex-order: 2;
+        order: 2;
+  }
+  .header .actions-header-wrap .user-wrap {
+    margin-left: 2px;
+  }
+  .header .actions-header-wrap .action-wrap {
+    margin-left: 0;
+  }
+  .header .menu-inner-wrap {
+    -ms-flex-order: 3;
+        order: 3;
+    margin-left: 5px;
+  }
+  .header .logo-inner-wrap {
+    -ms-flex: 1;
+        flex: 1;
+  }
+  .header .logo {
+    width: 172px;
+  }
+}
+@media (max-width: 479px) {
+  .header .logo-inner-wrap {
+    -ms-flex: 1;
+        flex: 1;
+  }
+  .header .logo {
+    width: 172px;
   }
 }
 /* ----------------------------------- *\
@@ -8194,10 +8258,6 @@ input.form-clear-autofill::-webkit-contacts-auto-fill-button {
 .item-tile-service-toggle:has(.tile-service-button-toggle) .tile-service-content {
   display: none;
 }
-.item-tile-service-toggle:has(.tile-service-button-toggle) .tile-service-actions .btn-action-ico {
-  z-index: inherit;
-  pointer-events: none;
-}
 .item-tile-service-toggle:has(.tile-service-button-toggle.active) .tile-service-content {
   display: block;
 }
@@ -8285,6 +8345,8 @@ input.form-clear-autofill::-webkit-contacts-auto-fill-button {
       flex-shrink: 0;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -ms-flex-align: center;
       align-items: center;
   gap: 10px;
@@ -8454,9 +8516,9 @@ input.form-clear-autofill::-webkit-contacts-auto-fill-button {
   font-size: 12px;
   font-weight: 300;
   text-align: center;
-  color: var(--clr-base);
-  border: 1px solid var(--clr-base);
-  background: var(--clr-bg-light);
+  color: #8B8B8B;
+  border: 1px solid var(--clr-border-light);
+  background: #E9E8E8;
 }
 .elm-status.type-new,
 .tile-status.type-new {

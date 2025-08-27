@@ -1,0 +1,58 @@
+/* ----------------------------------- *\
+			structura
+\* ----------------------------------- */
+.header {
+	.actions-header-wrap {
+		display: flex;
+		align-items: center;
+		order: 4;
+		.action-wrap {
+			margin-left: 20px;
+			width: 40px;
+			order: 2;
+			flex-shrink: 0;
+		}
+		.user-wrap {
+			order: 3;
+			flex-shrink: 0;
+			width: 44px;
+			margin-left: 20px;
+			.elm-photo {
+				background-repeat: 50%;
+			}
+		}
+	}
+}
+@media (max-width: 1023px) {
+	.header {
+		.actions-header-wrap {
+			order: 2;
+			.user-wrap {
+				margin-left: 2px;
+			}
+			.action-wrap {
+				margin-left: 0;
+			}
+		}
+		.menu-inner-wrap {
+			order: 3;
+			margin-left: 5px;
+		}
+		.logo-inner-wrap {
+			flex: 1;
+		}
+		.logo {
+			width: 172px;
+		}
+	}
+}
+@media (max-width: 479px) {
+	.header {
+		.logo-inner-wrap {
+			flex: 1;
+		}
+		.logo {
+			width: 172px;
+		}
+	}
+}
