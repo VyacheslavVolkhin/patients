@@ -193,14 +193,20 @@
 }
 .form-input {
 	&.inp-main {
+		width: 100%;
 		height: 50px;
 		border-radius: 12px;
 		border: 1px solid #E0E0E0;
+		background: transparent;
 		background: var(--clr-border-light);
 		padding: 0 10px 0 13px;
 		font-size: 17px;
 		font-weight: 300;
 		box-shadow: none;
+		outline: none;
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
 		&[placeholder]::-webkit-input-placeholder {color: var(--clr-light);}
 		&[placeholder]:-moz-placeholder {color: var(--clr-light);}
 		&[placeholder]::-moz-placeholder {color: var(--clr-light);}
@@ -219,7 +225,16 @@ textarea.form-input.inp-main {
 	padding-top: 14px;
 	line-height: normal;
 }
-select {
+input[list]::-webkit-calendar-picker-indicator {
+  display: none; 
+  opacity: 0; 
+  pointer-events: none; */
+}
+input[list] {
+  appearance: none;
+  -webkit-appearance: none;
+}
+select, input[list] {
 	&.form-input {
 		&.inp-main {
 			padding-right: 30px;

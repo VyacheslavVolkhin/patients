@@ -88,31 +88,31 @@
                                         </div>
                                     </div>
                                     <div class="frm-field">
-                                        <select class="form-input inp-main" required>
-                                            <option selected disabled hidden value="">Регион</option><!--placeholder-->
+                                        <input list="region" placeholder="Регион" class="form-input inp-main">
+                                        <datalist id="region">
                                             <option>Пункт списка</option>
                                             <option>Пункт списка</option>
                                             <option>Пункт списка</option>
                                             <option>Пункт списка</option>
-                                        </select>
+                                        </datalist>
                                     </div>
                                     <div class="frm-field">
-                                        <select class="form-input inp-main" required>
-                                            <option selected disabled hidden value="">Направление</option><!--placeholder-->
+                                        <input list="direction" placeholder="Направление" class="form-input inp-main">
+                                        <datalist id="direction">
                                             <option>Пункт списка</option>
                                             <option>Пункт списка</option>
                                             <option>Пункт списка</option>
                                             <option>Пункт списка</option>
-                                        </select>
+                                        </datalist>
                                     </div>
                                     <div class="frm-field">
-                                        <select class="form-input inp-main" required>
-                                            <option selected disabled hidden value="">Заболевание</option><!--placeholder-->
+                                        <input list="disease" placeholder="Заболевание" class="form-input inp-main">
+                                        <datalist id="disease">
                                             <option>Пункт списка</option>
                                             <option>Пункт списка</option>
                                             <option>Пункт списка</option>
                                             <option>Пункт списка</option>
-                                        </select>
+                                        </datalist>
                                     </div>
                                     <div class="frm-field field-submit">
                                         <button type="submit" class="btn button-main">
@@ -416,13 +416,13 @@
                     </div>
                     <div class="filter-content-wrap">
                         <div class="filter-action-wrap">
-                            <select class="form-input inp-main" required="">
-                                <option selected="" disabled="" hidden="" value="">Город/область</option><!--placeholder-->
+                            <input list="location" placeholder="Город/область" class="form-input inp-main">
+                            <datalist id="location">
                                 <option>Пункт списка</option>
                                 <option>Пункт списка</option>
                                 <option>Пункт списка</option>
                                 <option>Пункт списка</option>
-                            </select>
+                            </datalist>
                         </div>
                         <div class="filter-action-wrap">
                             <div class="frm-select-button">
@@ -431,13 +431,13 @@
                             </div>
                         </div>
                         <div class="filter-action-wrap">
-                            <select class="form-input inp-main" required="">
-                                <option selected="" disabled="" hidden="" value="">Цена</option><!--placeholder-->
+                            <input list="price" placeholder="Цена" class="form-input inp-main">
+                            <datalist id="price">
                                 <option>Пункт списка</option>
                                 <option>Пункт списка</option>
                                 <option>Пункт списка</option>
                                 <option>Пункт списка</option>
-                            </select>
+                            </datalist>
                         </div>
                     </div>
                     <div class="filter-apply-wrap">
@@ -835,7 +835,7 @@
                     <!--/item wrap-->
                 </div>
                 <div class="more-box">
-                    <a href="" class="btn-action-toggle js-btn-tgl">
+                    <a href="" class="btn-action-toggle">
                         <div class="button-title">Развернуть еще</div>
                     </a>
                 </div>
