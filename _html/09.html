@@ -192,13 +192,13 @@
 														</div>
 														<div class="filter-content-wrap">
 															<div class="filter-action-wrap">
-																<select class="form-input inp-main" required="">
-																	<option selected="" disabled="" hidden="" value="">Город/область</option><!--placeholder-->
+																<input list="location" placeholder="Город/область" class="form-input inp-main">
+																<datalist id="location">
 																	<option>Пункт списка</option>
 																	<option>Пункт списка</option>
 																	<option>Пункт списка</option>
 																	<option>Пункт списка</option>
-																</select>
+																</datalist>
 															</div>
 															<div class="filter-action-wrap">
 																<div class="frm-select-button">
@@ -207,13 +207,13 @@
 																</div>
 															</div>
 															<div class="filter-action-wrap">
-																<select class="form-input inp-main" required="">
-																	<option selected="" disabled="" hidden="" value="">Цена</option><!--placeholder-->
+																<input list="price" placeholder="Цена" class="form-input inp-main">
+																<datalist id="price">
 																	<option>Пункт списка</option>
 																	<option>Пункт списка</option>
 																	<option>Пункт списка</option>
 																	<option>Пункт списка</option>
-																</select>
+																</datalist>
 															</div>
 														</div>
 														<div class="filter-apply-wrap">
@@ -535,29 +535,31 @@
 															<div class="filter-title">Фильтр</div>
 														</div>
 														<div class="filter-content-wrap">
-															<div class="filter-action-wrap">
-																<select class="form-input inp-main" required="">
-																	<option selected="" disabled="" hidden="" value="">Город/область</option><!--placeholder-->
-																	<option>Пункт списка</option>
-																	<option>Пункт списка</option>
-																	<option>Пункт списка</option>
-																	<option>Пункт списка</option>
-																</select>
-															</div>
-															<div class="filter-action-wrap">
-																<div class="frm-select-button">
-																	<input type="checkbox" id="button01">
-																	<label for="button01">Со скидкой</label>
+															<div class="filter-content-wrap">
+																<div class="filter-action-wrap">
+																	<input list="location" placeholder="Город/область" class="form-input inp-main">
+																	<datalist id="location">
+																		<option>Пункт списка</option>
+																		<option>Пункт списка</option>
+																		<option>Пункт списка</option>
+																		<option>Пункт списка</option>
+																	</datalist>
 																</div>
-															</div>
-															<div class="filter-action-wrap">
-																<select class="form-input inp-main" required="">
-																	<option selected="" disabled="" hidden="" value="">Цена</option><!--placeholder-->
-																	<option>Пункт списка</option>
-																	<option>Пункт списка</option>
-																	<option>Пункт списка</option>
-																	<option>Пункт списка</option>
-																</select>
+																<div class="filter-action-wrap">
+																	<div class="frm-select-button">
+																		<input type="checkbox" id="button01">
+																		<label for="button01">Со скидкой</label>
+																	</div>
+																</div>
+																<div class="filter-action-wrap">
+																	<input list="price" placeholder="Цена" class="form-input inp-main">
+																	<datalist id="price">
+																		<option>Пункт списка</option>
+																		<option>Пункт списка</option>
+																		<option>Пункт списка</option>
+																		<option>Пункт списка</option>
+																	</datalist>
+																</div>
 															</div>
 														</div>
 														<div class="filter-apply-wrap">
