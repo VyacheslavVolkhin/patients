@@ -27,10 +27,31 @@
 		cursor: pointer;
 		margin-bottom: 0;
 		transition: all ease 0.2s;
+		padding-right: 40px;
+		position: relative;
+		&:before {
+			content: "";
+			display: block;
+			width: 24px;
+			height: 24px;
+			position: absolute;
+			background: url(../img/icons/arrow-menu.svg) center no-repeat;
+			background-size: 32px auto;
+			top: 50%;right: 8px;
+			margin-top: -12px;
+			transition: all ease 0.2s;
+			filter: var(--filterAttToBase);
+		}
 		&:hover {
 			color: var(--clr-att);
+			&:before {
+				filter: none;
+			}
 		}
 		&.active {
+			&:before {
+				rotate: 180deg;
+			}
 			&~.section-content-wrap {
 				height: auto;
 				padding-top: 15px;

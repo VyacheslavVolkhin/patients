@@ -11439,9 +11439,31 @@ select.form-input.inp-main:required:invalid {
   cursor: pointer;
   margin-bottom: 0;
   transition: all ease 0.2s;
+  padding-right: 40px;
+  position: relative;
+}
+.side-info-box .section-title-wrap.js-btn-tgl:before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  background: url(../img/icons/arrow-menu.svg) center no-repeat;
+  background-size: 32px auto;
+  top: 50%;
+  right: 8px;
+  margin-top: -12px;
+  transition: all ease 0.2s;
+  filter: var(--filterAttToBase);
 }
 .side-info-box .section-title-wrap.js-btn-tgl:hover {
   color: var(--clr-att);
+}
+.side-info-box .section-title-wrap.js-btn-tgl:hover:before {
+  filter: none;
+}
+.side-info-box .section-title-wrap.js-btn-tgl.active:before {
+  rotate: 180deg;
 }
 .side-info-box .section-title-wrap.js-btn-tgl.active ~ .section-content-wrap {
   height: auto;
