@@ -19,3 +19,30 @@
 @import '05-forms-new.less';
 @import 'common-new.less';
 /* end new styles 08.2025 */
+
+
+/* edits 10.2025 */
+.side-info-box {
+	.section-title-wrap.js-btn-tgl {
+		cursor: pointer;
+		margin-bottom: 0;
+		transition: all ease 0.2s;
+		&:hover {
+			color: var(--clr-att);
+		}
+		&.active {
+			&~.section-content-wrap {
+				height: auto;
+				padding-top: 15px;
+			}
+		}
+	}
+	.section-title-wrap.js-btn-tgl~.section-content-wrap {
+		height: 0;
+		position: relative;
+		overflow: hidden;
+		interpolate-size: allow-keywords;
+		transition: all ease 0.2s;
+	}
+}
+/* end edits 10.2025 */

@@ -10016,6 +10016,10 @@ input.form-clear-autofill::-webkit-contacts-auto-fill-button {
 .popup-main .frm-popup .field-info .frm-select label {
   padding-left: 28px;
 }
+.popup-main .frm-popup .field-info .frm-select a {
+  display: inline;
+  vertical-align: baseline;
+}
 .popup-main .frm-popup .field-submit .btn.button-main {
   height: 56px;
   font-size: 20px;
@@ -11004,19 +11008,13 @@ textarea.form-input.inp-main {
 }
 input[list]::-webkit-calendar-picker-indicator {
   display: none;
-  /* в новых версиях достаточно */
   opacity: 0;
-  /* на всякий случай для старых */
   pointer-events: none;
-  /* чтобы клики не ловил невидимый элемент */
 }
 input[list] {
   -moz-appearance: none;
        appearance: none;
   -webkit-appearance: none;
-  padding-right: 5px;
-  padding-right: 0.5rem;
-  /* чуть места справа, если нужно */
 }
 select.form-input.inp-main,
 input[list].form-input.inp-main {
@@ -11436,3 +11434,24 @@ select.form-input.inp-main:required:invalid {
   box-shadow: none !important;
 }
 /* end new styles 08.2025 */
+/* edits 10.2025 */
+.side-info-box .section-title-wrap.js-btn-tgl {
+  cursor: pointer;
+  margin-bottom: 0;
+  transition: all ease 0.2s;
+}
+.side-info-box .section-title-wrap.js-btn-tgl:hover {
+  color: var(--clr-att);
+}
+.side-info-box .section-title-wrap.js-btn-tgl.active ~ .section-content-wrap {
+  height: auto;
+  padding-top: 15px;
+}
+.side-info-box .section-title-wrap.js-btn-tgl ~ .section-content-wrap {
+  height: 0;
+  position: relative;
+  overflow: hidden;
+  interpolate-size: allow-keywords;
+  transition: all ease 0.2s;
+}
+/* end edits 10.2025 */
