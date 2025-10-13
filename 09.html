@@ -16,6 +16,7 @@
     <script src="./js/chart.js"></script>
     <script src="./js/swiper-bundle.min.js" defer></script>
     <script src="./js/fancybox.umd.js" defer></script>
+    <script src="./js/multifiles.js" defer></script>
     <script src="./js/scripts.js" defer></script>
     <script src="./js/scripts-new.js" defer></script>
 </head>
@@ -730,37 +731,32 @@
                                                 <div class="frm-section-content">
                                                     <div class="frm-row">
                                                         <div class="frm-field">
-                                                            <div class="frm-field-upload">
+                                                            <div class="frm-field-upload js-field-file-multiple">
+                                                                <input type="file" class="js-field-input" multiple>
                                                                 <div class="upload-info-wrap">
                                                                     <div class="elm-ico">
                                                                         <img src="./img/icons/cloud.svg" alt="">
                                                                     </div>
-                                                                    <div class="upload-title">Перетащите файлы сюда или нажмите для выбора</div>
-                                                                    <div class="upload-info">Поддерживаемые форматы: PDF, DOC, DOCX, JPG, PNG (до 10 МБ)</div>
+                                                                    <div class="file-info-wrap">
+                                                                        <div class="upload-title">Перетащите файлы сюда или нажмите для выбора</div>
+                                                                        <div class="upload-info">Поддерживаемые форматы: PDF, DOC, DOCX, JPG, PNG (до 10 МБ)</div>
+                                                                    </div>
                                                                 </div>
                                                                 <div class="upload-actions-wrap">
-                                                                    <a href="" class="btn">
+                                                                    <a href="" class="btn js-file-button-attach">
                                                                         <div class="button-title">Выбрать файлы</div>
                                                                     </a>
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="frm-field">
-                                                            <div class="frm-field-file type-att file-active">
-                                                                <div class="file-inner-wrap">
-                                                                    <div class="file-name">Результаты анализов.pdf 2.3 МБ</div>
-                                                                    <a href="" class="btn-action-ico ico-trash button-file-del"></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="frm-field">
-                                                            <div class="frm-field-file type-att file-active">
-                                                                <div class="file-inner-wrap">
-                                                                    <div class="file-name">Результаты анализов.pdf 2.3 МБ</div>
-                                                                    <a href="" class="btn-action-ico ico-trash button-file-del"></a>
-                                                                </div>
-                                                            </div>
-                                                        </div>
+                                                        <!-- <div class="frm-field">
+																<div class="frm-field-file type-att file-active">
+																	<div class="file-inner-wrap">
+																		<div class="file-name">Результаты анализов.pdf   2.3 МБ</div>
+																		<a href="" class="btn-action-ico ico-trash button-file-del"></a>
+																	</div>
+																</div>
+															</div> -->
                                                     </div>
                                                 </div>
                                             </div>

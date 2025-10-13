@@ -11435,6 +11435,9 @@ select.form-input.inp-main:required:invalid {
 }
 /* end new styles 08.2025 */
 /* edits 10.2025 */
+.uploaded-files-container {
+  margin-top: 10px;
+}
 .side-info-box .section-title-wrap.js-btn-tgl {
   cursor: pointer;
   margin-bottom: 0;
