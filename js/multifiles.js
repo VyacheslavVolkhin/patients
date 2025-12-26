@@ -102,21 +102,23 @@ function removeFileItem(fileItem) {
 
 // Функция для добавления файла в input
 function addFileToInput(file, fileInput, fileId) {
-    // Создаем DataTransfer для хранения файлов
+    // Получаем текущий DataTransfer
     const dataTransfer = new DataTransfer();
     
-    // Добавляем существующие файлы из input
-    if (fileInput.files) {
-        for (let i = 0; i < fileInput.files.length; i++) {
-            dataTransfer.items.add(fileInput.files[i]);
-        }
-    }
+    // Добавляем существующие файлы
+    const currentFiles = Array.from(fileInput.files || []);
+    currentFiles.forEach(existingFile => {
+        dataTransfer.items.add(existingFile);
+    });
     
     // Добавляем новый файл
     dataTransfer.items.add(file);
     
-    // Сохраняем файл в атрибуте для возможности удаления
-    fileInput.setAttribute(`data-file-${fileId}`, file.name);
+    // Сохраняем файл в кастомном хранилище
+    if (!fileInput._fileStorage) {
+        fileInput._fileStorage = new Map();
+    }
+    fileInput._fileStorage.set(fileId, file);
     
     // Обновляем files в input
     fileInput.files = dataTransfer.files;
@@ -128,19 +130,17 @@ function addFileToInput(file, fileInput, fileId) {
 function removeFileFromInput(fileId, fileInput) {
     const dataTransfer = new DataTransfer();
     
-    // Добавляем все файлы кроме удаляемого
-    if (fileInput.files) {
-        for (let i = 0; i < fileInput.files.length; i++) {
-            const file = fileInput.files[i];
-            // Сравниваем по имени файла (можно улучшить, добавив уникальный ID)
-            if (fileInput.getAttribute(`data-file-${fileId}`) !== file.name) {
-                dataTransfer.items.add(file);
-            }
-        }
+    // Удаляем из кастомного хранилища
+    if (fileInput._fileStorage) {
+        fileInput._fileStorage.delete(fileId);
     }
     
-    // Удаляем атрибут
-    fileInput.removeAttribute(`data-file-${fileId}`);
+    // Пересоздаем FileList из оставшихся файлов
+    if (fileInput._fileStorage) {
+        fileInput._fileStorage.forEach(file => {
+            dataTransfer.items.add(file);
+        });
+    }
     
     // Обновляем files в input
     fileInput.files = dataTransfer.files;

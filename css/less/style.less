@@ -70,3 +70,162 @@
 	}
 }
 /* end edits 10.2025 */
+/* edits 12.2025 */
+.item-tile-selected-panel {
+	.tile-action-wrap {
+		flex-shrink: 0;
+		padding-left: 3rem;;
+		align-self: center;
+		.btn {
+			padding: 0 3rem;
+			font-size: 17px;
+			font-weight: 300;
+		}
+	}
+}
+.elm-tabs-panel {
+	border-radius: 8px;
+	border: 1px solid #E0E0E0;
+	background: #f5f5f5;
+	line-height: 1;
+	.menu {
+		display: flex;
+		margin: -1px;
+		height: calc(100% + 2px);
+		li {
+			position: relative;
+			flex-shrink: 0;
+			height: 100%;
+			&:has(+li>.active) {
+				&:after {
+					display: none;
+				}
+			}
+			&:after {
+				content: "";
+				display: block;
+				position: absolute;
+				top: 10px;bottom: 10px;right: 0;
+				width: 1px;
+				background: #E0E0E0;
+			}
+			&:last-child {
+				&:after {
+					display: none;
+				}
+			}
+		}
+	}
+	.btn {
+		border: none;
+		background: none;
+		color: var(--clr-base);
+		border-radius: 8px;;
+		padding: 0 1em;
+		position: relative;
+		z-index: 2;
+		height: 100%;
+		&:hover {
+			background: none;
+			color: var(--clr-att);
+		}
+		&.active {
+			color: var(--clr-att);
+			background: none;
+			&:before {
+				opacity: 1;
+			}
+		}
+		&:before {
+			content: "";
+			display: block;
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			border-radius: 8px;
+			border: 1px solid var(--clr-att);
+			opacity: 0;
+			transition: all ease 0.2s;
+		}
+	}
+}
+.page-filter-box {
+	.filter-tabs-wrap {
+		margin: 0 2rem 0 0;
+		min-height: 60px;
+	}
+	.frm-main-search {
+		.form-input {
+			font-weight: 400;
+			font-size: 17px;
+		}
+	}
+	.elm-tabs-panel {
+		.btn {
+			font-size: 17px;
+			font-weight: 500;
+			min-width: (130/17em);
+		}
+	}
+}
+@media (max-width: 1399px) {
+	.item-tile-selected-panel {
+		flex-wrap: wrap;
+		.tile-action-wrap {
+			width: 100%;
+			flex-shrink: 0;
+			padding-top: 15px;
+			padding-left: calc(3rem + 112px);
+		}
+	}
+	.elm-tabs-panel {
+		li {
+			flex: 1;
+		}
+		.btn {
+			min-width: 0;
+			width: 100%;
+		}
+	}
+	.page-filter-box {
+		flex-wrap: wrap;
+		.filter-tabs-wrap {
+			width: 100%;
+			flex-shrink: 0;
+			margin-right: 0;
+		}
+	}
+}
+@media (max-width: 1023px) {
+	.page-filter-box {
+		.filter-tabs-wrap {
+			margin-bottom: 5px;
+		}
+		.elm-tabs-panel {
+			.btn {
+				padding: 0 15px;
+				min-width: 0;
+			}
+		}
+	}
+	.elm-tabs-panel {
+		li {
+			flex: 1;
+		}
+		.btn {
+			min-width: 0;
+			width: 100%;
+		}
+	}
+}
+@media (max-width: 767px) {
+	.item-tile-selected-panel {
+		.tile-action-wrap {
+			padding-left: 0;
+		}
+	}
+}
+/* end edits 12.2025 */
+
