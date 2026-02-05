@@ -399,7 +399,8 @@ if (calendarPopup && sliderInnerWrap) {
       let pLeft = element.offsetLeft;
       let pWidth = element.querySelector(".js-popup-block").offsetWidth;
       let pMax = pLeft + pWidth;
-      if (pMax > wrapWidth) {
+	  console.log(pLeft + ' ' + pWidth)
+      if (pMax > 200) {
         element.classList.add("popup-right");
       } else {
         element.classList.remove("popup-right");

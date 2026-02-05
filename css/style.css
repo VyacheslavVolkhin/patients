@@ -11481,6 +11481,12 @@ select.form-input.inp-main:required:invalid {
 }
 /* end edits 10.2025 */
 /* edits 12.2025 */
+.item-tile-selected-panel:has(input[type="checkbox"], input[type="radio"]) .tile-action-wrap {
+  display: none;
+}
+.item-tile-selected-panel:has(input:checked) .tile-action-wrap {
+  display: block;
+}
 .item-tile-selected-panel .tile-action-wrap {
   -ms-flex-negative: 0;
       flex-shrink: 0;

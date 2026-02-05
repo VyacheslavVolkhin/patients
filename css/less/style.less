@@ -72,6 +72,16 @@
 /* end edits 10.2025 */
 /* edits 12.2025 */
 .item-tile-selected-panel {
+	&:has(input[type="checkbox"], input[type="radio"]) {
+		.tile-action-wrap {
+			display: none;
+		}
+	}
+	&:has(input:checked) {
+		.tile-action-wrap {
+			display: block;
+		}
+	}
 	.tile-action-wrap {
 		flex-shrink: 0;
 		padding-left: 3rem;;

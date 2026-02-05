@@ -1,0 +1,77 @@
+/* ----------------------------------- *\
+			items styles
+\* ----------------------------------- */
+
+.elm-rate-panel {
+	display: inline-flex;
+	align-items: center;
+	height: 29px;
+	border-radius: 6px;
+	padding: 0 8px 0 8px;;
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 400;
+	color: #161616;
+	border: 1px solid #E0E0E0;
+	gap: 4px;
+	.rate-total {
+		flex-shrink: 0;
+		display: block;
+		padding-top: 2px;
+	}
+}
+.elm-rate {
+	width: 16px;
+	height: 16px;
+	display: block;
+	position: relative;
+	background: url(../img/icons/rate.svg) center no-repeat;
+	background-size: 24px auto;
+	filter: none;
+}
+.elm-rates {
+	display: flex;
+	justify-content: space-between;
+	width: 96px;
+	height: 16px;
+	line-height: 1;
+	&[data-rate="4"] {
+		.elm-rate {
+			&:nth-child(5) {
+				filter: brightness(0.7) grayscale(1);
+			}
+		}
+	}
+	&[data-rate="3"] {
+		.elm-rate {
+			&:nth-child(4),
+			&:nth-child(5) {
+				filter: brightness(0.7) grayscale(1);
+			}
+		}
+	}
+	&[data-rate="2"] {
+		.elm-rate {
+			&:nth-child(3),
+			&:nth-child(4),
+			&:nth-child(5) {
+				filter: brightness(0.7) grayscale(1);
+			}
+		}
+	}
+	&[data-rate="1"] {
+		.elm-rate {
+			&:nth-child(2),
+			&:nth-child(3),
+			&:nth-child(4),
+			&:nth-child(5) {
+				filter: brightness(0.7) grayscale(1);
+			}
+		}
+	}
+	&[data-rate="0"] {
+		.elm-rate {
+			filter: brightness(0.7) grayscale(1);
+		}
+	}
+}

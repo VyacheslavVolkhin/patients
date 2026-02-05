@@ -5,6 +5,14 @@
 		}
 	],
 	"settings": {
-		"window.title": "${rootName}"
+		"window.title": "${rootName}",
+		"editor.fontSize": 12,
+		"workbench.editor.tabSizing": "fixed",
+		"workbench.editor.highlightModifiedTabs": false,
+		"workbench.editor.pinnedTabsOnSeparateRow": true,
+		"workbench.editor.tabActionUnpinVisibility": true,
+		"workbench.editor.tabActionLocation": "right",
+		"workbench.editor.tabSizingFixedMaxWidth": 300,
+		"workbench.editor.tabSizingFixedMinWidth": 38
 	}
 }

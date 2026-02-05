@@ -58,7 +58,7 @@ module.exports = function (grunt) {
             all: {
                 src: 'img/spr/*.png',
                 dest: 'img/spr.png',
-                destCss: 'css/less/icons.less',
+                destCss: 'css/less-new/icons.less',
                 padding: 20,
                 imgPath: '../img/spr.png',
                 cssFormat: 'css',
@@ -81,8 +81,8 @@ module.exports = function (grunt) {
                     optimization: 2
                 },
                 files: {
-                    "css/style.css": "./css/less/style.less",
-                    "css/style.min.css": "./css/less/style.less"
+                    "css/style-new.css": "./css/less-new/style.less",
+                    "css/style-new.min.css": "./css/less-new/style.less"
                 }
             }
         },
@@ -104,14 +104,14 @@ module.exports = function (grunt) {
                             },
                             dist: {
                                 files: {
-                                    "css/style.min.css": "css/style.min.css"
+                                    "css/style-new.min.css": "css/style-new.min.css"
                                 }
                             }
                         })
                     ]
                 },
-                src: 'css/style.min.css',
-                dist: 'css/style.min.css',
+                src: 'css/style-new.min.css',
+                dist: 'css/style-new.min.css',
             },
             style: {
                 options: {
@@ -124,8 +124,8 @@ module.exports = function (grunt) {
                         require('autoprefixer')({overrideBrowserslist: 'last 2 versions'}),
                     ]
                 },
-                src: 'css/style.css',
-                dist: 'css/style.css',
+                src: 'css/style-new.css',
+                dist: 'css/style-new.css',
             }
         },
 
@@ -145,7 +145,7 @@ module.exports = function (grunt) {
             },
             target: {
                 files: {
-                    'css/min/app.min.css': ['css/reset.css', 'css/!*.css', '!css/style.min.css', '!css/style.css'],
+                    'css/min/app.min.css': ['css/reset.css', 'css/!*.css', '!css/style.min.css', '!css/style-new.css'],
                 }
             }
         },*/
@@ -162,7 +162,7 @@ module.exports = function (grunt) {
                 tasks: 'sprite'
             },
             styles: {
-                files: ['css/less/*.less'],
+                files: ['css/less-new/*.less'],
                 tasks: ['less', 'postcss'],
                 options: {
                     nospawn: true

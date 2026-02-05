@@ -61,24 +61,136 @@ function handleFiles(files, uploadField, fileInput) {
 function addFileItem(file, container, fileInput) {
     const fileSize = formatFileSize(file.size);
     const fileId = generateFileId();
+    const isImage = file.type.startsWith('image/');
+    const isVideo = file.type.startsWith('video/');
     
     const fileItem = document.createElement('div');
     fileItem.className = 'frm-field';
     fileItem.setAttribute('data-file-id', fileId);
-    fileItem.innerHTML = `
-        <div class="frm-field-file type-att file-active">
-            <div class="file-inner-wrap">
-                <div class="file-name">${file.name} ${fileSize}</div>
-                <a href="#" class="btn-action-ico ico-trash button-file-del"></a>
+    
+    if (isImage || isVideo) {
+        // Для фото и видео создаем элемент с превью
+        fileItem.innerHTML = `
+            <div class="frm-field-file type-att file-active">
+                <div class="file-inner-wrap">
+                    <div class="file-photo elm-photo photo-cover">
+                        ${isImage ? `<img alt="${file.name}">` : ''}
+                    </div>
+                    <div class="file-name">${file.name} ${fileSize}</div>
+                    <a href="#" class="btn-action-ico ico-trash button-file-del"></a>
+                </div>
             </div>
-        </div>
-    `;
+        `;
+        
+        // Загружаем превью
+        const imgContainer = fileItem.querySelector('.file-photo');
+        if (isImage) {
+            loadImagePreview(file, imgContainer);
+        } else if (isVideo) {
+            loadVideoPreview(file, imgContainer);
+        }
+    } else {
+        // Для остальных файлов - обычный вид
+        fileItem.innerHTML = `
+            <div class="frm-field-file type-att file-active">
+                <div class="file-inner-wrap">
+                    <div class="file-name">${file.name} ${fileSize}</div>
+                    <a href="#" class="btn-action-ico ico-trash button-file-del"></a>
+                </div>
+            </div>
+        `;
+    }
     
     container.appendChild(fileItem);
     
     // Сохраняем файл в input
     addFileToInput(file, fileInput, fileId);
 }
+
+// Функция для загрузки превью изображения
+function loadImagePreview(file, container) {
+    const reader = new FileReader();
+    const img = container.querySelector('img');
+    
+    reader.onload = function(e) {
+        img.src = e.target.result;
+    };
+    
+    reader.readAsDataURL(file);
+}
+
+// Функция для загрузки превью видео
+function loadVideoPreview(file, container) {
+    // Создаем видео элемент для получения превью
+    const video = document.createElement('video');
+    video.preload = 'metadata';
+    
+    video.onloadedmetadata = function() {
+        // Создаем canvas для создания скриншота
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+        
+        // Устанавливаем размеры canvas как у видео
+        canvas.width = video.videoWidth;
+        canvas.height = video.videoHeight;
+        
+        // Делаем скриншот на первой секунде
+        video.currentTime = 1;
+    };
+    
+    video.oncanplay = function() {
+        // Когда видео готово к воспроизведению, пытаемся сделать скриншот
+        setTimeout(() => {
+            try {
+                const canvas = document.createElement('canvas');
+                const ctx = canvas.getContext('2d');
+                canvas.width = video.videoWidth;
+                canvas.height = video.videoHeight;
+                ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+                
+                // Создаем изображение из canvas
+                const img = document.createElement('img');
+                img.src = canvas.toDataURL('image/jpeg', 0.8);
+                img.alt = file.name;
+                container.appendChild(img);
+                
+                // Добавляем иконку видео
+                const videoIcon = document.createElement('div');
+                videoIcon.className = 'video-icon';
+                videoIcon.innerHTML = '<i class="fas fa-play"></i>';
+                container.appendChild(videoIcon);
+            } catch (error) {
+                console.error('Ошибка при создании превью видео:', error);
+                // Если не удалось создать превью, показываем иконку видео
+                showVideoIcon(container, file.name);
+            }
+        }, 500);
+    };
+    
+    // Обработка ошибок
+    video.onerror = function() {
+        showVideoIcon(container, file.name);
+    };
+    
+    // Читаем видео как URL для получения метаданных
+    const url = URL.createObjectURL(file);
+    video.src = url;
+    
+    // Освобождаем URL через 30 секунд
+    setTimeout(() => {
+        URL.revokeObjectURL(url);
+    }, 30000);
+}
+
+// Функция для отображения иконки видео при ошибках
+function showVideoIcon(container, fileName) {
+    container.innerHTML = `
+        <div class="file-default-icon">
+            <i class="fas fa-file-video"></i>
+        </div>
+    `;
+}
+
 
 // Функция для удаления элемента файла
 function removeFileItem(fileItem) {
@@ -162,6 +274,10 @@ function formatFileSize(bytes) {
     const i = Math.floor(Math.log(bytes) / Math.log(k));
     
     return parseFloat((bytes / Math.pow(k, i)).toFixed(1)) + ' ' + sizes[i];
+}
+
+function generateFileId() {
+    return 'file_' + Math.random().toString(36).substr(2, 9);
 }
 
 // Функция для настройки drag and drop

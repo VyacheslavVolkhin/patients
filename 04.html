@@ -13,11 +13,16 @@
     <link rel="stylesheet" href="./css/fancybox.css" />
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="stylesheet" href="./css/style-new.min.css" />
+    <link rel="stylesheet" href="./css/choices.min.css">
+    <script src="./js/choices.min.js" defer></script>
+    <script src="./js/counter.js"></script>
     <script src="./js/chart.js"></script>
     <script src="./js/swiper-bundle.min.js" defer></script>
     <script src="./js/fancybox.umd.js" defer></script>
     <script src="./js/multifiles.js" defer></script>
     <script src="./js/scripts.js" defer></script>
+    <script src="./js/scripts-add.js" defer></script>
     <script src="./js/scripts-new.js" defer></script>
 </head>
 
@@ -687,6 +692,7 @@
 
                     <!--side-menu-box-->
                     <div class="side-menu-box">
+                        <a href="" class="btn-action-ico ico-arrow btn-menu-toggle js-btn-tgl"></a>
                         <ul class="menu">
                             <li>
                                 <a href="" class="btn active">
@@ -856,186 +862,6 @@
             </div>
         </footer>
         <!-- /footer -->
-
-
-        <!--popup-outer-box-->
-        <!-- <div class="popup-outer-box" id="popup-login">
-	<div class="popup-box">
-		<a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
-		<div class="popup-title-wrap">
-			<div class="popup-title">Вход в кабинет</div>
-		</div>
-		<div class="popup-content-wrap">
-			<form action="/" class="frm-popup">
-				<div class="frm-row">
-					<div class="frm-field">
-						<input type="email" class="form-input" placeholder="Ваш e-mail">
-					</div>
-				</div>
-				<div class="frm-row">
-					<div class="frm-field">
-						<div class="frm-field-password">
-							<input type="text" class="form-input" placeholder="Пароль">
-							<a href="" class="btn-action-ico ico-password button-active-toggle active js-password-toggle"></a>
-						</div>
-					</div>
-				</div>
-				<div class="frm-row row-actions">
-					<div class="frm-field">
-						<div class="frm-select">
-							<input type="checkbox" id="popup01">
-							<label for="popup01">Запомнить пароль</label>
-						</div>
-					</div>
-					<div class="frm-field">
-						<a href="" class="js-popup-open" data-popup="popup-password">Напомнить пароль</a>
-					</div>
-				</div>
-				<div class="frm-row-submit">
-					<div class="frm-field">
-						<button type="submit" class="btn">
-							<div class="button-title">Войти</div>
-						</button>
-					</div>
-				</div>
-				<div class="frm-row row-login">
-					<div class="row-title">Или войдите через</div>
-					<div class="frm-field">
-						<a href="" class="btn button-light">
-							<div class="button-ico">
-								<img src="./img/icons/login01.svg" alt="">
-							</div>
-						</a>
-					</div>
-					<div class="frm-field">
-						<a href="" class="btn button-light">
-							<div class="button-ico">
-								<img src="./img/icons/login02.svg" alt="">
-							</div>
-						</a>
-					</div>
-					<div class="frm-field">
-						<a href="" class="btn button-light">
-							<div class="button-ico">
-								<img src="./img/icons/login03.svg" alt="">
-							</div>
-						</a>
-					</div>
-				</div>
-			</form>
-		</div>
-	</div>
-</div> -->
-        <!--/popup-outer-box-->
-        <!--popup-outer-box-->
-        <!-- <div class="popup-outer-box" id="popup-reg">
-	<div class="popup-box">
-		<a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
-		<div class="popup-title-wrap">
-			<div class="popup-title">Регистрация</div>
-		</div>
-		<div class="popup-content-wrap">
-			<form action="/" class="frm-popup">
-				<div class="frm-row">
-					<div class="frm-field">
-						<input type="email" class="form-input" placeholder="Ваш e-mail">
-					</div>
-				</div>
-				<div class="frm-row">
-					<div class="frm-field">
-						<input type="text" class="form-input" placeholder="Ваше имя">
-					</div>
-				</div>
-				<div class="frm-row">
-					<div class="frm-field">
-						<div class="frm-field-password">
-							<input type="text" class="form-input" placeholder="Пароль">
-							<a href="" class="btn-action-ico ico-password button-active-toggle active js-password-toggle"></a>
-						</div>
-					</div>
-				</div>
-				<div class="frm-row">
-					<div class="frm-field">
-						<div class="frm-field-password">
-							<input type="text" class="form-input" placeholder="Повторите пароль">
-							<a href="" class="btn-action-ico ico-password button-active-toggle active js-password-toggle"></a>
-						</div>
-					</div>
-				</div>
-				<div class="frm-row row-actions">
-					<div class="frm-field">
-						<div class="frm-select">
-							<input type="checkbox" id="popup01">
-							<label for="popup01">Запомнить пароль</label>
-						</div>
-					</div>
-					<div class="frm-field">
-						<a href="" class="js-popup-open" data-popup="popup-password">Напомнить пароль</a>
-					</div>
-				</div>
-				<div class="frm-row-submit">
-					<div class="frm-field">
-						<button type="submit" class="btn">
-							<div class="button-title">Зарегистрироваться</div>
-						</button>
-					</div>
-				</div>
-				<div class="frm-row row-login">
-					<div class="row-title">Или войдите через</div>
-					<div class="frm-field">
-						<a href="" class="btn button-light">
-							<div class="button-ico">
-								<img src="./img/icons/login01.svg" alt="">
-							</div>
-						</a>
-					</div>
-					<div class="frm-field">
-						<a href="" class="btn button-light">
-							<div class="button-ico">
-								<img src="./img/icons/login02.svg" alt="">
-							</div>
-						</a>
-					</div>
-					<div class="frm-field">
-						<a href="" class="btn button-light">
-							<div class="button-ico">
-								<img src="./img/icons/login03.svg" alt="">
-							</div>
-						</a>
-					</div>
-				</div>
-			</form>
-		</div>
-	</div>
-</div> -->
-        <!--/popup-outer-box-->
-
-        <!--popup-outer-box-->
-        <!-- <div class="popup-outer-box" id="popup-password">
-	<div class="popup-box">
-		<a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
-		<div class="popup-title-wrap">
-			<div class="popup-title">Напомнить пароль</div>
-		</div>
-		<div class="popup-content-wrap">
-			<form action="/" class="frm-popup">
-				<div class="frm-row">
-					<div class="frm-field">
-						<input type="email" class="form-input" placeholder="denis456@mail.ru">
-					</div>
-				</div>
-				<div class="frm-row-submit">
-					<div class="frm-field">
-						<button type="submit" class="btn">
-							<div class="button-title">Востановить пароль</div>
-						</button>
-					</div>
-				</div>
-			</form>
-		</div>
-	</div>
-</div> -->
-        <!--/popup-outer-box-->
 
         <!--popup-outer-box-->
         <div class="popup-outer-box popup-main " id="popup-main-login">

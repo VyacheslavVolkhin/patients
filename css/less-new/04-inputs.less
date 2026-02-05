@@ -1,0 +1,95 @@
+/* ----------------------------------- *\
+			inputs elements styles
+\* ----------------------------------- */
+select {
+	&.form-input {
+
+	}
+	&.form-input-small {
+		height: 24px;
+		padding: 0 32px 0 4px;
+		font-size: 14px;
+		font-weight: 500;
+		color: #525252;
+		border-radius: 4px;
+		background: #f5f5f5;
+		border: none;
+		box-shadow: none !important;
+		background-image: url(../img/icons/arrow-toggle-main-select.svg);
+		background-position: right 4px center;
+		background-size: 24px auto;
+		background-repeat: no-repeat;
+		&:focus {
+			background-color: #f5f5f5;
+		}
+	}
+}
+.btn {
+	&.button-toggle {
+		padding-right: 28px;
+		&:before {
+			content: "";
+			display: block;
+			width: 24px;
+			height: 24px;
+			position: absolute;
+			background: url(../img/icons/arrow-toggle-main.svg) center no-repeat;
+			background-size: 100% auto;
+			top: 50%;right: 12px;
+			margin: -12px -12px 0 0;
+			transition: all ease 0.2s;
+		}
+		&.active {
+			&:before {
+				transform: rotate(180deg);
+			}
+		}
+	}	
+}
+.button-gray {
+	border-color: #E0E0E0;
+	background: var(--clr-border-light);
+	color: #161616;
+	&:hover {
+		color: #161616;
+		background-color:#E0E0E0;
+		border-color:#E0E0E0;
+	}
+}
+.btn-action-ico {
+	&.ico-clear {
+		&:before {
+			background-image: url(../img/icons/close-square.svg);
+		}
+	}
+	&.ico-arrow-down {
+		&:before {
+			transform: rotate(-90deg);
+		}
+	}
+	&.ico-send-button {
+		&:before {
+			background-image: url(../img/icons/send-button.svg);
+		}
+	}
+}
+@media (min-width: 1024px) {
+	select {
+		&.form-input-small {
+			height: 28px;
+			padding: 0 40px 0 6px;
+			font-size: 16px;
+			background-size: 28px auto;
+		}
+	}
+	.btn {
+		&.button-toggle {
+			padding-right: 34px;
+			&:before {
+				width: 28px;height: 28px;
+				right: 14px;
+				margin: -14px -14px 0 0;
+			}
+		}
+	}
+}
