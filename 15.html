@@ -101,11 +101,110 @@
                         <div class="items-wrap items-dash">
                             <!--item wrap-->
                             <div class="item-wrap wrap-dash">
-                                <div class="item-tile-panel type-fit-height section-mobile-full">
+                                <!-- balance -->
+                                <div class="item-tile-panel type-balance">
                                     <div class="panel-content-wrap">
-                                        333
+                                        <div class="balance-title-wrap">
+                                            <div class="balance-title">На вашем счету:</div>
+                                        </div>
+                                        <div class="balance-total-wrap">
+                                            <div class="balance-total">2 435,5  ₽</div>
+                                        </div>
+                                        <div class="balance-actions-wrap">
+                                            <div class="balance-action-wrap">
+                                                <a href="" class="btn button-light button-border">
+                                                    <div class="button-title">Пополнить счет</div>
+                                                </a>
+                                            </div>
+                                            <div class="balance-action-wrap">
+                                                <a href="" class="btn button-light">
+                                                    <div class="button-title">Перевести</div>
+                                                </a>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
+                                <!-- /balance -->
+                                <!-- form -->
+                                <div class="item-tile-panel">
+                                    <div class="panel-content-wrap">
+                                        <form action="/" class="form-balance-wrap form-input-light">
+                                            <div class="frm-title-wrap">
+                                                <div class="frm-title">Перевод средств</div>
+                                            </div>
+                                            <div class="frm-row">
+                                                <div class="frm-field">
+                                                    <div class="frm-field-input">
+                                                        <div class="frm-ico">
+                                                            <img src="./img/icons/pay.svg" alt="">
+                                                        </div>
+                                                        <select class="form-input inp-main" required>
+                                                            <option selected disabled hidden value="">Выберите метод перевода</option><!--placeholder-->
+                                                            <option>Пункт списка</option>
+                                                            <option>Пункт списка</option>
+                                                            <option>Пункт списка</option>
+                                                            <option>Пункт списка</option>
+                                                        </select>
+                                                        <div class="btn-action-ico ico-clear button-field-clear"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="frm-title-wrap">
+                                                <div class="frm-subtitle">Введите номер счета</div>
+                                            </div>
+                                            <div class="frm-row">
+                                                <div class="frm-field">
+                                                    <div class="frm-field-input">
+                                                        <input type="text" class="form-input inp-main inp-large-text" placeholder="0000 0000 0000 0000">
+                                                        <div class="btn-action-ico ico-clear button-field-clear"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="frm-title-wrap">
+                                                <div class="frm-subtitle">БИК банка</div>
+                                            </div>
+                                            <div class="frm-row">
+                                                <div class="frm-field">
+                                                    <div class="frm-field-input">
+                                                        <div class="frm-ico">
+                                                            <img src="./img/icons/pay.svg" alt="">
+                                                        </div>
+                                                        <select class="form-input inp-main inp-large-text" required>
+                                                            <option selected disabled hidden value="">000000000</option><!--placeholder-->
+                                                            <option></option>
+                                                            <option>Пункт списка</option>
+                                                            <option>Пункт списка</option>
+                                                            <option>Пункт списка</option>
+                                                        </select>
+                                                        <div class="btn-action-ico ico-clear button-field-clear"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="frm-field field-text">
+                                                    <p>Сбербанк Московское отделение <br>К/с 12341234123412341234 <br>ИНН / КПП 12345678 <br>Юр. адрес Москва</p>
+                                                </div>
+                                            </div>
+                                            <div class="frm-title-wrap">
+                                                <div class="frm-subtitle">Введите сумму перевода</div>
+                                            </div>
+                                            <div class="frm-row">
+                                                <div class="frm-field">
+                                                    <div class="frm-field-input">
+                                                        <input type="text" class="form-input inp-main inp-large" placeholder="" value="2 000 ₽">
+                                                        <div class="btn-action-ico ico-clear button-field-clear"></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="frm-row-submit">
+                                                <div class="frm-field field-submit">
+                                                    <button type="submit" class="btn button-border">
+                                                        <div class="button-title">Перевести</div>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                                <!-- /form -->
                             </div>
                             <!--/item wrap-->
                             <!--item wrap-->
@@ -141,7 +240,7 @@
                                 </div>
                                 <!--/page-filter-box-->
                                 <!--item tile panel-->
-                                <div class="item-tile-panel type-fill-height">
+                                <div class="item-tile-panel">
                                     <div class="panel-title-wrap">
                                         <div class="section-title title-large">20 января 2026 г</div>
                                     </div>

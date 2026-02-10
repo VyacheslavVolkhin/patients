@@ -1,6 +1,22 @@
 /* ----------------------------------- *\
 			inputs elements styles
 \* ----------------------------------- */
+.form-input-light {
+	.form-input {
+		&.inp-main {
+			background-color: #fff;
+		}
+	}
+	.field-text-content,
+	.frm-select-action {
+		background-color: #fff;
+	}
+}
+.form-input {
+	&.inp-large-text {
+		font-size: 20px;
+	}
+}
 select {
 	&.form-input {
 
@@ -74,6 +90,11 @@ select {
 	}
 }
 @media (min-width: 1024px) {
+	.form-input {
+		&.inp-large-text {
+			font-size: 24px;
+		}
+	}
 	select {
 		&.form-input-small {
 			height: 28px;

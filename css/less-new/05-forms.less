@@ -150,6 +150,23 @@
 			}
 		}
 	}
+	.frm-ico {
+		display: block;
+		width: 24px;height: 24px;
+		position: absolute;
+		top: 50%;left: 27px;
+		margin: -12px 0 0 -12px;
+		z-index: 3;
+		pointer-events: none;
+		&~.form-input {
+			padding-left: 44px;
+		}
+	}
+	&:has(.frm-ico) {
+		.form-input {
+			padding-left: 44px;
+		}
+	}
 }
 .file-inner-wrap {
 	.file-photo {
@@ -687,6 +704,19 @@ body {
 	}
 }
 @media (min-width: 1024px) {
+	.frm-field-input {
+		&:has(.frm-ico) {
+			.form-input {
+				padding-left: 56px;
+			}
+		}
+		.frm-ico {
+			left: 32px;
+			&~.form-input {
+				padding-left: 56px;
+			}
+		}
+	}
 	.frm-field-counter {
 		width: 114px;height: 28px;
 		border-radius: 12px;
