@@ -4433,7 +4433,7 @@ body:has(.table-box .js-btn-chat-open.active) .chat-box.dropdown-box {
 .dropdown-box .frm-select-toggle:last-child {
   margin-bottom: 0;
 }
-.tbl-menu-popup-box.dropdown-box {
+.tbl-menu-popup-box.dropdown-box.active {
   left: 180px !important;
 }
 .tbl-menu-popup-box.dropdown-box,

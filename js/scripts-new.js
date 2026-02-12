@@ -1,5 +1,85 @@
 document.addEventListener('DOMContentLoaded', function() {
 
+	//td button menu
+	const buttons = document.querySelectorAll('.js-td-button-menu');
+	const menu = document.querySelector('.tbl-menu-popup-box.dropdown-box');
+	
+	// Функция для позиционирования меню
+	function positionMenu(button) {
+		const buttonRect = button.getBoundingClientRect();
+		const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+		const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+		
+		menu.style.top = (buttonRect.bottom + scrollTop - 100) + 'px';
+		menu.style.left = (buttonRect.left + scrollLeft) + 'px';
+	}
+	
+	// Функция для открытия меню
+	function openMenu(button) {
+		positionMenu(button);
+		menu.classList.add('active-dotted');
+	}
+	
+	// Функция для закрытия меню
+	function closeMenu() {
+		menu.classList.remove('active-dotted');
+	}
+	
+	// Обработчик клика по кнопкам
+	buttons.forEach(button => {
+		button.addEventListener('click', function(e) {
+			e.stopPropagation(); // Предотвращаем всплытие события
+			
+			if (menu.classList.contains('active-dotted')) {
+				closeMenu();
+			} else {
+				openMenu(this);
+			}
+		});
+	});
+	
+	// Обработчик клика вне меню
+	document.addEventListener('click', function(e) {
+		const isClickInsideMenu = menu.contains(e.target);
+		const isClickOnButton = Array.from(buttons).some(button => button.contains(e.target));
+		
+		if (!isClickInsideMenu && !isClickOnButton) {
+			closeMenu();
+		}
+	});
+	
+	// Обновляем позицию при скролле
+	window.addEventListener('scroll', function() {
+		if (menu.classList.contains('active-dotted')) {
+			const activeButton = Array.from(buttons).find(button => 
+				button.classList.contains('active-button') // Добавьте класс для активной кнопки
+			);
+			
+			if (activeButton) {
+				positionMenu(activeButton);
+			}
+		}
+	});
+	
+	// Обновляем позицию при ресайзе окна
+	window.addEventListener('resize', function() {
+		if (menu.classList.contains('active-dotted')) {
+			const activeButton = Array.from(buttons).find(button => 
+				button.classList.contains('active-button')
+			);
+			
+			if (activeButton) {
+				positionMenu(activeButton);
+			}
+		}
+	});
+
+
+
+
+
+	
+
 
 	//select style
 	document.querySelectorAll('select.select-search').forEach(function(select) {
@@ -13,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			e.preventDefault();
 			const formWrap = this.closest('.tile-form-wrap');
 			if (formWrap) {
-				formWrap.classList.add('active');
+				formWrap.classList.add('active-dotted');
 				const input = formWrap.querySelector('.form-input');
 				if (input) input.focus();
 			}
@@ -117,9 +197,9 @@ document.addEventListener('DOMContentLoaded', function() {
             
             const toggleButton = sideMenuBox.querySelector('.btn-menu-toggle');
             if (!toggleButton) return;
-            if (toggleButton.classList.contains('active')) {
+            if (toggleButton.classList.contains('active-dotted')) {
                 event.preventDefault();
-                toggleButton.classList.remove('active');
+                toggleButton.classList.remove('active-dotted');
             }
         });
     });
@@ -162,7 +242,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		function updateActiveSlide(swiper) {
 			if (window.innerWidth < 768) {
 				container.querySelectorAll('.btn-menu').forEach(btn => {
-					btn.classList.remove('active');
+					btn.classList.remove('active-dotted');
 				});
 				const activeSlide = swiper.slides[swiper.activeIndex];
 				const activeBtn = activeSlide.querySelector('.btn-menu');
@@ -172,7 +252,7 @@ document.addEventListener('DOMContentLoaded', function() {
 			} else {
 				// На экранах шире 768px удаляем все классы active
 				// container.querySelectorAll('.btn-menu').forEach(btn => {
-				// 	btn.classList.remove('active');
+				// 	btn.classList.remove('active-dotted');
 				// });
 			}
 		}
