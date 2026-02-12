@@ -1,6 +1,14 @@
 /* ----------------------------------- *\
 			content styles
 \* ----------------------------------- */
+.info-top-box {
+	.frm-field-buttons-panel {
+		padding: 0;
+		border-radius: 0;
+		background: none;
+		border: none;
+	}
+}
 .popup-outer-box {
 	.popup-message-title {
 		display: block;
@@ -862,7 +870,7 @@ body {
 			}
 			.sl-wrap {
 				width: auto;
-				height: 58px;
+				height: 60px;
 				flex: 1;
 				&:last-child {
 					margin-bottom: 0;
@@ -901,6 +909,24 @@ body {
 	}
 }
 @media (min-width: 1024px) {
+	.info-top-box {
+		.frm-field-buttons-panel {
+			padding: 0;
+			border-radius: 0;
+			background: none;
+			border: none;
+			gap: 0;
+		}
+	}
+	.wrap {
+		&:has(.section-sticky) {
+			overflow: visible;
+		}
+	}
+	.section-sticky {
+		position: sticky;
+		top: 20px;
+	}
 	.content-wrap {
 		.table-box {
 			.tbl-inner-wrap {
