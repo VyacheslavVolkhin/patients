@@ -1,6 +1,84 @@
 /* ----------------------------------- *\
 			forms elements styles
 \* ----------------------------------- */
+.slider-pagination {
+	&.type-lines {
+		display: flex;
+		flex-wrap: nowrap;
+		gap: 10px;
+		.swiper-pagination-bullet {
+			width: auto;
+			flex: 1;
+			height: 3px;
+			border-radius: 3px;
+			border: none;
+			max-width: inherit;
+			background: #E6EEFA;
+			margin: 0;
+			padding: 0;
+			min-width: 0;
+			&:before, &:after {
+				display: none;
+			}
+			&:hover, &.swiper-pagination-bullet-active {
+				background: var(--clr-att);
+			}
+		}
+	}
+}
+
+.frm-rate-set {
+	&:hover {
+		.frm-rate {
+			filter: none !important;
+			&:hover {
+				&~.frm-rate {
+					filter: brightness(0) !important;
+				}
+			}
+		}
+	}
+	.frm-rate {
+		filter: brightness(0);
+	}
+	input:nth-child(1):checked {
+		&~.frm-rate {
+			filter: none;
+		}
+		&~.frm-rate~.frm-rate {
+			filter: brightness(0);
+		}
+	}
+	input:nth-child(2):checked {
+		&~.frm-rate {
+			filter: none;
+		}
+		&~.frm-rate~.frm-rate~.frm-rate {
+			filter: brightness(0);
+		}
+	}
+	input:nth-child(3):checked {
+		&~.frm-rate {
+			filter: none;
+		}
+		&~.frm-rate~.frm-rate~.frm-rate~.frm-rate {
+			filter: brightness(0);
+		}
+	}
+	input:nth-child(4):checked {
+		&~.frm-rate {
+			filter: none;
+		}
+		&~.frm-rate~.frm-rate~.frm-rate~.frm-rate~.frm-rate {
+			filter: brightness(0);
+		}
+	}
+	input:nth-child(5):checked {
+		&~.frm-rate {
+			filter: none;
+		}
+	}
+}
 .frm-main-send {
 	display: block;
 	position: relative;

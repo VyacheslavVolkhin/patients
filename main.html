@@ -15,6 +15,15 @@
     <link rel="stylesheet" href="./css/style.min.css" />
     <link rel="stylesheet" href="./css/style-new.min.css" />
     <link rel="stylesheet" href="./css/choices.min.css">
+    <style>
+        .tile-many-lines,
+        .text-many-lines {
+            display: -webkit-box !important;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 3;
+        }
+    </style>
     <script src="./js/choices.min.js" defer></script>
     <script src="./js/counter.js"></script>
     <script src="./js/chart.js"></script>
@@ -1135,17 +1144,18 @@
             </div>
             <!--/title-box-->
 
+
             <!--search-panel-box-->
             <div class="search-panel-box">
                 <form action="/" class="form-inner-wrap">
                     <div class="field-input">
-                        <input type="text" class="form-input" placeholder="Найти в научных статьях или полезной информации">
+                        <input type="text" class="form-input" placeholder="Найти">
                     </div>
-                    <!-- <div class="field-action">
-							<a href="" class="btn-action-ico">
-								<img src="./img/icons/main-filter.svg" alt="">
-							</a>
-						</div> -->
+                    <div class="field-action">
+                        <a href="" class="btn-action-ico">
+                            <img src="./img/icons/main-filter.svg" alt="">
+                        </a>
+                    </div>
                     <div class="field-submit">
                         <button type="submit" class="btn-action-ico">
                             <img src="./img/icons/main-send.svg" alt="">

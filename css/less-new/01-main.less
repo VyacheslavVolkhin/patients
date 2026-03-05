@@ -4,10 +4,39 @@
 :root {
 	--clr-plus: #34C759;
 	--clr-minus: #FF4633;
+
+	--sectionMarginSmall: 30px;
 }
 .text-plus {
 	color: var(--clr-plus);
 }
 .text-minus {
 	color: var(--clr-minus);
+}
+.mb-small {
+	margin-bottom: var(--sectionMarginSmall) !important;
+}
+.list-marker {
+	li {
+		padding-left: 14px;
+		position: relative;
+		margin: 0;
+		list-style-type: none;
+		&:before {
+			content: "";
+			display: block;
+			width: 3px;height: 3px;
+			border-radius: 50%;
+			background: currentColor;
+			position: absolute;
+			top: 9px;
+			left: 0;
+			margin-top: -2px;
+		}
+	}
+}
+@media (min-width: 1024px) {
+	:root {
+		--sectionMarginSmall: 30px;
+	}
 }

@@ -1,0 +1,82 @@
+<!--form-review-box-->
+<form actione="/" class="form-review-box">
+	<div class="frm-title-wrap">
+		<div class="frm-title">Напишите комментарий</div>
+		<p>Опубликованные сообщения являются частными мнениями лиц, их написавших.  <br>Редакция сайта за размещенные сообщения ответственности не несет.</p>
+	</div>
+	<div class="frm-content-wrap">
+		<div class="frm-row row-rate">
+			<div class="frm-field">
+				<div class="field-title">Насколько вам понравилась статья</div>
+				<div class="field-content">
+					<div class="frm-rate-set type-dark">
+						<input type="radio" name="rate-set" id="rate-set01">
+						<input type="radio" name="rate-set" id="rate-set02">
+						<input type="radio" name="rate-set" id="rate-set03">
+						<input type="radio" name="rate-set" id="rate-set04">
+						<input type="radio" name="rate-set" id="rate-set05">
+						<label for="rate-set01" class="frm-rate"></label>
+						<label for="rate-set02" class="frm-rate"></label>
+						<label for="rate-set03" class="frm-rate"></label>
+						<label for="rate-set04" class="frm-rate"></label>
+						<label for="rate-set05" class="frm-rate"></label>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="frm-row">
+			<div class="frm-field field-half">
+				<div class="frm-field-input">
+					<input type="text" class="form-input" placeholder="Ваше имя">
+				</div>
+			</div>
+			<div class="frm-field field-half">
+				<div class="frm-field-input">
+					<input type="email" class="form-input" placeholder="Email">
+				</div>
+			</div>
+		</div>
+		<div class="frm-row">
+			<div class="frm-field">
+				<div class="frm-field-input">
+					<textarea class="form-input" placeholder="Текст комментария"></textarea>
+				</div>
+			</div>
+		</div>
+		<div class="frm-row">
+			<div class="frm-field">
+				<div class="elm-attach">
+					<div class="attach-title">Картинка.png  1,2 мб</div>
+					<a href="" class="btn-action-ico ico-clear button-file-del js-file-button-del"></a>
+				</div>
+				<div class="frm-field-file type-second js-field-file">
+					<input type="file" class="js-field-input">
+					<button type="button" class="btn button-clear button-file-attach js-file-button-attach">
+						<div class="button-ico">
+							<img src="./img/icons/attach-main.svg" alt="">
+						</div>
+						<span class="button-title">Прикрепить фото или видео (jpg, png, bmp, mpg4, не тяжелее 10 мб)</span>
+					</button>
+					<div class="file-inner-wrap">
+						<div class="file-name"></div>
+						<a href="" class="btn-action-ico ico-trash button-file-del js-file-button-del"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="frm-row-submit">
+			<div class="frm-field field-info">
+				<div class="frm-select">
+					<input type="checkbox" id="reviewform">
+					<label for="reviewform">Нажимая на кнопку Опубликовать,  даю согласие на обработку <a href="">персональных данных</a></label>
+				</div>
+			</div>
+			<div class="frm-field field-submit">
+				<button type="submit" class="btn button-second">
+					<div class="button-title">Опубликовать</div>
+				</button>
+			</div>
+		</div>
+	</div>
+</form>
+<!--/form-review-box-->

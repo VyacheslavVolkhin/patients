@@ -15,6 +15,15 @@
     <link rel="stylesheet" href="./css/style.min.css" />
     <link rel="stylesheet" href="./css/style-new.min.css" />
     <link rel="stylesheet" href="./css/choices.min.css">
+    <style>
+        .tile-many-lines,
+        .text-many-lines {
+            display: -webkit-box !important;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 3;
+        }
+    </style>
     <script src="./js/choices.min.js" defer></script>
     <script src="./js/counter.js"></script>
     <script src="./js/chart.js"></script>
@@ -361,7 +370,6 @@
                                                             <a href="" class="btn">
                                                                 <div class="button-title">Онкология</div>
                                                             </a>
-                                                            </a>
                                                             <a href="" class="btn">
                                                                 <div class="button-title">Кардиология</div>
                                                             </a>
@@ -638,8 +646,8 @@
                                                     <div class="filter-content-wrap">
                                                         <div class="filter-content-wrap">
                                                             <div class="filter-action-wrap">
-                                                                <input list="location" placeholder="Город/область" class="form-input inp-main">
-                                                                <datalist id="location">
+                                                                <input list="location2" placeholder="Город/область" class="form-input inp-main">
+                                                                <datalist id="location2">
                                                                     <option>Пункт списка</option>
                                                                     <option>Пункт списка</option>
                                                                     <option>Пункт списка</option>
@@ -648,13 +656,13 @@
                                                             </div>
                                                             <div class="filter-action-wrap">
                                                                 <div class="frm-select-button">
-                                                                    <input type="checkbox" id="button01">
-                                                                    <label for="button01">Со скидкой</label>
+                                                                    <input type="checkbox" id="button02">
+                                                                    <label for="button02">Со скидкой</label>
                                                                 </div>
                                                             </div>
                                                             <div class="filter-action-wrap">
-                                                                <input list="price" placeholder="Цена" class="form-input inp-main">
-                                                                <datalist id="price">
+                                                                <input list="price2" placeholder="Цена" class="form-input inp-main">
+                                                                <datalist id="price2">
                                                                     <option>Пункт списка</option>
                                                                     <option>Пункт списка</option>
                                                                     <option>Пункт списка</option>

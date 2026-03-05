@@ -1,0 +1,11 @@
+1) Новые скрипты в /js/scripts-new.js
+2) Новые стили в /css/style-new.css или style-new.min.css
+3) В старых стилях правка: 
+блок стилей
+.tbl-menu-popup-box.dropdown-box {
+	left: 180px !important;
+}
+заменен на 
+.tbl-menu-popup-box.dropdown-box.active {
+	left: 180px !important;
+}

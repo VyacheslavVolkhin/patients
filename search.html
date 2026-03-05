@@ -1,0 +1,1385 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Главная</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/fancybox.css" />
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="stylesheet" href="./css/style-new.min.css" />
+    <link rel="stylesheet" href="./css/choices.min.css">
+    <style>
+        .tile-many-lines,
+        .text-many-lines {
+            display: -webkit-box !important;
+            -webkit-box-orient: vertical;
+            text-overflow: ellipsis;
+            -webkit-line-clamp: 3;
+        }
+    </style>
+    <script src="./js/choices.min.js" defer></script>
+    <script src="./js/counter.js"></script>
+    <script src="./js/chart.js"></script>
+    <script src="./js/swiper-bundle.min.js" defer></script>
+    <script src="./js/fancybox.umd.js" defer></script>
+    <script src="./js/multifiles.js" defer></script>
+    <script src="./js/scripts.js" defer></script>
+    <script src="./js/scripts-add.js" defer></script>
+    <script src="./js/scripts-new.js" defer></script>
+</head>
+
+
+<body>
+    <!-- wrap -->
+    <div class="wrap wrap-main">
+
+        <!-- header -->
+        <header class="header">
+            <div class="inner-wrap">
+                <div class="logo-inner-wrap">
+                    <a href="" class="logo">
+                        <img src="./img/main/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="menu-inner-wrap popup-menu-wrap js-popup-wrap">
+                    <a href="" class="btn-popup btn-action-ico ico-menu button-active-close js-btn-popup-toggle"></a>
+                    <div class="popup-content-block js-popup-block">
+                        <div class="menu-wrap">
+                            <ul class="menu">
+                                <li>
+                                    <a href="" class="btn-menu active">
+                                        <div class="button-title">Заявки</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn-menu">
+                                        <div class="button-title">Арбитраж</div>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" class="btn-menu">
+                                        <div class="button-title">Переписка</div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="actions-header-wrap">
+                    <div class="action-wrap">
+                        <a href="" class="btn-action-ico ico-notify"></a>
+                    </div>
+                    <div class="user-wrap">
+                        <a href="" class="elm-photo photo-cover">
+                            <img src="./img/main/user.jpg" alt="">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- /header -->
+
+
+        <!-- page -->
+        <div class="page-full">
+
+            <!--breadcrumbs-box-->
+            <div class="breadcrumbs-box">
+                <ol class="menu">
+                    <li><a href="">Главная</a></li>
+                    <li><a href="">Направления</a></li>
+                    <li><a href="">Косметология </a></li>
+                </ol>
+            </div>
+            <!--/breadcrumbs-box-->
+
+            <!--title-content-box-->
+            <div class="title-content-box">
+                <div class="title-wrap">
+                    <h2 class="page-title section-title">Результаты поиска в Москве по запросу <span class="text-light">«косметолог»</span></h2>
+                </div>
+            </div>
+            <!--/title-content-box-->
+
+            <!--content-outer-wrap-->
+            <div class="content-outer-wrap">
+
+                <!--content-wrap-->
+                <div class="content-wrap">
+
+                    <!--page-filter-box-->
+                    <div class="page-filter-box type-row" id="section01">
+                        <div class="filter-actions-wrap active">
+                            <div class="filter-content-wrap">
+                                <div class="filter-action-wrap">
+                                    <input list="location" placeholder="Город/область" class="form-input inp-main">
+                                    <datalist id="location">
+                                        <option>Пункт списка</option>
+                                        <option>Пункт списка</option>
+                                        <option>Пункт списка</option>
+                                        <option>Пункт списка</option>
+                                    </datalist>
+                                </div>
+                                <div class="filter-action-wrap">
+                                    <div class="frm-select-button">
+                                        <input type="checkbox" id="button01">
+                                        <label for="button01">Со скидкой</label>
+                                    </div>
+                                </div>
+                                <div class="filter-action-wrap">
+                                    <input list="location2" placeholder="Цена" class="form-input inp-main">
+                                    <datalist id="location2">
+                                        <option>Пункт списка</option>
+                                        <option>Пункт списка</option>
+                                        <option>Пункт списка</option>
+                                        <option>Пункт списка</option>
+                                    </datalist>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/page-filter-box-->
+
+                    <!--page-title-box-->
+                    <div class="page-title-box" id="section02">
+                        <div class="title-wrap">
+                            <div class="section-title h1-title title-medium">Специальности <span class="text-light">(3)</span></div>
+                        </div>
+                    </div>
+                    <!--/page-title-box-->
+
+                    <!--tiles-box-->
+                    <div class="tiles-box mb-small">
+                        <div class="items-wrap items-full">
+                            <!--item wrap-->
+                            <div class="item-wrap wrap-full">
+                                <a href="" class="item-tile-link">
+                                    <div class="tile-title">Врачи-косметологи</div>
+                                </a>
+                            </div>
+                            <!--/item wrap-->
+                            <!--item wrap-->
+                            <div class="item-wrap wrap-full">
+                                <a href="" class="item-tile-link">
+                                    <div class="tile-title">Косметологи-эстетисты</div>
+                                </a>
+                            </div>
+                            <!--/item wrap-->
+                            <!--item wrap-->
+                            <div class="item-wrap wrap-full">
+                                <a href="" class="item-tile-link">
+                                    <div class="tile-title">Детские врачи-косметологи</div>
+                                </a>
+                            </div>
+                            <!--/item wrap-->
+                        </div>
+                    </div>
+                    <!--/tiles-box-->
+
+                    <!--page-title-box-->
+                    <div class="page-title-box" id="section03">
+                        <div class="title-wrap">
+                            <div class="section-title h1-title title-medium">Типы клиник <span class="text-light">(1)</span></div>
+                        </div>
+                    </div>
+                    <!--/page-title-box-->
+
+                    <!--tiles-box-->
+                    <div class="tiles-box mb-small">
+                        <div class="items-wrap items-full">
+                            <!--item wrap-->
+                            <div class="item-wrap wrap-full">
+                                <a href="" class="item-tile-link">
+                                    <div class="tile-title">Косметологии</div>
+                                </a>
+                            </div>
+                            <!--/item wrap-->
+                        </div>
+                    </div>
+                    <!--/tiles-box-->
+
+                    <!--page-title-box-->
+                    <div class="page-title-box" id="section04">
+                        <div class="title-wrap">
+                            <div class="section-title h1-title title-medium">Услуги <span class="text-light">(3)</span></div>
+                        </div>
+                    </div>
+                    <!--/page-title-box-->
+
+                    <!--tiles-box-->
+                    <div class="tiles-box mb-small">
+                        <div class="items-wrap items-full">
+                            <!--item wrap-->
+                            <div class="item-wrap wrap-full">
+                                <a href="" class="item-tile-link">
+                                    <div class="tile-title">Косметологические услуги</div>
+                                </a>
+                            </div>
+                            <!--/item wrap-->
+                            <!--item wrap-->
+                            <div class="item-wrap wrap-full">
+                                <a href="" class="item-tile-link">
+                                    <div class="tile-title">Аппаратная косметология</div>
+                                </a>
+                            </div>
+                            <!--/item wrap-->
+                            <!--item wrap-->
+                            <div class="item-wrap wrap-full">
+                                <a href="" class="item-tile-link">
+                                    <div class="tile-title">Инъекционная косметология</div>
+                                </a>
+                            </div>
+                            <!--/item wrap-->
+                        </div>
+                    </div>
+                    <!--/tiles-box-->
+
+                    <!--page-title-box-->
+                    <div class="page-title-box" id="section05">
+                        <div class="title-wrap">
+                            <div class="section-title h1-title title-medium">Сети клиник (<span class="text-light">35)</span></div>
+                        </div>
+                    </div>
+                    <!--/page-title-box-->
+
+                    <!--tiles-box-->
+                    <div class="tiles-box mb-small">
+                        <div class="items-wrap items-full">
+                            <!--item wrap-->
+                            <div class="item-wrap wrap-full">
+                                <div class="item-tile-clinic-main type-mobile-small">
+                                    <div class="tile-header-wrap">
+                                        <div class="tile-logo-wrap">
+                                            <div class="tile-photo photo-contain">
+                                                <img src="./img/logo02.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-header-info-wrap">
+                                            <div class="tile-rate-wrap">
+                                                <div class="elm-rate-panel">
+                                                    <div class="rate-total-main">4.8</div>
+                                                    <div class="rate-link"><a href="">2 отзыва</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tile-info-wrap">
+                                        <div class="tile-title-wrap">
+                                            <div class="tile-title">Клиника неврологии и ортопедии ЗдравКлиник на Октябрьской</div>
+                                            <p>Многопрофильный медицинский центр</p>
+                                            <p>Лицензия ЛО-77-01-018297</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/item wrap-->
+                            <!--item wrap-->
+                            <div class="item-wrap wrap-full">
+                                <div class="item-tile-clinic-main type-mobile-small">
+                                    <div class="tile-header-wrap">
+                                        <div class="tile-logo-wrap">
+                                            <div class="tile-photo photo-contain">
+                                                <img src="./img/logo02.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-header-info-wrap">
+                                            <div class="tile-rate-wrap">
+                                                <div class="elm-rate-panel">
+                                                    <div class="rate-total-main">4.8</div>
+                                                    <div class="rate-link"><a href="">2 отзыва</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tile-info-wrap">
+                                        <div class="tile-title-wrap">
+                                            <div class="tile-title">Клиника неврологии и ортопедии ЗдравКлиник на Октябрьской</div>
+                                            <p>Многопрофильный медицинский центр</p>
+                                            <p>Лицензия ЛО-77-01-018297</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/item wrap-->
+                            <!--item wrap-->
+                            <div class="item-wrap wrap-full">
+                                <div class="item-tile-clinic-main type-mobile-small">
+                                    <div class="tile-header-wrap">
+                                        <div class="tile-logo-wrap">
+                                            <div class="tile-photo photo-contain">
+                                                <img src="./img/logo02.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-header-info-wrap">
+                                            <div class="tile-rate-wrap">
+                                                <div class="elm-rate-panel">
+                                                    <div class="rate-total-main">4.8</div>
+                                                    <div class="rate-link"><a href="">2 отзыва</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tile-info-wrap">
+                                        <div class="tile-title-wrap">
+                                            <div class="tile-title">Клиника неврологии и ортопедии ЗдравКлиник на Октябрьской</div>
+                                            <p>Многопрофильный медицинский центр</p>
+                                            <p>Лицензия ЛО-77-01-018297</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/item wrap-->
+                            <!--item wrap-->
+                            <div class="item-wrap wrap-full">
+                                <div class="item-tile-clinic-main type-mobile-small">
+                                    <div class="tile-header-wrap">
+                                        <div class="tile-logo-wrap">
+                                            <div class="tile-photo photo-contain">
+                                                <img src="./img/logo02.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-header-info-wrap">
+                                            <div class="tile-rate-wrap">
+                                                <div class="elm-rate-panel">
+                                                    <div class="rate-total-main">4.8</div>
+                                                    <div class="rate-link"><a href="">2 отзыва</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tile-info-wrap">
+                                        <div class="tile-title-wrap">
+                                            <div class="tile-title">Клиника неврологии и ортопедии ЗдравКлиник на Октябрьской</div>
+                                            <p>Многопрофильный медицинский центр</p>
+                                            <p>Лицензия ЛО-77-01-018297</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/item wrap-->
+                            <!--item wrap-->
+                            <div class="item-wrap wrap-full">
+                                <div class="item-tile-clinic-main type-mobile-small">
+                                    <div class="tile-header-wrap">
+                                        <div class="tile-logo-wrap">
+                                            <div class="tile-photo photo-contain">
+                                                <img src="./img/logo02.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-header-info-wrap">
+                                            <div class="tile-rate-wrap">
+                                                <div class="elm-rate-panel">
+                                                    <div class="rate-total-main">4.8</div>
+                                                    <div class="rate-link"><a href="">2 отзыва</a></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tile-info-wrap">
+                                        <div class="tile-title-wrap">
+                                            <div class="tile-title">Клиника неврологии и ортопедии ЗдравКлиник на Октябрьской</div>
+                                            <p>Многопрофильный медицинский центр</p>
+                                            <p>Лицензия ЛО-77-01-018297</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/item wrap-->
+                        </div>
+                        <div class="more-box">
+                            <a href="" class="btn-action">
+                                <div class="button-title">Развернуть еще</div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--/tiles-box-->
+
+                    <!--page-title-box-->
+                    <div class="page-title-box" id="section06">
+                        <div class="title-wrap">
+                            <div class="section-title h1-title title-medium">Клиники (<span class="text-light">35)</span></div>
+                        </div>
+                    </div>
+                    <!--/page-title-box-->
+
+                    <!--tiles-box-->
+                    <div class="tiles-box mb-small">
+                        <div class="items-wrap items-full">
+                            <!--item wrap-->
+                            <div class="item-wrap wrap-full">
+                                <div class="item-tile-clinic-main">
+                                    <div class="elm-attention-anchor">
+                                        <img src="./img/icons/succefull-check.svg" alt="">
+                                    </div>
+                                    <div class="tile-header-wrap">
+                                        <div class="tile-logo-wrap">
+                                            <div class="tile-photo photo-contain">
+                                                <img src="./img/logo02.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-header-info-wrap">
+                                            <div class="tile-rate-wrap">
+                                                <div class="elm-rate-panel">
+                                                    <div class="rate-total-main">4.8</div>
+                                                    <div class="rate-link"><a href="">2 отзыва</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tile-actions-wrap">
+                                                <div class="tile-action-wrap">
+                                                    <a href="" class="btn button-border button-gray">
+                                                        <div class="button-title">Вопросы и ответы</div>
+                                                    </a>
+                                                </div>
+                                                <div class="tile-action-wrap">
+                                                    <a href="" class="btn button-second">
+                                                        <div class="button-title">Задать вопрос </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tile-info-wrap">
+                                        <div class="tile-title-wrap">
+                                            <div class="tile-title">Клиника неврологии и ортопедии ЗдравКлиник на Октябрьской</div>
+                                            <p>Многопрофильный медицинский центр</p>
+                                            <p>Лицензия ЛО-77-01-018297</p>
+                                        </div>
+                                        <div class="tile-tags-wrap">
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Кардиология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Ортопедия</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Онкология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Неврология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Гастроэнтерология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Эндокринология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Урология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Гинекология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Травматология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Кардиология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Ортопедия</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Онкология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Неврология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Гастроэнтерология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Эндокринология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Урология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Гинекология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Травматология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray tile-button-toggle js-btn-tgl">
+                                                <div class="button-title">Еще 12</div>
+                                            </a>
+                                        </div>
+                                        <div class="tile-text-wrap">
+                                            <p>ЗдравКлиник на Октябрьской – узкоспециализированная клиника, в которой ведут прием травматологи, ортопеды, неврологи и вертебрологи.</p>
+                                            <div class="tile-text-content-hidden">
+                                                <p>ЗдравКлиник на Октябрьской – узкоспециализированная клиника, в которой ведут прием травматологи, ортопеды, неврологи и вертебрологи.</p>
+                                                <p>ЗдравКлиник на Октябрьской – узкоспециализированная клиника, в которой ведут прием травматологи, ортопеды, неврологи и вертебрологи.</p>
+                                                <p>ЗдравКлиник на Октябрьской – узкоспециализированная клиника, в которой ведут прием травматологи, ортопеды, неврологи и вертебрологи.</p>
+                                            </div>
+                                            <div class="tile-text-content-toggle">
+                                                <a href="" class="btn-action-toggle-text js-btn-tgl panel-button-toggle-texts">
+                                                    <div class="button-title" data-show="Подробнее" data-hide="Свернуть"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/item wrap-->
+                            <!--item wrap-->
+                            <div class="item-wrap wrap-full">
+                                <div class="item-tile-clinic-main">
+                                    <div class="tile-header-wrap">
+                                        <div class="tile-logo-wrap">
+                                            <div class="tile-photo photo-contain">
+                                                <img src="./img/logo02.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-header-info-wrap">
+                                            <div class="tile-rate-wrap">
+                                                <div class="elm-rate-panel">
+                                                    <div class="rate-total-main">4.8</div>
+                                                    <div class="rate-link"><a href="">2 отзыва</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tile-actions-wrap">
+                                                <div class="tile-action-wrap">
+                                                    <a href="" class="btn button-border button-gray">
+                                                        <div class="button-title">Вопросы и ответы</div>
+                                                    </a>
+                                                </div>
+                                                <div class="tile-action-wrap">
+                                                    <a href="" class="btn button-second">
+                                                        <div class="button-title">Задать вопрос </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tile-info-wrap">
+                                        <div class="tile-title-wrap">
+                                            <div class="tile-title">Клиника неврологии и ортопедии ЗдравКлиник на Октябрьской</div>
+                                            <p>Многопрофильный медицинский центр</p>
+                                            <p>Лицензия ЛО-77-01-018297</p>
+                                        </div>
+                                        <div class="tile-tags-wrap">
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Кардиология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Ортопедия</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Онкология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Неврология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Гастроэнтерология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Эндокринология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Урология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Гинекология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Травматология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Кардиология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Ортопедия</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Онкология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Неврология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Гастроэнтерология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Эндокринология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Урология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Гинекология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Травматология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray tile-button-toggle js-btn-tgl">
+                                                <div class="button-title">Еще 12</div>
+                                            </a>
+                                        </div>
+                                        <div class="tile-text-wrap">
+                                            <p>ЗдравКлиник на Октябрьской – узкоспециализированная клиника, в которой ведут прием травматологи, ортопеды, неврологи и вертебрологи.</p>
+                                            <div class="tile-text-content-hidden">
+                                                <p>ЗдравКлиник на Октябрьской – узкоспециализированная клиника, в которой ведут прием травматологи, ортопеды, неврологи и вертебрологи.</p>
+                                                <p>ЗдравКлиник на Октябрьской – узкоспециализированная клиника, в которой ведут прием травматологи, ортопеды, неврологи и вертебрологи.</p>
+                                                <p>ЗдравКлиник на Октябрьской – узкоспециализированная клиника, в которой ведут прием травматологи, ортопеды, неврологи и вертебрологи.</p>
+                                            </div>
+                                            <div class="tile-text-content-toggle">
+                                                <a href="" class="btn-action-toggle-text js-btn-tgl panel-button-toggle-texts">
+                                                    <div class="button-title" data-show="Подробнее" data-hide="Свернуть"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/item wrap-->
+                            <!--item wrap-->
+                            <div class="item-wrap wrap-full">
+                                <div class="item-tile-clinic-main">
+                                    <div class="tile-header-wrap">
+                                        <div class="tile-logo-wrap">
+                                            <div class="tile-photo photo-contain">
+                                                <img src="./img/logo02.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-header-info-wrap">
+                                            <div class="tile-rate-wrap">
+                                                <div class="elm-rate-panel">
+                                                    <div class="rate-total-main">4.8</div>
+                                                    <div class="rate-link"><a href="">2 отзыва</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tile-actions-wrap">
+                                                <div class="tile-action-wrap">
+                                                    <a href="" class="btn button-border button-gray">
+                                                        <div class="button-title">Вопросы и ответы</div>
+                                                    </a>
+                                                </div>
+                                                <div class="tile-action-wrap">
+                                                    <a href="" class="btn button-second">
+                                                        <div class="button-title">Задать вопрос </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tile-info-wrap">
+                                        <div class="tile-title-wrap">
+                                            <div class="tile-title">Клиника неврологии и ортопедии ЗдравКлиник на Октябрьской</div>
+                                            <p>Многопрофильный медицинский центр</p>
+                                            <p>Лицензия ЛО-77-01-018297</p>
+                                        </div>
+                                        <div class="tile-tags-wrap">
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Кардиология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Ортопедия</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Онкология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Неврология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Гастроэнтерология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Эндокринология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Урология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Гинекология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Травматология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Кардиология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Ортопедия</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Онкология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Неврология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Гастроэнтерология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Эндокринология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Урология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Гинекология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Травматология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray tile-button-toggle js-btn-tgl">
+                                                <div class="button-title">Еще 12</div>
+                                            </a>
+                                        </div>
+                                        <div class="tile-text-wrap">
+                                            <p>ЗдравКлиник на Октябрьской – узкоспециализированная клиника, в которой ведут прием травматологи, ортопеды, неврологи и вертебрологи.</p>
+                                            <div class="tile-text-content-hidden">
+                                                <p>ЗдравКлиник на Октябрьской – узкоспециализированная клиника, в которой ведут прием травматологи, ортопеды, неврологи и вертебрологи.</p>
+                                                <p>ЗдравКлиник на Октябрьской – узкоспециализированная клиника, в которой ведут прием травматологи, ортопеды, неврологи и вертебрологи.</p>
+                                                <p>ЗдравКлиник на Октябрьской – узкоспециализированная клиника, в которой ведут прием травматологи, ортопеды, неврологи и вертебрологи.</p>
+                                            </div>
+                                            <div class="tile-text-content-toggle">
+                                                <a href="" class="btn-action-toggle-text js-btn-tgl panel-button-toggle-texts">
+                                                    <div class="button-title" data-show="Подробнее" data-hide="Свернуть"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/item wrap-->
+                            <!--item wrap-->
+                            <div class="item-wrap wrap-full">
+                                <div class="item-tile-clinic-main">
+                                    <div class="tile-header-wrap">
+                                        <div class="tile-logo-wrap">
+                                            <div class="tile-photo photo-contain">
+                                                <img src="./img/logo02.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-header-info-wrap">
+                                            <div class="tile-rate-wrap">
+                                                <div class="elm-rate-panel">
+                                                    <div class="rate-total-main">4.8</div>
+                                                    <div class="rate-link"><a href="">2 отзыва</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tile-actions-wrap">
+                                                <div class="tile-action-wrap">
+                                                    <a href="" class="btn button-border button-gray">
+                                                        <div class="button-title">Вопросы и ответы</div>
+                                                    </a>
+                                                </div>
+                                                <div class="tile-action-wrap">
+                                                    <a href="" class="btn button-second">
+                                                        <div class="button-title">Задать вопрос </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tile-info-wrap">
+                                        <div class="tile-title-wrap">
+                                            <div class="tile-title">Клиника неврологии и ортопедии ЗдравКлиник на Октябрьской</div>
+                                            <p>Многопрофильный медицинский центр</p>
+                                            <p>Лицензия ЛО-77-01-018297</p>
+                                        </div>
+                                        <div class="tile-tags-wrap">
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Кардиология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Ортопедия</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Онкология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Неврология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Гастроэнтерология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Эндокринология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Урология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Гинекология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Травматология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Кардиология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Ортопедия</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Онкология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Неврология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Гастроэнтерология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Эндокринология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Урология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Гинекология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Травматология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray tile-button-toggle js-btn-tgl">
+                                                <div class="button-title">Еще 12</div>
+                                            </a>
+                                        </div>
+                                        <div class="tile-text-wrap">
+                                            <p>ЗдравКлиник на Октябрьской – узкоспециализированная клиника, в которой ведут прием травматологи, ортопеды, неврологи и вертебрологи.</p>
+                                            <div class="tile-text-content-hidden">
+                                                <p>ЗдравКлиник на Октябрьской – узкоспециализированная клиника, в которой ведут прием травматологи, ортопеды, неврологи и вертебрологи.</p>
+                                                <p>ЗдравКлиник на Октябрьской – узкоспециализированная клиника, в которой ведут прием травматологи, ортопеды, неврологи и вертебрологи.</p>
+                                                <p>ЗдравКлиник на Октябрьской – узкоспециализированная клиника, в которой ведут прием травматологи, ортопеды, неврологи и вертебрологи.</p>
+                                            </div>
+                                            <div class="tile-text-content-toggle">
+                                                <a href="" class="btn-action-toggle-text js-btn-tgl panel-button-toggle-texts">
+                                                    <div class="button-title" data-show="Подробнее" data-hide="Свернуть"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/item wrap-->
+                            <!--item wrap-->
+                            <div class="item-wrap wrap-full">
+                                <div class="item-tile-clinic-main">
+                                    <div class="tile-header-wrap">
+                                        <div class="tile-logo-wrap">
+                                            <div class="tile-photo photo-contain">
+                                                <img src="./img/logo02.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="tile-header-info-wrap">
+                                            <div class="tile-rate-wrap">
+                                                <div class="elm-rate-panel">
+                                                    <div class="rate-total-main">4.8</div>
+                                                    <div class="rate-link"><a href="">2 отзыва</a></div>
+                                                </div>
+                                            </div>
+                                            <div class="tile-actions-wrap">
+                                                <div class="tile-action-wrap">
+                                                    <a href="" class="btn button-border button-gray">
+                                                        <div class="button-title">Вопросы и ответы</div>
+                                                    </a>
+                                                </div>
+                                                <div class="tile-action-wrap">
+                                                    <a href="" class="btn button-second">
+                                                        <div class="button-title">Задать вопрос </div>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tile-info-wrap">
+                                        <div class="tile-title-wrap">
+                                            <div class="tile-title">Клиника неврологии и ортопедии ЗдравКлиник на Октябрьской</div>
+                                            <p>Многопрофильный медицинский центр</p>
+                                            <p>Лицензия ЛО-77-01-018297</p>
+                                        </div>
+                                        <div class="tile-tags-wrap">
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Кардиология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Ортопедия</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Онкология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Неврология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Гастроэнтерология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Эндокринология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Урология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Гинекология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Травматология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Кардиология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Ортопедия</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Онкология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Неврология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Гастроэнтерология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Эндокринология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Урология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Гинекология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray">
+                                                <div class="button-title">Травматология</div>
+                                            </a>
+                                            <a href="" class="btn button-tag button-tag-gray tile-button-toggle js-btn-tgl">
+                                                <div class="button-title">Еще 12</div>
+                                            </a>
+                                        </div>
+                                        <div class="tile-text-wrap">
+                                            <p>ЗдравКлиник на Октябрьской – узкоспециализированная клиника, в которой ведут прием травматологи, ортопеды, неврологи и вертебрологи.</p>
+                                            <div class="tile-text-content-hidden">
+                                                <p>ЗдравКлиник на Октябрьской – узкоспециализированная клиника, в которой ведут прием травматологи, ортопеды, неврологи и вертебрологи.</p>
+                                                <p>ЗдравКлиник на Октябрьской – узкоспециализированная клиника, в которой ведут прием травматологи, ортопеды, неврологи и вертебрологи.</p>
+                                                <p>ЗдравКлиник на Октябрьской – узкоспециализированная клиника, в которой ведут прием травматологи, ортопеды, неврологи и вертебрологи.</p>
+                                            </div>
+                                            <div class="tile-text-content-toggle">
+                                                <a href="" class="btn-action-toggle-text js-btn-tgl panel-button-toggle-texts">
+                                                    <div class="button-title" data-show="Подробнее" data-hide="Свернуть"></div>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/item wrap-->
+                        </div>
+                        <div class="more-box">
+                            <a href="" class="btn-action">
+                                <div class="button-title">Развернуть еще</div>
+                            </a>
+                        </div>
+                    </div>
+                    <!--/tiles-box-->
+
+
+
+                </div>
+                <!--/content-wrap-->
+
+                <!--side-wrap-->
+                <div class="side-wrap">
+
+                    <!--side-menu-box-->
+                    <div class="side-menu-box type-menu elm-hidden-mobile">
+                        <ul class="menu">
+                            <li>
+                                <a href="#section01" class="btn active">
+                                    <div class="button-title">Все</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section02" class="btn">
+                                    <div class="button-title">Специальности</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section03" class="btn">
+                                    <div class="button-title">Типы клиник</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section04" class="btn">
+                                    <div class="button-title">Услуги</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section05" class="btn">
+                                    <div class="button-title">Сети клиник</div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#section06" class="btn">
+                                    <div class="button-title">Клиники</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--/side-menu-box-->
+
+                </div>
+                <!--/side-wrap-->
+
+            </div>
+            <!--/content-outer-wrap-->
+
+        </div>
+        <!-- /page -->
+
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="inner-wrap">
+                <div class="info-inner-wrap">
+                    <div class="info-wrap">
+                        <p>© 2024, НейроМаркер</p>
+                    </div>
+                    <div class="info-wrap">
+                        <p>Сделано в <a href="" class="link-studio">Вебуспех <img src="./img/main/studio.svg" alt=""></a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- /footer -->
+
+        <!--popup-outer-box-->
+        <div class="popup-outer-box popup-main " id="popup-main-login">
+            <div class="popup-box">
+                <a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-title-wrap">
+                    <div class="popup-title">Вход в кабинет</div>
+                </div>
+                <div class="popup-content-wrap">
+                    <form action="/" class="frm-popup">
+                        <div class="select-inner-wrap">
+                            <div class="item-select-profile js-popup-wrap js-popup-select">
+                                <a href="" class="btn-popup btn-menu js-btn-popup-toggle"></a>
+                                <div class="select-content-block js-popup-block">
+                                    <ul class="menu">
+                                        <li>
+                                            <a href="" class="btn-menu active">
+                                                <div class="button-ico">
+                                                    <img src="./img/icons/menu03.svg" alt="">
+                                                </div>
+                                                <div class="button-title">
+                                                    <div class="button-title-head">Врач</div>
+                                                    <div class="button-title-info">Направляющий специалист</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="btn-menu">
+                                                <div class="button-ico">
+                                                    <img src="./img/icons/menu04.svg" alt="">
+                                                </div>
+                                                <div class="button-title">
+                                                    <div class="button-title-head">Клиника</div>
+                                                    <div class="button-title-info">Принимающая организация</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="" class="btn-menu">
+                                                <div class="button-ico">
+                                                    <img src="./img/icons/menu02.svg" alt="">
+                                                </div>
+                                                <div class="button-title">
+                                                    <div class="button-title-head">Пациент</div>
+                                                    <div class="button-title-info">Получатель медицинских услуг</div>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-field field-half">
+                                <input type="email" class="form-input inp-main" placeholder="Ваш e-mail">
+                            </div>
+                            <div class="frm-field field-half">
+                                <div class="frm-field-password">
+                                    <input type="text" class="form-input inp-main" placeholder="Пароль">
+                                    <a href="" class="btn-action-ico ico-password button-active-toggle active js-password-toggle"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm-row-submit row-line">
+                            <div class="frm-field field-info">
+                                <div class="frm-select">
+                                    <input type="checkbox" id="popup-form01">
+                                    <label for="popup-form01">Запомнить пароль</label>
+                                </div>
+                                <a href="" class="js-popup-open" data-popup="popup-main-password">Напомнить пароль</a>
+                            </div>
+                            <div class="frm-field field-submit">
+                                <button type="submit" class="btn button-main">
+                                    <div class="button-title">Войти</div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="frm-row row-login">
+                            <div class="row-title">Или войдите через</div>
+                            <div class="frm-field">
+                                <a href="" class="btn button-light">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/login01.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="frm-field">
+                                <a href="" class="btn button-light">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/login02.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="frm-field">
+                                <a href="" class="btn button-light">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/login03.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--/popup-outer-box-->
+
+        <!--popup-outer-box-->
+        <div class="popup-outer-box popup-main" id="popup-main-reg">
+            <div class="popup-box">
+                <a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-title-wrap">
+                    <div class="popup-title">Регистрация</div>
+                </div>
+                <div class="popup-content-wrap">
+                    <form action="/" class="frm-popup">
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <select class="form-input inp-main" required>
+                                    <option selected disabled hidden value="">Выберите роль</option><!--placeholder-->
+                                    <option>Пункт списка</option>
+                                    <option>Пункт списка</option>
+                                    <option>Пункт списка</option>
+                                    <option>Пункт списка</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <input type="text" class="form-input inp-main" placeholder="Ваше ФИО">
+                            </div>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-field field-half">
+                                <input type="email" class="form-input inp-main" placeholder="Ваш e-mail">
+                            </div>
+                            <div class="frm-field field-half">
+                                <input type="tel" class="form-input inp-main" placeholder="Телефон">
+                            </div>
+                        </div>
+                        <div class="frm-row">
+                            <div class="frm-field field-half">
+                                <div class="frm-field-password">
+                                    <input type="text" class="form-input inp-main" placeholder="Пароль">
+                                    <a href="" class="btn-action-ico ico-password button-active-toggle active js-password-toggle"></a>
+                                </div>
+                            </div>
+                            <div class="frm-field field-half">
+                                <div class="frm-field-password">
+                                    <input type="text" class="form-input inp-main" placeholder="Пароль">
+                                    <a href="" class="btn-action-ico ico-password button-active-toggle active js-password-toggle"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="frm-row-submit">
+                            <div class="frm-field field-info">
+                                <div class="frm-select">
+                                    <input type="checkbox" id="popup-form02">
+                                    <label for="popup-form02">Даю согласие на обработку <a href="">Персональных данных</a></label>
+                                </div>
+                            </div>
+                            <div class="frm-field field-submit">
+                                <button type="submit" class="btn button-main">
+                                    <div class="button-title">Зарегистрироваться</div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="frm-row row-login">
+                            <div class="row-title">Или войдите через</div>
+                            <div class="frm-field">
+                                <a href="" class="btn button-light">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/login01.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="frm-field">
+                                <a href="" class="btn button-light">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/login02.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="frm-field">
+                                <a href="" class="btn button-light">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/login03.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--/popup-outer-box-->
+
+        <!--popup-outer-box-->
+        <div class="popup-outer-box popup-main" id="popup-main-password">
+            <div class="popup-box">
+                <a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-title-wrap">
+                    <div class="popup-title">Восстановить пароль</div>
+                </div>
+                <div class="popup-content-wrap">
+                    <form action="/" class="frm-popup">
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <input type="email" class="form-input inp-main" placeholder="Ваш e-mail">
+                            </div>
+                        </div>
+                        <div class="frm-row-submit">
+                            <div class="frm-field field-submit">
+                                <button type="submit" class="btn button-main">
+                                    <div class="button-title">Востановить пароль</div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="frm-row row-login">
+                            <div class="row-title">Или войдите через</div>
+                            <div class="frm-field">
+                                <a href="" class="btn button-light">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/login01.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="frm-field">
+                                <a href="" class="btn button-light">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/login02.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                            <div class="frm-field">
+                                <a href="" class="btn button-light">
+                                    <div class="button-ico">
+                                        <img src="./img/icons/login03.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--/popup-outer-box-->
+
+
+
+        <!--popup-outer-box-->
+        <div class="popup-outer-box popup-message" id="popup-service-offer">
+            <div class="popup-box">
+                <a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-title-wrap">
+                    <div class="popup-title">Предложение о&nbsp;стоимости услуги</div>
+                    <p><b>Заявка #J9V4ZY3G</b> от 12.12.2025</p>
+                </div>
+                <div class="popup-content-wrap">
+                    <form action="/" class="frm-popup">
+                        <div class="frm-row">
+                            <div class="frm-field">
+                                <input type="text" class="form-input inp-main" placeholder="Укажите стоимость услуги">
+                            </div>
+                        </div>
+                        <div class="frm-row-submit">
+                            <div class="frm-field field-submit">
+                                <button type="submit" class="btn button-main">
+                                    <div class="button-title">Отправить предложение</div>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <!--/popup-outer-box-->
+
+        <!--popup-outer-box-->
+        <div class="popup-outer-box popup-message" id="popup-service-offer-succefull">
+            <div class="popup-box">
+                <a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-title-wrap">
+                    <div class="popup-title">Предложение о&nbsp;стоимости услуги</div>
+                    <p><b>Заявка #J9V4ZY3G</b> от 12.12.2025</p>
+                </div>
+                <div class="popup-content-wrap">
+                    <div class="popup-message-title text-green">принято</div>
+                </div>
+            </div>
+        </div>
+        <!--/popup-outer-box-->
+
+        <!--popup-outer-box-->
+        <div class="popup-outer-box popup-message" id="popup-service-offer-cancel">
+            <div class="popup-box">
+                <a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-title-wrap">
+                    <div class="popup-title">Предложение о&nbsp;стоимости услуги</div>
+                    <p><b>Заявка #J9V4ZY3G</b> от 12.12.2025</p>
+                </div>
+                <div class="popup-content-wrap">
+                    <div class="popup-message-title text-alert">отклонено</div>
+                </div>
+            </div>
+        </div>
+        <!--/popup-outer-box-->
+
+        <!--popup-outer-box-->
+        <div class="popup-outer-box popup-message" id="popup-patient-send">
+            <div class="popup-box">
+                <a href="" class="btn-popup-close btn-action-ico ico-close js-popup-close"></a>
+                <div class="popup-title-wrap text-large">
+                    <div class="elm-ico">
+                        <img src="./img/icons/popup-send.svg" alt="">
+                    </div>
+                    <div class="popup-title">Пациент отправлен на&nbsp;рассмотрение</div>
+                    <p>Ожидайте ответа от клиники или доктора, с предложением стоимости и времени приема</p>
+                </div>
+            </div>
+        </div>
+        <!--/popup-outer-box-->
+
+    </div>
+    <!-- /wrap -->
+
+
+</body>
+
+</html>
