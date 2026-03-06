@@ -576,6 +576,15 @@ a.elm-info-article:hover {
   font-weight: 400;
   color: #8B8B8B;
 }
+.item-tile-direction-list:has(.tile-button-toggle) .tile-list li:nth-child(3) ~ li {
+  display: none;
+}
+.item-tile-direction-list:has(.tile-button-toggle.active) .tile-info {
+  display: none;
+}
+.item-tile-direction-list:has(.tile-button-toggle.active) .tile-list li:nth-child(3) ~ li {
+  display: block;
+}
 .elm-attach,
 .tile-attach {
   overflow: hidden;
@@ -1307,6 +1316,12 @@ a.elm-info-article:hover {
   height: 60px;
 }
 .item-tile-review-main .tile-photo-wrap:nth-child(4) ~ .tile-photo-wrap {
+  display: none;
+}
+.item-tile-review-main:has(.tile-photo-action-wrap .active) .tile-photo-wrap:nth-child(4) ~ .tile-photo-wrap {
+  display: block;
+}
+.item-tile-review-main:has(.tile-photo-action-wrap .active) .tile-photo-action-wrap {
   display: none;
 }
 .item-tile-review-main .tile-photo-action-wrap {

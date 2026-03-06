@@ -222,6 +222,31 @@
 		font-weight: 400;
 		color: #8B8B8B;
 	}
+	&:has(.tile-button-toggle) {
+		.tile-list {
+			li {
+				&:nth-child(3) {
+					&~li {
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	&:has(.tile-button-toggle.active) {
+		.tile-info {
+			display: none;
+		}
+		.tile-list {
+			li {
+				&:nth-child(3) {
+					&~li {
+						display: block;
+					}
+				}
+			}
+		}
+	}
 }
 .elm-attach, .tile-attach {
 	overflow: hidden;
@@ -901,6 +926,18 @@
 			&~.tile-photo-wrap {
 				display: none;
 			}
+		}
+	}
+	&:has(.tile-photo-action-wrap .active) {
+		.tile-photo-wrap {
+			&:nth-child(4) {
+				&~.tile-photo-wrap {
+					display: block;
+				}
+			}
+		}
+		.tile-photo-action-wrap {
+			display: none;
 		}
 	}
 	.tile-photo-action-wrap {
