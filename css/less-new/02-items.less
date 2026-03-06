@@ -849,6 +849,9 @@
 	font-weight: 300;
 	color: #161616;
 	line-height: (20/15);
+	.tile-rate-toggle {
+		display: none;
+	}
 	.tile-header-wrap {
 		display: flex;
 		align-items: center;
@@ -957,6 +960,14 @@
 	}
 	.tile-header-inner {
 		flex: 1;
+	}
+	.tile-rates-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 6px 10px;
+	}
+	.elm-rate-panel {
+		flex-shrink: 0;
 	}
 	.photo-title {
 		display: flex;
@@ -1525,6 +1536,32 @@
 	}
 }
 @media (max-width: 1023px) {
+	.item-tile-review-main {
+		&:has(.tile-rate-toggle) {
+			.tile-rate-toggle {
+				display: flex !important;
+			}
+			.elm-rate-panel {
+				&:nth-child(2) {
+					&~.elm-rate-panel {
+						display: none;
+					}
+				}
+			}
+		}
+		&:has(.tile-rate-toggle.active)  {
+			.tile-rate-toggle {
+				display: none !important;
+			}
+			.elm-rate-panel {
+				&:nth-child(2) {
+					&~.elm-rate-panel {
+						display: flex;
+					}
+				}
+			}
+		}
+	}
 	.item-tile-review-small {
 		padding: 15px;
 		.tile-many-lines {

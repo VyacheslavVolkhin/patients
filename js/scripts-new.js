@@ -342,7 +342,7 @@ document.addEventListener('DOMContentLoaded', function() {
 		if (!swiperEl) return;
 	
 		new Swiper(swiperEl, {
-			loop: false,
+			loop: true,
 			slidesPerGroup: 1,
 			slidesPerView: 1,
 			spaceBetween: 0,
@@ -364,6 +364,8 @@ document.addEventListener('DOMContentLoaded', function() {
 		});
 	});
 
+	document.querySelector('.tiles-stories-box > .slider-inner-wrap > .slider-wrap > .slider > .swiper-slide-active')
+  ?.addEventListener('mouseenter', function() { this.classList.add('showed'); }, { once: true });
 
 	//slider tile
 	const sliderstile = document.querySelectorAll(".slider-tile");

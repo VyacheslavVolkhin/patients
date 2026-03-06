@@ -231,6 +231,12 @@ a.elm-info-article {
 	color: #161616;
 	border: 1px solid #E0E0E0;
 	gap: 4px;
+	&.js-btn-tgl {
+		cursor: pointer;
+		&:hover {
+			border-color: #c0c0c0;
+		}
+	}
 	.rate-link {
 		font-size: 12px;
 		font-weight: 300;
@@ -241,10 +247,27 @@ a.elm-info-article {
 			}
 		}
 	}
+	&>.elm-rate {
+
+	}
 	.rate-total {
 		flex-shrink: 0;
 		display: block;
 		padding-top: 2px;
+	}
+	.rate-title {
+		flex: 1;
+		display: block;
+		position: relative;
+		max-width: 100%;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		font-size: 12px;
+		font-weight: 300;
+		color: #525252;
+		line-height: 20px;
+		height: 18px;
 	}
 	.rate-total-main {
 		display: block;
@@ -321,4 +344,115 @@ a.elm-info-article {
 			filter: brightness(0.7) grayscale(1);
 		}
 	}
+}
+.elm-rate {
+	&[data-rate="01"] {filter: brightness(1.8) contrast(0.7) saturate(0);;}
+	&[data-rate="02"] {filter: brightness(1.8) contrast(0.7) saturate(0);;}
+	&[data-rate="03"] {filter: brightness(1.8) contrast(0.7) saturate(0);;}
+	&[data-rate="04"] {filter: brightness(1.8) contrast(0.7) saturate(0);;}
+	&[data-rate="05"] {filter: brightness(1.8) contrast(0.7) saturate(0);;}
+	&[data-rate="06"] {filter: brightness(1.8) contrast(0.7) saturate(0);;}
+	&[data-rate="07"] {filter: brightness(1.8) contrast(0.7) saturate(0);;}
+	&[data-rate="08"] {filter: brightness(1.8) contrast(0.7) saturate(0);;}
+	&[data-rate="09"] {filter: brightness(1.8) contrast(0.7) saturate(0);;}
+	&[data-rate="1"] {filter: brightness(1.8) contrast(0.7) saturate(0);;}
+	&[data-rate="2"] {filter: brightness(1.8) contrast(0.7) saturate(0);;}
+	&[data-rate="3"] {filter: brightness(1.8) contrast(0.7) saturate(0);;}
+	&[data-rate="4"] {filter: brightness(1.8) contrast(0.7) saturate(0);;}
+	&[data-rate="5"] {filter: brightness(1.8) contrast(0.7) saturate(0);;}
+	&[data-rate="6"] {filter: brightness(1.8) contrast(0.7) saturate(0);;}
+	&[data-rate="7"] {filter: brightness(1.8) contrast(0.7) saturate(0);;}
+	&[data-rate="8"] {filter: brightness(1.8) contrast(0.7) saturate(0);;}
+	&[data-rate="9"] {filter: brightness(1.8) contrast(0.7) saturate(0);;}
+	&[data-rate="10"] {filter: brightness(1.8) contrast(0.7) saturate(0);;}
+	&[data-rate="11"] {filter: brightness(1.8) contrast(0.7) saturate(0);;}
+	&[data-rate="12"] {filter: brightness(1.8) contrast(0.7) saturate(0);;}
+	&[data-rate="13"] {filter: brightness(1.8) contrast(0.7) saturate(0);;}
+	&[data-rate="14"] {filter: brightness(1.8) contrast(0.7) saturate(0);;}
+	&[data-rate="15"] {filter: brightness(1.8) contrast(0.7) saturate(0);;}
+	&[data-rate="16"] {filter: brightness(1.8) contrast(0.7) saturate(0);;}
+	&[data-rate="17"] {filter: brightness(1.8) contrast(0.7) saturate(0);;}
+	&[data-rate="18"] {filter: brightness(1.8) contrast(0.7) saturate(0);;}
+	&[data-rate="19"] {filter: brightness(1.8) contrast(0.7) saturate(0);;}
+	&[data-rate="20"] {filter: brightness(0.6) contrast(0.8) saturate(0) hue-rotate(0deg);;}
+	&[data-rate="21"] {filter: brightness(0.6) contrast(0.8) saturate(0) hue-rotate(0deg);;}
+	&[data-rate="22"] {filter: brightness(0.6) contrast(0.8) saturate(0) hue-rotate(0deg);;}
+	&[data-rate="23"] {filter: brightness(0.6) contrast(0.8) saturate(0) hue-rotate(0deg);;}
+	&[data-rate="24"] {filter: brightness(0.6) contrast(0.8) saturate(0) hue-rotate(0deg);;}
+	&[data-rate="25"] {filter: brightness(0.6) contrast(0.8) saturate(0) hue-rotate(0deg);;}
+	&[data-rate="26"] {filter: brightness(0.6) contrast(0.8) saturate(0) hue-rotate(0deg);;}
+	&[data-rate="27"] {filter: brightness(0.6) contrast(0.8) saturate(0) hue-rotate(0deg);;}
+	&[data-rate="28"] {filter: brightness(0.6) contrast(0.8) saturate(0) hue-rotate(0deg);;}
+	&[data-rate="29"] {filter: brightness(0.6) contrast(0.8) saturate(0) hue-rotate(0deg);;}
+	&[data-rate="30"] {filter: brightness(0.8) contrast(1.2) saturate(0.7) hue-rotate(-10deg);}
+	&[data-rate="31"] {filter: brightness(0.8) contrast(1.2) saturate(0.7) hue-rotate(-10deg);}
+	&[data-rate="32"] {filter: brightness(0.8) contrast(1.2) saturate(0.7) hue-rotate(-10deg);}
+	&[data-rate="33"] {filter: brightness(0.8) contrast(1.2) saturate(0.7) hue-rotate(-10deg);}
+	&[data-rate="34"] {filter: brightness(0.8) contrast(1.2) saturate(0.7) hue-rotate(-10deg);}
+	&[data-rate="35"] {filter: brightness(0.8) contrast(1.2) saturate(0.7) hue-rotate(-10deg);}
+	&[data-rate="36"] {filter: brightness(0.8) contrast(1.2) saturate(0.7) hue-rotate(-10deg);}
+	&[data-rate="37"] {filter: brightness(0.8) contrast(1.2) saturate(0.7) hue-rotate(-10deg);}
+	&[data-rate="38"] {filter: brightness(0.8) contrast(1.2) saturate(0.7) hue-rotate(-10deg);}
+	&[data-rate="39"] {filter: brightness(0.8) contrast(1.2) saturate(0.7) hue-rotate(-10deg);}
+	&[data-rate="40"] {filter: brightness(0.8) contrast(1.2) saturate(0.7) hue-rotate(-10deg);}
+	&[data-rate="41"] {filter: brightness(0.8) contrast(1.2) saturate(0.7) hue-rotate(-10deg);}
+	&[data-rate="42"] {filter: brightness(0.8) contrast(1.2) saturate(0.7) hue-rotate(-10deg);}
+	&[data-rate="43"] {filter: brightness(0.8) contrast(1.2) saturate(0.7) hue-rotate(-10deg);}
+	&[data-rate="44"] {filter: brightness(0.8) contrast(1.2) saturate(0.7) hue-rotate(-10deg);}
+	&[data-rate="45"] {filter: brightness(0.8) contrast(1.2) saturate(0.7) hue-rotate(-10deg);}
+	&[data-rate="46"] {filter: none;}
+	&[data-rate="47"] {filter: none;}
+	&[data-rate="48"] {filter: none;}
+	&[data-rate="49"] {filter: none;}
+	&[data-rate="50"] {filter: none;}
+	&[data-rate="51"] {filter: none;}
+	&[data-rate="52"] {filter: none;}
+	&[data-rate="53"] {filter: none;}
+	&[data-rate="54"] {filter: none;}
+	&[data-rate="55"] {filter: none;}
+	&[data-rate="56"] {filter: none;}
+	&[data-rate="57"] {filter: none;}
+	&[data-rate="58"] {filter: none;}
+	&[data-rate="59"] {filter: none;}
+	&[data-rate="60"] {filter: none;}
+	&[data-rate="61"] {filter: none;}
+	&[data-rate="62"] {filter: none;}
+	&[data-rate="63"] {filter: none;}
+	&[data-rate="64"] {filter: none;}
+	&[data-rate="65"] {filter: none;}
+	&[data-rate="66"] {filter: none;}
+	&[data-rate="67"] {filter: none;}
+	&[data-rate="68"] {filter: none;}
+	&[data-rate="69"] {filter: none;}
+	&[data-rate="70"] {filter: none;}
+	&[data-rate="71"] {filter: none;}
+	&[data-rate="72"] {filter: none;}
+	&[data-rate="73"] {filter: none;}
+	&[data-rate="74"] {filter: none;}
+	&[data-rate="75"] {filter: none;}
+	&[data-rate="76"] {filter: none;}
+	&[data-rate="77"] {filter: none;}
+	&[data-rate="78"] {filter: none;}
+	&[data-rate="79"] {filter: none;}
+	&[data-rate="80"] {filter: none;}
+	&[data-rate="81"] {filter: none;}
+	&[data-rate="82"] {filter: none;}
+	&[data-rate="83"] {filter: none;}
+	&[data-rate="84"] {filter: none;}
+	&[data-rate="85"] {filter: none;}
+	&[data-rate="86"] {filter: none;}
+	&[data-rate="87"] {filter: none;}
+	&[data-rate="88"] {filter: none;}
+	&[data-rate="89"] {filter: none;}
+	&[data-rate="90"] {filter: none;}
+	&[data-rate="91"] {filter: none;}
+	&[data-rate="92"] {filter: none;}
+	&[data-rate="93"] {filter: none;}
+	&[data-rate="94"] {filter: none;}
+	&[data-rate="95"] {filter: none;}
+	&[data-rate="96"] {filter: none;}
+	&[data-rate="97"] {filter: none;}
+	&[data-rate="98"] {filter: none;}
+	&[data-rate="99"] {filter: none;}
+	&[data-rate="100"] {filter: none;}
 }
