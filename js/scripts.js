@@ -583,18 +583,18 @@ if (calendarPopup && sliderInnerWrap) {
       event.stopPropagation();
     });
   });
-  document.querySelectorAll(".popup-outer-box").forEach(function (element) {
-    element.addEventListener("click", function (event) {
-      if (!event.target.closest(".popup-box")) {
-        document.body.classList.remove("popup-open");
-        document.body.classList.remove("popup-open-scroll");
-        document.querySelectorAll(".popup-outer-box").forEach(function (e) {
-          e.classList.remove("active");
-        });
-        return false;
-      }
-    });
-  });
+//   document.querySelectorAll(".popup-outer-box").forEach(function (element) {
+//     element.addEventListener("click", function (event) {
+//       if (!event.target.closest(".popup-box")) {
+//         document.body.classList.remove("popup-open");
+//         document.body.classList.remove("popup-open-scroll");
+//         document.querySelectorAll(".popup-outer-box").forEach(function (e) {
+//           e.classList.remove("active");
+//         });
+//         return false;
+//       }
+//     });
+//   });
 
   //slider row
   const swiperSliderRow = new Swiper(".slider-row .swiper", {

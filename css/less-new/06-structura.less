@@ -1,12 +1,75 @@
 /* ----------------------------------- *\
 			structura
 \* ----------------------------------- */
-
+.header {
+	.info-inner-wrap {
+		font-size: 14px;
+		line-height: 17px;
+		color: var(--clr-base);
+		text-align: left;
+		order: 1;
+		font-weight: 600;
+		padding-left: 30px;
+		width: 300px;
+		flex-shrink: 0;
+		text-wrap: pretty;
+		.info-title {
+			text-wrap: pretty;
+		}
+	}
+	.menu-inner-wrap {
+		.info-inner-wrap {
+			padding: 0 15px;
+			width: 100%;
+			max-width: 100%;
+			display: none;
+			text-align: center;
+		}
+	}
+	.logo-inner-wrap {
+		order: -1;
+	}
+	.text-att {
+		display: inline;
+		font-size: 1.4em;
+		font-weight: bold;
+	}
+}
+@media (min-width: 768px) and (max-width: 1023px) {
+	.header {
+		&:has(.info-inner-wrap) {
+			.logo-inner-wrap {
+				flex: 0 0 auto;
+			}
+			.info-inner-wrap {
+				width: auto;
+				flex: 1;
+			}
+		}
+	}
+}
 @media (max-width: 1023px) {
 	.wrap {
 		&:has(.breadcrumbs-box) {
 			.header {
 				margin-bottom: 10px;
+			}
+		}
+	}
+}
+@media (max-width: 767px) {
+	.header {
+		&:has(.info-inner-wrap) {
+			.popup-menu-wrap .popup-content-block {
+				width: 260px;
+			}
+		}
+		.info-inner-wrap {
+			display: none;
+		}
+		.menu-inner-wrap {
+			.info-inner-wrap {
+				display: block;
 			}
 		}
 	}
