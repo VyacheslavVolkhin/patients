@@ -8,3 +8,40 @@
 @import '04-inputs.less';
 @import '05-forms.less';
 @import '06-structura.less';
+/* button counter */
+.btn, .btn-action-menu {
+	.elm-count {
+		font-size: 10px;
+		min-width: 18px;
+		height: 18px;
+		line-height: 18px;
+		border-radius: 9px;
+		padding: 0 4px;
+		font-weight: bold;
+		margin-left: 5px;
+	}
+}
+.side-menu-box {
+	.btn {
+		.elm-count {
+			margin-left: 8px;
+		}
+	}
+}
+.actions-panel-box {
+	.btn {
+		.elm-count {
+			margin-left: 10px;
+		}
+	}
+}
+.wrap:has(.side-menu-box .btn-menu-toggle.active) .side-menu-box {
+	.btn {
+		.elm-count {
+			position: absolute;
+			bottom: 50%;left: 50%;
+			margin: 0 0 -2px 0;
+		}
+	}
+}
+/* end button counter */
